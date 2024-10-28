@@ -90,7 +90,13 @@
       :target: ../trackmanager/index.html
 ..
 .. |NEW-IN-V5-LOGO-SMALL| image:: /_static/images/logos/new_in_version_5.png
-      :alt: EX-MotorShield8874
+      :alt: New In Version 5.4
+      :scale: 30%
+      :class: image-min-width-144
+      :target: ../news/posts/20230807.html
+..
+.. |NEW-IN-V5-4-LOGO-SMALL| image:: /_static/images/logos/new_in_version_5_4.png
+      :alt: New In Version 5.4
       :scale: 30%
       :class: image-min-width-144
       :target: ../news/posts/20230807.html

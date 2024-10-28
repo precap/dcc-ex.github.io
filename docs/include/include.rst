@@ -93,6 +93,10 @@
 
   <span class="new-in-v5">New in version 5 </span>
 ..
+.. |NEW-IN-V5-4| raw:: html
+
+  <span class="new-in-v5-4">New in version 5.4 </span>
+..
 .. |DEPRECATED| raw:: html
    
   <span style="font-weight: bold; font-style: italic; color:red">Deprecated</span>

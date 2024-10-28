@@ -854,6 +854,13 @@ html[data-theme='dark'] .rst-content code.literal, .rst-content tt.literal {
   color: #00a3b9; 
   font-size: 110%; 
 }
+.new-in-v5-4 {
+  font-family: Audiowide,Helvetica,Arial,sans-serif;  
+  font-weight: bold; 
+  font-style: italic; 
+  color: #00a3b9; 
+  font-size: 110%; 
+}
 
 html[data-theme='dark'] .new-in-v5 {
   font-weight: normal; 
