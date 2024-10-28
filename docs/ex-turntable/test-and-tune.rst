@@ -374,8 +374,6 @@ The EX-RAIL equivalent to the above would be:
 Controlling EX-Turntable with a rotary encoder
 ==============================================
 
-|NEW-IN-V5-LOGO-SMALL|
-
 It is possible to use a rotary encoder to select turntable positions if desired, which is handy for use with mimic panels and so forth.
 
 There is an additional device driver available "IO_RotaryEncoder.h" which can be used with the rotary encoder software installed on a separate Arduino Nano or Uno that has the rotary encoder and an OLED display connected to it.

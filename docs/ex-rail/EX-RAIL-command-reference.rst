@@ -327,7 +327,7 @@ Scripts/Sequences - Types and Control
 AUTOSTART - A task is automatically started at this point during startup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| If you have previously relied on the implied AUTOSTART to run things immediately, you must now add this explicitly to the beginning of myAutomation.h
+If you have previously relied on the implied AUTOSTART to run things immediately, you must now add this explicitly to the beginning of myAutomation.h
 
 |hr-dashed|
 
@@ -711,7 +711,7 @@ Create and manage HAL device objects
 HAL( device, parameters ) - Create a HAL device in myAutomation.h
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Create a HAL device in myAutomation.h rather than needing to use myHal.cpp
+Create a HAL device in myAutomation.h rather than needing to use myHal.cpp
 
 .. collapse:: For example: (click to show)
 
@@ -774,7 +774,7 @@ Define a servo based signal, such as semaphore signals. Each position is an angl
 DCC_SIGNAL( id, addr, sub_addr ) - Define a DCC accessory signal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Define a DCC accessory signal. Control the colour or aspect of these via the defined ``id``
+Define a DCC accessory signal. Control the colour or aspect of these via the defined ``id``
 
 DCCX_SIGNAL( Address, redAspect, amberAspect, greenAspect ) - This defines a signal (with id same as dcc address)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -794,7 +794,7 @@ Direct use of other aspects does not affect the signal flags. ASPECT and <A> can
 VIRTUAL_SIGNAL( id ) - Define a virtual signal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Define a virtual signal, which is backed by another automation sequence
+Define a virtual signal, which is backed by another automation sequence
 
 |hr-dashed|
 
@@ -842,21 +842,21 @@ always considered a stop.  The exact aspect codes to be used must be determined 
 ONGREEN( signal_id) - Define an event handler for when a signal is set to the green aspect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Define an event handler for when a signal is set to the green aspect
+Define an event handler for when a signal is set to the green aspect
 
 |hr-dashed|
 
 ONAMBER( signal_id) - Define an event handler for when a signal is set to the amber aspect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Define an event handler for when a signal is set to the amber aspect
+Define an event handler for when a signal is set to the amber aspect
 
 |hr-dashed|
 
 ONRED( signal_id) - Define an event handler for when a signal is set to the red aspect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Define an event handler for when a signal is set to the red aspect
+Define an event handler for when a signal is set to the red aspect
 
 |hr-dashed|
 
@@ -902,7 +902,7 @@ Define a DCC accessory turnout/point. Note that DCC linear addresses are not sup
 TURNOUTL( id, addr [, "description"] ) - Define a DCC accessory turnout/point
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Define a DCC accessory turnout/point.  This macro will convert a linear address to the address/subaddress format using the TURNOUT command above.
+Define a DCC accessory turnout/point.  This macro will convert a linear address to the address/subaddress format using the TURNOUT command above.
 
 Note when providing the name of the profile that the profile names are case sensitive, and must be written exactly as they appear (e.g. Bounce, not bounce or BOUNCE).
 
@@ -995,8 +995,6 @@ Turntable/Traverser Objects - Definition and Control
     :local:
     :class: in-this-section
 
-|NEW-IN-V5-LOGO-SMALL|
-
 Also refer to :ref:`ex-turntable/test-and-tune:ex-rail automation`.
 
 |hr-dashed|
@@ -1004,7 +1002,7 @@ Also refer to :ref:`ex-turntable/test-and-tune:ex-rail automation`.
 MOVETT( vpin, steps, activity ) - Move the specified |EX-TT| to the provided step position and perform the specified activity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Move the specified |EX-TT| to the provided step position and perform the specified activity
+Move the specified |EX-TT| to the provided step position and perform the specified activity
 
 .. note:: 
 
@@ -1015,14 +1013,14 @@ MOVETT( vpin, steps, activity ) - Move the specified |EX-TT| to the provided ste
 IFRE ( vpin, value ) - Test if a rotary encoder has been set to the specified value
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Test if a rotary encoder has been set to the specified value
+Test if a rotary encoder has been set to the specified value
 
 |hr-dashed|
 
 ONCHANGE( vpin ) - Detects a rotary encoder has changed position
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Detects a rotary encoder has changed position
+Detects a rotary encoder has changed position
 
 .. collapse:: For example: (click to show)
 
@@ -1540,8 +1538,6 @@ XFTOGGLE( cab, func ) - Toggle DCC function on specific cab
 EX-FastClock Event Handlers
 ---------------------------
 
-|NEW-IN-V5-LOGO-SMALL|
-
 .. contents:: In This Section
   :depth: 4
   :local:
@@ -1554,14 +1550,14 @@ Also refer to :ref:`ex-fastclock/cs-commands:controlling ex-rail by time`.
 ONCLOCKTIME( hours, mins ) - Event handler for when the specified clock time is reached
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Event handler for when the specified clock time is reached
+Event handler for when the specified clock time is reached
 
 |hr-dashed|
 
 ONCLOCKMINS( mins ) - Event handler to be repeated the same time every hour
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Event handler to be repeated the same time every hour
+Event handler to be repeated the same time every hour
 
 ----
 
@@ -1675,7 +1671,7 @@ Program CV value on main, must be proceeded by setting the loco ID with ``SETLOC
 IFLOCO( loco ) - If the specified loco ID is defined for this sequence, perform the defined activities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| If the specified loco ID is defined for this sequence, perform the defined activities
+If the specified loco ID is defined for this sequence, perform the defined activities
 
 .. collapse:: For example: (click to show)
 
@@ -1695,14 +1691,12 @@ IFLOCO( loco ) - If the specified loco ID is defined for this sequence, perform 
 FORGET - Forget the loco in the running automation/sequence
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Forget the loco in the running automation/sequence
+Forget the loco in the running automation/sequence
 
 ----
 
 TrackManager Control
 --------------------
-
-|NEW-IN-V5-LOGO-SMALL|
 
 .. contents:: In This Section
   :depth: 4
@@ -1920,7 +1914,7 @@ LCD( row, "msg" ) - Write message on LCD/OLED if fitted
 SCREEN( display, row, "msg" ) - Writes a message to the specified display on the specified row
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Writes a message to the specified display on the specified row
+Writes a message to the specified display on the specified row
 
 |hr-dashed|
 
@@ -1959,28 +1953,28 @@ SERIAL3( "msg" ) - Writes direct to Serial3
 SERIAL4( "msg" ) - Writes direct to Serial4
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Writes direct to Serial4
+Writes direct to Serial4
 
 |hr-dashed|
 
 SERIAL5( "msg" ) - Writes direct to Serial5
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Writes direct to Serial5
+Writes direct to Serial5
 
 |hr-dashed|
 
 SERIAL6( "msg" ) - Writes direct to Serial6
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Writes direct to Serial6
+Writes direct to Serial6
 
 |hr-dashed|
 
 WITHROTTLE( "msg" ) - Writes a message to DCC-EX clients
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Writes a message to DCC-EX clients (alias of ``PRINT``)
+Writes a message to DCC-EX clients (alias of ``PRINT``)
 
 |hr-dashed|
 
@@ -2008,14 +2002,14 @@ CommandStation Functions
 POWERON - Power on track and UNJOIN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Power on track and UNJOIN
+Power on track and UNJOIN
 
 |hr-dashed|
 
 POWEROFF - Power off track
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Power off track
+Power off track
 
 |hr-dashed|
 
@@ -2032,14 +2026,14 @@ UNJOIN - Disconnect prog track from main
 KILLALL - Kills all running |EX-R| activities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Kills all running |EX-R| activities
+Kills all running |EX-R| activities
 
 |hr-dashed|
 
 PARSE( "msg" ) - Allows parsing of a DCC-EX API command via myAutomation.h
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5| Allows parsing of a DCC-EX API command via myAutomation.h
+Allows parsing of a DCC-EX API command via myAutomation.h
 
 |hr-dashed|
 

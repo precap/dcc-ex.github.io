@@ -13,8 +13,6 @@ Overview and configuration
 
   |EX-IO| is currently in its infancy and as such is considered to be in Alpha testing, so could (and likely will) change without notice, and possibly even be broken in some scenarios.
 
-|NEW-IN-V5-LOGO-SMALL|
-
 .. sidebar:: 
   
   .. contents:: On this page

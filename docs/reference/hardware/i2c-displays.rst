@@ -17,7 +17,7 @@ I2C Displays
 
 |EX-CS| supports both LCD and OLED to display status and other user-defined information. While a command station is typically hidden away under a layout, if you like the idea of a nice visual display for your panel, several different |I2C| displays will work. You can use either a 20 character by 2 line or 4 line LCD display, or an OLED display capable of up to 8 lines.
 
-|NEW-IN-V5| |EX-CS| can support more than one display and indeed write to them from within |EX-R| for fancy lineside or auxilliary displays.
+|EX-CS| can support more than one display and indeed write to them from within |EX-R| for fancy lineside or auxilliary displays.
 
 Further to this, the new |EX-I| can now configure the main status display during installation making adding a display very simple. The command station code is also easily configurable in order to add more displays, change the display settings, as well as add or change what is printed on the display.
 
@@ -217,8 +217,6 @@ If you have custom messages you wish to display, you can do this by adding the l
 
 Configuring Additional Displays
 ===============================
-
-|NEW-IN-V5-LOGO-SMALL|
 
 Apart from the main status display (display '0'), |EX-CS| allows definition of many more additional displays which can be any mix of LCD and OLED |I2C| displays. These displays can show all manner of output, including using ``SCREEN()`` commands issued from within |EX-R| scripts. Here is an OLED showing train departure times on a station building:
 

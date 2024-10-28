@@ -144,7 +144,7 @@ Automatically Running a Sequence at Power Up
 .. note:: 
    :class: note-float-right
 
-   |NEW-IN-V5| There is no longer an implied AUTOSTART whereby everything in myAutomation.h prior to the first ``DONE`` keyword is executed on startup. If you wish to reinstate this behaviour, simply add the keyword ``AUTOSTART`` as the first line.
+   There is no longer an implied AUTOSTART whereby everything in myAutomation.h prior to the first ``DONE`` keyword is executed on startup. If you wish to reinstate this behaviour, simply add the keyword ``AUTOSTART`` as the first line.
 
 If you want a sequence to start immediate the system powers up, add the ``AUTOSTART`` command to the content of the sequence.
 
