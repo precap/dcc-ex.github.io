@@ -30,7 +30,7 @@ This section will focus on the types of turntables/traversers supported by |EX-C
 
 .. note:: 
 
-  While |EX-TT| is |NEW-IN-V5|, this section focuses on new functionality supporting turntables/traversers in the same manner as turnouts/points, by creating objects that can be advertised to and controlled by throttles in a similar way. |NOT-IN-PROD-VERSION|.
+  This section focuses on functionality supporting turntables/traversers in the same manner as turnouts/points, by creating objects that can be advertised to and controlled by throttles in a similar way. |NOT-IN-PROD-VERSION|.
 
 Turntable/traverser control options
 ===================================

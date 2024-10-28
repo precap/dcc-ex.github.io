@@ -24,15 +24,15 @@ As a consequence of this, it is much easier to write a device driver for a new d
 breaking |EX-CS| for other users.  There are various drivers already available for you to use:
 
 * |I2C|-connected Displays (LCD, OLED);
-* |NEW-IN-V5| support for :ref:`multiple LCD/OLED displays <reference/hardware/i2c-displays:configuring additional displays>`;
+* support for :ref:`multiple LCD/OLED displays <reference/hardware/i2c-displays:configuring additional displays>`;
 * |I2C|-connected GPIO Expanders (MCP23017, MPC23008, PCF8574);
 * |I2C|-connected Servo Controller (PCA9685);
 * |I2C|-connected laser proximity detector (Time-of-Flight) (VL53L0X);
 * |I2C|-connected Analogue input modules (ADS111x);
-* |NEW-IN-V5| :doc:`/reference/hardware/i2c-multiplexers` support (TCA9547, TCA9548);
+* :doc:`/reference/hardware/i2c-multiplexers` support (TCA9547, TCA9548);
 * Serial-port-connected DFPlayer MP3 player;
 * Ultrasound proximity detector (HC-SR04);
-* |NEW-IN-V5| :doc:`/ex-ioexpander/index`
+* :doc:`/ex-ioexpander/index`
 
 and others.
 
@@ -108,8 +108,6 @@ One device notably uses software to configure the |I2C| address - the VL53L01 Ti
 
 Extending Addressing with Multiplexer Support
 =============================================
-
-|NEW-IN-V5-LOGO-SMALL|
 
 There are a number of |I2C| devices on the market that can only ever use one pre-defined |I2C| address, and with devices such as the MCP23017 I/O expander there are only eight addresses available for use, limiting the ability to add more devices. Further to this, there are devices with address conflicts that also cannot be overcome easily.
 

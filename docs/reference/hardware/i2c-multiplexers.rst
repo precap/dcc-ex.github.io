@@ -15,8 +15,6 @@ I2C Multiplexers
       :depth: 1
       :local:
 
-|NEW-IN-V5-LOGO-SMALL|
-
 What is a multiplexer?
 ======================
 

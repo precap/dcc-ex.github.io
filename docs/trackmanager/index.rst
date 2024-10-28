@@ -9,8 +9,6 @@ TrackManager (DCC & DC)
 
 |tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button2|
 
-|NEW-IN-V5-LOGO-SMALL|
-
 .. sidebar::
 
    .. contents:: On this page

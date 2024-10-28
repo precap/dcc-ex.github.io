@@ -10,8 +10,6 @@ STMicroelectronics Nucleo (Recommended)
 
 |tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button2|
 
-|NEW-IN-V5|
-
 .. sidebar::
 
    .. contents:: On this page
