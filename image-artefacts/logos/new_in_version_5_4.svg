@@ -2,7 +2,7 @@
 <svg
    inkscape:export-ydpi="17.060751"
    inkscape:export-xdpi="17.060751"
-   inkscape:export-filename="..\..\docs\_static\images\logos\new_in_version_5.png"
+   inkscape:export-filename="..\..\docs\_static\images\logos\new_in_version_5_4.png"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="new_in_version_5_4.svg"
    id="svg40"
@@ -38,8 +38,8 @@
      inkscape:window-maximized="1"
      inkscape:window-y="177"
      inkscape:window-x="1912"
-     inkscape:cy="689.17728"
-     inkscape:cx="2129.9143"
+     inkscape:cy="695.11844"
+     inkscape:cx="810.97151"
      inkscape:zoom="0.16831664"
      showgrid="false"
      id="namedview42"
@@ -348,15 +348,15 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1160"><tspan
+       id="tspan355"><tspan
          style="font-size:66.3716px;stroke:none"
-         id="tspan1152">in</tspan><tspan
+         id="tspan347">in</tspan><tspan
          style="font-size:66.3716px"
-         id="tspan1154"> </tspan><tspan
+         id="tspan349"> </tspan><tspan
          style="fill:#00a3b9;stroke:none"
-         id="tspan1156">EX-</tspan><tspan
+         id="tspan351">EX-</tspan><tspan
          style="fill:#00353d;stroke:#00353d"
-         id="tspan1158">CommandStation</tspan></tspan></text>
+         id="tspan353">CommandStation</tspan></tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-9"
@@ -367,7 +367,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1162">Version 5.4</tspan></text>
+       id="tspan357">Version 5.4</tspan></text>
   <text
      xml:space="preserve"
      id="text4777"
