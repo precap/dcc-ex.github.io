@@ -23,9 +23,9 @@ STMicroelectronics has a range of ARM based microcontrollers that are generally 
 
 Further to this, all of the NUCLEO series of development boards also provide Arduino Uno compatible header sockets, meaning existing motor (and other) shields can just plug straight in, providing they are 3v3 compatible (see note above).
 
-All of the NUCLEO series being considered as a future |DCC-EX| platform have a great deal more RAM (128KB to 256KB vs 8KB for a Mega), double or more FLASH (512KB to 2MB) for program storage, and much faster CPU speed (100 to 180Mhz vs 16Mhz) than the current AVR-based UNO and Mega.
+The NUCLEO series have a great deal more RAM (128KB to 256KB vs 8KB for a Mega), double or more FLASH (512KB to 2MB) for program storage, and much faster CPU speed (100 to 180Mhz vs 16Mhz) than the current AVR-based UNO and Mega.
 
-With those attributes comes the potential to support much larger EX-RAIL scripts, more WiThrottle connections, and many new features.
+With those attributes comes the potential to support much larger EX-RAIL scripts, and therefore much larger layouts needing animation and automation, and new features like built-in Ethernet.
 
 Nucleo-64 vs Nucleo-144 Form Factors
 ------------------------------------
@@ -101,7 +101,7 @@ We've compiled this simple summary table to help with this:
     - `411RE <https://os.mbed.com/platforms/st-nucleo-f411re/>`_
   * - Nucleo-F446RE
     - 64
-    - Supported
+    - Supported & Recommended
     - 512KB
     - 128KB
     - 180Mhz
@@ -134,7 +134,7 @@ We've compiled this simple summary table to help with this:
     - `F413ZH <https://os.mbed.com/platforms/st-nucleo-f413zh/>`_
   * - Nucleo-F446ZE
     - 144
-    - Supported
+    - Supported & Recommended
     - 512KB
     - 128KB
     - 180Mhz
@@ -145,18 +145,18 @@ We've compiled this simple summary table to help with this:
     - `F446ZE <https://os.mbed.com/platforms/st-nucleo-f446ze/>`_
   * - Nucleo-F429ZH
     - 144
-    - Beta
+    - Supported & Recommended
     - 2.0MB
     - 256KB
     - 180Mhz
     - 114
     - 4
     - Ethernet 10/100
-    - Ethernet builtin, fastest, STM removing from sale soon
+    - Ethernet builtin, fastest, NO LONGER AVAILABLE
     - `F429ZI <https://os.mbed.com/platforms/st-nucleo-f429zi/>`_
   * - Nucleo-F439ZH
     - 144
-    - Beta
+    - Supported & Recommended
     - 2.0MB
     - 256KB
     - 180Mhz
@@ -170,7 +170,7 @@ Which you choose will come down to cost and features you desire. The range in pr
 
 .. note:: 
 
-  While the F429ZI is supported by the Arduino IDE, the identical (from a DCC-EX perspective) F439ZI was not. As the F429ZI is being phased out of production by the manufacturer ST Microelectronics, the DCC-EX dev team has submitted a PR to the STM32duino core developers to have it permanently included. This ought to be available from v2.8.0 onwards of the STM32duino core.
+  While the F429ZI is supported and recommended, ST Microelectronics has decided to end production. The F439ZI is functionally identical as far as DCC-EX is concerned and readily available.
 
 Install the STLink drivers for Windows
 --------------------------------------
@@ -302,8 +302,8 @@ Here is how a Nucleo-64 board looks when new, with a top view, and the pinouts. 
 
 You will notice that the Ardiuno connectors are slightly inboard of the dual-row headers called the Morpho connectors.
 
-Notes on the Arduino connectors on the NUCLEO range
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes on the Arduino connectors on the NUCLEO-64 range
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Whilst the I/O pins are 5v-tolerant for digital IO, for the moment we recommend using 3v3 friendly Arduino R3 spec shields where you can.
 - The analog pins are NOT 5v-tolerant and accept a maximum of 3v3. We recommend using the new EX-MotorShield8874, or a genuine Ardiuno Motor Shield R3 revision (and only the R3!) for the moment. Instructions for modifying the earlier R2 version and the Deek Robot Motor Shield will follow in due course.
@@ -325,8 +325,71 @@ Here is the NUCLEO-F411RE with on the left a genuine Arduino Motor Shield R3 ins
   :alt: STM Nucleo-F411RE with DCC-EX EX-MotorShield8874 installed
   :scale: 17%
 
-Serial for WiFi, for Nucleo-64 models
+Serial for WiFi, for NUCLEO-64 models
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To connect an ESP8266 via either a WiFi shield or ESP01 module, you may use any of the available serial ports, which appear on different Morpho pins for the various Nucleo-64 models.
+
+The |EX-CS| source code currently maps the first additional serial port pins to:
+
+- F401RE: Rx/PB7 on CN7 pin 17, Tx/PB6 on CN10 pin 17 - known as Serial1
+- F411RE: Rx/PA15 on CN7 pin 17, Tx/PB7 on CN7 pin 21 - known as Serial1
+- F446RE: Rx/PC11 on CN7 pin 2, Tx/PC10 on CN7 pin 1 - known as Serial3
+
+Also defined in |EX-CS| is an additional serial port which appears on the following pins:
+
+- F401RE Rx CN10 PA12 pin 12, Tx CN10 PA11 pin 13 - known as Serial6
+- F411RE Rx CN10 PA12 pin 12, Tx CN10 PA11 pin 13 - known as Serial6
+- F446RE Rx CN7 PD2 pin 4, Tx CN7 PC12 pin 3 - known as Serial5
+
+You will need to select a serial port to use, and connect the Rx pin on your NUCLEO to the Tx pin of your WiFi device, and the Tx pin of the NUCLEO to the Rx pin of the WiFi device. We recommend using Serial1 for the F401RE and F411RE, and Serial3 for F446RE. Below are pics of the positions of all available mapped serial ports:
+
+.. image:: /_static/images/nucleo/nucleo-f411re-f446re-wifi-serial1.png
+  :alt: NUCLEO F411RE/F446RE Serial1 Rx/Tx Connections
+  :scale: 50%
+
+NB: Use of Serial1 on the F401RE means using PB6 which is also Arduino pin D8 - this means you cannot use D8 for a motor shield unless you comment out the Serial1 definition. Speak to the DCC-EX dev team on Discord if you need help to do this. The default serial port used for console communications for Nucleo-64 models is Serial2, which is sent via the ST-Link debugger to the USB serial console. It is not connected to the Arduino Rx/Tx pins of D0/D1 which have no connection at all to any pin.
+
+Hardware setup notes for a NUCLEO-144 based |EX-CS|
+---------------------------------------------------
+
+Here is how a Nucleo-144 board looks when new, with a top view, and the pinouts. The other Nucleo-64 models look near identical, pinouts are exactly the same, however some of their I/O functions map slightly differently as the microcontrollers might be slightly different internally.
+
+.. image:: /_static/images/nucleo/nucleo-f411re-top.png
+  :alt: STM Nucleo-F411RE top face
+  :scale: 25%
+
+.. image:: /_static/images/nucleo/nucleo-f411re-pinout.png
+  :alt: STM Nucleo-F411RE connector pinouts
+  :scale: 50%
+
+You will notice that the Ardiuno connectors are slightly inboard of the dual-row headers called the Morpho connectors.
+
+Notes on the Arduino connectors on the NUCLEO-144 range
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Whilst the I/O pins are 5v-tolerant for digital IO, for the moment we recommend using 3v3 friendly Arduino R3 spec shields where you can.
+- The analog pins are NOT 5v-tolerant and accept a maximum of 3v3. We recommend using the new EX-MotorShield8874, or a genuine Ardiuno Motor Shield R3 revision (and only the R3!) for the moment. Instructions for modifying the earlier R2 version and the Deek Robot Motor Shield will follow in due course.
+- By default the Rx/Tx Arduino pins (D0/D1) are NOT connected to any of the NUCLEO's pins. There are jumpers underneath to connect them to Serial2, but this isn't recommended (see steps for serial connections below)
+- The Morpho pins extend both above AND below the Nucleo-64 series boards! Please be very wary of shorting any of these pins, especially those that protrude below. We recommend mounting 10mm M3 screw hex standoffs into the 3 mounting holes on the main PCB for your safety. See pic here:
+
+.. image:: /_static/images/nucleo/nucleo-f411re-bottom-spacers.png
+  :alt: STM Nucleo-F411RE underneath face with 10mm M3 standoffs
+  :scale: 25%
+
+
+Here is the NUCLEO-F411RE with on the left a genuine Arduino Motor Shield R3 installed, and on the right a |DCC-EX| EX-MotorShield8874 installed:
+
+.. image:: /_static/images/nucleo/nucleo-f411re-with-motor-shield.png
+  :alt: STM Nucleo-F411RE with genuine Arduino Motor Shield R3 installed
+  :scale: 30%
+
+.. image:: /_static/images/motorboards/ex_motorshield8874_nucleo_f411.jpg
+  :alt: STM Nucleo-F411RE with DCC-EX EX-MotorShield8874 installed
+  :scale: 17%
+
+Serial for WiFi, for NUCLEO-144 models
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To connect an ESP8266 via either a WiFi shield or ESP01 module, you may use any of the available serial ports, which appear on different Morpho pins for the various Nucleo-64 models.
 

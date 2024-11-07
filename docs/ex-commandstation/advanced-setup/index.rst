@@ -4,9 +4,9 @@
 
 |EX-CS-LOGO|
    
-****************
-Advanced Options
-****************
+**********************
+DIY - Advanced Options
+**********************
 
 |tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button2|
 
