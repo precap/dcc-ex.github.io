@@ -55,7 +55,7 @@ These broadcast responses should be understood if your controller deals with tur
 
 - ``<H id [DCC|SERVO|VPIN|LCN] ... [0|1]>`` - When turnouts are closed/thrown, this response is broadcast (see :ref:`reference/software/command-summary-consolidated:turnouts/points`)
 - ``<[q|Q] id>`` - When sensors are deactivated/activated, this response is broadcast (see :ref:`reference/software/command-summary-consolidated:sensors`)
-- ``<m "text">`` - **New in 5.4.0** - A message can be sent to all throttles using |EX-R| (see :ref:`ex-rail/ex-rail-command-reference:message( "msg" ) - writes a message to all clients`)
+- ``<m "text">`` - **New in 5.4.0** - A message can be sent to all throttles using |EX-R| (see `MESSAGE( "msg" ) - Writes a message to all clients <../ex-rail/EX-RAIL-command-reference.html#message-msg-writes-a-message-to-all-clients>`_)
 - ``<i id position moving>`` - **New in 5.4.0** - Broadcasts if the new turntable/traverser objects are implemented (see :ref:`reference/software/command-summary-consolidated:turntables/traversers`).
 
 Working with track power states
