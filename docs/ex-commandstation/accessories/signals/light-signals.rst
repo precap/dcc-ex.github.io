@@ -59,7 +59,7 @@ If your signalling requires using different colours to the standard red/amber/gr
 Signals with flashing amber
 ---------------------------
 
-|NEW-IN-5-4|
+|NEW-IN-V5-4|
 
 |EX-R| now has the ability to blink a vpin on and off at set intervals, which can also be utilised to creating a flashing or blinking amber signal.
 

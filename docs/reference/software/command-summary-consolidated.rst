@@ -960,7 +960,7 @@ NOTE: Both the following commands do the same thing. Pick the one that works for
 <A address aspect> - Command for DCC Extended Accessories.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-5-4| 
+|NEW-IN-V5-4| 
 
 This command sends an extended accessory packet to the track, normally used to set a signal aspect. Aspect numbers are undefined as sdtandards except for 0 which is always considered a stop.
 
