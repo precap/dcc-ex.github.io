@@ -155,8 +155,8 @@ These commands can be run interactively via the serial console or over Ethernet/
 
 |hr-dashed|
 
-<D EXRAIL state> - Enable or disable EX-RAIL sequence logging
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``<D EXRAIL state>`` - Enable or disable EX-RAIL sequence logging
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When the CommandStation is connected to a serial monitor, EX-RAIL sequence logging can be turned on or off (Enabled or Disabled).
 
@@ -460,35 +460,47 @@ Branch or Follow a numbered sequence. This lets us do clever things like perform
 
 |hr-dashed|
 
-``PAUSE`` - E-STOP all locos and PAUSE all other EX-RAIL tasks until RESUMEd
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``PAUSE`` - E-STOP all locos and PAUSE all other EX-RAIL tasks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+E-STOP all locos and PAUSE all other EX-RAIL tasks until RESUMEd.
 
 |hr-dashed|
 
 ``RESUME`` - Resume all paused tasks, including loco movement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Resume all paused tasks, including loco movement.
+
 |hr-dashed|
 
-``START( sequence_id )`` - Start a new task to execute a route or sequence
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``START( sequence_id )`` - Execute a route or sequence
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Start a new task to execute a route or sequence.
 
 |hr-dashed|
 
 ``DELAY( delay )`` - Delay a number of milliseconds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Delay the current sequence a number of milliseconds.
+
 |hr-dashed|
 
 ``DELAYMINS( delay )`` - Delay a number of minutes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Delay the current sequence a number of minutes.
+
 |hr-dashed|
 
-``DELAYRANDOM( min_delay, max_delay )`` - Delay a random time between min and max milliseconds
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``DELAYRANDOM( min_delay, max_delay )`` - Delay a random period of time
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Delay a random time between min and max milliseconds, see :ref:`ex-rail/examples:Multiple inter-connected trains` for good examples.
+Delay the current sequence a random time between min and max milliseconds.
+
+See :ref:`ex-rail/examples:Multiple inter-connected trains` for good examples.
 
 .. collapse:: Delay examples: (click to show)
 
@@ -509,8 +521,8 @@ Delay a random time between min and max milliseconds, see :ref:`ex-rail/examples
 
 |hr-dashed|
 
-``IFRANDOM( percent )`` - Runs commands in IF block a random percentage of the time
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``IFRANDOM( percent )`` - Run commands a random percentage of the time
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Runs commands in IF block a random percentage of the time. This is handy for more realism by enabling automations that don't have to run on a schedule.
 
@@ -530,8 +542,8 @@ Runs commands in IF block a random percentage of the time. This is handy for mor
 
 |hr-dashed|
 
-``ROUTE_CAPTION( id, "caption" )`` - dynamically change the label of the Route button
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ROUTE_CAPTION( id, "caption" )`` - Change the label of the Route button
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4|
 
@@ -595,8 +607,8 @@ Dynamically change the label of the Route button.
 
 |hr-dashed|
 
-``ROUTE_ACTIVE( id )`` - dynamically activate a Route
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ROUTE_ACTIVE( id )`` - Activate a Route
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4|
 
@@ -608,8 +620,8 @@ See example in ROUTE_CAPTION.
 
 |hr-dashed|
 
-``ROUTE_INACTIVE( id, caption )`` - dynamically deactivate a Route
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ROUTE_INACTIVE( id, caption )`` - Deactivate a Route
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4|
 
@@ -621,7 +633,7 @@ See example in ROUTE_CAPTION.
 
 |hr-dashed|
 
-``ROUTE_HIDDEN( id )`` - hide a Route from display
+``ROUTE_HIDDEN( id )`` - Hide a Route from display
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4|
@@ -641,12 +653,12 @@ Dynamically disable a Route.
 
 |hr-dashed|
 
-``STASH( stashId )`` - Stashes the current loco/invert in the numbered stash
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``STASH( stashId )`` - Stashes the current loco/invert
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-v5-4|
 
-TBA
+Stashes the current loco/invert in the numbered stash.
 
 .. note:: 
 
@@ -659,7 +671,7 @@ TBA
 
 |NEW-IN-V5-4|
 
-TBA
+Zeroes the specified stash.
 
 |hr-dashed|
 
@@ -668,7 +680,10 @@ TBA
 
 |NEW-IN-V5-4|
 
-TBA
+Zeroes all stashes.
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
@@ -1008,9 +1023,9 @@ All the below turnout/point definitions will define turnouts/points that are adv
 Define a DCC accessory turnout/point. Note that DCC linear addresses are not supported, and must be converted to address/subaddress in order to be defined. Refer to the :ref:`reference/downloads/documents:stationary decoder address table (xlsx spreadsheet)` for help on these conversions. (or see TURNOUTL below).
 
 *Parameters:* |BR|
-|_| > **id:** identifier of the Turnout/Point |BR|
-|_| > **addr:** ranges from 0 to 511 |BR|
-|_| > **subaddr:** ranges from 0 to 3 |BR|
+|_| > **id** - identifier of the Turnout/Point |BR|
+|_| > **addr** - ranges from 0 to 511 |BR|
+|_| > **subaddr** - ranges from 0 to 3 |BR|
 |_| > **description** - The description that will be assigned to the turnout/point |BR|
 
 
@@ -1031,8 +1046,8 @@ Note when providing the name of the profile that the profile names are case sens
 Define a pin operated turnout. When sending a CLOSE command, the pin will be HIGH, and a THROW command will set the pin LOW.
 
 *Parameters:* |BR|
-|_| > **id:** unique Id for the servo |BR|
-|_| > **pin:** vpin to which the servo is attached |BR|
+|_| > **id** - unique Id for the servo |BR|
+|_| > **pin** - vpin to which the servo is attached |BR|
 |_| > **description** - The description that will be assigned to the turnout/point |BR|
 
 |hr-dashed|
@@ -1043,11 +1058,11 @@ Define a pin operated turnout. When sending a CLOSE command, the pin will be HIG
 Define a servo turnout/point. "active_angle" is for THROW, "inactive_angle" is for CLOSE, and profile is one of Instant, Fast, Medium, Slow or Bounce (although clearly we don't recommend Bounce for turnouts/points!). 
 
 *Parameters:* |BR|
-|_| > **id:** unique Id for the servo |BR|
-|_| > **pin:** vpin to which the servo is attached |BR|
-|_| > **active_angle:** the PWM value corresponding to the servo position for THROWN state, normally in the range 102 to 490 |BR|
-|_| > **inactive_angle:** the PWM value corresponding to the servo position for CLOSED state, normally in the range 102 to 490 |BR|
-|_| > **profile:** one of |BR|
+|_| > **id** - unique Id for the servo |BR|
+|_| > **pin** - vpin to which the servo is attached |BR|
+|_| > **active_angle** - the PWM value corresponding to the servo position for THROWN state, normally in the range 102 to 490 |BR|
+|_| > **inactive_angle** - the PWM value corresponding to the servo position for CLOSED state, normally in the range 102 to 490 |BR|
+|_| > **profile** - one of |BR|
 |_| |_| |_| |_| - 0=Instant,  |BR|
 |_| |_| |_| |_| - 1=Fast (0.5 sec),  |BR|
 |_| |_| |_| |_| - 2=Medium (1 sec),  |BR|
@@ -2091,8 +2106,8 @@ TrackManager Control
 Configures the mode of the selected track, refer also to :doc:`/trackmanager/index`
 
 *Parameters:* |BR|
-|_| > **track:** - The track to configure, valid options are A to H |BR|
-|_| > **mode:** - The mode to set the track to, |BR|
+|_| > **track** - - The track to configure, valid options are A to H |BR|
+|_| > **mode** - - The mode to set the track to, |BR|
 |_| |_| |_| |_| valid options for DCC are: |BR|
 |_| |_| |_| |_| - ``MAIN`` or |BR|
 |_| |_| |_| |_| - ``PROG``, |BR|
@@ -2127,8 +2142,8 @@ When setting at track mode to either DC or DCX, you must use the ``SETLOCO( loco
 Configures the power setting of the selected track, refer also to :doc:`/trackmanager/index`
 
 *Parameters:* |BR|
-  |_| > **track:** - The track to configure, valid options are A to H |BR|
-  |_| > **ON/OFF:** - Turn the power ON or OFF for this track |BR|
+  |_| > **track** - - The track to configure, valid options are A to H |BR|
+  |_| > **ON/OFF** - - Turn the power ON or OFF for this track |BR|
 
 .. collapse:: For example: (click to show)
 
@@ -2152,13 +2167,13 @@ The settings achievable vary slightly depending upon the processor running the C
 
 *Parameters:* |BR|
 
-|_| > **track:** - The track to configure, valid options are A to H |BR|
-|_| > **frequency:** - The frequency to set for this track |BR|
+|_| > **track** - - The track to configure, valid options are A to H |BR|
+|_| > **frequency** - - The frequency to set for this track |BR|
 |_| |_| |_|>valid options are: |BR|
-|_| |_| |_| |_|> **0:** Default - low frequency 131Hz |BR|
-|_| |_| |_| |_|> **1:** Mid frequency - 490Hz |BR|
-|_| |_| |_| |_|> **2:** High frequency - 3400Hz |BR|
-|_| |_| |_| |_|> **3:** Supersonic - 62500Hz|BR|
+|_| |_| |_| |_|> **0** - Default - low frequency 131Hz |BR|
+|_| |_| |_| |_|> **1** - Mid frequency - 490Hz |BR|
+|_| |_| |_| |_|> **2** - High frequency - 3400Hz |BR|
+|_| |_| |_| |_|> **3** - Supersonic - 62500Hz|BR|
 
 Trial and error will be needed for specific locos that do not respond well to the defaults (low) frequency setting.
 
