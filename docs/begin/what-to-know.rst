@@ -32,7 +32,7 @@ However, if you just want to know how DCC, and in particular |DCC-EX|, can help 
 DCC-EX does DC as well
 ----------------------
 
-As mentioned, along with DCC, |DCC-EX| can be used to control Direct Current (DC) locomotives using Pulse Width Modulation (PWM). This is actually an improvement over pure DC since the full voltage is always applied to the track. Rather than controlling a voltage from zero to full to control speed, the average time the full voltage is applied controls the speed. This allows for better stops and starts and smoother operation at low speeds. We do NOT use the flawed "zero stretching" method some command stations use.
+As mentioned, along with DCC, |DCC-EX| can be used to control Direct Current (DC) locomotives using Pulse Width Modulation (PWM). This is actually an improvement over pure DC since the full voltage is always applied to the track. Rather than controlling a voltage from zero to full to control speed, the average *time* the full voltage is applied controls the speed. This allows for better stops and starts and smoother operation at low speeds. We do NOT use the flawed "zero stretching" method some command stations use.
 
 More information on using DC PWM can be found :doc:`on the TrackManager page </trackmanager/index>`.
 
@@ -132,11 +132,11 @@ How does spending only $60 to $120 US (€54 - 110) sound to get the equivalent 
 
 We offer our own ready-to-run solutions in addition to a DIY path where you snap together a command station yourself. The DCC-EX Team created the |EX-CSB1| (EX-CSB1) which is a full USB or WiFi connected Command Station on one board. Just like the commercial products, you can connect a power supply, connect it to your tracks, and you are ready to run trains in seconds. And the EX-CSB1 is half or less the price of competing systems.
 
-The |DCC-EX| DIY project is our free and open source software you install onto widely available, inexpensive microcontrollers and components to provide full featured DCC and DC train and accessory control. If at the the entry level you are willing to do some learning and assembling, you can get into modelling or upgrade your current setup very inexpensively.
+The |DCC-EX| DIY project is our free and open source software you install onto widely available, inexpensive microcontrollers and components to provide full featured DCC and DC train and accessory control. If at the entry level you are willing to do some learning and minor assembling, you can get into modelling or upgrade your current setup very inexpensively.
 
 You will get more features from our software than you will from many commercial DCC controllers, while saving money with the hardware components that can be purchased at a fraction of the price of commercial systems.
 
-We also have our own |EX-MS| to provide more power to DIY setups using Arduino or ESPDuino32 boards or to add power districts to an |EX-CSB1|, and an |EX-WS| to add WiFi capability to the DIY option as well if you choose that route. (The EX-CSB1 already includes the features of both of these boards)
+We also have our own |EX-MS| to provide more power to DIY setups using Arduino or ESPDuino32 boards or to add power districts to an |EX-CSB1|. In addition, we offer an |EX-WS| to add WiFi capability to the DIY option if you choose that route. (The EX-CSB1 already includes the features of both of these boards)
 
 As we grow, we are creating an entire ecosystem (an EX-osystem if you will) of products that plug together and allow you to control every aspect of your layout including lighting, sensors, points, motors, servos, displays, and more.
 
@@ -149,11 +149,11 @@ You can also read through the :doc:`/ex-commandstation/accessories/index` sectio
 I just want to run my trains
 ============================
 
-If you simply want a system to run your DCC or DC trains, then you only need to concern yourself with |EX-CS| running on our |EX-CSB1| or on a DIY system like an Arduino Mega. |EX-CS| is our core digital controller product. While it can also do a lot more, you don't need to know about any other features or capabilities in order to use it to just run trains.
+If you simply want a system to run your DCC or DC trains, then you only need to concern yourself with |EX-CS| running on our |EX-CSB1| or on a DIY system using a board like an Arduino Mega. |EX-CS| is our core digital controller product. While it can also do a lot more, you don't need to know about any other features or capabilities in order to use it to just run trains.
 
-Note that you will need a throttle or controller to connect to the CS (via serial, WiFi, or Ethernet), but you already have a throttle - your phone. There are several excellent apps, like |Engine Driver| that are free and can have you up and running in minutes. And there are plenty of DIY physical throttles as well as commercial ones like the TCS throttles.
+Note that you will need a throttle or controller to connect to the CS (via serial, WiFi, or Ethernet), but you already have a throttle - you laptop or your phone. Our |EX-WT| runs on a computer connected to the CS via a USB cable. And there are several excellent apps, like |Engine Driver| that are free and can have you up and running in minutes via a WiFi connection. If physical knobs and buttons are your thing, there are plenty of DIY physical throttles as well as commercial ones like the TCS throttles.
 
-Be sure to begin your walkthrough at the :doc:`/begin/levels` page which will then guide you through the :doc:`/ex-commandstation/index` documentation and the :doc:`/throttles/index` section to become familiar with what throttle options are available (including our very own free and open source |EX-WT| that connects your computer to the CS with a USB cable).
+Be sure to begin your walkthrough at the :doc:`/begin/levels` page which will then guide you through the :doc:`/ex-commandstation/index` documentation and the :doc:`/throttles/index` section to become familiar with what throttle options are available.
 
 This provides a very cost effective and expandable introduction to DCC train control using inexpensive hardware and our (free) open source |EX-CS| software.
 

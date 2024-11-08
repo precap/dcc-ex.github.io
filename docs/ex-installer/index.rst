@@ -14,7 +14,9 @@ EX-Installer
 
 ----
 
-Once you have assembled your |EX-CS| hardware you need to load our software onto it make is usable.  
+If you have DIY assembled your |EX-CS| hardware you need to load our software onto it make is usable.
+
+If you purchased an |EX-CSB1| you may wish to reload our software to enable additional features.
 
 To make it as simple as possible we have created the |EX-I| app.
 
