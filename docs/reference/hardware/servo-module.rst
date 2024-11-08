@@ -229,7 +229,7 @@ The parameters required are:
 - OnValue = The desired intensity (brightness) of the LED when turned on, with 0 being off, and 4095 being 100%
 - OffValue = The desired intensity (brightness) of the LED when turned off
 
-** New in V5.4.0 **
+|NEW-IN-5-4|
 
 There is now an option to configure these LED's from within the myAutomation.h file instead of the mySetup.h file.  See CONFIGURE_SERVO in EXRAIL Command Reference.
 
