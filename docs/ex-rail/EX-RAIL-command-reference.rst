@@ -525,7 +525,7 @@ Runs commands in IF block a random percentage of the time. This is handy for mor
 ROUTE_CAPTION( id, "caption" ) - dynamically change the label of the Route button
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 Dynamically change the label of the Route button.
 
@@ -590,7 +590,7 @@ Dynamically change the label of the Route button.
 ROUTE_ACTIVE( id ) - dynamically activate a Route
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0.**
+|NEW-IN-5-4|
 
 Dynamically flag a Route as active.
 
@@ -603,7 +603,7 @@ See example in ROUTE_CAPTION.
 ``ROUTE_INACTIVE( id, caption )`` - dynamically deactivate a Route
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0.**
+|NEW-IN-5-4|
 
 Dynamically flag a Route as inactive.
 
@@ -616,7 +616,7 @@ See example in ROUTE_CAPTION.
 ROUTE_HIDDEN( id ) - hide a Route from display
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0.**
+|NEW-IN-5-4|
 
 Dynamically hide a Route.
 
@@ -627,14 +627,14 @@ Dynamically hide a Route.
 ROUTE_DISABLED( id ) - disable a Route
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 |hr-dashed|
 
 STASH( stashId ) - Stashes the current loco/invert in the numbered stash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 .. note:: 
 
@@ -645,21 +645,25 @@ STASH( stashId ) - Stashes the current loco/invert in the numbered stash
 CLEAR_STASH( stashId ) - Zeroes the specified stash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 |hr-dashed|
 
 CLEAR_ALL_STASH - Zeroes all stashes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
+
+TBA
 
 |hr-dashed|
 
 PICKUP_STASH( stashId ) - Retrieves and sets the loco/invert from the specified stash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
+
+TBA
 
 |hr-dashed|
 
@@ -734,7 +738,7 @@ Create a HAL device in myAutomation.h rather than needing to use myHal.cpp
 HAL_IGNORE_DEFAULTS - Disable default MCP23017 and PCA9685 HAL devices
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 
 
@@ -779,7 +783,7 @@ Define a DCC accessory signal. Control the colour or aspect of these via the def
 DCCX_SIGNAL( Address, redAspect, amberAspect, greenAspect ) - This defines a signal (with id same as dcc address)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-** New in version 5.4.0 ** 
+|NEW-IN-5-4| 
 
 This defines a signal (with id same as dcc address) that can be operated
 by the RED/AMBER/GREEN commands.   In each case the command uses the signal address to refer to the signal and the aspect chosen depends on the use of the RED AMBER or GREEN command sent. Other aspects may be sent but will require the direct use of the ASPECT command.
@@ -831,7 +835,7 @@ RED( signal_id ) - Set defined signal to Red (See SIGNAL)
 ASPECT( address, aspect ) - Command for DCC Extended Accessories.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-** New in version 5.4.0 **
+|NEW-IN-5-4|
 
 This command sends an extended accessory packet to the track, normally used to set
 a signal aspect. Aspect numbers are undefined as standards except for 0 which is
@@ -979,7 +983,7 @@ THROW( id ) - Throw a defined turnout/point
 TOGGLE_TURNOUT( id ) - Toggle a defined turnout/point between CLOSE/THROW
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 Toggles the state of the specified turnout/point between closed and thrown.
 
@@ -1040,7 +1044,7 @@ Detects a rotary encoder has changed position
 Turntable features
 ^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 .. contents:: In This Section
     :depth: 4
@@ -1151,11 +1155,11 @@ Sensors/Inputs - Reading and Responding
 JMRI_SENSOR(vpin [,count]) - Creates <S> type sensors visible to JMRI.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-** New in version 5.4.0 ** 
+|NEW-IN-5-4|* 
 
 This Macro causes the creation of JMRI <S> type sensors in a way that is simpler than repeating lines of <S> commands in mySetup.h.
 
-- JMRI_SENSOR(100)   is equenvelant to <S 100 100 1>
+- JMRI_SENSOR(100)   is equivalent to <S 100 100 1>
 - JMRI_SENSOR(100,16) will create <S> type sensors for vpins 100-115.
 
 AT( sensor_id ) - Causes a sequence to wait until a sensor is active/triggered
@@ -1311,7 +1315,7 @@ UNLATCH( sensor_id ) - Remove LATCH on sensor
 ONBUTTON( vpin ) - Event handler for debounced button presses
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 This new event handler is handy for mimic panel and other buttons that need to perform an action when a button is pressed, rather than having to create a sequence with a combination of ``AFTER`` and ``IF`` statements to debounce a button which quickly becomes very complicated.
 
@@ -1322,7 +1326,7 @@ Note that this works for active low buttons only.
 ONSENSOR( sensor_id ) - Event handler for sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 A new event handler to perform actions when a sensor is activated. Like the other sensor triggers such as ``IF``, ``AT``, and ``AFTER``, a negative value can be used for an active high sensor.
 
@@ -1360,7 +1364,7 @@ FADE( pin, value, ms ) - Fade an LED on a servo driver to given value taking giv
 BLINK( pin, onMs, offMs ) - Blink an output pin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 This will start a pin/Vpin blinking until such time as it is ``SET``, ``RESET``, or set via a signal operation.
 
@@ -1380,7 +1384,7 @@ LCN( "msg" ) - Send message to LCN Accessory Network
 CONFIGURE_SERVO(vpin, pos1, pos2, profile) - Allows easy definition of LED's connected to PCA9685 boards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-** New in version 5.4.0 ** 
+|NEW-IN-5-4|
 
 This macro offsers a more convenient way of defining an LED connected to a PCA9685 pin, instead of performing the HAL call in halSetup.h
 
@@ -1531,7 +1535,7 @@ All the above "ON" commands are event handlers that trigger a sequence of comman
 XFTOGGLE( cab, func ) - Toggle DCC function on specific cab
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 ----
 
@@ -1635,7 +1639,7 @@ FOFF( func ) - Turn off loco function
 FTOGGLE( func ) - Toggle the state of the current loco's function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 |hr-dashed|
 
@@ -1981,7 +1985,7 @@ Writes a message to DCC-EX clients (alias of ``PRINT``)
 MESSAGE( "msg" ) - Writes a message to all clients
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-** New in version 5.4.0 ** 
+|NEW-IN-5-4|
 
 Writes a message to all serial throttles and all WiThrottles.
 
@@ -2052,7 +2056,7 @@ If you are unsure on the impacts using anything in this section may have, please
 STEALTH( code ) - include some C++ code in a ROUTE/SEQUENCE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0.**
+|NEW-IN-5-4|
 
 SERIOUS ENGINEERS ONLY   |engineer| 
 
@@ -2086,7 +2090,7 @@ Syntax:
 STEALTH_GLOBAL( code )
 ^^^^^^^^^^^^^^^^^^^^^^
 
-**New in 5.4.0.**
+|NEW-IN-5-4|
 
 SERIOUS ENGINEERS and ADVANCED C++ USERS ONLY   |engineer| 
 

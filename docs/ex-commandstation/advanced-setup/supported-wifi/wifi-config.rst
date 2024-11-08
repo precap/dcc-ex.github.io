@@ -282,7 +282,7 @@ If you don't change this setting and start up in AP mode instead, the default pa
 #define WIFI_FORCE_AP
 ---------------------
 
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 **Default: commented out** - Uncomment this line if you wish to use a custom SSID for your WiFi in access point mode, otherwise defining a custom SSID will cause the WiFi to attempt to connect to an existing WiFi network is STA mode.
 

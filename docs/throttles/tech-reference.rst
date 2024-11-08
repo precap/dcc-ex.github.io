@@ -198,7 +198,7 @@ A throttle needs to know which EX-RAIL Automations and Routes it can show the us
   * ``<jA 13 A "description">`` - Returns the description for ID 13, and that it is an automation.
   * ``<jA 13 X>`` - Indicates ID 13 is not found.
   
-**New in 5.4.0**
+|NEW-IN-5-4|
 
 Route states can now also be broadcast via |EX-R|, allowing throttles to respond when they are active/inactive or hidden. Throttle developers should now respond to (or ignore if not implemented) the ``<jB ...>`` broadcasts.
 
