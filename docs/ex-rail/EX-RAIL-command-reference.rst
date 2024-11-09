@@ -333,7 +333,10 @@ Scripts/Sequences - Types and Control
 
 A sequence is automatically started at this point during startup.
 
-If you have previously relied on the implied AUTOSTART to run things immediately,  as of Verison 5.0 you must now add this explicitly to the beginning of myAutomation.h
+If you have previously relied on the implied AUTOSTART to run things immediately,  as of Version 5.0 you must now add this explicitly to the beginning of myAutomation.h
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
@@ -377,6 +380,9 @@ All of these sequence types must be terminated by either a ``DONE``, ``FOLLOW(id
 
 Completes a Sequence/Route/Animation/Event handler, and any other automation definition as shown in the various examples on this page and elsewhere in the |EX-R| documentation.
 
+*Parameters:* |BR|
+|_| > none
+
 |hr-dashed|
 
 ``CALL( route )`` - Branch to a separate sequence
@@ -390,6 +396,9 @@ Branch to a separate sequence, which will need to RETURN when complete.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Return to the calling sequence when completed (no DONE required).
+
+*Parameters:* |BR|
+|_| > none
 
 .. collapse:: For example: (click to show)
 
@@ -465,12 +474,18 @@ Branch or Follow a numbered sequence. This lets us do clever things like perform
 
 E-STOP all locos and PAUSE all other EX-RAIL tasks until RESUMEd.
 
+*Parameters:* |BR|
+|_| > none
+
 |hr-dashed|
 
 ``RESUME`` - Resume all paused tasks, including loco movement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Resume all paused tasks, including loco movement.
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
@@ -658,7 +673,7 @@ Dynamically disable a Route.
 
 |NEW-IN-v5-4|
 
-Stashes the current loco/invert in the numbered stash.
+Stashes/Stores the current loco/invert in the specified stash location.
 
 .. note:: 
 
@@ -671,7 +686,7 @@ Stashes the current loco/invert in the numbered stash.
 
 |NEW-IN-V5-4|
 
-Zeroes the specified stash.
+Zeroes/Empties the specified stash location.
 
 |hr-dashed|
 
@@ -680,7 +695,7 @@ Zeroes the specified stash.
 
 |NEW-IN-V5-4|
 
-Zeroes all stashes.
+Zeroes/Empties all stash locations.
 
 *Parameters:* |BR|
 |_| > none
@@ -692,11 +707,13 @@ Zeroes all stashes.
 
 |NEW-IN-V5-4|
 
-TBA
+Retrieves and sets the loco/invert from the specified stash location.
 
 |hr-dashed|
 
 ----
+
+.. _exrail_conditional_statements:
 
 Conditional Statements
 ----------------------
@@ -733,7 +750,7 @@ also see ``IFNOT()``, ``IFRED()``, ``IFAMBER()``, ``IFGREEN()``, ``IFCLOSED()``,
 
 |hr-dashed|
 
-``IFNOT ( sensor_id )`` ... ``ELSE`` ... ``ENDIF``  - Execute commands if the conditions are NOT met
+``IFNOT ( sensor_id )`` ... ELSE ... ENDIF  - Execute commands if the conditions are NOT met
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Perform the following block of commands if the specified sensor is not active.
@@ -746,8 +763,8 @@ Must be followed by an ``ENDIF`` somewhere in the following commands.
 
 |hr-dashed|
 
-ELSE - Alternate logic to any IF related command returning False
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ELSE`` - Alternate logic to any IF related command returning False
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Provides alternative logic to any IF related command returning False.
 
@@ -829,6 +846,13 @@ Create a HAL device in myAutomation.h rather than needing to use myHal.cpp
 
 |NEW-IN-V5-4|
 
+Disable default MCP23017 and PCA9685 HAL devices
+
+*Parameters:* |BR|
+|_| > none
+
+----
+
 Signal Objects - Definition and Control
 ---------------------------------------
 
@@ -851,8 +875,8 @@ Define a pin based signal, which requires three active low pins to be defined to
 
 |hr-dashed|
 
-SIGNALH( red_pin, amber_pin, green_pin ) - Define a pin based signal with active high pins
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``SIGNALH( red_pin, amber_pin, green_pin )`` - Define a pin based signal with active high pins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As above to define a pin based signal, but with active high pins instead. Active high means they are activated when the associated pins are set to 5V (or 3.3V if using a 3.3V device).
 
@@ -914,7 +938,7 @@ Define a virtual signal, which is backed by another automation sequence
 Test if signal is red.
 
 *Parameters:* |BR|
-|_| > **id** - id of the virtual signal |BR|
+|_| > **signal_id** - id of the virtual signal to test |BR|
 
 |hr-dashed|
 
@@ -923,12 +947,18 @@ Test if signal is red.
 
 Test if signal is amber
 
+*Parameters:* |BR|
+|_| > **signal_id** - id of the virtual signal to test |BR|
+
 |hr-dashed|
 
 ``IFGREEN( signal_id )`` - Test if signal is green
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Test if signal is green
+
+*Parameters:* |BR|
+|_| > **signal_id** - id of the virtual signal to test |BR|
 
 |hr-dashed|
 
@@ -937,6 +967,9 @@ Test if signal is green
 
 Set a defined signal to GREEN (see SIGNAL).
 
+*Parameters:* |BR|
+|_| > **signal_id** - id of the virtual signal to set |BR|
+
 |hr-dashed|
 
 ``AMBER( signal_id )`` - Set a defined signal to Amber
@@ -944,12 +977,18 @@ Set a defined signal to GREEN (see SIGNAL).
 
 Set a defined signal to Amber (See SIGNAL).
 
+*Parameters:* |BR|
+|_| > **signal_id** - id of the virtual signal to set |BR|
+
 |hr-dashed|
 
 ``RED( signal_id )`` - Set defined signal to Red
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Set defined signal to Red (See SIGNAL).
+
+*Parameters:* |BR|
+|_| > **signal_id** - id of the virtual signal to set|BR|
 
 |hr-dashed|
 
@@ -969,6 +1008,9 @@ always considered a stop.  The exact aspect codes to be used must be determined 
 
 Define an event handler for when a signal is set to the green aspect.
 
+*Parameters:* |BR|
+|_| > **signal_id** - id of the virtual signal to set |BR|
+
 |hr-dashed|
 
 ``ONAMBER( signal_id)`` - Define event handler for when a signal is set to the amber
@@ -976,12 +1018,18 @@ Define an event handler for when a signal is set to the green aspect.
 
 Define an event handler for when a signal is set to the amber aspect.
 
+*Parameters:* |BR|
+|_| > **signal_id** - id of the virtual signal to set |BR|
+
 |hr-dashed|
 
 ``ONRED( signal_id)`` - Define event handler for when a signal is set to the red aspect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Define an event handler for when a signal is set to the red aspect.
+
+*Parameters:* |BR|
+|_| > **signal_id** - id of the virtual signal to set |BR|
 
 |hr-dashed|
 
@@ -1105,8 +1153,8 @@ Test if a turnout is thrown
 
 |hr-dashed|
 
-``ONCLOSE( turnout_id )`` - Event handler for when a turnout/point is sent a close command
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ONCLOSE( turnout_id )`` - Event handler for when a turnout/point is closed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Event handler for when a turnout/point is sent a close command. Note that there can be only one defined ONCLOSE event for a specific turnout/point.
 
@@ -1115,8 +1163,8 @@ Event handler for when a turnout/point is sent a close command. Note that there 
 
 |hr-dashed|
 
-``ONTHROW( turnout_id )`` - Event handler for when a turnout/point is sent a throw command
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ONTHROW( turnout_id )`` - Event handler for when a turnout/point is thrown
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Event handler for when a turnout/point is sent a throw command. Note that there can be only one defined ONTHROW event for a specific turnout/point.
 
@@ -1125,25 +1173,23 @@ Event handler for when a turnout/point is sent a throw command. Note that there 
 
 |hr-dashed|
 
-``CLOSE( turnout_id )`` - Close a defined turnout/point
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``CLOSE( turnout_id )`` - Close a turnout/point
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Closes a defined turnout/point.
 
 *Parameters:* |BR|
 |_| > **turnout_id** - The id of the turnout/point to close |BR|
 
-
 |hr-dashed|
 
-``THROW( turnout_id )`` - Throw a defined turnout/point
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``THROW( turnout_id )`` - Throw a turnout/point
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Throws a defined turnout/point.
 
 *Parameters:* |BR|
 |_| > **turnout_id** - The id of the turnout/point to throw |BR|
-
 
 .. collapse:: For example: (click to show)
 
@@ -1270,8 +1316,9 @@ To fully define a turntable/traverser object, you need to define the object firs
 
 Define a DCC accessory turntable/traverser at the specified **id** and the **home_angle** angle.
 
-- id - the id of the turntable/traverser, valid IDs are 1 - 32767
-- home_angle - the angle of the home position, valid angles are 0 - 3600
+*Parameters:* |BR|
+|_| > **id** - id of the turntable/traverser, valid IDs are 1 - 32767 |BR|
+|_| > **home_angle** - the angle of the home position, valid angles are 0 - 3600
 
 |hr-dashed|
 
@@ -1284,12 +1331,11 @@ This statement will create the |EX-TT| turntable/traverser object only, so you w
 
 The HAL creation will require the **vpin** and **i2c_address** parameters.
 
-Where:
-
-- id - the id of the turntable/traverser, valid IDs are 1 - 32767
-- vpin - the id of the vpin where the |EX-TT| device is located
-- i2c_address - the |I2C| address of the |EX-TT| device
-- home_angle - the angle of the home position, valid angles are 0 - 3600
+*Parameters:* |BR|
+|_| > **id** - id of the turntable/traverser, valid IDs are 1 - 32767 |BR|
+|_| > **vpin** - id of the vpin where the |EX-TT| device is located |BR|
+|_| > **i2c_address** - the |I2C| address of the |EX-TT| device |BR|
+|_| > **home_angle** - the angle of the home position, valid angles are 0 - 3600
 
 Example creation and definition:
 
@@ -1300,47 +1346,60 @@ Example creation and definition:
 
 |hr-dashed|
 
-``TT_ADDPOSITION( turntable_id, position_id, value, angle [, "description"] )`` - Add a turntable position
+``TT_ADDPOSITION( id, position_id, value, angle [, "description"] )`` - Add a turntable position
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Add a position to a turntable/traverser object **turntable_id** with position index **position_id**, step or DCC address **value**, **angle** degrees from home.
 
-- turntable_id - the id of the turntable/traverser, which must be created prior to adding positions
-- position_id - the index of the position to add, valid positions are 1 - 48
-- value - either steps from home for EX-Turntable, or the linear DCC address for a DCC accessory turntable, valid values are 1 - 32767
-- angle - the angle of the position from the home position, valid angles are 0 - 3600
+*Parameters:* |BR|
+|_| > **id** - id of the turntable/traverser, which must be created prior to adding positions |BR|
+|_| > **position_id** - index of the position to add, valid positions are (1 - 48) |BR|
+|_| > **value** - either steps from home for EX-Turntable, or the linear DCC address for a DCC accessory turntable, valid values are (1 - 32767) |BR|
+|_| > **angle** - angle of the position from the home position, valid angles are (0 - 3600)
 
 ``IF_TTPOSITION( id, position )`` - Test if turntable/traverser is at a position
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Tests if the turntable/traverser at the specified **id** is at the specified **position**.
 
+*Parameters:* |BR|
+|_| > **id** - id of the turntable/traverser to test. (1 - 32767) |BR|
+|_| > **position** - position to rotate to. (1 - 48) 
+
 ``ONROTATE( id )`` - Event handler for when a turntable/traverser is rotated
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Triggers the event handling mechanism for turntable/traverser **id** if configured. Note that there can be only one defined ONROTATE event for a specific turntable/traverser.
+
+*Parameters:* |BR|
+|_| > **id** - id of the turntable/traverser to test (1 - 32767)
 
 ``ROTATE( id, position, activity )`` - Rotate an EX-Turntable turntable/traverser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Rotate an EX-Turntable turntable/traverser at the specified **id** to the specified **position**, and perform **activity**.
 
-- id - the id of the turntable/traverser, valid IDs are 1 - 32767
-- position - the position to rotate to, valid positions are 1 - 48
-- activity - refer to :ref:`ex-turntable/test-and-tune:ex-turntable commands`, using the "EX-RAIL activity" column
+*Parameters:* |BR|
+|_| > **id** - id of the turntable/traverser, valid IDs are (1 - 32767) |BR|
+|_| > **position** - position to rotate to, valid positions are (1 - 48) |BR|
+|_| > **activity** - refer to :ref:`ex-turntable/test-and-tune:ex-turntable commands`, using the "EX-RAIL activity" column
 
 ``ROTATE_DCC( id, position )`` - Rotate a DCC accessory turntable/traverser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Rotate a DCC accessory turntable/traverser at the specified **id** to the specified **position**.
 
-- id - the id of the turntable/traverser, valid IDs are 1 - 32767
-- position - the position to rotate to, valid positions are 1 - 48
+*Parameters:* |BR|
+|_| > **id** - id of the turntable/traverser, valid IDs are (1 - 32767) |BR|
+|_| > **position** - position to rotate to, valid positions are (1 - 48)
 
 ``WAITFORTT( id )`` - Wait for EX-Turntable turntable/traverser to complete a rotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wait for the EX-Turntable turntable/traverser at **id** to complete a rotation. As no feedback can be received from DCC accessory turntables, this is only valid for EX-Turntable.
+
+*Parameters:* |BR|
+|_| > **id** - id of the turntable to test
 
 |force-break|
 
@@ -1366,10 +1425,17 @@ This command causes the creation of JMRI <S> type sensors in a way that is simpl
 - JMRI_SENSOR(100)   is equivalent to <S 100 100 1>
 - JMRI_SENSOR(100,16) will create <S> type sensors for vpins 100-115.
 
+*Parameters:* |BR|
+|_| > **vpin** - vpin to create |BR|
+|_| > **count** - optional. Number of sensors to create. Inclusive on vpin. Default is one (1) 
+
 ``AT( sensor_id )`` - Causes a sequence to wait until a sensor is active/triggered
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A sequence will not progress until a sensor has been triggered.
+
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test
 
 |hr-dashed|
 
@@ -1378,12 +1444,19 @@ A sequence will not progress until a sensor has been triggered.
 
 A sequence will not progress until after a sensor has been triggered and then is off for 0.5 seconds.
 
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test
+
 |hr-dashed|
 
 ``ATTIMEOUT( sensor_id, timeout_ms )`` - Causes a sequence to wait until either a sensor is active/triggered, or if the timer runs out
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A sequence will not progress until either a sensor is active/triggered, or if the timer runs out. It then continues and sets a testable "timed out" flag (see ``IFTIMEOUT``).
+
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **timeout_ms** - time/duration to wait for in milliseconds
 
 |hr-dashed|
 
@@ -1392,6 +1465,11 @@ A sequence will not progress until either a sensor is active/triggered, or if th
 
 If sensor activated or latched, continue. Otherwise skip to ELSE or matching ENDIF.
 
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test
+
+See the :ref:`Condititional Statments section <exrail_conditional_statements>` for more information on IF ... ELSE ... ENDIF commands.
+
 |hr-dashed|
 
 ``IFNOT( sensor_id )`` - If sensor NOT activated and NOT latched, continue
@@ -1399,12 +1477,20 @@ If sensor activated or latched, continue. Otherwise skip to ELSE or matching END
 
 If sensor NOT activated and NOT latched, continue. Otherwise skip to ELSE or matching ENDIF.
 
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test
+
+See the :ref:`Condititional Statments section <exrail_conditional_statement>` for more information on IF ... ELSE ... ENDIF commands.
+
 |hr-dashed|
 
 ``IFTIMEOUT`` - Tests if "timed out" flag has been set by an ATTIMEOUT() sensor reading attempt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|hr-dashed|
+Tests if "timed out" flag has been set by an ATTIMEOUT() sensor reading attempt.
+
+*Parameters:* |BR|
+|_| > none
 
 Note that with the sensor commands `IF()`, `IFNOT()`, `IFTIMEOUT()`, `AT()`, `ATTIMEOUT()`, and `AFTER()`, you can use negative values to enable the use of active HIGH sensors.
 
@@ -1419,13 +1505,25 @@ Note that with the sensor commands `IF()`, `IFNOT()`, `IFTIMEOUT()`, `AT()`, `AT
 
 |hr-dashed|
 
-``ATGTE( analogpin, value )`` - Waits for an analog pin to reach the specified value
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ATGTE( analogpin, value )`` - Waits for an analog pin to reach a value
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Waits for an analog pin to reach the specified value.
+
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **value** - value to test against
 
 |hr-dashed|
 
-``ATLT ( analogpin, value )`` - Waits for an analog pin to go below the specified value
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ATLT ( analogpin, value )`` - Waits for an analog pin to go below a value
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Waits for an analog pin to go below the specified value.
+
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **value** - value to test against
 
 |hr-dashed|
 
@@ -1434,6 +1532,10 @@ Note that with the sensor commands `IF()`, `IFNOT()`, `IFTIMEOUT()`, `AT()`, `AT
 
 Test if analog pin reading is greater than or equal to value (>=).
 
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **value** - value to test against
+
 |hr-dashed|
 
 ``IFLT( sensor_id, value )`` - Test if analog pin reading is less than value
@@ -1441,9 +1543,12 @@ Test if analog pin reading is greater than or equal to value (>=).
 
 Test if analog pin reading is less than value (<).
 
-|hr-dashed|
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **value** - value to test against
 
-All the `IFGTE()`, `IFLT()`, `ATGTE()`and `ATLT()` commands read the analog value from an analog input pin (A0 - A5 on an Arduino Mega) or an analog input from an I/O expander module. Valid values are defined by the capability of the analog to digital converter in use.
+  All the `IFGTE()`, `IFLT()`, `ATGTE()`and `ATLT()` commands read the analog value from an analog input pin (A0 - A5 on an Arduino Mega) or an analog input from an I/O expander module. Valid values are defined by the capability of the analog to digital converter in use.
+
 
 .. collapse:: Sensor examples: (click to show)
 
@@ -1482,14 +1587,20 @@ LATCH/UNLATCH can be used to maintain the state of a sensor, or can also be used
 
 Latches a sensor on (Sensors 0-255 only).
 
-|hr-dashed|
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to unlatch
 
 See UNLATCH() for examples.
+
+|hr-dashed|
 
 ``UNLATCH( sensor_id )`` - Remove LATCH on sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|hr-dashed|
+Remove LATCH on sensor.
+
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to unlatch
 
 .. collapse:: For example: (click to show)
 
@@ -1527,6 +1638,9 @@ This new event handler is handy for mimic panel and other buttons that need to p
 
 Note that this works for active low buttons only.
 
+*Parameters:* |BR|
+|_| > **vpin** - vpin to test
+
 |hr-dashed|
 
 ``ONSENSOR( sensor_id )`` - Event handler for sensors
@@ -1535,6 +1649,9 @@ Note that this works for active low buttons only.
 |NEW-IN-V5-4|
 
 A new event handler to perform actions when a sensor is activated. Like the other sensor triggers such as ``IF``, ``AT``, and ``AFTER``, a negative value can be used for an active high sensor.
+
+*Parameters:* |BR|
+|_| > **sensor_id** - id of the sensor to test
 
 |force-break|
 
@@ -1556,8 +1673,8 @@ Output and LED control
 Set output pin (set to HIGH)
 
 *Parameters:* |BR|
-|_| > **pin** - The pin number of the first connected that you which to change|BR|
-|_| > **count** - optional number of pins to change, starting from and including **pin**. Default is one |BR|
+|_| > **pin** - The first pin number connected that you which to change |BR|
+|_| > **count** - optional number of pins to change, starting from and including **pin**. Default is one
 
 |hr-dashed|
 
@@ -1567,13 +1684,20 @@ Set output pin (set to HIGH)
 Reset output pin (set to LOW)
 
 *Parameters:* |BR|
-|_| > **pin** - The pin number of the first connected that you which to change|BR|
-|_| > **count** - optional number of pins to change, starting from and including **pin**. Default is one |BR|
+|_| > **pin** - The first pin number connected that you which to change |BR|
+|_| > **count** - optional number of pins to change, starting from and including **pin**. Default is one
 
 |hr-dashed|
 
-``FADE( pin, value, ms )`` - Fade an LED on a servo driver to given value taking given time
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``FADE( pin, value, ms )`` - Fade an LED
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Fade an LED on a servo driver to given value taking given time.
+
+*Parameters:* |BR|
+|_| > **pin** -  pin/vpin of the LED |BR|
+|_| > **value** - value to fade the pin to |BR|
+|_| > **ms** - duration taken to get to the value in miliseconds
 
 |hr-dashed|
 
@@ -1584,18 +1708,24 @@ Reset output pin (set to LOW)
 
 This will start a pin/Vpin blinking until such time as it is ``SET``, ``RESET``, or set via a signal operation.
 
-`onMs` is the time for the pin to be on in milliseconds, and `offMs` is the off time in milliseconds.
+*Parameters:* |BR|
+|_| > **pin** -  pin/vpin of the LED |BR|
+|_| > **onMs** - time/duration for the pin to be on in milliseconds |BR|
+|_| > **offMs** - off time/duration in milliseconds
 
-.. code-block:: 
+  .. code-block:: 
 
-  BLINK(22, 500, 500) // Blink pin 22 at half second intervals
+    BLINK(22, 500, 500) // Blink pin 22 at half second intervals
 
 |hr-dashed|
 
 ``LCN( "msg" )`` - Send message to LCN Accessory Network
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Send message to LCN Accessory Network
+Send message to LCN Accessory Network.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
 
@@ -1613,9 +1743,9 @@ This command offers a more convenient way of defining an LED connected to a PCA9
 |_| > **profile** - the required profile |BR|
 
 *Examples:* |BR|
-|_| previously in mySetup.h: |BR|
+|_| previously in mySetup.h you would have used: |BR|
 |_| IODevice::configureServo(112,2437,0,PCA9685::NoPowerOff); |BR|
-|_| now in myAutomation.h: |BR|
+|_| Now in myAutomation.h use: |BR| |BR|
 |_| CONFIGURE_SERVO(111, 2437, 0, PCA9685::NoPowerOff)
 
 
@@ -1727,9 +1857,6 @@ Alias of ANOUT.
 |_| > **volume** - volume (0-30) |BR|
 |_| > **???** - ??? TBA |BR|
 
-*Examples:* |BR|
-|_| ??? |BR|
-
 ----
 
 Servo Control
@@ -1745,24 +1872,39 @@ Servo Control
 ``SERVO( id, position, profile )`` - Move an animation servo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Move an animation servo. Do NOT use for Turnouts/points. (profile is one of Instant, Fast, Medium, Slow or Bounce)
+Move an animation servo. *Do NOT use for Turnouts/points.*
+
+*Parameters:* |BR|
+|_| > **id** - id of the servo to move |BR|
+|_| > **position** - position to move to |BR|
+|_| > **profile** - one of |BR|
+|_| |_| |_| |_| - Instant,  |BR|
+|_| |_| |_| |_| - Fast (0.5 sec),  |BR|
+|_| |_| |_| |_| - Medium (1 sec),  |BR|
+|_| |_| |_| |_| - Slow (2 sec) and  |BR|
+|_| |_| |_| |_| - Bounce (subject to revision) |BR|
 
 |hr-dashed|
 
 ``SERVO2( id, position, duration )`` - Move an animation servo taking duration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Move an animation servo taking duration in ms. Do NOT use for Turnouts/points
+Move an animation servo taking duration in milliseconds. *Do NOT use for Turnouts/points*
+
+*Parameters:* |BR|
+|_| > **id** - id of the servo to move |BR|
+|_| > **position** - position to move to |BR|
+|_| > **duration** - duration of the move in milliseconds|BR|
 
 |hr-dashed|
 
 ``WAITFOR( pin )`` - Wait for a servo motion to complete prior to continuing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The WAITFOR() command instructs EX-RAIL to wait for a servo motion to complete prior to continuing
+The WAITFOR() command instructs EX-RAIL to wait for a servo motion to complete prior to continuing.
 
-
-|hr-dashed|
+*Parameters:* |BR|
+|_| > **pin** - vpin to test
 
 
 .. collapse:: A couple of examples: (click to show)
@@ -1810,49 +1952,103 @@ DCC Accessory Decoder Control
 ``ONACTIVATE( addr, sub_addr )`` - Event handler for 2 part DCC accessory packet value 1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-TBA
+Event handler for 2 part DCC accessory packet value 1
+
+All these "ON" commands are event handlers that trigger a sequence of commands to run when the event occurs. These can vary from the most basic tasks such as setting signals when turnouts are closed or thrown, to triggering complete automation sequences via a DCC accessory decoder.
+
+*Parameters:* |BR|
+|_| > **addr** - DCC address ??? |BR|
+|_| > **Sub_addr** - sub-address ???
 
 |hr-dashed|
 
 ``ONACTIVATEL( linear )`` - Event handler for linear DCC accessory packet value 1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Event handler for linear DCC accessory packet value 1
+
+All these "ON" commands are event handlers that trigger a sequence of commands to run when the event occurs. These can vary from the most basic tasks such as setting signals when turnouts are closed or thrown, to triggering complete automation sequences via a DCC accessory decoder.
+
+*Parameters:* |BR|
+|_| > **linear** - ???
+
 |hr-dashed|
 
 ``ONDEACTIVATE( addr, sub_addr )`` - Event handler for 2 part DCC accessory packet value 0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Event handler for 2 part DCC accessory packet value 0
+
+All these "ON" commands are event handlers that trigger a sequence of commands to run when the event occurs. These can vary from the most basic tasks such as setting signals when turnouts are closed or thrown, to triggering complete automation sequences via a DCC accessory decoder.
+
+*Parameters:* |BR|
+|_| > **addr** - DCC address ??? |BR|
+|_| > **Sub_addr** - sub-address ???
 
 |hr-dashed|
 
 ``ONDEACTIVATEL( linear )`` - Event handler for linear DCC accessory packet value 0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Event handler for linear DCC accessory packet value 0.
+
+*Parameters:* |BR|
+|_| > **linear** - ???
+
 |hr-dashed|
 
 ``ACTIVATE( addr, sub_addr )`` - Sends a DCC accessory packet with value 1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sends a DCC accessory packet with value 1.
+
+*Parameters:* |BR|
+|_| > **addr** - DCC address ??? |BR|
+|_| > **Sub_addr** - sub-address ???
 
 |hr-dashed|
 
 ``ACTIVATEL( linear )`` - Sends a DCC accessory packet with value 1 to a linear address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Sends a DCC accessory packet with value 1 to a linear address.
+
+*Parameters:* |BR|
+|_| > **linear** - ???
+
 |hr-dashed|
 
 ``DEACTIVATE( addr, sub_addr )`` - Sends a DCC accessory packet with value 0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sends a DCC accessory packet with value 0.
+
+*Parameters:* |BR|
+|_| > **addr** - DCC address ??? |BR|
+|_| > **Sub_addr** - sub-address ???
 
 |hr-dashed|
 
 ``DEACTIVATEL( addr )`` - Sends a DCC accessory packet with value 0 to a linear address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Sends a DCC accessory packet with value 0 to a linear address
+
+*Parameters:* |BR|
+|_| > **addr** - DCC address ??? 
+
 |hr-dashed|
 
 ``XFON( cab, func )``` - Send DCC function ON to specific cab
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Send DCC function ON to specific cab (e.g. coach lights) *Not for Loco use - use FON instead!*
+Send DCC function ON to specific cab (e.g. coach lights) *Not for Loco use - use FON instead!*
+
+All these "ON" commands are event handlers that trigger a sequence of commands to run when the event occurs. These can vary from the most basic tasks such as setting signals when turnouts are closed or thrown, to triggering complete automation sequences via a DCC accessory decoder.
+
+*Parameters:* |BR|
+|_| > **cab** - DCC address of your loco |BR|
+|_| > **func** - Function number (0-31)
 
 |hr-dashed|
 
@@ -1861,7 +2057,11 @@ TBA
 
 Send DCC function OFF to specific cab (e.g. coach lights) Not for Loco use - use FON instead!
 
-All the above "ON" commands are event handlers that trigger a sequence of commands to run when the event occurs. These can vary from the most basic tasks such as setting signals when turnouts are closed or thrown, to triggering complete automation sequences via a DCC accessory decoder.
+All these "ON" commands are event handlers that trigger a sequence of commands to run when the event occurs. These can vary from the most basic tasks such as setting signals when turnouts are closed or thrown, to triggering complete automation sequences via a DCC accessory decoder.
+
+*Parameters:* |BR|
+|_| > **cab** - DCC address of your loco |BR|
+|_| > **func** - Function number (0-31)
 
 |hr-dashed|
 
@@ -1895,12 +2095,19 @@ Also refer to :ref:`ex-fastclock/cs-commands:controlling ex-rail by time`.
 
 Event handler for when the specified clock time is reached
 
+*Parameters:* |BR|
+|_| > **hour** - hour to test against |BR|
+|_| > **minute** - minute to test against
+
 |hr-dashed|
 
 ``ONCLOCKMINS( mins )`` - Event handler to be repeated the same time every hour
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Event handler to be repeated the same time every hour
+
+*Parameters:* |BR|
+|_| > **minute** - minute to test against
 
 ----
 
@@ -1923,17 +2130,17 @@ Locos - Definition and Control
 Emergency stops all locomotives.
 
 *Parameters:* |BR|
-|_| > **none**
+|_| > none
 
 |hr-dashed|
 
 ``SETLOCO( loco )`` - Set the loco address for this task
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Set the loco address for this task
+Set the loco address for this sequence.
 
 *Parameters:* |BR|
-|_| > **loco** - DCC address of your loco
+|_| > **loco** - DCC address of your loco 
 
 |hr-dashed|
 
@@ -1951,10 +2158,10 @@ Start a new task send a given loco along given route/sequence
 ``READ_LOCO`` - Read loco ID from prog track
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Read loco ID from prog track
+Read the loco ID from prog track.
 
 *Parameters:* |BR|
-|_| > **none**
+|_| > none
 
 |hr-dashed|
 
@@ -1970,7 +2177,7 @@ Drive loco forward at DCC speed 0-127 (1=ESTOP)
 
 |hr-dashed|
 
-``REV( speed )`` - Drive logo in reverse at DCC speed
+``REV( speed )`` - Drive loco in reverse at DCC speed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Drive current loco in reverse at DCC speed 0-127 (1=ESTOP)
@@ -1997,7 +2204,10 @@ Drive loco in current direction at DCC speed
 ``STOP`` - Set loco speed to 0
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Set loco speed to 0 (same as SPEED(0))
+Set the current loco speed to 0 (same as SPEED(0))
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
@@ -2021,8 +2231,8 @@ Turn off the specified function for the current loco.
 
 |hr-dashed|
 
-``FTOGGLE( func )`` - Toggle the state of the current loco's function
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``FTOGGLE( func )`` - Toggle the state of a loco's function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4|
 
@@ -2033,9 +2243,13 @@ Toggle off the specified function for the current loco.  i.e. Turn off if on, or
 
 |hr-dashed|
 
-``INVERT_DIRECTION`` - Switches FWD/REV meaning for this loco
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``INVERT_DIRECTION`` - Switches FWD/REV meaning for loco
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Switches FWD/REV meaning for the current loco.
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
@@ -2057,16 +2271,19 @@ Toggle off the specified function for the current loco.  i.e. Turn off if on, or
 |hr-dashed|
 
 ``POM( cv, value )`` - Program CV value on main
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Program CV value on main, must be proceeded by setting the loco ID with ``SETLOCO( loco )``
 
 |hr-dashed|
 
-``IFLOCO( loco )`` - If the specified loco ID is defined for this sequence, perform the defined activities
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``IFLOCO( loco )`` - perform commands if the specified loco ID is defined for this sequence
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If the specified loco ID is defined for this sequence, perform the defined activities
+
+*Parameters:* |BR|
+|_| > **loco** - DCC Address of the loco to test against
 
 .. collapse:: For example: (click to show)
 
@@ -2088,6 +2305,9 @@ If the specified loco ID is defined for this sequence, perform the defined activ
 
 Forget the loco in the running automation/sequence
 
+*Parameters:* |BR|
+|_| > none
+
 ----
 
 TrackManager Control
@@ -2100,8 +2320,8 @@ TrackManager Control
 
 |hr-dashed|
 
-``SET_TRACK( track, mode )`` - Configures the mode of the selected track
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``SET_TRACK( track, mode )`` - Configures the mode of a track
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Configures the mode of the selected track, refer also to :doc:`/trackmanager/index`
 
@@ -2136,8 +2356,8 @@ When setting at track mode to either DC or DCX, you must use the ``SETLOCO( loco
     DONE
 
 
-``SET_POWER( track, ON/OFF )`` - Enable/Disable power on the selected track
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``SET_POWER( track, ON/OFF )`` - Enable/Disable power on a track
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Configures the power setting of the selected track, refer also to :doc:`/trackmanager/index`
 
@@ -2156,8 +2376,8 @@ Configures the power setting of the selected track, refer also to :doc:`/trackma
     SET_POWER(A, ON)
     DONE
 
-``SETFREQ( track, frequency )`` - Enable specific frequency on the selected track
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``SETFREQ( track, frequency )`` - Enable a specific frequency
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 DC/DCX track settings only.
 
@@ -2166,7 +2386,6 @@ Configures the frequency setting of the selected track.
 The settings achievable vary slightly depending upon the processor running the CS but broadly follow the following:
 
 *Parameters:* |BR|
-
 |_| > **track** - - The track to configure, valid options are A to H |BR|
 |_| > **frequency** - - The frequency to set for this track |BR|
 |_| |_| |_|>valid options are: |BR|
@@ -2191,19 +2410,25 @@ Controlling Overload/Shorts
 
 |hr-dashed|
 
-``ONOVERLOAD( track )`` - Event handler for actions to be taken when an Overload occurs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ONOVERLOAD( track )`` - Event handler for when an Overload occurs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   Creates an event handler for the selected track, to be executed when the MotorDriver routines detect and overload. Refer also to :doc:`/trackmanager/index`
 
+*Parameters:* |BR|
+|_| > **track** - - The track to configure, valid options are A to H
+
 |hr-dashed|
 
-``AFTEROVERLOAD( track )`` - Event handler for actions to be taken when an Overload clears
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``AFTEROVERLOAD( track )`` - Event handler for when an Overload clears
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Creates a complementary event handler for the selected track, to be executed when the MotorDriver routines indicate the overload is cleared. Refer also to :doc:`/trackmanager/index`
 
 Note:  AFTEROVERLOAD is only relevant when used within and ONOVERLOAD.... DONE structure.
+
+*Parameters:* |BR|
+|_| > **track** - - The track to configure, valid options are A to H
 
 |hr-dashed|
 
@@ -2274,17 +2499,28 @@ Virtual Block Control
 
 Reserve a block (0-255). If already reserved, current loco will STOP and sequence waits for block to become free
 
-|hr-dashed|
-
-``FREE( block_id )`` - Free previously reserved block
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*Parameters:* |BR|
+|_| > **block_id** - Block to reserve (0-255)
 
 |hr-dashed|
 
-``IFRESERVE( block )`` - If block is NOT reserved, reserves it and run commands in IF block
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``FREE( block_id )`` - Free block
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Free previously reserved block.
+
+*Parameters:* |BR|
+|_| > **block_id** - Block to free (0-255)
+
+|hr-dashed|
+
+``IFRESERVE( block )`` - Execut commnads if block is NOT reserved
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If block is NOT reserved, reserves it and run commands in IF block. Otherwise, skip to matching ENDIF
+
+*Parameters:* |BR|
+|_| > **block_id** - Block to test (0-255)
 
 ----
 
@@ -2301,25 +2537,47 @@ Communication and Display Functions
 
 |hr-dashed|
 
-``LCD( row, "msg" )`` - Write message on LCD/OLED if fitted
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``LCD( row, "msg" )`` - Write message on LCD/OLED
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Write message on LCD/OLED, if fitted.
+
+*Parameters:* |BR|
+|_| > **row** - row of the LED/OLD to write the message |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
 
-``SCREEN( display, row, "msg" )`` - Writes a message to the specified display on the specified row
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``SCREEN( display, row, "msg" )`` - Writes a message to a display
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Writes a message to the specified display on the specified row
+Writes a message to the specified display on the specified row.
+
+*Parameters:* |BR|
+|_| > **display** - which display to write to ??? |BR|
+|_| > **row** - row of the LED/OLD to write the message |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
 
 ``BROADCAST( "msg" )`` - Broadcast to all throttles/JMRI on serial and WiFi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Broadcast to all throttles/JMRI on serial and WiFi
+
+*Parameters:* |BR|
+|_| > **msg** - message to broadcast
+
 |hr-dashed|
 
 ``PRINT( "msg" )`` - Print diagnostic message to Serial Monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Write a diagnostic message to the Serial Monitor.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
+
 
 |hr-dashed|
 
@@ -2328,59 +2586,96 @@ Writes a message to the specified display on the specified row
 
 Writes direct to Serial (Serial0/USB)
 
+*Parameters:* |BR|
+|_| > **msg** - message to write
+
 |hr-dashed|
 
 ``SERIAL1( "msg" )`` - Writes direct to Serial1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Writes direct to Serial1.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
 
 ``SERIAL2( "msg" )`` - Writes direct to Serial2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Writes direct to Serial2.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
+
 |hr-dashed|
 
 ``SERIAL3( "msg" )`` - Writes direct to Serial3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Writes direct to Serial3.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
 
 ``SERIAL4( "msg" )`` - Writes direct to Serial4
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Writes direct to Serial4
+Writes direct to Serial4.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
 
 ``SERIAL5( "msg" )`` - Writes direct to Serial5
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Writes direct to Serial5
+Writes direct to Serial5.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
 
 ``SERIAL6( "msg" )`` - Writes direct to Serial6
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Writes direct to Serial6
+Writes direct to Serial6.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
 
-``WITHROTTLE( "msg" )`` - Writes a message to DCC-EX clients
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``WITHROTTLE( "msg" )`` - Writes a message to WiThrottle clients
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Writes a message to DCC-EX clients (alias of ``PRINT``)
+Writes a message to WiThrottle clients (alias of ``PRINT``)
+
+A a WiThrottle throttle will receive ``Hmtext``.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
 
 |hr-dashed|
+
+.. _exrail_message:
 
 ``MESSAGE( "msg" )`` - Writes a message to all clients
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4|
 
-Writes a message to all serial throttles and all WiThrottles.
+Writes a message to all serial throttles and all WiThrottle Clients.
 
 A |DCC-EX| throttle will receive a broadcast ``<m "text">``, and a WiThrottle throttle will receive ``Hmtext``.
+
+*Parameters:* |BR|
+|_| > **msg** - message to write
 
 ----
 
@@ -2397,24 +2692,40 @@ CommandStation Functions
 ``POWERON`` - Power on track and UNJOIN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Power on track and UNJOIN
+Turn the track power on and UNJOIN if currently joined.
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
 ``POWEROFF`` - Power off track
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Power off track
+Turn the track power off.
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
-``JOIN`` - Join PROG and MAIN track outputs to send the same MAIN DCC signal
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``JOIN`` - Join PROG and MAIN track outputs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Join PROG and MAIN track outputs to send the same MAIN DCC signal.
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
 ``UNJOIN`` - Disconnect prog track from main
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Disconnect PROG output from MAIN output.
+
+*Parameters:* |BR|
+|_| > none
 
 |hr-dashed|
 
@@ -2423,12 +2734,18 @@ Power off track
 
 Kills all running |EX-R| activities
 
+*Parameters:* |BR|
+|_| > none
+
 |hr-dashed|
 
 ``PARSE( "msg" )`` - Allows parsing of a DCC-EX API command via myAutomation.h
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Allows parsing of a DCC-EX API command via myAutomation.h
+Allows parsing of a DCC-EX API command via myAutomation.h.  This allows you to include Native DCC-EX Cammands in myAutomation.h where there is no equivalent EXRAIL command.
+
+*Parameters:* |BR|
+|_| > **msg** - message to parse
 
 |hr-dashed|
 
