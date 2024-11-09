@@ -290,6 +290,10 @@ Alias naming rules:
 - **May then** also contain numbers.
 - **Must not** contain spaces or special characters.
 
+*Parameters:* |BR|
+|_| > **name** - name for the Alias.  See rules above |BR|
+|_| > **value** - value to insert in place of the Alias
+
   .. collapse:: For example: (click to show)
 
     Defining a pin turnout/point without an alias:
@@ -355,6 +359,10 @@ Define an automation sequence that is advertised to WiThrottles to send a train 
 
 See :ref:`ex-rail/examples:Stopping at a Station (simple loop)` for a simple example.
 
+*Parameters:* |BR|
+|_| > **id** - id for the sequence/route/automation |BR|
+|_| > **description** - description for the sequence/route/automation
+
 |hr-dashed|
 
 ``ROUTE( id, "description" )`` - Define a route that is advertised to WiThrottles
@@ -362,12 +370,20 @@ See :ref:`ex-rail/examples:Stopping at a Station (simple loop)` for a simple exa
 
 Define a route that is advertised to WiThrottles. This can be used to initiate automation sequences such as setting turnouts/points and signals to allow a train to be driven through a specific route on the layout. See :ref:`ex-rail/examples:creating routes` for various examples.
 
+*Parameters:* |BR|
+|_| > **id** - id for the sequence/route/automation |BR|
+|_| > **description** - description for the sequence/route/automation
+
 |hr-dashed|
 
 ``SEQUENCE( id )`` - A general purpose automation sequence not advertised to WiThrottles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A general purpose automation sequence that is not advertised to WiThrottles. This may be triggered automatically on startup, or be called by other sequences or activities. See :ref:`ex-rail/examples:automating various non-track items`, :ref:`ex-rail/examples:Point to Point Shuttle`, and :ref:`ex-rail/examples:multiple inter-connected trains` for further examples.
+
+*Parameters:* |BR|
+|_| > **id** - id for the sequence/route/automation |BR|
+|_| > **description** - description for the sequence/route/automation
 
 |hr-dashed|
 
@@ -385,10 +401,13 @@ Completes a Sequence/Route/Animation/Event handler, and any other automation def
 
 |hr-dashed|
 
-``CALL( route )`` - Branch to a separate sequence
+``CALL( id )`` - Branch to a separate sequence
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Branch to a separate sequence, which will need to RETURN when complete.
+
+*Parameters:* |BR|
+|_| > **id** - id for the sequence/route/automation to branch to
 
 |hr-dashed|
 
@@ -441,6 +460,9 @@ Return to the calling sequence when completed (no DONE required).
 
 Branch or Follow a numbered sequence. This lets us do clever things like performing a different sequence depending on whether a turnout/point is CLOSED or THROWN, as well as simple things such as the example above where we keep looping through the same sequence.
 
+*Parameters:* |BR|
+|_| > **id** - id for the sequence/route/automation to branch to
+
 .. collapse:: For example: (click to show)
 
   .. code-block:: cpp
@@ -489,24 +511,33 @@ Resume all paused tasks, including loco movement.
 
 |hr-dashed|
 
-``START( sequence_id )`` - Execute a route or sequence
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``START( id )`` - Execute a route or sequence
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Start a new task to execute a route or sequence.
 
+*Parameters:* |BR|
+|_| > **id** - id for the sequence/route/automation to branch to
+
 |hr-dashed|
 
-``DELAY( delay )`` - Delay a number of milliseconds
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``DELAY( delay )`` - Delay the sequence a number of milliseconds
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Delay the current sequence a number of milliseconds.
 
+*Parameters:* |BR|
+|_| > **delay** - period to delay in milliseconds
+
 |hr-dashed|
 
-``DELAYMINS( delay )`` - Delay a number of minutes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``DELAYMINS( delay )`` - Delay the sequence a number of minutes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Delay the current sequence a number of minutes.
+
+*Parameters:* |BR|
+|_| > **delay** - period to delay in minutes
 
 |hr-dashed|
 
@@ -516,6 +547,10 @@ Delay the current sequence a number of minutes.
 Delay the current sequence a random time between min and max milliseconds.
 
 See :ref:`ex-rail/examples:Multiple inter-connected trains` for good examples.
+
+*Parameters:* |BR|
+|_| > **min_delay** - minimum period to delay in milliseconds |BR|
+|_| > **max_delay** - maximum period to delay in milliseconds
 
 .. collapse:: Delay examples: (click to show)
 
@@ -541,6 +576,9 @@ See :ref:`ex-rail/examples:Multiple inter-connected trains` for good examples.
 
 Runs commands in IF block a random percentage of the time. This is handy for more realism by enabling automations that don't have to run on a schedule.
 
+*Parameters:* |BR|
+|_| > **percent** - percentage to test against (0-100) |BR|
+
 .. collapse:: For example: (click to show)
 
   .. code-block:: cpp
@@ -563,6 +601,10 @@ Runs commands in IF block a random percentage of the time. This is handy for mor
 |NEW-IN-V5-4|
 
 Dynamically change the label of the Route button.
+
+*Parameters:* |BR|
+|_| > **id** - id of the route to change |BR|
+|_| > **caption** - text to replace on the route 'button' label
 
 .. collapse:: For example: (click to show)
 
@@ -631,7 +673,8 @@ Dynamically flag a Route as active.
 
 See example in ROUTE_CAPTION.
 
-|force-break|
+*Parameters:* |BR|
+|_| > **id** - id of the route to activate |BR|
 
 |hr-dashed|
 
@@ -644,7 +687,8 @@ Dynamically flag a Route as inactive.
 
 See example in ROUTE_CAPTION.
 
-|force-break|
+*Parameters:* |BR|
+|_| > **id** - id of the route to deactivate |BR|
 
 |hr-dashed|
 
@@ -655,7 +699,8 @@ See example in ROUTE_CAPTION.
 
 Dynamically hide a Route.
 
-|force-break|
+*Parameters:* |BR|
+|_| > **id** - id of the route to hide |BR|
 
 |hr-dashed|
 
@@ -666,12 +711,18 @@ Dynamically hide a Route.
 
 Dynamically disable a Route.
 
+*Parameters:* |BR|
+|_| > **id** - id of the route to disable |BR|
+
 |hr-dashed|
 
 ``STASH( stashId )`` - Stashes the current loco/invert
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-v5-4|
+
+*Parameters:* |BR|
+|_| > **id** - id of the stash location to store the value (0-???) |BR|
 
 Stashes/Stores the current loco/invert in the specified stash location.
 
@@ -687,6 +738,9 @@ Stashes/Stores the current loco/invert in the specified stash location.
 |NEW-IN-V5-4|
 
 Zeroes/Empties the specified stash location.
+
+*Parameters:* |BR|
+|_| > **id** - id of the stash location to store the value (0-???) |BR|
 
 |hr-dashed|
 
@@ -708,6 +762,9 @@ Zeroes/Empties all stash locations.
 |NEW-IN-V5-4|
 
 Retrieves and sets the loco/invert from the specified stash location.
+
+*Parameters:* |BR|
+|_| > **id** - id of the stash location to store the value (0-???) |BR|
 
 |hr-dashed|
 
@@ -746,7 +803,7 @@ Must be followed by an ``ENDIF`` somewhere in the following commands.
 *Parameters:* |BR|
 |_| > **sensor_id** - id of the sensor to check |BR|
 
-also see ``IFNOT()``, ``IFRED()``, ``IFAMBER()``, ``IFGREEN()``, ``IFCLOSED()``, 
+Also see ``IFNOT()``, ``IFRED()``, ``IFAMBER()``, ``IFGREEN()``, ``IFCLOSED()``, ``IFTHROWN()``, ``IFRANDOM()``, ``IFTTPOSITION()``, ``IFRE()``, ``IFTIMEOUT()``, ``IFGTE()``, ``IFLT()``, ``IFLOCO()``, ``IFRESERVE()``
 
 |hr-dashed|
 
@@ -1244,18 +1301,6 @@ Move the specified |EX-TT| to the provided step position and perform the specifi
 
 |hr-dashed|
 
-``IFTTPOSITION ( id, position )`` - Test if the Turntable is at a position
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Test if the Turntable is at the specified position.
-
-*Parameters:* |BR|
-|_| > **id** - The id of the turntable |BR|
-|_| > **position** - position to test |BR|
-
-
-|hr-dashed|
-
 ``IFRE ( vpin, value )`` - Test if a rotary encoder has been set to a value
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1264,7 +1309,6 @@ Test if a rotary encoder has been set to the specified value
 *Parameters:* |BR|
 |_| > **vpin** - The VPin the encoder is connected to |BR|
 |_| > **value** - value to test |BR|
-
 
 |hr-dashed|
 
@@ -1357,7 +1401,9 @@ Add a position to a turntable/traverser object **turntable_id** with position in
 |_| > **value** - either steps from home for EX-Turntable, or the linear DCC address for a DCC accessory turntable, valid values are (1 - 32767) |BR|
 |_| > **angle** - angle of the position from the home position, valid angles are (0 - 3600)
 
-``IF_TTPOSITION( id, position )`` - Test if turntable/traverser is at a position
+|hr-dashed|
+
+``IFTTPOSITION( id, position )`` - Test if turntable/traverser is at a position
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Tests if the turntable/traverser at the specified **id** is at the specified **position**.
@@ -1366,6 +1412,8 @@ Tests if the turntable/traverser at the specified **id** is at the specified **p
 |_| > **id** - id of the turntable/traverser to test. (1 - 32767) |BR|
 |_| > **position** - position to rotate to. (1 - 48) 
 
+|hr-dashed|
+
 ``ONROTATE( id )`` - Event handler for when a turntable/traverser is rotated
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1373,6 +1421,8 @@ Triggers the event handling mechanism for turntable/traverser **id** if configur
 
 *Parameters:* |BR|
 |_| > **id** - id of the turntable/traverser to test (1 - 32767)
+
+|hr-dashed|
 
 ``ROTATE( id, position, activity )`` - Rotate an EX-Turntable turntable/traverser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1384,6 +1434,8 @@ Rotate an EX-Turntable turntable/traverser at the specified **id** to the specif
 |_| > **position** - position to rotate to, valid positions are (1 - 48) |BR|
 |_| > **activity** - refer to :ref:`ex-turntable/test-and-tune:ex-turntable commands`, using the "EX-RAIL activity" column
 
+|hr-dashed|
+
 ``ROTATE_DCC( id, position )`` - Rotate a DCC accessory turntable/traverser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1392,6 +1444,8 @@ Rotate a DCC accessory turntable/traverser at the specified **id** to the specif
 *Parameters:* |BR|
 |_| > **id** - id of the turntable/traverser, valid IDs are (1 - 32767) |BR|
 |_| > **position** - position to rotate to, valid positions are (1 - 48)
+
+|hr-dashed|
 
 ``WAITFORTT( id )`` - Wait for EX-Turntable turntable/traverser to complete a rotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1480,7 +1534,7 @@ If sensor NOT activated and NOT latched, continue. Otherwise skip to ELSE or mat
 *Parameters:* |BR|
 |_| > **sensor_id** - id of the sensor to test
 
-See the :ref:`Condititional Statments section <exrail_conditional_statement>` for more information on IF ... ELSE ... ENDIF commands.
+See the :ref:`Condititional Statments section <exrail_conditional_statements>` for more information on IF ... ELSE ... ENDIF commands.
 
 |hr-dashed|
 
