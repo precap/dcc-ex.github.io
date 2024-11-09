@@ -1534,7 +1534,7 @@ If sensor NOT activated and NOT latched, continue. Otherwise skip to ELSE or mat
 *Parameters:* |BR|
 |_| > **sensor_id** - id of the sensor to test
 
-See the :ref:`Condititional Statments section <exrail_conditional_statement>` for more information on IF ... ELSE ... ENDIF commands.
+See the :ref:`Condititional Statments section <exrail_conditional_statements>` for more information on IF ... ELSE ... ENDIF commands.
 
 |hr-dashed|
 
