@@ -21,7 +21,7 @@ There are a number key objects that are important for creating sequences:
 
 * `Roster Entries - Your locos <#adding-a-roster>`_
 * `Turnouts/Points <#adding-turnouts-points>`_
-* `Servos for Semophores/Signals and Animations <#servos-for-signals-and -animations>`_
+* `Servos for Semaphores/Signals and Animations <#servos-for-signals-and -animations>`_
 * `Sensors <#adding-sensors>`_
 * `Signals (Lights) <#adding-signals>`_
 

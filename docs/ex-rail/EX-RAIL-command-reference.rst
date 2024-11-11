@@ -101,7 +101,7 @@ On this page, you will see various references to the use of ``DONE``, ``ENDIF``,
 
 |force-break|
 
-AT ( sensor_id ) or AFTER(sensor_id [,debounceTime] ) versus IF( sensor_id )
+AT(sensor_id) or AFTER(sensor_id [,debounceTime]) versus IF(sensor_id)
 -----------------------------------------------------------------------------
 
 When defining conditions, the behaviour of ``AT()`` and ``AFTER()`` is quite different to using conditional ``IF()`` statements.
@@ -352,10 +352,10 @@ There are three options to define |EX-R| scripts or sequences:
 
 |hr-dashed|
 
-``AUTOMATION( id, "description" )`` - Define an automation sequence which is advertised to WiThrottles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``AUTOMATION( id, "description" )`` - Define an automation sequence which is advertised to throttles/clients
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Define an automation sequence that is advertised to WiThrottles to send a train along. 
+Define an automation sequence that is advertised to throttles/clients to send a train along. 
 
 See :ref:`ex-rail/examples:Stopping at a Station (simple loop)` for a simple example.
 
@@ -365,10 +365,10 @@ See :ref:`ex-rail/examples:Stopping at a Station (simple loop)` for a simple exa
 
 |hr-dashed|
 
-``ROUTE( id, "description" )`` - Define a route that is advertised to WiThrottles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ROUTE( id, "description" )`` - Define a route that is advertised to throttles/clients
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Define a route that is advertised to WiThrottles. This can be used to initiate automation sequences such as setting turnouts/points and signals to allow a train to be driven through a specific route on the layout. See :ref:`ex-rail/examples:creating routes` for various examples.
+Define a route that is advertised to throttles/clients. This can be used to initiate automation sequences such as setting turnouts/points and signals to allow a train to be driven through a specific route on the layout. See :ref:`ex-rail/examples:creating routes` for various examples.
 
 *Parameters:* |BR|
 |_| > **id** - id for the sequence/route/automation |BR|
@@ -376,10 +376,10 @@ Define a route that is advertised to WiThrottles. This can be used to initiate a
 
 |hr-dashed|
 
-``SEQUENCE( id )`` - A general purpose automation sequence not advertised to WiThrottles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``SEQUENCE( id )`` - A general purpose automation sequence not advertised to throttles/clients
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A general purpose automation sequence that is not advertised to WiThrottles. This may be triggered automatically on startup, or be called by other sequences or activities. See :ref:`ex-rail/examples:automating various non-track items`, :ref:`ex-rail/examples:Point to Point Shuttle`, and :ref:`ex-rail/examples:multiple inter-connected trains` for further examples.
+A general purpose automation sequence that is not advertised to throttles/clients. This may be triggered automatically on startup, or be called by other sequences or activities. See :ref:`ex-rail/examples:automating various non-track items`, :ref:`ex-rail/examples:Point to Point Shuttle`, and :ref:`ex-rail/examples:multiple inter-connected trains` for further examples.
 
 *Parameters:* |BR|
 |_| > **id** - id for the sequence/route/automation |BR|
@@ -421,7 +421,7 @@ Return to the calling sequence when completed (no DONE required).
 
 .. collapse:: For example: (click to show)
 
-  Say, for example, you have an AUTOMATION you initiate the sends a train through your layout with multiple station stops, and you want to do the same things at each station.
+  For example, you have an AUTOMATION which you initiate that sends a train through your layout with multiple station stops, and you want to do the same things at each station.
 
   You could write a very long AUTOMATION sequence to do this, or you could write the sound SEQUENCE once, then call it at each station:
 
@@ -455,13 +455,13 @@ Return to the calling sequence when completed (no DONE required).
 
 |hr-dashed|
 
-``FOLLOW( route )`` - Branch or Follow a numbered sequence
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``FOLLOW( sequence_id )`` - Branch or Follow a specified sequence
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Branch or Follow a numbered sequence. This lets us do clever things like performing a different sequence depending on whether a turnout/point is CLOSED or THROWN, as well as simple things such as the example above where we keep looping through the same sequence.
+Branch or Follow a specified sequence. This lets us do clever things like performing a different sequence depending on whether a turnout/point is CLOSED or THROWN, as well as simple things such as the example above where we keep looping through the same sequence.
 
 *Parameters:* |BR|
-|_| > **id** - id for the sequence/route/automation to branch to
+|_| > **sequence_id** - id for the sequence/route/automation to branch to
 
 .. collapse:: For example: (click to show)
 
@@ -595,15 +595,15 @@ Runs commands in IF block a random percentage of the time. This is handy for mor
 
 |hr-dashed|
 
-``ROUTE_CAPTION( id, "caption" )`` - Change the label of the Route button
+``ROUTE_CAPTION( route_id, "caption" )`` - Change the label of the Route button
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Dynamically change the label of the Route button.
 
 *Parameters:* |BR|
-|_| > **id** - id of the route to change |BR|
+|_| > **route_id** - id of the route to change |BR|
 |_| > **caption** - text to replace on the route 'button' label
 
 .. collapse:: For example: (click to show)
@@ -664,65 +664,65 @@ Dynamically change the label of the Route button.
 
 |hr-dashed|
 
-``ROUTE_ACTIVE( id )`` - Activate a Route
+``ROUTE_ACTIVE( route_id )`` - Activate a Route
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Dynamically flag a Route as active.
 
 See example in ROUTE_CAPTION.
 
 *Parameters:* |BR|
-|_| > **id** - id of the route to activate |BR|
+|_| > **route_id** - id of the route to activate |BR|
 
 |hr-dashed|
 
-``ROUTE_INACTIVE( id, caption )`` - Deactivate a Route
+``ROUTE_INACTIVE( route_id, caption )`` - Deactivate a Route
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Dynamically flag a Route as inactive.
 
 See example in ROUTE_CAPTION.
 
 *Parameters:* |BR|
-|_| > **id** - id of the route to deactivate |BR|
+|_| > **route_id** - id of the route to deactivate |BR|
 
 |hr-dashed|
 
-``ROUTE_HIDDEN( id )`` - Hide a Route from display
+``ROUTE_HIDDEN( route_id )`` - Hide a Route from display
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Dynamically hide a Route.
 
 *Parameters:* |BR|
-|_| > **id** - id of the route to hide |BR|
+|_| > **route_id** - id of the route to hide |BR|
 
 |hr-dashed|
 
-``ROUTE_DISABLED( id )`` - disable a Route
+``ROUTE_DISABLED( route_id )`` - disable a Route
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Dynamically disable a Route.
 
 *Parameters:* |BR|
-|_| > **id** - id of the route to disable |BR|
+|_| > **route_id** - id of the route to disable |BR|
 
 |hr-dashed|
 
-``STASH( stashId )`` - Stashes the current loco/invert
+``STASH( stash_id )`` - Stashes the current loco/invert
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-v5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 *Parameters:* |BR|
-|_| > **id** - id of the stash location to store the value (0-???) |BR|
+|_| > **stash_id** - id of the stash location to store the value (0-???) |BR|
 
 Stashes/Stores the current loco/invert in the specified stash location.
 
@@ -732,22 +732,22 @@ Stashes/Stores the current loco/invert in the specified stash location.
 
 |hr-dashed|
 
-``CLEAR_STASH( stashId )`` - Zeroes the specified stash
+``CLEAR_STASH( stash_id )`` - Zeroes the specified stash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Zeroes/Empties the specified stash location.
 
 *Parameters:* |BR|
-|_| > **id** - id of the stash location to store the value (0-???) |BR|
+|_| > **stash_id** - id of the stash location to store the value (0-???) |BR|
 
 |hr-dashed|
 
 ``CLEAR_ALL_STASH`` - Zeroes all stashes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Zeroes/Empties all stash locations.
 
@@ -756,15 +756,15 @@ Zeroes/Empties all stash locations.
 
 |hr-dashed|
 
-``PICKUP_STASH( stashId )`` - Retrieves and sets the loco/invert from the specified stash
+``PICKUP_STASH( stash_id )`` - Retrieves and sets the loco/invert from the specified stash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Retrieves and sets the loco/invert from the specified stash location.
 
 *Parameters:* |BR|
-|_| > **id** - id of the stash location to store the value (0-???) |BR|
+|_| > **stash_id** - id of the stash location to store the value (0-???) |BR|
 
 |hr-dashed|
 
@@ -856,14 +856,14 @@ Halt the execution of the current block of commands until the sensor is set.
 
 |hr-dashed|
 
-``AFTER( sensor_id [,debounceTime] )`` - Halt command execution until the sensor is cleared 
+``AFTER( sensor_id [,debounce_time] )`` - Halt command execution until the sensor is cleared 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Halt the execution of the current block of commands until the sensor is cleared.
 
 *Parameters:* |BR|
 |_| > **sensor_id** - id of the sensor to check |BR|
-|_| > **debounceTime** -  optional debounce time (default 500mS) |BR|
+|_| > **debounce_time** -  optional debounce time (default 500mS) |BR|
 
 ----
 
@@ -879,6 +879,10 @@ Create and manage HAL device objects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a HAL device in myAutomation.h rather than needing to use myHal.cpp
+
+*Parameters:* |BR|
+|_| > **device** - device |BR|
+|_| > **parameters** -  as needed |BR|
 
 .. collapse:: For example: (click to show)
 
@@ -901,7 +905,7 @@ Create a HAL device in myAutomation.h rather than needing to use myHal.cpp
 ``HAL_IGNORE_DEFAULTS`` - Disable default MCP23017 and PCA9685 HAL devices
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Disable default MCP23017 and PCA9685 HAL devices
 
@@ -967,7 +971,7 @@ Define a DCC accessory signal. Control the colour or aspect of these via the def
 ``DCCX_SIGNAL( Address, redAspect, amberAspect, greenAspect )`` - Defines a signal (with id as dcc address)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4| 
+|NEW-IN-V5-4-LOGO-SMALL| 
 
 This defines a signal (with id same as dcc address) that can be operated
 by the RED/AMBER/GREEN commands.   In each case the command uses the signal address to refer to the signal and the aspect chosen depends on the use of the RED AMBER or GREEN command sent. Other aspects may be sent but will require the direct use of the ASPECT command.
@@ -1052,7 +1056,7 @@ Set defined signal to Red (See SIGNAL).
 ``ASPECT( address, aspect )`` - Command for DCC Extended Accessories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 This command sends an extended accessory packet to the track, normally used to set
 a signal aspect. Aspect numbers are undefined as standards except for 0 which is
@@ -1262,7 +1266,7 @@ Throws a defined turnout/point.
 ``TOGGLE_TURNOUT( turnout_id )`` - Toggle a defined turnout/point between CLOSE/THROW
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Toggles the state of the specified turnout/point between closed and thrown.
 
@@ -1338,7 +1342,7 @@ Detects a rotary encoder has changed position
 Turntable features
 ^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 .. contents:: In This Section
     :depth: 4
@@ -1472,7 +1476,7 @@ Sensors/Inputs - Reading and Responding
 ``JMRI_SENSOR(vpin [,count])`` - Creates <S> type sensors visible to JMRI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 This command causes the creation of JMRI <S> type sensors in a way that is simpler than repeating lines of <S> commands in mySetup.h.
 
@@ -1686,7 +1690,7 @@ Remove LATCH on sensor.
 ``ONBUTTON( vpin )`` - Event handler for debounced button presses
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 This new event handler is handy for mimic panel and other buttons that need to perform an action when a button is pressed, rather than having to create a sequence with a combination of ``AFTER`` and ``IF`` statements to debounce a button which quickly becomes very complicated.
 
@@ -1700,7 +1704,7 @@ Note that this works for active low buttons only.
 ``ONSENSOR( sensor_id )`` - Event handler for sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 A new event handler to perform actions when a sensor is activated. Like the other sensor triggers such as ``IF``, ``AT``, and ``AFTER``, a negative value can be used for an active high sensor.
 
@@ -1746,19 +1750,19 @@ Reset output pin (set to LOW)
 ``FADE( pin, value, ms )`` - Fade an LED
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Fade an LED on a servo driver to given value taking given time.
+Fade an LED on a servo driver to specified value taking specified time.
 
 *Parameters:* |BR|
 |_| > **pin** -  pin/vpin of the LED |BR|
 |_| > **value** - value to fade the pin to |BR|
-|_| > **ms** - duration taken to get to the value in miliseconds
+|_| > **ms** - duration taken to get to the value in milliseconds
 
 |hr-dashed|
 
 ``BLINK( pin, onMs, offMs )`` - Blink an output pin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 This will start a pin/Vpin blinking until such time as it is ``SET``, ``RESET``, or set via a signal operation.
 
@@ -1786,7 +1790,7 @@ Send message to LCN Accessory Network.
 ``CONFIGURE_SERVO(vpin, pos1, pos2, profile)`` - Define LED's connected to PCA9685 boards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 This command offers a more convenient way of defining an LED connected to a PCA9685 pin, instead of performing the HAL call in halSetup.h
 
@@ -1808,7 +1812,7 @@ This command offers a more convenient way of defining an LED connected to a PCA9
 ``NEOPIXEL( vpin, red, green, blue [,count] )`` - Controls the colour of attached Neopixel LEDs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Controls the colour of one or more attached Neopixel LEDs
 
@@ -1828,7 +1832,7 @@ Controls the colour of one or more attached Neopixel LEDs
 ``NEOPIXEL_SIGNAL( signalid, red, green, blue )`` - Controls the colour of attached Neopixel LED
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Controls the colour of one attached Neopixel LED
 
@@ -1847,7 +1851,7 @@ Controls the colour of one attached Neopixel LED
 ``ANOUT( vpin, value, param1, param2)`` - Analog output ??
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 TBA
 
@@ -1899,7 +1903,7 @@ TBA
 ``PLAY_SOUND( vpin, fileNumber, volume, ??? )`` - Play mp3 files from a Micro-SD card
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Play mp3 files from a Micro-SD card, using a DFPlayer MP3 Module.
 
@@ -2122,7 +2126,7 @@ All these "ON" commands are event handlers that trigger a sequence of commands t
 ``XFTOGGLE( loco, func )`` - Toggle DCC function on specific loco
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Toggle DCC function on loco with the specified DCC address.
 
@@ -2198,10 +2202,10 @@ Set the loco address for this sequence.
 
 |hr-dashed|
 
-``SENDLOCO( loco, route )`` - Start a new task send a given loco along given route/sequence
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``SENDLOCO( loco, route )`` - Start route/sequence with a specified loco 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Start a new task send a given loco along given route/sequence
+Start a new task send a specified loco along a specified route/sequence
 
 *Parameters:* |BR|
 |_| > **loco** - DCC address of your loco |BR|
@@ -2288,7 +2292,7 @@ Turn off the specified function for the current loco.
 ``FTOGGLE( func )`` - Toggle the state of a loco's function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Toggle off the specified function for the current loco.  i.e. Turn off if on, or on if off.
 
@@ -2722,7 +2726,7 @@ A a WiThrottle throttle will receive ``Hmtext``.
 ``MESSAGE( "msg" )`` - Writes a message to all clients
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 Writes a message to all serial throttles and all WiThrottle Clients.
 
@@ -2818,7 +2822,7 @@ If you are unsure on the impacts using anything in this section may have, please
 ``STEALTH( code )`` - include some C++ code in a ROUTE/SEQUENCE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 **SERIOUS ENGINEERS and ADVANCED C++ USERS ONLY**   |engineer| 
 
@@ -2852,7 +2856,7 @@ Syntax:
 ``STEALTH_GLOBAL( code )``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|NEW-IN-V5-4|
+|NEW-IN-V5-4-LOGO-SMALL|
 
 **SERIOUS ENGINEERS and ADVANCED C++ USERS ONLY**   |engineer| 
 
