@@ -2834,7 +2834,7 @@ Allows parsing of a DCC-EX API command via myAutomation.h.  This allows you to i
 Layout Command Control (LCC)
 ----------------------------
 
-The following commands have been introduced to support Layout Command Control (LCC).
+The following commands have been introduced to support Layout Command Control (LCC) / CBUS.
 
 ``LCC(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^
