@@ -401,8 +401,20 @@ Completes a Sequence/Route/Animation/Event handler, and any other automation def
 
 |hr-dashed|
 
+``ENDTASK`` - Completes a Sequence/Route/Animation/Event, or any other automation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Identical to ``DONE``.
+
+Completes a Sequence/Route/Animation/Event handler, and any other automation definition as shown in the various examples on this page and elsewhere in the |EX-R| documentation.
+
+*Parameters:* |BR|
+|_| > none
+
+|hr-dashed|
+
 ``CALL( id )`` - Branch to a separate sequence
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Branch to a separate sequence, which will need to RETURN when complete.
 
@@ -2829,6 +2841,26 @@ Allows parsing of a DCC-EX API command via myAutomation.h.  This allows you to i
 
 |hr-dashed|
 
+``DISABLE_PROG`` - Disable programming to save RAM/Flash
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Disable programming to save RAM/Flash.
+
+*Parameters:* |BR|
+|_| > none
+
+|hr-dashed|
+
+``IO_NO_HAL`` - Reduce FLASH footprint when HAL features not required
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To reduce FLASH footprint when HAL features not required.
+
+Note: The HAL is disabled by default on Nano and Uno platforms, because of limited flash space.
+
+*Parameters:* |BR|
+|_| > none
+
 ----
 
 Layout Command Control (LCC)
@@ -2844,6 +2876,7 @@ TBA
 *Parameters:* |BR|
 |_| > **eventid** - TBA
 
+|hr-dashed|
 
 ``LCCX(senderid,eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2854,6 +2887,7 @@ TBA
 |_| > **senderid** - TBA |BR|
 |_| > **eventid** - TBA
 
+|hr-dashed|
 
 ``ACON(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -2863,6 +2897,7 @@ TBA
 *Parameters:* |BR|
 |_| > **eventid** - TBA
 
+|hr-dashed|
 
 ``ACOF(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -2872,6 +2907,7 @@ TBA
 *Parameters:* |BR|
 |_| > **eventid** - TBA
 
+|hr-dashed|
 
 ``ONACON(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2881,6 +2917,7 @@ TBA
 *Parameters:* |BR|
 |_| > **eventid** - TBA
 
+|hr-dashed|
 
 ``ONACOF(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2889,7 +2926,6 @@ TBA
 
 *Parameters:* |BR|
 |_| > **eventid** - TBA
-
 
 ----
 
