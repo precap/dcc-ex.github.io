@@ -352,8 +352,8 @@ There are three options to define |EX-R| scripts or sequences:
 
 |hr-dashed|
 
-``AUTOMATION( id, "description" )`` - Define an automation sequence which is advertised to throttles/clients
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``AUTOMATION( id, "description" )`` - Define an automation, advertised to throttles/clients
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Define an automation sequence that is advertised to throttles/clients to send a train along. 
 
@@ -365,8 +365,8 @@ See :ref:`ex-rail/examples:Stopping at a Station (simple loop)` for a simple exa
 
 |hr-dashed|
 
-``ROUTE( id, "description" )`` - Define a route that is advertised to throttles/clients
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``ROUTE( id, "description" )`` - Define a route, advertised to throttles/clients
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Define a route that is advertised to throttles/clients. This can be used to initiate automation sequences such as setting turnouts/points and signals to allow a train to be driven through a specific route on the layout. See :ref:`ex-rail/examples:creating routes` for various examples.
 
@@ -376,8 +376,8 @@ Define a route that is advertised to throttles/clients. This can be used to init
 
 |hr-dashed|
 
-``SEQUENCE( id )`` - A general purpose automation sequence not advertised to throttles/clients
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``SEQUENCE( id )`` - A general purpose sequence, not advertised to throttles/clients
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A general purpose automation sequence that is not advertised to throttles/clients. This may be triggered automatically on startup, or be called by other sequences or activities. See :ref:`ex-rail/examples:automating various non-track items`, :ref:`ex-rail/examples:Point to Point Shuttle`, and :ref:`ex-rail/examples:multiple inter-connected trains` for further examples.
 
@@ -596,7 +596,7 @@ Runs commands in IF block a random percentage of the time. This is handy for mor
 |hr-dashed|
 
 ``ROUTE_CAPTION( route_id, "caption" )`` - Change the label of the Route button
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4-LOGO-SMALL|
 
@@ -665,7 +665,7 @@ Dynamically change the label of the Route button.
 |hr-dashed|
 
 ``ROUTE_ACTIVE( route_id )`` - Activate a Route
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4-LOGO-SMALL|
 
@@ -679,7 +679,7 @@ See example in ROUTE_CAPTION.
 |hr-dashed|
 
 ``ROUTE_INACTIVE( route_id, caption )`` - Deactivate a Route
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4-LOGO-SMALL|
 
@@ -693,7 +693,7 @@ See example in ROUTE_CAPTION.
 |hr-dashed|
 
 ``ROUTE_HIDDEN( route_id )`` - Hide a Route from display
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4-LOGO-SMALL|
 
@@ -705,7 +705,7 @@ Dynamically hide a Route.
 |hr-dashed|
 
 ``ROUTE_DISABLED( route_id )`` - disable a Route
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4-LOGO-SMALL|
 
@@ -857,7 +857,7 @@ Halt the execution of the current block of commands until the sensor is set.
 |hr-dashed|
 
 ``AFTER( sensor_id [,debounce_time] )`` - Halt command execution until the sensor is cleared 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Halt the execution of the current block of commands until the sensor is cleared.
 
@@ -1684,6 +1684,28 @@ Remove LATCH on sensor.
         LATCH(ROUTE_TOGGLE)         // LATCH ROUTE_TOGGLE to indicate route set
       ENDIF
     DONE
+
+.. collapse:: For example: (click to show)
+
+  In this example, LATCH/UNLATCH is used to start/stop a separate running sequence.
+
+  .. code-block:: cpp
+
+      ROUTE(1,"Shuttle")
+        SETLOCO(3)
+        IF(99) 
+          UNLATCH(99) 
+          DONE 
+        ENDIF
+        LATCH(99)
+      FOLLOW(2)   // this line is not actully needed
+
+      SEQUENCE(2)
+        .... move loco etc
+        IF(99) 
+          FOLLOW(2) 
+        ENDIF
+      DONE // will also stop loco
 
 |hr-dashed|
 
@@ -2806,6 +2828,68 @@ Allows parsing of a DCC-EX API command via myAutomation.h.  This allows you to i
 |_| > **msg** - message to parse
 
 |hr-dashed|
+
+----
+
+Layout Command Control (LCC)
+----------------------------
+
+The following commands have been introduced to support Layout Command Control (LCC).
+
+``LCC(eventid)`` - TBA
+^^^^^^^^^^^^^^^^^^^^^^
+
+TBA
+
+*Parameters:* |BR|
+|_| > **eventid** - TBA
+
+
+``LCCX(senderid,eventid)`` - TBA
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TBA
+
+*Parameters:* |BR|
+|_| > **senderid** - TBA |BR|
+|_| > **eventid** - TBA
+
+
+``ACON(eventid)`` - TBA
+^^^^^^^^^^^^^^^^^^^^^^^
+
+TBA
+
+*Parameters:* |BR|
+|_| > **eventid** - TBA
+
+
+``ACOF(eventid)`` - TBA
+^^^^^^^^^^^^^^^^^^^^^^^
+
+TBA
+
+*Parameters:* |BR|
+|_| > **eventid** - TBA
+
+
+``ONACON(eventid)`` - TBA
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TBA
+
+*Parameters:* |BR|
+|_| > **eventid** - TBA
+
+
+``ONACOF(eventid)`` - TBA
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TBA
+
+*Parameters:* |BR|
+|_| > **eventid** - TBA
+
 
 ----
 
