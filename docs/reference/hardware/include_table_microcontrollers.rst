@@ -5,7 +5,7 @@
   :header-rows: 1
   :class: command-table
 
-  * - Microcontroller Type / Brand
+  * - Type / Brand . . . .
     - Recom- |BRxa| mended
     - Supported
     - Comfort |BRxa| Level
@@ -23,7 +23,7 @@
     - Yes
     - Yes
     - Conductor
-    - UNO / Mega format
+    - UNO / Mega
     - Yes
     - Yes
     - Yes
@@ -38,7 +38,7 @@
     - Yes
     - Yes
     - Tinkerer
-    - UNO / Mega format
+    - UNO / Mega
     - Yes
     - Yes
     - Yes
@@ -52,7 +52,7 @@
     - Yes
     - Yes
     - Tinkerer
-    - 
+    - \-
     - Yes [5]_
     - No
     - Yes
@@ -80,7 +80,7 @@
     - No
     - Yes
     - Tinkerer
-    - UNO / Mega format
+    - UNO / Mega
     - No
     - Yes
     - Limited [3]_
@@ -122,7 +122,7 @@
     - No [6]_
     - Yes
     - Tinkerer
-    - UNO / Mega format
+    - UNO / Mega
     - Yes
     - Yes
     - Yes

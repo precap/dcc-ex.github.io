@@ -5,17 +5,17 @@
   :header-rows: 1
   :class: command-table
 
-  * - Motor Board Type / Brand
+  * - Type / Brand . . . . . . . . .
     - Recom- |BRxb| mended
     - Sup- |BRxb| ported
     - Comfort |BRxb| Level
     - Format
-    - Stackable
+    - Stack- |BRxb| able
     - Short |BRxb| Circuit |BRxb| Protection
     - Current |BRxb| Sense [20]_
     - DC |BRxb| Support
-    - No. Outputs
-    - Max Amps |BRxb| (per output)
+    - No. |BRxb| Outputs |BRxb| / Tracks
+    - Max |BRxb| Amps [21]_
     - Comments / Notes . . . . . . . . . . . . . . . . . . . . . . . . . . 
 
   * - :doc:`DCC-EX EX-MotorShield8874 RevA</reference/hardware/motorboards/ex-motor-shield-8874>`
@@ -23,7 +23,7 @@
     - Yes
     - Tinkerer
     - UNO / Mega
-    - Yes [21]_
+    - Yes [22]_
     - Yes
     - Yes
     - Yes
@@ -167,8 +167,8 @@
     - Engineer
     - UNO / Mega
     - No
-    - Yes [22]_
-    - Yes [22]_
+    - Yes [23]_
+    - Yes [23]_
     - No
     - 2
     - 2
@@ -280,5 +280,6 @@
 
 
 .. [20] CV Programming
-.. [21] Requires modification of the board to stack the second board
-.. [22] Requires modification of the board to support Current Sense
+.. [21] Per output
+.. [22] Requires modification of the board to stack the second board
+.. [23] Requires modification of the board to support Current Sense

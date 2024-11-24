@@ -30,13 +30,17 @@ Hardware
     index-i2c
     accessory-controllers
 
-Microcontrollers Table
-======================
+|HR-DASHED|
+
+Microcontroller List
+====================
 
 .. include:: include_table_microcontrollers.rst
 
-Motor Board Table
-=================
+|HR-DASHED|
+
+Motor Board List
+================
 
 .. include:: include_table_motor_boards.rst
 
