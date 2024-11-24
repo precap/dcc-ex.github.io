@@ -29,3 +29,8 @@ Hardware
     bluetooth
     index-i2c
     accessory-controllers
+
+Microcontrollers Table
+======================
+
+.. include:: include_table_microcontrollers.rst
