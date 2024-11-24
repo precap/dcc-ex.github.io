@@ -1,4 +1,4 @@
-.. include:: /include/include_x.rst
+.. include:: /include/include_xa.rst
   
 .. list-table::
   :widths: auto
@@ -6,17 +6,17 @@
   :class: command-table
 
   * - Microcontroller Type / Brand
-    - Recom- |BRx| mended
+    - Recom- |BRxa| mended
     - Supported
-    - Comfort |BRx| Level
-    - Shield |BRx| Format
-    - HAL / |BRx| |I2Cx|
+    - Comfort |BRxa| Level
+    - Shield |BRxa| Format
+    - HAL / |BRxa| |I2Cxa|
     - EEPROM
-    - EXRAIL |BRx| Support
-    - Track |BRx| Manager |BRx| Support
-    - DC |BRx| Support
+    - EXRAIL |BRxa| Support
+    - Track |BRxa| Manager |BRxa| Support
+    - DC |BRxa| Support
     - WiFi
-    - WiFi # |BRx| Connect- |BRx| ions [9]_
+    - WiFi # |BRxa| Connect- |BRxa| ions [9]_
     - Comments / Notes . . . . . . . . . . . . . . . . . . . . . . . . . . 
 
   * - EX-CSB1
@@ -178,7 +178,7 @@
 .. [2] Requires a supported motor driver that supports :ref:`TrackManager <trackmanager/index:hardware requirements and technical notes>`
 .. [3] Limited EXRAIL scripts are possible only when disabling EEPROM and programming
 .. [4] Features and support in Beta testing can and will change regularly, be sure to keep up to date with developments on our `Discord server <https://discord.gg/y2sB4Fp>`_ 
-.. [5] HAL/|I2Cx| connectivity is only available via the blocking Arduino Wire library at present
+.. [5] HAL/|I2Cxa| connectivity is only available via the blocking Arduino Wire library at present
 .. [6] While the Mega+WiFi boards seem like a good option and are based on our well-known, stable Mega2560 platform, there are many reports of quality issues with these, so buyer beware, and use of these is not recommended
 .. [7] The core development team no longer have access to these, and testing is limited to ensuring the software compiles for the board type
 .. [8] The core Arduino library has a bug affecting serial console output which can be patched but renders the device unsuited for future development until fixed in the main Arduino core library for SAMD21

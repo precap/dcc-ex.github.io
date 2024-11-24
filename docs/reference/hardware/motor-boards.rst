@@ -46,6 +46,10 @@ Current list of boards
 
 In this section we outline the various details that we know of related to each of the different boards that we've either tested, or know to work based on user feedback.
 
+We've compiled this simple summary table to help with this:
+
+.. include:: include_table_motor_boards.rst
+
 TrackManager DC compatible boards
 ---------------------------------
 

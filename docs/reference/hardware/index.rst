@@ -34,3 +34,9 @@ Microcontrollers Table
 ======================
 
 .. include:: include_table_microcontrollers.rst
+
+Motor Board Table
+=================
+
+.. include:: include_table_motor_boards.rst
+
