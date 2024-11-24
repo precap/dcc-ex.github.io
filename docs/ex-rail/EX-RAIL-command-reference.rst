@@ -2868,6 +2868,13 @@ Layout Command Control (LCC)
 
 The following commands have been introduced to support Layout Command Control (LCC) / CBUS.
 
+.. contents:: In This Section
+  :depth: 4
+  :local:
+  :class: in-this-section
+
+|hr-dashed|
+
 ``LCC(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^
 
