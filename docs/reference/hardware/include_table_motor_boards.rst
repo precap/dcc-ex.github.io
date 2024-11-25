@@ -45,7 +45,7 @@
     - 
 
   * - :doc:`Deek-Robot Motor Shield</reference/hardware/motorboards/deek-robot-motor-shield>`
-    - No
+    - Yes
     - Yes
     - Tinkerer
     - UNO / Mega

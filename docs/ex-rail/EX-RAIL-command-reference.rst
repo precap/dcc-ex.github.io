@@ -43,7 +43,7 @@ Handy information
 
 - COMMANDS are case sensitive. i.e. they must be in uppercase. Text parameters you provide (aliases,  descriptions) are not
 - *AUTOMATION*, *ROUTE*, and *SEQUENCE* use the same ID number space, so a ``FOLLOW(n)`` command can be used for any of them
-- Sensors and outputs used by AT/AFTER/SET/RESET/LATCH/UNLATCH/SERVO/IF/IFNOT refer directly to Arduino pins, and those handled by |I2C| expansion (as virtual pins or vpins)
+- Sensors and outputs used by AT/AFTER/SET/RESET/LATCH/UNLATCH/SERVO/IF/IFNOT refer directly to Arduino pins, and those handled by |I2C| expansion (as virtual pins or vpins).
 - Signals also refer directly to pins, and the signal ID (for RED/AMBER/GREEN) is always the same as the RED signal pin
 - It's OK to use sensor IDs that have no physical item in the layout. These can only be LATCHed, tested (IF/IFNOT), or UNLATCHed in the sequences. If a sensor is latched by the sequence, it can only be unlatched by the sequence so ``AT(35) LATCH(35)`` for example, effectively latches sensor 35 on when detected once
 - All IDs used in commands and functions will be numbers, or an ALIAS name if configured
@@ -101,7 +101,7 @@ On this page, you will see various references to the use of ``DONE``, ``ENDIF``,
 
 |force-break|
 
-AT(sensor_id) or AFTER(sensor_id [,debounceTime]) versus IF(sensor_id)
+AT(vpin) or AFTER(vpin [,debounceTime]) versus IF(vpin)
 -----------------------------------------------------------------------------
 
 When defining conditions, the behaviour of ``AT()`` and ``AFTER()`` is quite different to using conditional ``IF()`` statements.
@@ -858,23 +858,23 @@ Must be proceeded by an ``IF()`` somewhere in the preceding commands.
 
 |hr-dashed|
 
-``AT( sensor_id )`` - Halt command execution until the sensor is set
+``AT( vpin )`` - Halt command execution until the sensor is set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Halt the execution of the current block of commands until the sensor is set.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to check |BR|
+|_| > **vpin** - id of the sensor to check |BR|
 
 |hr-dashed|
 
-``AFTER( sensor_id [,debounce_time] )`` - Halt command execution until the sensor is cleared 
+``AFTER( vpin [,debounce_time] )`` - Halt command execution until the sensor is cleared 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Halt the execution of the current block of commands until the sensor is cleared.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to check |BR|
+|_| > **vpin** - id of the sensor to check |BR|
 |_| > **debounce_time** -  optional debounce time (default 500mS) |BR|
 
 ----
@@ -1519,18 +1519,18 @@ A sequence will not progress until after a sensor has been triggered and then is
 
 |hr-dashed|
 
-``ATTIMEOUT( sensor_id, timeout_ms )`` - Causes a sequence to wait until either a sensor is active/triggered, or if the timer runs out
+``ATTIMEOUT( vpin, timeout_ms )`` - Causes a sequence to wait until either a sensor is active/triggered, or if the timer runs out
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A sequence will not progress until either a sensor is active/triggered, or if the timer runs out. It then continues and sets a testable "timed out" flag (see ``IFTIMEOUT``).
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **vpin** - id of the sensor to test |BR|
 |_| > **timeout_ms** - time/duration to wait for in milliseconds
 
 |hr-dashed|
 
-``IF( sensor_id )`` - If sensor activated or latched, continue
+``IF( vpin )`` - If sensor activated or latched, continue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If sensor activated or latched, continue. Otherwise skip to ELSE or matching ENDIF.
@@ -1542,7 +1542,7 @@ See the :ref:`Condititional Statments section <exrail_conditional_statements>` f
 
 |hr-dashed|
 
-``IFNOT( sensor_id )`` - If sensor NOT activated and NOT latched, continue
+``IFNOT( vpin )`` - If sensor NOT activated and NOT latched, continue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If sensor NOT activated and NOT latched, continue. Otherwise skip to ELSE or matching ENDIF.
@@ -1575,46 +1575,46 @@ Note that with the sensor commands `IF()`, `IFNOT()`, `IFTIMEOUT()`, `AT()`, `AT
 
 |hr-dashed|
 
-``ATGTE( analogpin, value )`` - Waits for an analog pin to reach a value
+``ATGTE( vpin, value )`` - Waits for an analog pin to reach a value
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Waits for an analog pin to reach the specified value.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **vpin** - analogue pin. id of the sensor to test |BR|
 |_| > **value** - value to test against
 
 |hr-dashed|
 
-``ATLT ( analogpin, value )`` - Waits for an analog pin to go below a value
+``ATLT ( vpin, value )`` - Waits for an analog pin to go below a value
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Waits for an analog pin to go below the specified value.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **sensor_id** - analogue pin. id of the sensor to test |BR|
 |_| > **value** - value to test against
 
 |hr-dashed|
 
-``IFGTE( sensor_id, value )`` - Test if analog pin reading is greater than or equal to value
+``IFGTE( vpin, value )`` - Test if analog pin reading is greater than or equal to value
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Test if analog pin reading is greater than or equal to value (>=).
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **vpin** - analogue pin. id of the sensor to test |BR|
 |_| > **value** - value to test against
 
 |hr-dashed|
 
-``IFLT( sensor_id, value )`` - Test if analog pin reading is less than value
+``IFLT( vpin, value )`` - Test if analog pin reading is less than value
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Test if analog pin reading is less than value (<).
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test |BR|
+|_| > **vpin** - Analogue pin. id of the sensor to test |BR|
 |_| > **value** - value to test against
 
   All the `IFGTE()`, `IFLT()`, `ATGTE()`and `ATLT()` commands read the analog value from an analog input pin (A0 - A5 on an Arduino Mega) or an analog input from an I/O expander module. Valid values are defined by the capability of the analog to digital converter in use.
@@ -1652,25 +1652,25 @@ LATCH/UNLATCH can be used to maintain the state of a sensor, or can also be used
 
 |hr-dashed|
 
-``LATCH( sensor_id )`` - Latches a sensor on
+``LATCH( vpin )`` - Latches a sensor on
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Latches a sensor on (Sensors 0-255 only).
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to unlatch
+|_| > **vpin** - id of the sensor to unlatch
 
 See UNLATCH() for examples.
 
 |hr-dashed|
 
-``UNLATCH( sensor_id )`` - Remove LATCH on sensor
+``UNLATCH( vpin )`` - Remove LATCH on sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Remove LATCH on sensor.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to unlatch
+|_| > **vpin** - id of the sensor to unlatch
 
 .. collapse:: For example: (click to show)
 
@@ -1735,7 +1735,7 @@ Note that this works for active low buttons only.
 
 |hr-dashed|
 
-``ONSENSOR( sensor_id )`` - Event handler for sensors
+``ONSENSOR( vpin )`` - Event handler for sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |NEW-IN-V5-4-LOGO-SMALL|
@@ -1743,7 +1743,7 @@ Note that this works for active low buttons only.
 A new event handler to perform actions when a sensor is activated. Like the other sensor triggers such as ``IF``, ``AT``, and ``AFTER``, a negative value can be used for an active high sensor.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test
+|_| > **vpin** - id of the sensor to test
 
 |force-break|
 
