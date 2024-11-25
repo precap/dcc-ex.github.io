@@ -1837,6 +1837,8 @@ To monitor one or more Arduino pins for sensor triggers, first define/edit/delet
   
     Once defined, the EX-CS will send a ``<Q id>`` response anytime the sensor is activated, and a ``<q id>`` response when deactivated. 
 
+    It is worthwhile creating new IDs to define sensors, for JMRI, using vpin=id. It will simplify your life.
+
 |hr-dashed|
 
 <S id> - Delete defined sensor
