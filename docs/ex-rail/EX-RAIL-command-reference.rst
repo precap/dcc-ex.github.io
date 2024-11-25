@@ -804,7 +804,7 @@ Refer also to :ref:`ex-rail/ex-rail-command-reference:correct use of done, endif
 
 |hr-dashed|
 
-``IF ( sensor_id )`` ... ELSE ... ENDIF  - Execute commands if the conditions are met
+``IF ( vpin )`` ... ELSE ... ENDIF  - Execute commands if the conditions are met
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Perform the following block of commands if the specified sensor is active.
@@ -813,13 +813,13 @@ Optionally be followed by an ``ELSE`` somewhere in the following commands.
 Must be followed by an ``ENDIF`` somewhere in the following commands. 
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to check |BR|
+|_| > **vpin** - id of the sensor to check |BR|
 
 Also see ``IFNOT()``, ``IFRED()``, ``IFAMBER()``, ``IFGREEN()``, ``IFCLOSED()``, ``IFTHROWN()``, ``IFRANDOM()``, ``IFTTPOSITION()``, ``IFRE()``, ``IFTIMEOUT()``, ``IFGTE()``, ``IFLT()``, ``IFLOCO()``, ``IFRESERVE()``
 
 |hr-dashed|
 
-``IFNOT ( sensor_id )`` ... ELSE ... ENDIF  - Execute commands if the conditions are NOT met
+``IFNOT ( vpin )`` ... ELSE ... ENDIF  - Execute commands if the conditions are NOT met
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Perform the following block of commands if the specified sensor is not active.
@@ -828,7 +828,7 @@ Optionally be followed by an ``ELSE`` somewhere in the following commands.
 Must be followed by an ``ENDIF`` somewhere in the following commands. 
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to check |BR|
+|_| > **vpin** - id of the sensor to check |BR|
 
 |hr-dashed|
 
@@ -1499,23 +1499,23 @@ This command causes the creation of JMRI <S> type sensors in a way that is simpl
 |_| > **vpin** - vpin to create |BR|
 |_| > **count** - optional. Number of sensors to create. Inclusive on vpin. Default is one (1) 
 
-``AT( sensor_id )`` - Causes a sequence to wait until a sensor is active/triggered
+``AT( vpin )`` - Causes a sequence to wait until a sensor is active/triggered
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A sequence will not progress until a sensor has been triggered.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test
+|_| > **vpin** - id of the sensor to test
 
 |hr-dashed|
 
-``AFTER( sensor_id )`` - Causes a sequence to wait until after a sensor has been triggered
+``AFTER( vpin )`` - Causes a sequence to wait until after a sensor has been triggered
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A sequence will not progress until after a sensor has been triggered and then is off for 0.5 seconds.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test
+|_| > **vpin** - id of the sensor to test
 
 |hr-dashed|
 
@@ -1536,7 +1536,7 @@ A sequence will not progress until either a sensor is active/triggered, or if th
 If sensor activated or latched, continue. Otherwise skip to ELSE or matching ENDIF.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test
+|_| > **vpin** - id of the sensor to test
 
 See the :ref:`Condititional Statments section <exrail_conditional_statements>` for more information on IF ... ELSE ... ENDIF commands.
 
@@ -1548,7 +1548,7 @@ See the :ref:`Condititional Statments section <exrail_conditional_statements>` f
 If sensor NOT activated and NOT latched, continue. Otherwise skip to ELSE or matching ENDIF.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - id of the sensor to test
+|_| > **vpin** - id of the sensor to test
 
 See the :ref:`Condititional Statments section <exrail_conditional_statements>` for more information on IF ... ELSE ... ENDIF commands.
 
@@ -1592,7 +1592,7 @@ Waits for an analog pin to reach the specified value.
 Waits for an analog pin to go below the specified value.
 
 *Parameters:* |BR|
-|_| > **sensor_id** - analogue pin. id of the sensor to test |BR|
+|_| > **vpin** - analogue pin. id of the sensor to test |BR|
 |_| > **value** - value to test against
 
 |hr-dashed|
