@@ -250,14 +250,14 @@ Manually frees a virtual track Block, valid IDs are in the range 0 - 255.
 
 |hr-dashed|
 
-``</ LATCH sensor_id>`` - Lock sensor ON, preventing external influence
+``</ LATCH vpin>`` - Lock sensor ON, preventing external influence
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Lock sensor ON, preventing external influence, valid IDs are in the range 0 - 255.
 
 |hr-dashed|
 
-``</ UNLATCH sensor_id>`` - Unlock sensor, returning to current external state
+``</ UNLATCH vpin>`` - Unlock sensor, returning to current external state
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Unlock sensor, returning to current external state, valid IDs are in the range 0 - 255.
