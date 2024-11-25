@@ -38,6 +38,7 @@ The DCC-EX EX-CSB1 Command Station/Booster comes ready to use out of the box and
     /ex-commandstation/controllers
     /ex-commandstation/testing
     /support/ex-cs-troubleshooting
+    manual
 
 Looking for some help with your EX-CSB1?
 ========================================
