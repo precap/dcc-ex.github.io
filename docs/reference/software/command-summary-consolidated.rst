@@ -1862,6 +1862,36 @@ All sensors defined as per above are repeatedly and sequentially checked within 
 
 Depending on whether the physical sensor is acting as an "event-trigger" or a "detection-sensor", you may decide to ignore the ``<q id>`` return and only react to ``<Q id>`` triggers.
 
+|hr-dashed|
+
+``</ LATCH vpin>`` - Lock sensor ON, preventing external influence
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lock sensor ON, preventing external influence, valid IDs are in the range 0 - 255.
+
+  *Parameters:* |BR|
+  |_| > **vpin:** identifier of the Sensor (0-255)
+  
+  *Response:* |BR|
+  |_| Successful: ? |BR|
+  |_| Fail: ?
+
+|hr-dashed|
+
+``</ UNLATCH vpin>`` - Unlock sensor, returning to current external state
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Unlock sensor, returning to current external state, valid IDs are in the range 0 - 255.
+
+  *Parameters:* |BR|
+  |_| > **vpin:** identifier of the Sensor (0-255)
+  
+  *Response:* |BR|
+  |_| Successful: ? |BR|
+  |_| Fail: ?
+
+Refer to the LATCH/UNLATCH commands in the :ref:`ex-rail/ex-rail-command-reference:sensors/inputs - reading and responding` section below for further details.
+
 ----
 
 Outputs (Configuring the EX-CommandStation)
