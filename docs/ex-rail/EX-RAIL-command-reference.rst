@@ -55,7 +55,7 @@ Handy information
 
   - AUTOMATION, ROUTE, and SEQUENCE IDs
   - Turnout/Point IDs
-  - Pin IDs - Includes physical pins on the CommandStation, virtual pins (Vpins) on I/O expander modules, and virtual pins that have no physical presence
+  - Vpins - Includes physical pins on the CommandStation, virtual pins (Vpins) on I/O expander modules, and virtual pins that have no physical presence
   - Virtual block IDs as used in RESERVE/FREE
 
   Therefore, you can have an AUTOMATION, a turnout/point, a Vpin, and a virtual block all defined with the same ID without issue as these will not relate to each other. This is probably a great reason to consider aliases to avoid confusion.
@@ -813,7 +813,7 @@ Optionally be followed by an ``ELSE`` somewhere in the following commands.
 Must be followed by an ``ENDIF`` somewhere in the following commands. 
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to check |BR|
+|_| > **vpin** - vpin (or alias) of the sensor to check |BR|
 
 Also see ``IFNOT()``, ``IFRED()``, ``IFAMBER()``, ``IFGREEN()``, ``IFCLOSED()``, ``IFTHROWN()``, ``IFRANDOM()``, ``IFTTPOSITION()``, ``IFRE()``, ``IFTIMEOUT()``, ``IFGTE()``, ``IFLT()``, ``IFLOCO()``, ``IFRESERVE()``
 
@@ -828,7 +828,7 @@ Optionally be followed by an ``ELSE`` somewhere in the following commands.
 Must be followed by an ``ENDIF`` somewhere in the following commands. 
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to check |BR|
+|_| > **vpin** - vpin (or alias) of the sensor to check |BR|
 
 |hr-dashed|
 
@@ -864,7 +864,7 @@ Must be proceeded by an ``IF()`` somewhere in the preceding commands.
 Halt the execution of the current block of commands until the sensor is set.
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to check |BR|
+|_| > **vpin** - vpin (or alias) of the sensor to check |BR|
 
 |hr-dashed|
 
@@ -874,7 +874,7 @@ Halt the execution of the current block of commands until the sensor is set.
 Halt the execution of the current block of commands until the sensor is cleared.
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to check |BR|
+|_| > **vpin** - vpin (or alias) of the sensor to check |BR|
 |_| > **debounce_time** -  optional debounce time (default 500mS) |BR|
 
 ----
@@ -1001,7 +1001,7 @@ Direct use of other aspects does not affect the signal flags. ASPECT and <A> can
 Define a virtual signal, which is backed by another automation sequence
 
 *Parameters:* |BR|
-|_| > **id** - id of the virtual signal |BR|
+|_| > **id** - id (or alias) of the virtual signal |BR|
 
 |hr-dashed|
 
@@ -1011,7 +1011,7 @@ Define a virtual signal, which is backed by another automation sequence
 Test if signal is red.
 
 *Parameters:* |BR|
-|_| > **signal_id** - id of the virtual signal to test |BR|
+|_| > **signal_id** - id (or alias) of the virtual signal to test |BR|
 
 |hr-dashed|
 
@@ -1021,7 +1021,7 @@ Test if signal is red.
 Test if signal is amber
 
 *Parameters:* |BR|
-|_| > **signal_id** - id of the virtual signal to test |BR|
+|_| > **signal_id** - id (or alias) of the virtual signal to test |BR|
 
 |hr-dashed|
 
@@ -1031,7 +1031,7 @@ Test if signal is amber
 Test if signal is green
 
 *Parameters:* |BR|
-|_| > **signal_id** - id of the virtual signal to test |BR|
+|_| > **signal_id** - id (or alias) of the virtual signal to test |BR|
 
 |hr-dashed|
 
@@ -1041,7 +1041,7 @@ Test if signal is green
 Set a defined signal to GREEN (see SIGNAL).
 
 *Parameters:* |BR|
-|_| > **signal_id** - id of the virtual signal to set |BR|
+|_| > **signal_id** - id (or alias) of the virtual signal to set |BR|
 
 |hr-dashed|
 
@@ -1051,7 +1051,7 @@ Set a defined signal to GREEN (see SIGNAL).
 Set a defined signal to Amber (See SIGNAL).
 
 *Parameters:* |BR|
-|_| > **signal_id** - id of the virtual signal to set |BR|
+|_| > **signal_id** - id (or alias) of the virtual signal to set |BR|
 
 |hr-dashed|
 
@@ -1505,7 +1505,7 @@ This command causes the creation of JMRI <S> type sensors in a way that is simpl
 A sequence will not progress until a sensor has been triggered.
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to test
+|_| > **vpin** - vpin (or alias) of the sensor to test
 
 |hr-dashed|
 
@@ -1515,7 +1515,7 @@ A sequence will not progress until a sensor has been triggered.
 A sequence will not progress until after a sensor has been triggered and then is off for 0.5 seconds.
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to test
+|_| > **vpin** - vpin (or alias) of the sensor to test
 
 |hr-dashed|
 
@@ -1525,7 +1525,7 @@ A sequence will not progress until after a sensor has been triggered and then is
 A sequence will not progress until either a sensor is active/triggered, or if the timer runs out. It then continues and sets a testable "timed out" flag (see ``IFTIMEOUT``).
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to test |BR|
+|_| > **vpin** - vpin (or alias) of the sensor to test |BR|
 |_| > **timeout_ms** - time/duration to wait for in milliseconds
 
 |hr-dashed|
@@ -1536,7 +1536,7 @@ A sequence will not progress until either a sensor is active/triggered, or if th
 If sensor activated or latched, continue. Otherwise skip to ELSE or matching ENDIF.
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to test
+|_| > **vpin** - vpin (or alias) of the sensor to test
 
 See the :ref:`Condititional Statments section <exrail_conditional_statements>` for more information on IF ... ELSE ... ENDIF commands.
 
@@ -1548,7 +1548,7 @@ See the :ref:`Condititional Statments section <exrail_conditional_statements>` f
 If sensor NOT activated and NOT latched, continue. Otherwise skip to ELSE or matching ENDIF.
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to test
+|_| > **vpin** - vpin (or alias) of the sensor to test
 
 See the :ref:`Condititional Statments section <exrail_conditional_statements>` for more information on IF ... ELSE ... ENDIF commands.
 
@@ -1581,7 +1581,7 @@ Note that with the sensor commands `IF()`, `IFNOT()`, `IFTIMEOUT()`, `AT()`, `AT
 Waits for an analog pin to reach the specified value.
 
 *Parameters:* |BR|
-|_| > **vpin** - analogue pin. id of the sensor to test |BR|
+|_| > **vpin** - analogue pin. vpin (or alias) of the sensor to test |BR|
 |_| > **value** - value to test against
 
 |hr-dashed|
@@ -1592,7 +1592,7 @@ Waits for an analog pin to reach the specified value.
 Waits for an analog pin to go below the specified value.
 
 *Parameters:* |BR|
-|_| > **vpin** - analogue pin. id of the sensor to test |BR|
+|_| > **vpin** - analogue pin. vpin (or alias) of the sensor to test |BR|
 |_| > **value** - value to test against
 
 |hr-dashed|
@@ -1603,7 +1603,7 @@ Waits for an analog pin to go below the specified value.
 Test if analog pin reading is greater than or equal to value (>=).
 
 *Parameters:* |BR|
-|_| > **vpin** - analogue pin. id of the sensor to test |BR|
+|_| > **vpin** - analogue pin. vpin (or alias) of the sensor to test |BR|
 |_| > **value** - value to test against
 
 |hr-dashed|
@@ -1614,7 +1614,7 @@ Test if analog pin reading is greater than or equal to value (>=).
 Test if analog pin reading is less than value (<).
 
 *Parameters:* |BR|
-|_| > **vpin** - Analogue pin. id of the sensor to test |BR|
+|_| > **vpin** - Analogue pin. vpin (or alias) of the sensor to test |BR|
 |_| > **value** - value to test against
 
   All the `IFGTE()`, `IFLT()`, `ATGTE()`and `ATLT()` commands read the analog value from an analog input pin (A0 - A5 on an Arduino Mega) or an analog input from an I/O expander module. Valid values are defined by the capability of the analog to digital converter in use.
@@ -1658,7 +1658,7 @@ LATCH/UNLATCH can be used to maintain the state of a sensor, or can also be used
 Latches a sensor on (Sensors 0-255 only).
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to unlatch
+|_| > **vpin** - vpin (or alias) of the sensor to unlatch
 
 See UNLATCH() for examples.
 
@@ -1670,7 +1670,7 @@ See UNLATCH() for examples.
 Remove LATCH on sensor.
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to unlatch
+|_| > **vpin** - vpin (or alias) of the sensor to unlatch
 
 .. collapse:: For example: (click to show)
 
@@ -1743,7 +1743,7 @@ Note that this works for active low buttons only.
 A new event handler to perform actions when a sensor is activated. Like the other sensor triggers such as ``IF``, ``AT``, and ``AFTER``, a negative value can be used for an active high sensor.
 
 *Parameters:* |BR|
-|_| > **vpin** - id of the sensor to test
+|_| > **vpin** - vpin (or alias) of the sensor to test
 
 |force-break|
 
