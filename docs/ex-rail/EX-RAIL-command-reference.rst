@@ -1082,7 +1082,7 @@ always considered a stop.  The exact aspect codes to be used must be determined 
 Define an event handler for when a signal is set to the green aspect.
 
 *Parameters:* |BR|
-|_| > **signal_id** - id of the virtual signal to set |BR|
+|_| > **signal_id** - id (or alias) of the virtual signal to set |BR|
 
 |hr-dashed|
 
@@ -1092,7 +1092,7 @@ Define an event handler for when a signal is set to the green aspect.
 Define an event handler for when a signal is set to the amber aspect.
 
 *Parameters:* |BR|
-|_| > **signal_id** - id of the virtual signal to set |BR|
+|_| > **signal_id** - id (or alias) of the virtual signal to set |BR|
 
 |hr-dashed|
 
@@ -1102,7 +1102,7 @@ Define an event handler for when a signal is set to the amber aspect.
 Define an event handler for when a signal is set to the red aspect.
 
 *Parameters:* |BR|
-|_| > **signal_id** - id of the virtual signal to set |BR|
+|_| > **signal_id** - id (or alias) of the virtual signal to set |BR|
 
 |hr-dashed|
 
