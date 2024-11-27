@@ -48,7 +48,6 @@ Handy information
 - It's OK to use sensor IDs that have no physical item in the layout. These can only be LATCHed, tested (IF/IFNOT), or UNLATCHed in the sequences. If a sensor is latched by the sequence, it can only be unlatched by the sequence so ``AT(35) LATCH(35)`` for example, effectively latches sensor 35 on when detected once
 - All IDs used in commands and functions will be numbers, or an ALIAS name if configured
 - Most IDs simply need to be unique, however RESERVE/FREE and LATCH/UNLATCH must be in the range 0 - 255
-- Anywhere a ID or VPIN is required, an Alias or calculation can be used. (e.g. ``ALIAS_NAME + 1``) This can be useful for reference a set of related items.
 
 .. note:: 
 
