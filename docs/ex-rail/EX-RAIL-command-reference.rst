@@ -48,6 +48,7 @@ Handy information
 - It's OK to use sensor IDs that have no physical item in the layout. These can only be LATCHed, tested (IF/IFNOT), or UNLATCHed in the sequences. If a sensor is latched by the sequence, it can only be unlatched by the sequence so ``AT(35) LATCH(35)`` for example, effectively latches sensor 35 on when detected once
 - All IDs used in commands and functions will be numbers, or an ALIAS name if configured
 - Most IDs simply need to be unique, however RESERVE/FREE and LATCH/UNLATCH must be in the range 0 - 255
+- Anywhere a ID or VPIN is required, an Alias or calculation can be used. (e.g. ``ALIAS_NAME + 1``) This can be useful for reference a set of related items.
 
 .. note:: 
 
@@ -942,7 +943,7 @@ Signal Objects - Definition and Control
 Define a pin based signal, which requires three active low pins to be defined to correspond with red, amber, and green lights. Active low means they are activated when the associated pins are set to 0V or ground.
 
 *Parameters:* |BR|
-|_| > **red_pin** - vpin of the red LED |BR|
+|_| > **red_pin** - vpin of the red LED. Also defines the signal_id. |BR|
 |_| > **amber_pin** - vpin of the amber LED |BR|
 |_| > **green_pin** - vpin of the green LED |BR|
 
@@ -956,7 +957,7 @@ As above to define a pin based signal, but with active high pins instead. Active
 For both the SIGNAL/SIGNALH commands, signal colour is set using the pin defined for the red pin. If the signal only has two colours (e.g. RED/GREEN), set the unused colour's pin to 0.
 
 *Parameters:* |BR|
-|_| > **red_pin** - vpin of the red LED |BR|
+|_| > **red_pin** - vpin of the red LED. Also defines the signal_id. |BR|
 |_| > **amber_pin** - vpin of the amber LED |BR|
 |_| > **green_pin** - vpin of the green LED |BR|
 

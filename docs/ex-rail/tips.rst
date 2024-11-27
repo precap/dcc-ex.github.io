@@ -59,6 +59,18 @@ This is a simple substitution that lets you have readable names for things in yo
 
 Refer to :ref:`ex-rail/ex-rail-command-reference:aliases` for more information.
 
+Where a vpin is needed it may be convenient to define an alias to cover several pins of an iodevice to automatically and invisibly calculate a vpin for EXRAIL commands.
+e.g. add an example:
+
+.. code-block:: cpp
+   :class: code-block-float-right
+
+   ALIAS(BaseVpin,616)   // ioexpander
+   ALIAS(Platform, BaseVpin+)
+   …
+   IF(Platform 2) …      // equivalent to IF(618)
+   AT(Platform 1)….      // equivalent to AT(617) 
+
 Alias names:
 
 - **Must not** be an existing EX-RAIL command name or other reserved word.
@@ -66,7 +78,8 @@ Alias names:
 - **Must start** with letters A-Z/a-z, 0-9 or underscore _ .
 - **May then** also contain numbers.
 - **Must not** contain spaces or special characters.
-   
+- **May** end with ``+`` or  ``-``. When used the alias must be followed by a number.
+
 
 Including sub-files
 ===================
