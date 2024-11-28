@@ -26,6 +26,8 @@ Designed by the |DCC-EX| development team, the EX-CSB1 replaces up to 3 differen
    :alt: DCC-EX EX-CSB1
    :scale: 40%
 
+   EX-CSB1 CommandStation / Booster
+
 What is the EX-CSB1?
 ====================
 

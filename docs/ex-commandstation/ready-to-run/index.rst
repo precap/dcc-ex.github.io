@@ -12,9 +12,12 @@ A DCC-EX Command Station can now outperform commercial DCC command stations whic
 
 The |EX-CSB1| is the  second offering in the DCC-EX open source hardware ecosystem specifically designed for model railroaders, and is a direct result of the strong community engagement DCC-EX strives to inspire.
 
-.. image:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
+.. figure:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
    :alt: DCC-EX EX-CSB1
-   :scale: 25%
+   :align: center
+   :scale: 40%
+
+   EX-CSB1 CommandStation / Booster
 
 Features
 ========
