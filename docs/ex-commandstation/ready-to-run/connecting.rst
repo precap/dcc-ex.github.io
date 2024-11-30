@@ -61,7 +61,36 @@ The pluggable male screw terminals accept to 16 to 28 AWG/1.5mm^2 gauge solid or
 
 Using a small flat-bladed screwdriver, loosen both screws on the MAIN (A) Track Output being careful not to screw them all the way out. The screws just need to be loosened enough to fit your wires into the holes. Tighten down both screws once you have inserted the wires making sure to not overtighten. You can pull the connector out of its socket to remove it from the |EX-CSB1| to make this easier. Remember push the connector all the way into the connector on the board to snap it back in place.
 
-[insert image - screwing in wires]
+.. figure:: /_static/images/ex-csb1/csb1_insert_wire3.png
+   :alt: Inserting Track Wires
+   :scale: 40%
+   :align: center
+
+   Inserting wires
+
+.. figure:: /_static/images/ex-csb1/csb1_insert_wire4.png
+   :alt: Tightening Screws
+   :scale: 40%
+   :align: center
+   
+   Tightening Screws
+
+
+.. figure:: /_static/images/ex-csb1/csb1_insert_wire.png
+   :alt: Unplugging connector to insert wires
+   :scale: 40%
+   :align: center
+
+   Optionally unplugging connector to insert wires
+
+.. figure:: /_static/images/ex-csb1/csb1_insert_wire2.png
+   :alt: Wires properly inserted
+   :scale: 40%
+   :align: center
+   
+   Wires properly inserted and plug inserted
+
+
 
 .. NOTE:: The power connection to your track will be either wires you solder yourself to the rails or via a power connector that plugs into track (such as Kato Unitrack). We will leave it up to you to determine the proper connection to your track. 
 
@@ -75,9 +104,14 @@ USB Connection
 
 Connect the USB-C end of the USB cable to the |EX-CS|. Connect the other end to your computer or laptop on which you will run |EX-WT|.
 
-[insert image - USB plugging]
+.. figure:: /_static/images/ex-csb1/csb1_power_usb.png
+   :alt: Connecting USB cable
+   :scale: 40%
+   :align: center
+   
+   Connecting USB cable
 
-Note that 5V power is supplied with the USB connection, so the green 3.3V LED illuminate. This powers the electronics on the board for basic testing and to apply software updates, but will not power the track outputs until power is applied through the barrel jack. You do NOT need USB power for normal operation. The blue WiFi LED will also illuminate indicating the CSB1 is setup for a WiFi connection. More on wifi here XXX. And last, the display will show status information. More on this below XXX
+Note that 5V power is supplied with the USB connection, so the single green 3.3V LED illuminates (See figure). This powers the electronics on the board for basic testing and to apply software updates, but will not power the track outputs until power is applied through the barrel jack. You do NOT need USB power for normal operation. The blue WiFi LED will also illuminate indicating the CSB1 is setup for a WiFi connection. More on wifi here XXX. And last, the display will show status information. More on this below XXX
 
 Power Connection
 ------------------
@@ -107,22 +141,32 @@ Testing Your Command Station
 Connect Track Input Power
 --------------------------
 
-.. figure:: /_static/images/ex-csb1/barrel_jack1.png
-   :alt: Barrel Jack
-   :scale: 40%
-   :align: right
-
-   Inserting Power Supply Barrel Jack
-
 To fully power the CSB1, just plug your power supply into the mains power (aka wall outlet) and connect the barrel end to the Command Station. Make sure your power supply matches the needs of your setup: the voltage should be between 12V and 25V DC, depending on the scale of your locomotives, and it should provide at least 2A of current with good over-current performance and voltage stability. To get the most out of your EX-CSB1, we suggest using a modern switching power supply with 4A or more. For Z scale, 12V is usually enough, but for N, HO, and OO scales, we recommend using between 14V and 16V DC. It’s important that your DC power is well-regulated which is why we suggest a modern switch-mode power supply with double insulation and strong overload protection.
+
+.. figure:: /_static/images/ex-csb1/csb1_barrel_insert.png
+   :alt: Inserting barrel plug
+   :scale: 40%
+   :align: center
+
+   Inserting Power Supply Barrel Plug
 
 When you connect power to the CSB1, you should see one or both bright green power LEDs light up (5V and 3.3V power), confirming that the electronics are working. However, for safety, track output power will be off by default when you first plug in the EX-CSB1. This is to prevent power from accidentally being applied to your layout before everything is ready. If you prefer, you can change this default setting [link] XXX.
 
-[insert image - board power leds]
+.. figure:: /_static/images/ex-csb1/csb1_power_barrel.png
+   :alt: Barrel Power LEDs
+   :scale: 40%
+   :align: center
+
+   Barrel Plug Power LEDs
 
 You should see status information on the display including the CSB1 firmware version, track power status, free memory, and WiFi connection information. If you do not have a display, you will need to connect a serial monitor XXX [insert link]
 
-[insert image - OLED Display]
+.. figure:: /_static/images/ex-csb1/csb1_oled.png
+   :alt: OLED Status Display
+   :scale: 40%
+   :align: center
+
+   OLED Status Display
 
 The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log XXX [insert link]) after it boots so you can connect with a phone throttle. This quick start covers initial testing with USB connection to a computer, see XXX for connecting via WiFi [insert link]
 
