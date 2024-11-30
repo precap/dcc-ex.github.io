@@ -56,7 +56,7 @@ Benefits include:
 .. image:: /_static/images/ex-csb1/ti_8874.jpeg
    :alt: DCC-EX EX-CSB1
    :scale: 80%
-   :alight right
+   :align: right
 
 The EX-CSB1's robust, single-PCB design includes integrated MOSFET motor drivers from Texas Instruments, providing up to 5A peak power per track output. This allows for simultaneous operation of multiple trains with reduced power consumption and heat generation compared to traditional systems.
 
