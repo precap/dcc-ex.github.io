@@ -50,12 +50,12 @@ Track Connection
 
 There are 2 track output power connectors marked A and B. In the standard DCC-EX configuration of a CSB1, A is configured for DCC MAIN operation, and B is configured for PROG or programming track output. We recommend connecting your track to the A MAIN output initially to test your Command Station. To alter this default configuration of DCC outputs, or for DC Mode, you would need to configure outputs with a TrackManager command in the mySetup.h file or via Routes. See :doc:`the TrackManager page </trackmanager/index>`
 
-.. figure:: /_static/images/ex-csb1/pluggable_connectors.png
-   :alt: Pluggable Track Output Connectors
-   :scale: 40%
+.. figure:: /_static/images/ex-csb1/ab_outputs.png
+   :alt: Track A and B Outputs
+   :scale: 90%
    :align: center
 
-   Track Power Connectors
+   Track A and B Outputs
 
 The pluggable male screw terminals accept to 16 to 28 AWG/1.5mm^2 gauge solid or stranded wire. If you use stranded, we recommend "tinning" the ends of the wire to make a good connection and ensure that stray wire whiskers don't stray outside the screw terminals and cause a short circuit. Larger wire can handle more current and provide less resistance.  18-22 AWG is a good start. Keep your wires short by mounting the CS close to the track. See XXX for more information or wire gauge.
 
