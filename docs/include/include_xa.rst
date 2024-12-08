@@ -11,3 +11,6 @@
 .. role:: dcc-ex-red-bold-italic
 ..
 .. |I2Cxa| replace:: I\ :sup:`2`\ C
+..
+.. |_xa| unicode:: 0xA0
+  :trim:
