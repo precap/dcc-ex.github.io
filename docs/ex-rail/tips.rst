@@ -69,6 +69,23 @@ Alias names:
 - **May** end with ``+`` or  ``-``. When used the alias must be followed by a number.
 
 
+Parameters with Arithmetic
+==========================
+
+Any parameter for an EXRAIL command that takes numbers can be replaced with an c++ arithmetic calculation, as long as that calculation can be resolved at compile/load time.  (e.g.  + - * /  >> << &  | ! ~ and even ?: )
+
+This can be useful if you have a block of related IDs or VPINs and you don't wish to give each an ALIAS.
+
+.. code-block:: cpp
+   :class: code-block-float-right
+
+   ALIAS(Platform, 600)
+   ...
+   IF(Platform)
+   IF(Platform + 1)     // equivalent to IF(601)
+   IF(Platform + 2)     // equivalent to IF(602)
+ 
+
 Including sub-files
 ===================
 

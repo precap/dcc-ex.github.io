@@ -809,7 +809,10 @@ html[data-theme='dark'] .sd-card-header {
   font-size: 100% important;
 }
 html[data-theme='dark'] .rst-content code.literal, .rst-content tt.literal {
-  color: #ff6000 !important;
+  color: #f9ff00 !important;
+  font-size: 100% important;
+  border: 1px solid #333;
+  background: #141414;
 }
 
 /* general purpose */
