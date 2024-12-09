@@ -464,6 +464,10 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
   background: #6d3403 !important;
 }
 
+.rst-content .citation-reference, .rst-content .footnote-reference {
+  font-size: 70%;
+}
+
 /* *************************************** */
 
 .menuselection {
