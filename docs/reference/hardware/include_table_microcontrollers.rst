@@ -5,19 +5,19 @@
   :header-rows: 1
   :class: command-table
 
-  * - Type / Brand . . . .
-    - Recom- |BRxa| mended
-    - Supported
+  * - Type / Brand |_xa| |_xa| |_xa| |_xa| |_xa|
+    - R |BRxa| e |BRxa| c |BRxa| o |BRxa| m |BRxa| m |BRxa| e |BRxa| n |BRxa| d |BRxa| e |BRxa| d
+    - S |BRxa| u |BRxa| p |BRxa| p |BRxa| o |BRxa| r |BRxa| t |BRxa| e |BRxa| d
     - Comfort |BRxa| Level
     - Shield |BRxa| Format
-    - HAL / |BRxa| |I2Cxa|
-    - EEPROM
-    - EXRAIL |BRxa| Support
-    - Track |BRxa| Manager |BRxa| Support
-    - DC |BRxa| Support
-    - WiFi
-    - WiFi # |BRxa| Connect- |BRxa| ions [9]_
-    - Comments / Notes . . . . . . . . . . . . . . . . . . . . . . . . . . 
+    - HAL |BRxa| / |BRxa| |I2Cxa|
+    - E |BRxa| E |BRxa| P |BRxa| R |BRxa| O |BRxa| M
+    - EX- |BRxa| RAIL |BRxa| Sup- |BRxa| port
+    - Track |BRxa| Man- |BRxa| ager |BRxa| Sup- |BRxa| port
+    - D C |BRxa| Sup- |BRxa| port
+    - W |BRxa| i |BRxa| F |BRxa| i
+    - Wifi |BRxa| # |BRxa| Con- |BRxa| nect-  |BRxa| ions |BRxa| [9]_
+    - Comments / Notes |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| 
 
   * - EX-CSB1
     - Yes
@@ -83,7 +83,7 @@
     - UNO / Mega
     - No
     - Yes
-    - Limited [3]_
+    - Limit- |BRxa| ed [3]_
     - No
     - No [2]_
     - No
@@ -111,7 +111,7 @@
     - \-
     - No
     - Yes
-    - Limited [3]_
+    - Limit- |BRxa| ed [3]_
     - No
     - No [2]_
     - No
@@ -134,7 +134,7 @@
 
   * - SAMD21
     - No
-    - Deprecated [7]_ [8]_
+    - Dep- |BRxa| re- |BRxa| cat- |BRxa| ed |BRxa| [7]_ [8]_
     - Engineer
     - \-
     - Yes
@@ -148,7 +148,7 @@
 
   * - :doc:`Nano Every</reference/hardware/microcontrollers/nano-every>`
     - No
-    - Deprecated [7]_
+    - Dep- |BRxa| re- |BRxa| cat- |BRxa| ed |BRxa| [7]_
     - Engineer
     - \-
     - Yes
@@ -162,7 +162,7 @@
 
   * - :doc:`Teensy</reference/hardware/microcontrollers/teensy>`
     - No
-    - Deprecated [7]_
+    - Dep- |BRxa| re- |BRxa| cat- |BRxa| ed |BRxa| [7]_
     - Engineer
     - \-
     - Yes [5]_

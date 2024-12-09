@@ -5,18 +5,18 @@
   :header-rows: 1
   :class: command-table
 
-  * - Type / Brand . . . . . . . . .
-    - Recom- |BRxb| mended
-    - Sup- |BRxb| ported
-    - Comfort |BRxb| Level
-    - Format
-    - Stack- |BRxb| able
-    - Short |BRxb| Circuit |BRxb| Protection
-    - Current |BRxb| Sense [20]_
-    - DC |BRxb| Support
-    - No. |BRxb| Outputs |BRxb| / Tracks
-    - Max |BRxb| Amps [21]_
-    - Comments / Notes . . . . . . . . . . . . . . . . . . . . . . . . . . 
+  * - Type / Brand |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb|
+    - R |BRxb| e |BRxb| c |BRxb| o |BRxb| m |BRxb| m |BRxb| e |BRxb| n |BRxb| d |BRxb| e |BRxb| d
+    - S |BRxb| u |BRxb| p |BRxb| p |BRxb| o |BRxb| r |BRxb| t |BRxb| e |BRxb| d
+    - Com- |BRxb| fort |BRxb| Level
+    - For- |BRxb| mat
+    - S |BRxb| t |BRxb| a |BRxb| c |BRxb| k |BRxb| a |BRxb| b |BRxb| l |BRxb| e
+    - Short |BRxb| Cir- |BRxb| cuit |BRxb| Pro- |BRxb| tect- |BRxb| ion
+    - Cur- |BRxb| rent |BRxb| Sen- |BRxb| se |BRxb| [20]_
+    - DC |BRxb| Sup- |BRxb| port
+    - No. |BRxb| Out- |BRxb| puts |BRxb| / |BRxb| Tra- |BRxb| cks
+    - Max |BRxb| Amps |BRxb| [21]_
+    - Comments / Notes  |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb| |_xb|
 
   * - :doc:`DCC-EX EX-MotorShield8874 RevA</reference/hardware/motorboards/ex-motor-shield-8874>`
     - Yes
