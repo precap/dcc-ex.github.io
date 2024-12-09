@@ -80,7 +80,7 @@ This can be useful if you have a block of related IDs or VPINs and you don't wis
    :class: code-block-float-right
 
    ALIAS(Platform, 600)
-   …
+   ...
    IF(Platform)
    IF(Platform + 1)     // equivalent to IF(601)
    IF(Platform + 2)     // equivalent to IF(602)
