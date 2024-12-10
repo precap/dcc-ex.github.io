@@ -82,7 +82,7 @@ Servo control
 
 There is now support for controlling servos via the Arduino Servo library for Arduino AVR platforms (Uno, Nano, and Mega only), or via hardware PWM pins on other platforms.
 
-This enables the use of the ``<D SERVO ...>`` command, along with the ``SERVO()``, ``SERVO_TURNOUT()``, and ``SERVO_SIGNAL()`` |EX-R| commands, along with being able to define servo based turnout objects on these devices.
+This enables the use of the ``<D SERVO ...>`` command, along with the ``SERVO()``, ``SERVO_TURNOUT()``, and ``SERVO_SIGNAL()`` |EX-R| commands, along with being able to define servo based turnout/point objects on these devices.
 
 When using AVR based platforms that utilise the Servo library, the reported values for servo movements are from 544 to 2400, which is significantly different to the 100 to 400 in use by the PCA9685 servo modules. Experimentation will be required to determine the correct values for your servos. If you're familiar with the library, we use the writeMicroseconds() function. Any digital pin can be used to control servos.
 

@@ -1903,7 +1903,7 @@ Outputs (Configuring the EX-CommandStation)
     :class: in-this-section
 
 |EX-CS| supports optional OUTPUT control of any unused Arduino Pins for custom purposes. Pins can be activated or de-activated. 
-The default is to set ACTIVE pins HIGH and INACTIVE pins LOW. However, this default behavior can be inverted for any pin in which case ACTIVE=LOW and INACTIVE=HIGH.  
+The default is to set ACTIVE pins HIGH and INACTIVE pins LOW. However, this default behaviour can be inverted for any pin in which case ACTIVE=LOW and INACTIVE=HIGH.  
 
 Definitions and state (ACTIVE/INACTIVE) for pins are retained in EEPROM and restored on power-up.
 The default is to set each defined pin to active or inactive according to its restored state. 

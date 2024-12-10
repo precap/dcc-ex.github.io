@@ -3,15 +3,15 @@
 .. include:: /include/include-ex-bp.rst
 |EX-BP-LOGO|
 
-*******************************************************************************************
-Example - Full automation with servo based turnouts and signals with a PCA9685 servo module
-*******************************************************************************************
+**************************************************************************************************
+Example - Full automation with servo based turnouts/points and signals with a PCA9685 servo module
+**************************************************************************************************
 
 |tinkerer| |engineer|
 
 .. code-block:: 
 
-  // myAutomation.h for simple ROUTEs with servo based turnouts and signals, and sensors directly connected to the Mega2560.
+  // myAutomation.h for simple ROUTEs with servo based turnouts/points and signals, and sensors directly connected to the Mega2560.
 
   ALIAS(TRN1, 100)
   ALIAS(TRN2, 101)
@@ -42,7 +42,7 @@ Example - Full automation with servo based turnouts and signals with a PCA9685 s
   SERVO_SIGNAL(SIG2_TRN2_GO, 400, 250, 100)
   SERVO_SIGNAL(SIG3_STN_EX, 400, 250, 100)
 
-  // Start up with turnouts closed and signals red
+  // Start up with turnouts/points closed and signals red
   CLOSE(TRN1)
   CLOSE(TRN2)
   RED(SIG1_TRN1_APP)
