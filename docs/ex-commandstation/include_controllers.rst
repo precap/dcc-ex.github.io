@@ -2,7 +2,7 @@
 .. include:: /include/include-l1.rst
 .. include:: /include/include-throttles.rst
 
-|EX-CS-LOGO| |support-button| 
+|EX-CS-LOGO|
 
 *********************************
 Choosing a Throttle (Controller)
