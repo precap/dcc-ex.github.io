@@ -1,5 +1,5 @@
 .. include:: /include/include.rst
-.. include:: /include/include-l2.rst
+.. include:: /include/include-l1.rst
 .. include:: /include/include-ex-cs.rst
 .. meta::
    :keywords: EX-Installer
@@ -338,7 +338,7 @@ To proceed, click the :guilabel:`Load` button.
 Results are shown in the lower half of the screen.
 
 
-If there are **no errors**, you can proceed to :doc:`testing your setup <controllers>`.
+If there are **no errors**, you can proceed to :doc:`testing your setup </ex-commandstation/controllers-diy>`.
 
 If there **are errors** or you are having difficulties check the :doc:`/support/ex-cs-troubleshooting` page for assistance.
 
@@ -354,6 +354,6 @@ Next Steps - Selecting a Throttle (Controller)
    
    The programming track is for programming only. Make sure you are on the main track if you expect your loco to move or respond to light or sound commands.
 
-Click :doc:`here <controllers>` or click the "next" button to learn how to select a throttle (controller) suitable to test and use your |EX-CS|.
+Click :doc:`here </ex-commandstation/controllers-diy>` or click the "next" button to learn how to select a throttle (controller) suitable to test and use your |EX-CS|.
 
 |force-break|

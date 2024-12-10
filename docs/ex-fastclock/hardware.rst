@@ -31,7 +31,7 @@ The software for the |EX-FC| can be found in the |EX-FC| repository in the |DCC-
 ToDo
 ====
 
-Add a more detailed description here
+.. todo:: LOW - Add a more detailed description here
 
 Next Steps
 ==========

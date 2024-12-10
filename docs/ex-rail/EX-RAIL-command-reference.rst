@@ -766,7 +766,7 @@ See :ref:`ex-rail/examples:Multiple inter-connected trains` for good examples.
 ``RANDWAIT( ??? )`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO: RANDWAIT
+.. todo: LOW - EXRAIL doco - RANDWAIT
 
 *Parameters:* |BR|
 |_| > **???** - ??? |BR|
@@ -1978,7 +1978,7 @@ LATCH/UNLATCH can be used to maintain the state of a sensor, or can also be used
 ``ATTIMOUT1 ( vpin, value )`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: ATTIMEOUT1
+.. todo: LOW - EXRAIL doco - ATTIMEOUT1
 
 Waits for ???.
 
@@ -1993,7 +1993,7 @@ Waits for ???.
 ``ATTIMOUT2 ( vpin, value )`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: ATTIMEOUT2
+.. todo: LOW - EXRAIL doco - ATTIMEOUT2
 
 Waits for ???.
 
@@ -2009,7 +2009,7 @@ Waits for ???.
 ``DRIVE ( vpin )`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: DRIVE
+.. todo: MEDIUM - EXRAIL doco - DRIVE
 
 ???
 
@@ -2279,7 +2279,7 @@ Controls the colour of one attached Neopixel LED
 
 |NEW-IN-V5-4-LOGO-SMALL|
 
-.. todo:: ANOUT
+.. todo: LOW - EXRAIL doco - ANOUT
 
 
 *Parameters:* |BR|
@@ -2553,7 +2553,7 @@ Sends a DCC accessory packet with value 0 to a linear address
 ``DCCACTIVATE( addr, sub_addr )`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: DCCACTIVTE
+.. todo: LOW - EXRAIL doco - DCCACTIVTE
 
 *Parameters:* |BR|
 |_| > **addr** - DCC address ??? |BR|
@@ -2624,7 +2624,7 @@ Also refer to :ref:`ex-fastclock/cs-commands:controlling ex-rail by time`.
 ``ONTIME( value )`` - Event handler for when the specified time is reached
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: ONTIME
+.. todo: MEDIUM - EXRAIL doco - ONTIME
 
 Event handler for when the specified time is reached
 
@@ -3363,7 +3363,7 @@ Disconnect PROG output from MAIN output.
 ``ENDEXRAIL`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: ENDEXRAIL
+.. todo: LOW - EXRAIL doco - ENDEXRAIL
 
 *Parameters:* |BR|
 |_| > none
@@ -3437,7 +3437,7 @@ The following commands have been introduced to support Layout Command Control (L
 ``ONLCC(sender, eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: ONLCC
+.. todo:: LOW - EXRAIL doco - ONLCC
 
 *Parameters:* |BR|
 |_| > **sender** - TBA |BR|
@@ -3450,7 +3450,7 @@ The following commands have been introduced to support Layout Command Control (L
 ``LCC(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: LCC
+.. todo:: LOW - EXRAIL doco - LCC
 
 *Parameters:* |BR|
 |_| > **eventid** - TBA
@@ -3462,7 +3462,7 @@ The following commands have been introduced to support Layout Command Control (L
 ``LCCX(senderid,eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: LCCX
+.. todo:: LOW - EXRAIL doco - LCCX
 
 *Parameters:* |BR|
 |_| > **senderid** - TBA |BR|
@@ -3475,7 +3475,7 @@ The following commands have been introduced to support Layout Command Control (L
 ``ACON(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: ACON
+.. todo:: LOW - EXRAIL doco - ACON
 
 *Parameters:* |BR|
 |_| > **eventid** - TBA
@@ -3487,7 +3487,7 @@ The following commands have been introduced to support Layout Command Control (L
 ``ACOF(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: ACOF
+.. todo:: LOW - EXRAIL doco - ACOF
 
 *Parameters:* |BR|
 |_| > **eventid** - TBA
@@ -3499,7 +3499,7 @@ The following commands have been introduced to support Layout Command Control (L
 ``ONACON(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: OACON
+.. todo:: LOW - EXRAIL doco - OACON
 
 *Parameters:* |BR|
 |_| > **eventid** - TBA
@@ -3511,7 +3511,7 @@ The following commands have been introduced to support Layout Command Control (L
 ``ONACOF(eventid)`` - TBA
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: ONACOF
+.. todo:: LOW - EXRAIL doco - ONACOF
 
 *Parameters:* |BR|
 |_| > **eventid** - TBA
