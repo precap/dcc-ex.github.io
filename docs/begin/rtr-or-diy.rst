@@ -22,10 +22,13 @@ First some quick definitions. EX-CommandStation is 2 things. It is the name of o
 
 An |EX-CS| is a simple, but powerful, DCC and DC Command Station which you can purchase ready-to-run or assemble yourself from widely available parts. It supports much of the NMRA Digital Command Control (DCC) standards, including:
 
-.. image:: /_static/images/wifi/wangtongze_jumpered.png
+
+.. figure:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
    :alt: EX-CommandStation
-   :scale: 15%
+   :scale: 25%
    :align: right
+
+   R2R EX-CSB1 Command Station / Booster
 
 * Simultaneous control of multiple locomotives
 * Control of all cab functions (F0-F28 and F29-F68)
@@ -35,11 +38,21 @@ An |EX-CS| is a simple, but powerful, DCC and DC Command Station which you can p
 
 It includes advanced features such as:
 
+.. figure:: /_static/images/wifi/wangtongze_jumpered.png
+   :alt: EX-CommandStation
+   :scale: 14%
+   :align: right
+
+   DIY EX-CommandStation
+
 * A |WiThrottle Server| implementation for instant compatibility with popular throttles 
 * General purpose inputs and outputs (I/O) for extensibility
 * I2C bus for controlling accessories with I2C capability 
 * |JMRI| integration
 * |EX-R| Automation and Animation scripting that can control everything on your layout, including the locos
+
+   Do-It-Yourself EX-CommandStation
+
 
 It includes advanced features such as:
 

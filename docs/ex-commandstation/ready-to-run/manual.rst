@@ -1,5 +1,3 @@
-:orphan:
-
 .. include:: /include/include.rst
 .. include:: /include/include-l1.rst
 .. include:: /include/include-ex-cs.rst
@@ -8,91 +6,9 @@
 
 .. index:: EXCSB1, EX-CSB1
 
-******************
-|EX-CSB1|
-******************
-
-|conductor| |tinkerer| |engineer| |support-button|
-
-.. sidebar::
-
-  .. contents:: On this page
-    :depth: 1
-    :local:
-
-Designed by the |DCC-EX| development team, the EX-CSB1 replaces up to 3 different stacked Arduino boards to provide a complete, expandible DCC and DC PWM command station or booster with dual 5A track outputs, integrated programming track capability, and built-in fast WiFi for throttle control connections.
-
-.. figure:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
-   :alt: DCC-EX EX-CSB1
-   :scale: 40%
-
-   EX-CSB1 CommandStation / Booster
-
-What is the EX-CSB1?
-====================
-
-The |EX-CSB1| is the first fully integrated DCC Command Station with DC PWM and Booster mode capabilities developed by the DCC-EX Team. This versatile board can function as a complete Command Station with USB or WiFi connectivity or serve as a stand-alone booster, making it an ideal addition to any layout, including those using non-DCC-EX systems.
-
-Key Features:
-  * All-in-one DCC Command Station/Booster: Compatible with DCC and capable of PWM DC output
-  * Built-in Fast WiFi: Supports up to 10 simultaneous throttle connections, expandable with JMRI
-  * Advanced Hardware: Utilizes an ESP32 microcontroller with dual DCC or PWM DC 5A outputs, including variable current limit control
-  * Expandable Outputs: Can accept a DCC-EX EX-MotorShield8874 for two additional DCC/DC PWM outputs, providing power to four total districts. Multiple EX-CSB1s can be added as boosters around the layout.
-  * Protection & Safety: Software programmable over-current protection, and hardware over-current, over-temperature and reverse voltage protection
-  * Versatile Power Supply: Operates with a single 12V to 25V power supply that powers the entire system
-  * USB-C Interface: For easy software updates, connection to EX-WebThrottle or JMRI, and logging/debugging
-  * Accessory Support: Qwiic/STEMMA QT 3.3V, compatible I2C connector and extra I2C pin headers for all your accessories
-  * Pre-Installed with DCC-EX Command Station Software from most suppliers
-  * Auto-Reverser capability assignable to each DCC output independently
-  * RailSync DCC input for automatic booster mode engagement under software control (EX-RAIL)
-  * OLED Display: Bundled graphical display for status and diagnostics, with support for additional displays
-
-Benefits include: 
-  * Ready-To-Run: Pre-assembled, with no need for additional assembly or configuration
-  * Enhanced Performance: Faster WiFi than an ESP8266 with support for double the number of connections, faster processor, and a great deal more memory than an Arduino Mega for complex EXRAIL automation/animation scripts
-  * Efficient Power Usage: Less voltage drop, ensuring more power reaches the track
-  * Flexible Output Management (TrackManager :sup:`tm` support): Dynamically assign outputs to different modes (DC/DCC/PROG/Auto-Reverse), with proper NMRA current limits
-
-.. image:: /_static/images/ex-csb1/ti_8874.jpeg
-   :alt: DCC-EX EX-CSB1
-   :scale: 80%
-   :align: right
-
-The EX-CSB1's robust, single-PCB design includes integrated MOSFET motor drivers from Texas Instruments, providing up to 5A peak power per track output. This allows for simultaneous operation of multiple trains with reduced power consumption and heat generation compared to traditional systems.
-
-With its dual role as a command station or booster, the EX-CSB1 can be strategically placed around a layout, seamlessly switching to booster mode upon detecting a RailSync input signal. This feature is particularly useful for modular layouts, ensuring smooth operation across different sections once joined together and slaved to a master DCC signal. Distributing power around the layout also reduces the cost of heavy copper lines to carry the DCC signal that would otherwise be needed with centralised power.
-
-XXX [Insert Image - 8874 stacked on CSB1]
-
-An additional DCC-EX EX-MotorShield 8874 can be inserted onto the command station board to provide two more DCC or PWM DC outputs with the same performance characteristics and output mode flexibility.
-
-The system includes comprehensive protection features such as reverse polarity protection, hardware and software overcurrent protection, overvoltage protection, and thermal protection. It also provides clear status indications via LEDs for microcontroller power, track input supply, track output power per output channel, DCC/DC mode indication and direction for DC mode, and WiFi connection status.
-
-The |EX-CSB1|'s built-in EXRAIL layout Animation and Automation capabilities enable advanced control of layout operations, including crossing controls, signal management, automated train routing, layout lighting control, and much more whilst being much simpler to learn than Arduino C++ programming.
-
-
-Why did we make it?
-====================
-
-After the success of our EX-CommandStation software and then the EX-MotorShield8874, which allowed modellers to build their own setups, we realized there was a need for something even simpler. The DCC-EX Team wanted to create a solution that would appeal to a wider range of modellers, especially those who might not feel as confident with the electronics and software or those who just prefer to spend time enjoying their layouts instead of tinkering with tech.
-
-We wanted to keep the sense of accomplishment that comes with a DIY project, but make it much easier, smaller, and more "plug-and-play". After all, most of us would rather focus on running our trains than on troubleshooting wiring or connections. Whether you consider yourself a Conductor, Tinkerer, or Engineer, you might appreciate an all-in-one solution that saves time and space, and reduces complexity. So we asked ourselves, "What features would the ideal entry-level yet expandible command station have?". And that's how the |EX-CSB1| was born.
-
-How can I get one?
-==================
-
-Units may be purchased from the following sources:
-
-* In Australia, New Zealand and Asia-Pacific from `Millennium Engineering Pty Ltd <https://www.milleng.com.au>`_
-* In Europe from `Semify's Web Store <https://www.semify-eda.com/ex-motorshield8874/>`_ (based in Austria)
-* In the US from the `DCC-EX Store <https://store.dcc-ex.com/>`_ or...
-* from `Smart Hobby, LLC <https://www.smarthobbyllc.com/>`_. You can also find Smart Hobby on Facebook
-* In the UK from `Chesterfield Model Making & Miniature Electronics <https://chesterfield-models.co.uk/product/semify-dcc-ex-motor-shield/>`_
-* and other manufacturers licensed by DCC-EX.
-
-The EX-CSB1 Command Stations normally come with an OLED status display and a carrier base mount (sometimes called a "sled") or case depending on supplier. There are different options for the board such as with or without an additional EX-MotorShield8874 for two additional DCC/PWM DC outputs. Prices start from around $129-$149 in the US without and with a power supply, to approximately £98 in the UK, €115 in Europe, and in Australia starting from $AU190. Prices typically do not include tax and shipping. 
-
-`Click here for ordering in quantity of if you wish to become a reseller <Ordering in Quantity or wishing to Resell>`_.
+***************************************
+EX-CSB1 Operating Manual
+***************************************
 
 Board layout
 ==============
@@ -125,7 +41,7 @@ Board layout
 **Track A and B Outputs** - These are female pluggable terminals that accept a removable male screw terminal plug (included with your CSB1). Using the removable connectors allows for easy reconfiguration, testing, and placement of your command station. You can unsolder these connectors (or ask for a special order) and replace them with 3.5mm pitch screw terminals if you prefer. For DCC operation, output A is usually the MAIN track and output B is the programming track. However, with our TrackManager :sup:`tm` feature, you can configure any output to be DCC, DC, MAIN, or PROG. You should keep the phase of the tracks aligned, so if a train crosses from one power district to another it doesn't intentionally cause a short (unless it's a reversing loop and you have assigned that output to have Auto-Reverse capability.) See: :doc:`/ex-installer/managing-config-files`. Power to each output can be controlled together or individually. Correct wired gauge for the screw terminals is 16 to 28AWG (1.5mm^2). Be sure your wire gauge can handle the current you expect on the track.
 
 .. image:: /_static/images/ex-csb1/track_output_leds.png
-   :alt: Pluggable Track Output Connectors
+   :alt: Track Output LEDs
    :scale: 70%
    :align: right
 
@@ -233,7 +149,6 @@ Board layout
 
 
 
-
 Powering the EX-CSB1
 =====================
 
@@ -255,9 +170,9 @@ To power up the CSB1, just plug your power supply into the mains power (aka wall
 
    12V/3A Power Supply
 
-Don't worry if your power supply offers more amps than you need. While too much voltage can be harmful, extra current isn't a problem since the CSB1 will only use as much as it needs. In fact, it's better to have a bit more current than too little. However, remember that both voltage and current can be dangerous if not handled properly. The barrel connector helps add some safety, but be cautious—if, for example, a metal tool accidentally touches the terminals of a high-powered supply, it could cause a short circuit.
+.. NOTE:: Your power supply can be rated at *or above* the specified Amperage rating. You must not exceed the voltage rating of your device, but a little extra current is ok, since the CSB1 will only use as much as it needs. However, remember that both voltage and current can be dangerous.
 
-For more details on how much current do I need, see [link] XXX
+.. For more details on how much current do I need, see [link] XXX
 
 When you connect power to the CSB1, you should see one or both bright green power LEDs light up, confirming that the electronics are working. However, for safety, track power will be off by default when you first plug in the EX-CSB1. This is to prevent power from accidentally being applied to your layout before everything is ready. If you prefer, you can change this default setting [link] XXX.
 
@@ -287,9 +202,9 @@ What you will need
 * 16 to 28AWG/1.5mm^2 Wire
 * Jeweller's flat bladed screwdriver (1.5 - 2mm blade)
 * A laptop or other computer*
-* A USB cable*
+* A USB cable with one end a USB-C for the EX-CSB1, and the other to suit your PC*
 
- \*Optional for connecting connecting to a computer
+ \*Optional for connecting connecting to a computer for WebThrottle, JMRI and to reload |EX-CS|
 
 Start with all power disconnected
 ----------------------------------
@@ -308,7 +223,7 @@ For DC operation, polarity does matter. One rail is positive, and the other is n
 DCC Operation
 ---------------
 
-The EX-CSB1 is set to operate in DCC mode by default. If you want to switch to DC mode, you can find instructions on how to do that here XXX [link]
+The EX-CSB1 is set to operate in DCC mode by default. If you want to switch to any of the outputs to DC mode, you can find instructions on how to do that here :doc:`TrackManager page </trackmanager/index>`
 
 DC Operation
 -------------
@@ -362,7 +277,7 @@ XXX figure link showing WiFi LED
 Connecting a Throttle
 ----------------------
 
-XXX suggest we cater for both Wifi and WebThrottle with just a link to a generic page... such as https://dcc-ex.com/throttles/software/index.html#gsc.tab=0 which we may need to make more generic?? XXX
+You can connect to the EX-CSB1 using both an app via Wifi on a smartphone or tablet, and on a PC using WebThrottle with the PC plugged into the EX-CSB1's USB-C port. Detailed instructions are here https://dcc-ex.com/ex-commandstation/controllers.html#choosing-a-throttle-controller
 
 
 Connecting via Wifi
@@ -374,7 +289,7 @@ Please connect your smartphone or tablet where you previously installed Engine D
 
 XXX figure image of phone logging in to the AP
 
-::NOTE: Note too that some smart phones and tablets will try hard to only connect you to a WiFi network that has Internet access, and you may be asked if you really want to connect to a WiFi network without it. For the sake of getting up and running quickly, just dismiss such queries. In the next section we show you how to reconfigure the EX-CSB1 to join your home or layout WiFi network should you prefer it.
+ .. NOTE:: Note too that some smart phones and tablets will try hard to only connect you to a WiFi network that has Internet access, and you may be asked if you really want to connect to a WiFi network without it. For the sake of getting up and running quickly, just dismiss such queries. In the next section we show you how to reconfigure the EX-CSB1 to join your home or layout WiFi network should you prefer it.
 
 Connecting Via USB and EX-WebThrottle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -387,187 +302,3 @@ Use TrackManager to Set Outputs to DCC or DC Operation
 XXX why is this restated?? (See somewhere above)
 
 Our Trackmanager technology allows you to configure any of 4 outputs to be DCC MAIN, DCC PROG, or DC PWM in order to run DCC or DC locos. 2 outputs are included with the EX-CSB1 with 2 more available with the purchase of an EX-MotorShield 8874 that just stacks on top. By default, output A is configured as a DCC MAIN track and output B is configured as a DCC PROG Programming track. You can dynamically change the configuration using throttles (such as |EX-WT|, |JMRI|, or |Engine Driver|) or you can configure your CSB1 to always start in your desired configuration. Note that one of the outputs can be configured in such a way that it is another MAIN power district that automatically switches to programming mode when a programming command is issued by your throttle and then automatically switches back to MAIN. XXX have this be a NOTE? See a detailed TM section?
-
-
-Upgrading the Software
-=========================
-
-XXX - any reason you didn't you just copy my very carefully written Getting Started Guide content here??? PMA
-
-The EX-CSB1 comes preloaded with the Command Station software, so you can start using it right out of the box. However, if you wish to customize its configuration or update the software, you can easily do so by connecting the EX-CSB1 to your computer via USB. Follow these steps to make any changes you need:
-
-Step 1: Connect the EX-CSB1 to Your Computer
-Locate the USB Port: Find the USB-C port on your EX-CSB1.
-Use a Compatible USB Cable: Grab a USB-C cable that matches the port on your PC or laptop. This will likely be a USB-A to USB-C cable for older PCs and laptops, or a USB-C to USB-C for more modern PCs and laptops.
-Plug It In: Connect one end of the USB cable to the EX-CSB1 and the other end to an available USB port on your computer.
-
-Step 2: Install the Required USB Drivers
-Automatic Installation: In many cases, your computer will automatically recognize the EX-CSB1 and install the necessary USB serial drivers.
-Manual Installation: just link to the CH340 content we already have?? XXX
-
-If the drivers do not install automatically, you may need to download them from the official website. Follow the instructions provided on the site to complete the installation.
-
-Step 3: Access or Update the Command Station Software
-Open the Software: Since the EX-CSB1 comes preloaded with the Command Station software, you can access it directly by launching the program on your computer after connecting the EX-CSB1.
-Download the Latest Version (Optional): If you want to update to the latest software version, visit the official DCC-EX website and download it. Open the installer and follow the on-screen instructions.
-Modify the Configuration: The software allows you to customize the EX-CSB1’s configuration to suit your specific needs. Use the setup wizard or manual settings within the software to make any changes.
-
-Step 4: Verify the Connection
-Open the Command Station Software: Once the software is updated or if you’re making adjustments, launch it from your desktop or start menu.
-Check the Connection: The software should automatically detect the EX-CSB1. If it doesn’t, ensure that your USB cable is securely connected and try again.
-
-Step 5: Start Using or Customizing Your Command Station
-With the EX-CSB1 connected, you’re ready to start using it or making any necessary adjustments to the configuration. Explore the features and tailor the settings to optimize your model railway experience.
-
-Changing the Configuration
-============================
-
-XXX - see my Getting Started Guide content?? PMA
-
-Uploading EXRAIL Scripts
-==========================
-
-XXX - generic link here?
-
-Resetting the CS
-=================
-
-XXX - what do you mean here??
-
-Soft Reset Recovery
---------------------
-
-Factory Reset
--------------
-
-XXX - no need? Just specify the "default" settings needed for EX-Installer??? PMA
-
-If you need to reset your EX-CSB1 Command Station software to its default settings, you'll need to reinstall the software. This process will overwrite your current configuration with the original default settings. Follow these steps to reset the software:
-
-Step 1: Disconnect Power
-Before you begin, make sure the Command Station is powered off. Unplug the power supply from the wall or disconnect the barrel connector from the CSB1. This ensures that the system is completely powered down before the reset process.
-
-Step 2: Connect to Your Computer via USB
-Locate the USB Port: Find the USB port on your EX-CSB1.
-Use a Compatible USB Cable: Connect the CSB1 to your computer using the appropriate USB cable.
-Power On: Plug the power supply back in or reconnect the barrel connector to power on the CSB1.
-
-Step 3: Download the Latest Installer
-Visit the DCC-EX Website: Go to the official DCC-EX website and download the latest version of the Command Station software installer.
-Save the Installer: Save the installer file to a location on your computer where you can easily access it.
-
-Step 4: Run the Installer
-Open the Installer: Locate the downloaded installer file on your computer and double-click to run it.
-Follow the On-Screen Instructions: The installer will guide you through the reinstallation process. During this process, the existing software on the EX-CSB1 will be overwritten with the default settings.
-Complete the Installation: Allow the installer to complete the process. Once done, the software will be reset to its original configuration.
-
-Step 5: Verify the Reset
-Launch the Command Station Software: After the installation is complete, open the Command Station software to ensure it’s running correctly with the default settings.
-Check the Configuration: Confirm that the software has been reset by checking the basic settings and making sure they match the defaults.
-
-Step 6: Reconfigure if Necessary
-Customize Settings: If you need to adjust the settings to suit your layout, you can now do so within the software.
-Test Your Setup: Power up your layout and test the system to ensure everything is working as expected.
-
-
-
-USB Connection to a Serial Monitor
-===================================
-
-XXX - NOOOOO... can we not do this using **just** EX-Installer's Device Monitor?? 
-
-Using the appropriate USB-A to USB-C or USB-C to USB-C cable, you can use the Arduino IDE, EX-WebThrottle, or JMRI to act as a serial monitor to view diagnostic messages from the Command Station or send manual commands for testing or configuration.
-
-USB Connection to JMRI
-=======================
-
-Integrated displays
-====================
-
-Connecting Accessories (I2C)
-=============================
-
-The EX-CSB1 Command Station allows you to expand your model railway setup by connecting various I2C accessories such as sensors, displays, and GPIO expanders. Using the DCC-EX |EX-I| and additional tools, you can easily configure these accessories to work with your layout.
-
-Step 1: Selecting I2C Accessories
------------------------------------
-Choose Compatible Accessories:
-Common I2C accessories include displays (e.g., OLED, LCD), sensors (e.g., temperature, distance), and GPIO expanders.
-Ensure your accessories are compatible with I2C and check the DCC-EX website for supported devices.
-
-Step 2: Connecting Accessories to EX-CSB1
-------------------------------------------
-Locate the I2C Ports:
-Use the "I2C x 2" ports for general I2C devices.
-Use the "OLED I2C" port if you're connecting an OLED display.
-Wiring the Devices:
-SDA (Data Line): Connect the SDA pin on your accessory to the SDA pin on the EX-CSB1.
-SCL (Clock Line): Connect the SCL pin on your accessory to the SCL pin on the EX-CSB1.
-Power: Depending on your device’s requirements, connect the VCC pin to either 3.3V or 5V on the EX-CSB1. Connect the GND pin to GND.
-Daisy-Chaining Multiple Devices: If connecting more than one I2C device, ensure each has a unique I2C address, which can be set via jumpers or configuration switches.
-
-Step 3: Installing and Running the DCC-EX Installer
------------------------------------------------------
-Download and Install:
-
-Visit the DCC-EX Installer page to download the latest version.
-Follow the on-screen instructions to install the software on your computer.
-Run the Installer:
-
-Connect your EX-CSB1 to your computer via USB.
-Open the DCC-EX Installer. The installer will guide you through the initial setup, including basic configurations like setting up I2C displays.
-Configuring I2C Displays:
-
-The installer will allow you to configure connected displays (such as OLED or LCD) directly during the setup process.
-For other I2C devices, further configuration may require manual adjustments using the DCC-EX CommandStation software or editing configuration files.
-
-Step 4: Manual Configuration for Advanced Accessories
-------------------------------------------------------
-Access the CommandStation Software:
-
-For advanced I2C accessories like sensors or GPIO expanders, you may need to manually configure them via the DCC-EX CommandStation software.
-This involves accessing configuration files or using a serial monitor to input specific commands.
-Editing Configuration Files:
-
-If necessary, open the configuration files provided with the DCC-EX software to manually add and configure your I2C devices. Instructions for this can be found on the DCC-EX documentation pages.
-Save and Apply Settings:
-
-After configuring your devices, ensure you save and apply your settings through the CommandStation software.
-Step 5: Testing and Troubleshooting
-Test Your Setup:
-
-Once configured, power on your layout and check if the I2C devices are functioning correctly.
-Use the diagnostics tools provided by the DCC-EX software to troubleshoot any issues.
-Troubleshooting Common Issues:
-
-Double-check wiring connections and I2C addresses.
-If issues persist, refer to the troubleshooting guides on the DCC-EX website.
-Additional Resources
-For more detailed instructions and support, refer to these resources:
-
-XXX are these main headings or subheadings of what is above?
-
-Adding an EX-MotorShield 8874
-===============================
-
-You can and an |EX-MS| to provide an additional 2 outputs. You may want to do this if you want to split your DCC layout into separate power districts or if running DC PWM, create up to 4 blocks before you need to add a booster. XXX more detail here?
-
-
-DCC-EX I2C Hardware Overview
-=============================
-
-Using the EX-CommandStation Software
-=====================================
-
-DCC-EX Installer Guide
-========================
-
-Connecting and Configuring I2C Displays
-========================================
-
-Ordering in Quantity or wishing to Resell
-==========================================
-
-For quantities of 10 or less per year, you may utilize a PCB manufacturing and assembly service such as JLCPCB without licensing fees. A donation to DCC-EX would be appreciated, so click the DONATE button! The production files are available on the `DCC-EX GitHub <https://github.com/DCC-EX/EX-Motorshield8874>`_. XXX include donate button on the page
-
-Entrepreneurs wanting to use the design to offer commercial quantities to their local communities should contact DCC-EX (sales @ dcc-ex.com) to arrange a bulk purchase or a license to manufacture. Licensing includes donating a royalty to DCC-EX per board sold.

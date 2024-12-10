@@ -14,10 +14,12 @@ What is EX-CommandStation?
 
 |EX-CS| is simple, but powerful, DCC, and DC, Command Station software which runs on the |EX-CSB1| or on hardware that you can assemble yourself made using widely available Arduino or ESPDuino32 boards. It supports much of the NMRA Digital Command Control (DCC) standards, including:
 
-.. image:: /_static/images/wifi/wangtongze_jumpered.png
+.. figure:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
    :alt: EX-CommandStation
-   :scale: 15%
+   :scale: 25%
    :align: right
+
+   R2R EX-CSB1 Command Station / Booster
    
 * Simultaneous control of multiple locomotives and their functions
 * Control of accessory/function decoders
@@ -25,6 +27,13 @@ What is EX-CommandStation?
 * Programming on Main Track
 
 It includes advanced features such as:
+
+.. figure:: /_static/images/wifi/wangtongze_jumpered.png
+   :alt: EX-CommandStation
+   :scale: 14%
+   :align: right
+
+   DIY EX-CommandStation
 
 * A |WiThrottle Server| implementation for instant compatibility with popular throttles 
 * General purpose inputs and outputs (I/O) for extensibility
