@@ -36,14 +36,28 @@ Board Layout
 
    EX-CSB1 top (click image to enlarge it)
 
+.. note::
 
-Connections
-=====================
+   Start with all power disconnected!! Before connecting any wires to your command station or tracks, make sure you have unplugged the power supply from the wall or removed the barrel connector from the command station. It is crucial to ensure that the command station has no power while you are working on your connections.
 
-Start with all power disconnected
-----------------------------------
+Summary or Super-Quick Start
+============================
 
-Before connecting any wires to your command station or tracks, make sure you have unplugged the power supply from the wall or removed the barrel connector from the command station. It is crucial to ensure that the command station has no power while you are working on your connections.
+In summary, you need just two basic wiring connections to the EX-CSB1 to be up and running trains:
+
+* Track connected to Track A Output
+* Power supply input connected to Power IN DC barrel jack
+
+And to connect via WiFi to the EX-CSB1 you need a wireless smart device running either:
+
+* Engine Driver or EX-ToolBox for Android
+* WiThrottle for Apple iOS
+
+Connecting to the EX-CSB1 via WiFi:
+
+* Select the WiFi network named DCCEX_xxxxxx, and use the corresponding password PASS_xxxxxx (where xxxxxx is identical in each case) shown on your EX-CSB1's OLED display
+* Tell your smart device not to worry about there being no Internet connection
+* Launch throttle app, which should connect automatically
 
 Track Connection
 -----------------
