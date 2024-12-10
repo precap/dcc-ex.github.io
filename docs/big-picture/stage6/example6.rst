@@ -3,15 +3,15 @@
 .. include:: /include/include-ex-bp.rst
 |EX-BP-LOGO|
 
-********************************************************************************************
-Example - Full automation with pin based turnouts and signals on MCP23017 I/O expander Vpins
-********************************************************************************************
+***************************************************************************************************
+Example - Full automation with pin based turnouts/points and signals on MCP23017 I/O expander Vpins
+***************************************************************************************************
 
 |tinkerer| |engineer|
 
 .. code-block:: 
 
-  // myAutomation.h for SEQUENCEs with pin based turnouts, sensors, and signals via MCP23017 I/O expander Vpins.
+  // myAutomation.h for SEQUENCEs with pin based turnouts/points, sensors, and signals via MCP23017 I/O expander Vpins.
 
   // Define our aliases:
   ALIAS(TRN1, 100)
@@ -44,7 +44,7 @@ Example - Full automation with pin based turnouts and signals on MCP23017 I/O ex
   SIGNAL(SIG2_TRN2_GO, 176, 177)
   SIGNAL(SIG3_STN_EX, 179, 180)
 
-  // Start up with turnouts closed and signals red
+  // Start up with turnouts/points closed and signals red
   CLOSE(TRN1)
   CLOSE(TRN2)
   RED(SIG1_TRN1_APP)

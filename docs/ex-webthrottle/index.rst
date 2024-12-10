@@ -37,9 +37,9 @@ What you need to run EX-WebThrottle
 
 You don't need anything else to test it out and to run in emulator mode, just run it and play. To use it to run real trains you will need:
 
-* An Arduino Mega or Uno Microcontroller
-* An Arduino Motor Control Shield
-* The |EX-CS| software loaded on your Arduino
+* An |EX-CSB1|, |BR| or 
+* DIY |EX-CS| based on a Arduino Mega, Arduino Uno, or other compatible microcontroller with a compatible Motor Shield/Board
+* Plus the |EX-CS| software already loaded
 
 Getting started
 ===============
@@ -56,7 +56,7 @@ To get started, connect your |EX-CS| to a computer that has a USB port and which
 Run or Install EX-WebThrottle
 =============================
 
-You have an option for how you would like to run |EX-WT|, from the cloud or installed locally on your machine. We recommend using it from the cloud or as a web app, but the choice is yours.
+You have an option for how you would like to run |EX-WT|, from the cloud or installed locally on your machine. We recommend using it from the cloud but the choice is yours.
 
 Run it now (Run from the cloud)
 ===============================

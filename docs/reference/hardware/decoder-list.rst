@@ -83,7 +83,7 @@ Note to manufacturers: This list is not designed in any way to disparage or favo
     - JST-9
     - Default
     - 3
-    - | I have noticed that these decoders switch on the rear light at power on with no commands, which can be a useful behavior for troubleshooting. They run nicely as installed. The learning curve I had on the 1st was entirely using DCC-EX + JMRI to configure them, additional installations and changes have been smooth.
+    - | I have noticed that these decoders switch on the rear light at power on with no commands, which can be a useful behaviour for troubleshooting. They run nicely as installed. The learning curve I had on the 1st was entirely using DCC-EX + JMRI to configure them, additional installations and changes have been smooth.
       | DH126D is meant to be an economy decoder with fewer functions and features than the DH166D.
       | 1st and 2nd in November of 2022, 3rd was installed in December 2023.
   * - Digitrax
