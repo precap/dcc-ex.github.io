@@ -294,7 +294,28 @@ XXX figure image of phone logging in to the AP
 Connecting Via USB and EX-WebThrottle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-XXX Do we just link to the webthrottle page or do a quick version here?
+Connect the USB-C end of the USB cable to the |EX-CS|. Connect the other end to your computer or laptop on which you will run |EX-WT|.
+
+.. figure:: /_static/images/ex-csb1/csb1_power_usb.png
+   :alt: Connecting USB cable
+   :scale: 40%
+   :align: center
+   
+   Connecting USB cable
+
+Note that 5V power is supplied with the USB connection, so the single green 3.3V LED illuminates (See figure). This powers the electronics on the board for basic testing and to apply software updates, but will not power the track outputs until power is applied through the barrel jack. You do NOT need USB power for normal operation. The blue WiFi LED will also illuminate indicating the CSB1 is setup for a WiFi connection. And last, the display will show status information.
+
+.. todo XXX Do we just link to the webthrottle page or do a quick version here?
+
+Connect EX-WebThrottle
+-----------------------
+
+You can connect to the EX-CSB1 using both an app via Wifi on a smartphone or tablet, and on a PC using WebThrottle with the PC plugged into the EX-CSB1's USB-C port. Detailed instructions are here https://dcc-ex.com/ex-commandstation/controllers.html#choosing-a-throttle-controller. As mentioned above, in this quick start we will be using EX-Webthrottle.
+
+Begin by running |EX-WT| by clicking this link. todo XXX [insert link] Detailed instructions on how to use WebThrottle is here todo XXX. 
+How detailed to get here? We don't want to just repeat everything from the WT page, but also don't want to make a user jump back and forth between pages todo XXX.
+
+todo XXX images of running webthrottle
 
 Use TrackManager to Set Outputs to DCC or DC Operation
 ========================================================
