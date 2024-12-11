@@ -201,12 +201,44 @@ The WiFi LED will illuminate once WiFi is configured and ready as an Access Poin
 Connect Engine Driver
 ----------------------
 
-.. figure:: /_static/images/ex-csb1/csb1_oled.png
+.. figure:: /_static/images/engine-driver/ed_preferences1.png
    :alt: OLED Status Display
    :scale: 40%
    :align: center
 
-   OLED Status Display
+   OLED blah
+
+.. figure:: /_static/images/engine-driver/ed_preferences2.png
+   :alt: OLED Status Display
+   :scale: 40%
+   :align: center
+
+   OLED blah
+
+.. figure:: /_static/images/engine-driver/ed_preferences3.png
+   :alt: OLED Status Display
+   :scale: 40%
+   :align: center
+
+   OLED blah
+
+.. figure:: /_static/images/engine-driver/ed_preferences4.png
+   :alt: OLED Status Display
+   :scale: 40%
+   :align: center
+
+   OLED blah
+
+.. figure:: /_static/images/engine-driver/ed_preferences5.png
+   :alt: OLED Status Display
+   :scale: 40%
+   :align: center
+
+   OLED blah
+
+
+
+
 
 
 
