@@ -201,7 +201,14 @@ The WiFi LED will illuminate once WiFi is configured and ready as an Access Poin
 Connect Engine Driver
 ----------------------
 
-Select the Engine Driver App on your Andriod smart device and click on the three dots in the upper right corner to open the menu:
+Select the Engine Driver App on your Andriod smart device and once it loads, the setup wizard
+
+.. figure:: /_static/images/engine_driver/ed_ed_icon.png
+   :alt: Engine App Icon
+   :scale: 45%
+   :align: left
+
+   Engine Driver App Icon
 
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
    :alt: Engine Driver Main Screen
@@ -213,11 +220,11 @@ Select the Engine Driver App on your Andriod smart device and click on the three
 Next, select the "preferences" option:
 
 .. figure:: /_static/images/engine_driver/ed_preferences2.png
-   :alt: Changing DCC-EX Options
+   :alt: Changing Engine Driver Preferences
    :scale: 45%
    :align: center
 
-   Changing DCC-EX Options
+   Changing Engine Driver Preferences
 
 In order to get the most functionality from Engine Driver, there are a few settings that should be changed. By default, Engine Driver uses the WiThrottle protocol, which the EX-CSB1 also understands, but the native DCC-EX protocol has much more power. Scroll through the long list of options and make sure "Emergency Stop", "Layout Power Button" and "DCC-EX Button" are all checked
 
@@ -234,7 +241,18 @@ In order to get the most functionality from Engine Driver, there are a few setti
 .. figure:: /_static/images/engine_driver/ed_preferences4.png
    :alt: Engine Driver DCC-EX button option
    :scale: 45%
-   :align: center
+   :align: left
+
+   Engine Driver DCC-EX button option
+
+|BR|
+
+Keep scrolling to see the option for "DCC-EX - EX-CommandStation Preferences" and click on it. Then choose "Auto" or "Yes". Auto will automatically switch between WiThrottle protocol for other command stations and DCC-EX protocol when Engine Driver sees it is a DCC-EX command station. If you aren't using other command stations, at home or at a club, simply choose "Yes".
+
+.. figure:: /_static/images/engine_driver/ed_dccex_preference1.png
+   :alt: Engine Driver DCC-EX button option
+   :scale: 45%
+   :align: left
 
    Engine Driver DCC-EX button option
 
