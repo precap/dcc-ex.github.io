@@ -468,6 +468,26 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
   font-size: 70%;
 }
 
+.admonition {
+  border-radius: 5px;
+}
+
+.warning {
+  border-radius: 5px;
+}
+html[data-theme='dark'] .warning {
+  background: #37270c !important;
+  border-radius: 5px;
+}
+.admonition-title {
+  border-radius: 5px 5px 0px 0px ;
+}
+html[data-theme='dark'] .admonition-title {
+  background: #ff8a00 !important;
+  border-radius: 5px 5px 0px 0px ;
+  color: black;
+}
+
 /* *************************************** */
 
 .menuselection {

@@ -107,7 +107,7 @@ To get started, simply choose your path. Whether you are a Conductor, Tinkerer, 
     :maxdepth: 1
     :hidden:
 
-    /ex-commandstation/ready-to-run/index
-    /ex-commandstation/diy/index
-    /ex-commandstation/advanced-setup/index
-    /ex-commandstation/accessories/index
+    /ex-commandstation/ready-to-run/index__included
+    /ex-commandstation/diy/index__included
+    /ex-commandstation/advanced-setup/index__included
+    /ex-commandstation/accessories/index__included

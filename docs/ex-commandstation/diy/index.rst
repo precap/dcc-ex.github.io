@@ -1,5 +1,5 @@
 .. include:: /include/include.rst
-.. include:: /include/include-l3.rst
+.. include:: /include/include-l2.rst
 .. include:: /include/include-ex-cs.rst
 |EX-CS-LOGO|
 
@@ -15,9 +15,12 @@ DIY - Getting Started
     :depth: 1
     :local:
 
-In order to get the most out of this website, we only ask you at first to make 2 choices, the first was to self-identify your "level" with regards to DCC-EX. If you have not chosen whether you are a Conductor, Tinkerer, or Engineer, please go to :ref:`begin/levels:choose your comfort level` before proceeding further.
+In order to get the most out of this website, we only ask you at first to make 2 choices:
 
-Your next choice will be whether you want to choose the "Ready-To-Run" (RTR) path or the "Do-It-Yourself" (DIY) path. You are here on the DIY path where you will build your own command station from parts including Arduino, ESP32, or STM32 boards. If you meant to choose the Ready-To-Run route using an |EX-CSB1|, then please go to :doc:`/ex-commandstation/ready-to-run/index`. If you need a definition of what an EX-CommandStation is, please see :ref:`begin/rtr-or-diy:what is ex-commandstation?`.
+- The first is to self-identify your "level" with regards to DCC-EX. |BR| If you have not chosen whether you are a Conductor, Tinkerer, or Engineer, please go to :ref:`begin/levels:choose your comfort level` before proceeding further.
+- Your next choice will be whether you want to choose the "Ready-To-Run" (RTR) path or the "Do-It-Yourself" (DIY) path. 
+
+You are here on the DIY path where you will build your own command station from parts including Arduino, ESP32, or STM32 boards. If you meant to choose the Ready-To-Run route using an |EX-CSB1|, then please go to :doc:`/ex-commandstation/ready-to-run/index`. If you need a definition of what an EX-CommandStation is, please see :ref:`begin/rtr-or-diy:what is ex-commandstation?`.
 
 The following pages will instruct you on how to build an |EX-CS| including assembling your hardware, installing software, and running your first train. After that, we will provide examples for how the base system can be extended and upgraded.
 
@@ -26,7 +29,7 @@ The Components of a Full System
 
 To actually run your model railroad you will need a few items:
 
-.. image:: /_static/images/wifi/wangtongze_jumpered.png
+.. figure:: /_static/images/wifi/wangtongze_jumpered.png
    :alt: EX-CommandStation
    :scale: 15%
    :align: right
@@ -44,7 +47,7 @@ To actually run your model railroad you will need a few items:
 
   - our free, open source, custom software 
 
-.. image:: /_static/images/engine_driver/vertical_slider.png
+.. figure:: /_static/images/engine_driver/vertical_slider.png
    :alt: Engine Driver
    :scale: 75%
    :align: right
@@ -78,5 +81,5 @@ Click :doc:`here <purchasing>` or click the "next" button to see what you need t
     ../installer-diy.rst
     ../controllers-diy.rst
     ../testing-diy.rst
-    /support/ex-cs-troubleshooting
+    /support/ex-cs-troubleshooting__included-diy
     /support/wifi-at-version
