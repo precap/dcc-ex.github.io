@@ -75,8 +75,8 @@ Click :doc:`here <purchasing>` or click the "next" button to see what you need t
     purchasing
     assembly
     wifi-setup
-    ../installer.rst
+    ../installer-diy.rst
     ../controllers-diy.rst
-    ../testing.rst
+    ../testing-diy.rst
     /support/ex-cs-troubleshooting
     /support/wifi-at-version

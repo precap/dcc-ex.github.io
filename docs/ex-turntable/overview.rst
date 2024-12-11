@@ -224,7 +224,7 @@ The above outlines how the default automatic phase switching works with |EX-TT|,
 .. 
   If you find that the default 45/225 degree angles aren't right for your layout, then this can be modified in "config.h" which is created in :ref:`ex-commandstation/diy/assembly:7. Load firmware on your Command Station`, and the configuration parameter is outlined here: :ref:`ex-turntable/configure:phase_switch_angle`.
 
-If you find that the default 45/225 degree angles aren't right for your layout, then this can be modified in "config.h" which is created in :doc:`/ex-commandstation/installer`, and the configuration parameter is outlined here: :ref:`ex-turntable/configure:phase_switch_angle`.
+If you find that the default 45/225 degree angles aren't right for your layout, then this can be modified in "config.h" which is created in :doc:`/ex-commandstation/installer-diy`, and the configuration parameter is outlined here: :ref:`ex-turntable/configure:phase_switch_angle`.
 
 If you have a layout that requires more control over when phase switching does and doesn't happen, you can configure manual phase switching, as outlined in :ref:`ex-turntable/test-and-tune:manual phase switching`.
 
