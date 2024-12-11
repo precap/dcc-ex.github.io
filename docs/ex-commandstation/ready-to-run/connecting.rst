@@ -201,45 +201,49 @@ The WiFi LED will illuminate once WiFi is configured and ready as an Access Poin
 Connect Engine Driver
 ----------------------
 
-.. figure:: /_static/images/engine-driver/ed_preferences1.png
+Select the Engine Driver App on your Andriod smart device and click on the three dots in the upper right corner to open the menu:
+
+.. figure:: /_static/images/engine_driver/ed_preferences1.png
+   :alt: Engine Driver Main Screen
+   :scale: 45%
+   :align: center
+
+   Engine Driver Main Screen
+
+Next, select the "preferences" option:
+
+.. figure:: /_static/images/engine_driver/ed_preferences2.png
+   :alt: Changing DCC-EX Options
+   :scale: 45%
+   :align: center
+
+   Changing DCC-EX Options
+
+In order to get the most functionality from Engine Driver, there are a few settings that should be changed. By default, Engine Driver uses the WiThrottle protocol, which the EX-CSB1 also understands, but the native DCC-EX protocol has much more power. Scroll through the long list of options and make sure "Emergency Stop", "Layout Power Button" and "DCC-EX Button" are all checked
+
+
+.. figure:: /_static/images/engine_driver/ed_preferences3.png
+   :alt: Engine Driver optional buttons
+   :scale: 45%
+   :align: left
+
+   Engine Driver optional buttons
+
+   
+
+.. figure:: /_static/images/engine_driver/ed_preferences4.png
+   :alt: Engine Driver DCC-EX button option
+   :scale: 45%
+   :align: center
+
+   Engine Driver DCC-EX button option
+
+.. figure:: /_static/images/engine_driver/ed_preferences5.png
    :alt: OLED Status Display
-   :scale: 40%
+   :scale: 45%
    :align: center
 
    OLED blah
-
-.. figure:: /_static/images/engine-driver/ed_preferences2.png
-   :alt: OLED Status Display
-   :scale: 40%
-   :align: center
-
-   OLED blah
-
-.. figure:: /_static/images/engine-driver/ed_preferences3.png
-   :alt: OLED Status Display
-   :scale: 40%
-   :align: center
-
-   OLED blah
-
-.. figure:: /_static/images/engine-driver/ed_preferences4.png
-   :alt: OLED Status Display
-   :scale: 40%
-   :align: center
-
-   OLED blah
-
-.. figure:: /_static/images/engine-driver/ed_preferences5.png
-   :alt: OLED Status Display
-   :scale: 40%
-   :align: center
-
-   OLED blah
-
-
-
-
-
 
 
 Confirm startup
