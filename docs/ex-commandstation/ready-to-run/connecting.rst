@@ -79,7 +79,7 @@ There are 2 track output power connectors marked A and B. In the standard DCC-EX
 
    Track A and B Outputs
 
-The pluggable male screw terminals accept to 16 to 28 AWG/1.5mm^2 gauge solid or stranded wire. If you use stranded, we recommend "tinning" the ends of the wire to make a good connection and ensure that stray wire whiskers don't stray outside the screw terminals and cause a short circuit. Larger wire can handle more current and provide less resistance.  18-22 AWG is a good start. Keep your wires short by mounting the CS close to the track. 
+The pluggable male screw terminals accept to 16 to 28 AWG/1.5mm^2 gauge solid or stranded wire. If you use stranded, we recommend "tinning" the ends of the wire to make a good connection and ensure that stray wire whiskers don't stray outside the screw terminals and cause a short circuit. Larger wire can handle more current and provide less resistance.  18-22 AWG usually good. Keep your wires short by mounting the CS close to the track. 
 
 .. todo See XXX for more information or wire gauge.
 
@@ -118,26 +118,16 @@ Using a small flat-bladed screwdriver, loosen both screws on the MAIN (A) Track 
 
 .. NOTE:: The power connection to your track will be either wires you solder yourself to the rails or via a power connector that plugs into track (such as Kato Unitrack). We will leave it up to you to determine the proper connection to your track. 
 
-Connect the other ends of the track output wires to your track. While not critical at this stage when using DCC, it is best to keep to a standard where the RED wire is connected to the outside rail of the track to make things easier when using feeders to track sections or adding reversing loops. 
+Connect the other ends of the track output wires to your track. While not critical at this stage when using DCC, it is best to keep to a standard where the RED wire (or striped wire) is connected to the outside rail of the track to make things easier when using feeders to track sections or adding reversing loops. 
 
 .. todo XXX need to mention DC here with a link?
 
-[insert image - connecting wires to track]
-
-
-USB Connection
-------------------
-
-Connect the USB-C end of the USB cable to the |EX-CS|. Connect the other end to your computer or laptop on which you will run |EX-WT|.
-
-.. figure:: /_static/images/ex-csb1/csb1_power_usb.png
-   :alt: Connecting USB cable
-   :scale: 40%
+.. figure:: /_static/images/ex-csb1/track_power_conn_1.jpg
+   :alt: Connecting Wires to Track
+   :scale: 80%
    :align: center
    
-   Connecting USB cable
-
-Note that 5V power is supplied with the USB connection, so the single green 3.3V LED illuminates (See figure). This powers the electronics on the board for basic testing and to apply software updates, but will not power the track outputs until power is applied through the barrel jack. You do NOT need USB power for normal operation. The blue WiFi LED will also illuminate indicating the CSB1 is setup for a WiFi connection. And last, the display will show status information.
+   Connecting Wires to Track
 
 .. todo Add more on WiFi here XXX and More on this below XXX
 
@@ -178,9 +168,7 @@ To fully power the CSB1, just plug your power supply into the mains power (aka w
 
    Inserting Power Supply Barrel Plug
 
-When you connect power to the CSB1, you should see one or both bright green power LEDs light up (5V and 3.3V power), confirming that the electronics are working. However, for safety, track output power will be off by default when you first plug in the EX-CSB1. This is to prevent power from accidentally being applied to your layout before everything is ready. If you prefer, you can change this default setting.
-
-.. todo XXX Add link to above
+When you connect power to the CSB1 via the barrel connector, you should see both bright green power LEDs light up (5V and 3.3V power), confirming that the electronics are working. However, for safety, track output power will be off by default when you first plug in the EX-CSB1. This is to prevent power from accidentally being applied to your layout before everything is ready. If you prefer, you can change this default setting in the :doc:`Startup Configuration </ex-commandstation/advanced-setup/startup-config>` ). 
 
 .. figure:: /_static/images/ex-csb1/csb1_power_barrel.png
    :alt: Barrel Power LEDs
@@ -189,7 +177,7 @@ When you connect power to the CSB1, you should see one or both bright green powe
 
    Barrel Plug Power LEDs
 
-You should see status information on the display including the CSB1 firmware version, track power status, free memory, and WiFi connection information. If you do not have a display, you will need to connect a serial monitor.
+You should see status information on the display including the CSB1 firmware version, track power status, free memory, and WiFi connection information. If you do not have a display, you will need to connect a serial monitor (See: :doc:`Using a Serial Monitor </reference/tools/serial-monitor>`).
 
 .. todo XXX insert link to serial monitor
 
@@ -200,26 +188,27 @@ You should see status information on the display including the CSB1 firmware ver
 
    OLED Status Display
 
-The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log todo XXX [insert link]) after it boots so you can connect with a phone throttle. This quick start covers initial testing with USB connection to a computer.
+The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. This quick start covers initial testing with a WiFi smart device app, for a USB Connection with EX-WebThrottle or JMRI and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
 
-.. todo XXX add ", see XXX for connecting via WiFi [insert link]" above
+Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly. To configure your CSB1 to connect to your network, see :doc:`WiFi Configuration </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`
 
-Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly.
+.. todo XXX We need to probably link to the manual or another CSB1 doc and cover using installer as preferred to the IDE
 
 The WiFi LED will illuminate once WiFi is configured and ready as an Access Point (or Station if reconfigured for STA mode.)
 
 .. todo [insert link] XXX figure link showing WiFi LED
 
+Connect Engine Driver
+----------------------
 
-Connect EX-WebThrottle
------------------------
+.. figure:: /_static/images/ex-csb1/csb1_oled.png
+   :alt: OLED Status Display
+   :scale: 40%
+   :align: center
 
-You can connect to the EX-CSB1 using both an app via Wifi on a smartphone or tablet, and on a PC using WebThrottle with the PC plugged into the EX-CSB1's USB-C port. Detailed instructions are here https://dcc-ex.com/ex-commandstation/controllers.html#choosing-a-throttle-controller. As mentioned above, in this quick start we will be using EX-Webthrottle.
+   OLED Status Display
 
-Begin by running |EX-WT| by clicking this link. todo XXX [insert link] Detailed instructions on how to use WebThrottle is here todo XXX. 
-How detailed to get here? We don't want to just repeat everything from the WT page, but also don't want to make a user jump back and forth between pages todo XXX.
 
-todo XXX images of running webthrottle
 
 Confirm startup
 ----------------
