@@ -16,7 +16,12 @@ Choosing a Throttle (Controller)
       :depth: 2
       :local:
 
-This page is specifically intended for a |conductor-text| who has installed *just* the recommended hardware (including WiFi). If you are a |tinkerer-text| or |engineer-text| or have installed some of the additional, or different, hardware from that recommended for a |conductor-text| then we suggest that you look at the :doc:`/ex-commandstation/advanced-setup/controllers` page for the full list of Throttle (Controller) options.
+This page is specifically intended for a |conductor-text| who has either:
+
+- Purchased an |EX-CSB1|, or 
+- Installed *just* the recommended DIY hardware (including WiFi). 
+
+If you are a |tinkerer-text| or |engineer-text| or have installed some of the additional, or different, hardware from that recommended for a |conductor-text| then we suggest that you look at the :doc:`/ex-commandstation/advanced-setup/controllers` page for the full list of Throttle (Controller) options.
 
 ----
 
@@ -31,7 +36,7 @@ You need just two things that work together to operate your model railroad:
 The EX-CommandStation
 ---------------------
 
-The |EX-CS| is covered in the :doc:`Getting Started <index>` section, and is usually an Arduino microcontroller, a motor driver and a WiFi shield. The Command Station accepts instructions from a controller and generates packets that are transmitted to your track and subsequently your trains.
+The |EX-CS| is covered in the :doc:`/begin/rtr-or-diy` pages, and is either an |EX-CSB1| or an Arduino microcontroller with a motor driver and a WiFi shield. The Command Station accepts instructions from a controller and generates packets that are transmitted to your track and subsequently your trains.
 
 The Throttle (Controller)
 -------------------------
@@ -60,6 +65,8 @@ Here is a small subset of the throttles you can use with the |EX-CS|. These opti
 
 For further throttle and connection options, refer to :doc:`/ex-commandstation/advanced-setup/controllers`.
 
+----
+
 Connecting via WiFi
 -------------------
 
@@ -67,26 +74,28 @@ For those who just want to run trains and not use any other control software, th
 
 Here is an image that represents a direct connection.
 
-.. image:: /_static/images/throttles/throttle_wifi_direct.png
+.. figure:: /_static/images/throttles/throttle_wifi_direct.png
    :alt:  WiFi Throttle Direct to CS
    :align: center
    :scale: 40%
 
+   WiFi Throttle Direct to Command Station
+
 There are number of excellent :doc:`phone apps and physical hardware devices </throttles/index>` that can be used as a WiFi Throttle (Controller) for the |EX-CS|.  On this page we are only going to cover two. 
 
 .. warning:: 
+   
+   This warning is only relevant to the DIY EX-CommandStation. **It is not relevant to the EX-CommandStation/Booster One Express.**
 
-   This warning is only relevant to the DIY |EX-CS|. It is not relevant to the |EX-CSB1|.
+   Be aware that the Espressif firmware shipped with *Duinopeak ESP8266 WiFi Expansion* and *ESP-01 or ESP-01S* devices :dcc-ex-red-bold:`probably will NOT work` with |EX-CS| out of the box.
 
-   Please be aware that the Espressif firmware shipped with *Duinopeak ESP8266 WiFi Expansion* and *ESP-01 or ESP-01S* devices :dcc-ex-red-bold:`will probably NOT work` with |EX-CS| out of the box.
+   The recommended :doc:`Makerfabs ESP8266 WiFi Shield </reference/hardware/wifi-boards/makerfabs-esp8266>` is now shipping with the correct firmware version and **will work** with |EX-CS| *without modification*.
 
-   (Note: The recommended :doc:`Makerfabs ESP8266 WiFi Shield </reference/hardware/wifi-boards/makerfabs-esp8266>` is now shipping with the correct firmware version and **will work** with |EX-CS| *without modification*).
-
-   If you see a WiFi network Name (SSID) of "DCCEX-SAYS-BROKEN-FIRMWARE" then you have one of the problematic AT firmware versions.
-
-   This can be corrected, but is probably beyond Conductor level and requires additional hardware.  
+   If you see a WiFi network Name (SSID) of ``DCCEX-SAYS-BROKEN-FIRMWARE`` then you have one of the problematic AT firmware versions.  This can be corrected, but is probably beyond Conductor level and requires additional hardware.  
 
    See :doc:`/support/wifi-at-version` for details on how to check the version and how to correct it if needed.
+
+|hr-dashed|
 
 Compatible WiFi Throttles
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -102,6 +111,8 @@ We will just cover two here. These two are a) free, or have a free version, b) a
 
 If you have an Android phone use :doc:`/throttles/software/engine-driver`. |br| If you have an Apple (iOS) phone use :doc:`/throttles/software/withrottle`.
 
+|hr-dashed|
+
 Engine Driver (Android \| WiThrottle \| WiFi)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -112,12 +123,14 @@ Engine Driver (Android \| WiThrottle \| WiFi)
 
 Basic use of |Engine Driver| will be covered on the following :doc:`/ex-commandstation/testing-diy` page. (See :doc:`Engine Driver Page </throttles/software/engine-driver>` for additional details on how to install and run |Engine Driver|.)
 
+|hr-dashed|
+
 WiThrottle Lite (iOS \| WiThrottle \| WiFi)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 |WiThrottle| is an app for iPhones and iPads. It can connect directly to the |EX-CS| like |Engine Driver| does, or connect to |JMRI| on a computer and then have |JMRI| connect to the Command Station via a USB cable.
 
-The "Lite" version of |WiThrottle| is free and is more than adequate for some initial testing and base running of locos. However the lite version does not have a Track Power button/command so it is important to configure your |EX-CS| to power on at startup.
+The "Lite" version of |WiThrottle| is free and is more than adequate for some initial testing and base running of locos. However the Lite version does not have a Track Power button/command so it is important to configure your |EX-CS| to power on at startup.
 
 Basic use of |WiThrottle| will be covered on the following :doc:`/ex-commandstation/testing-diy` page.  (See :doc:`WiThrottle Page </throttles/software/withrottle>` for details on how to install and run |WiThrottle|.)
 
@@ -126,29 +139,37 @@ Basic use of |WiThrottle| will be covered on the following :doc:`/ex-commandstat
 Connecting via USB
 ------------------
 
-Here are your connections, just a computer running a chromium-based browser (Chrome, Edge, Safari and others) a USB cable, and your |EX-CS|.
+Here are the connections, just a computer running a chromium-based browser (Chrome, Edge, Safari and others) a USB cable, and your |EX-CS|.
 
-.. image:: /_static/images/throttles/webthrottle_setup.png
+.. figure:: /_static/images/throttles/webthrottle_setup.png
    :alt: EX-WebThrottle
    :align: center
    :scale: 40%
+
+   EX-WebThrottle
+
+|hr-dashed|
 
 Compatible USB Throttles
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There is currently only one USB compatible Throttle (Controller) for the |EX-CS| that we are aware of.
 
+|hr-dashed|
+
 Our EX-WebThrottle (DCC-EX Native Commands | USB/Serial)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The simplest throttle option is to just use a throttle connected directly to the Command Station. The simplest of all is arguably |EX-WT|, connected via a USB cable from your computer and web browser directly to the Command Station. You have control of multiple locomotives and can operate turnouts/points. There is a way to replace the USB cable with a wireless connection, but we will cover that later in the Wireless USB Bridge section. Below is a picture of |EX-WT| with the side menu open. You can click on the image to see it full size.
+The simplest throttle option is to just use a throttle directly connected to the Command Station. The simplest of these is arguably |EX-WT|, connected via a USB cable from your computer and web browser directly to the Command Station. You have control of multiple locomotives and can operate turnouts/points. There is a way to replace the USB cable with a wireless connection, but we will cover that later in the Wireless USB Bridge section. Below is a picture of |EX-WT| with the side menu open. You can click on the image to see it full size.
 
-.. image:: /_static/images/throttles/webthrottle1.jpg
+.. figure:: /_static/images/throttles/webthrottle1.jpg
    :alt: EX-WebThrottle
    :align: center
    :scale: 40%
 
-|
+   EX-WebThrottle
+
+|hr-dashed|
 
 Basic use of |EX-WT| will be covered on the following :doc:`/ex-commandstation/testing-diy` page.  (For additional operating instructions see :doc:`how to use EX-WebThrottle </ex-webthrottle/index>`)
 
@@ -157,4 +178,4 @@ Basic use of |EX-WT| will be covered on the following :doc:`/ex-commandstation/t
 Next Steps - Testing your setup 
 ===============================
 
-Click :doc:`here <testing>` or click the "next" button to learn how to test your |EX-CS|.
+Click on the "next" button below to learn how to test your |EX-CS|.
