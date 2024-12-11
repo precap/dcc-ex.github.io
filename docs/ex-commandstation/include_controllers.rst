@@ -110,7 +110,7 @@ Engine Driver (Android \| WiThrottle \| WiFi)
 * The first method is to connect directly to the Command Station via WiFi. You will need either a |EX-CSB1| with its integrated WiFI, or a WiFi board connected to your DIY Command Station (see WiFi Setup :doc:`WiFi Setup </ex-commandstation/diy/wifi-setup>`).
 * The second method is to use |JMRI| and connect |Engine Driver| (ED) to the computer running |JMRI|. (We won't cover that option here.)
 
-Basic use of |Engine Driver| will be covered on the following :doc:`/ex-commandstation/testing` page. (See :doc:`Engine Driver Page </throttles/software/engine-driver>` for additional details on how to install and run |Engine Driver|.)
+Basic use of |Engine Driver| will be covered on the following :doc:`/ex-commandstation/testing-diy` page. (See :doc:`Engine Driver Page </throttles/software/engine-driver>` for additional details on how to install and run |Engine Driver|.)
 
 WiThrottle Lite (iOS \| WiThrottle \| WiFi)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -119,7 +119,7 @@ WiThrottle Lite (iOS \| WiThrottle \| WiFi)
 
 The "Lite" version of |WiThrottle| is free and is more than adequate for some initial testing and base running of locos. However the lite version does not have a Track Power button/command so it is important to configure your |EX-CS| to power on at startup.
 
-Basic use of |WiThrottle| will be covered on the following :doc:`/ex-commandstation/testing` page.  (See :doc:`WiThrottle Page </throttles/software/withrottle>` for details on how to install and run |WiThrottle|.)
+Basic use of |WiThrottle| will be covered on the following :doc:`/ex-commandstation/testing-diy` page.  (See :doc:`WiThrottle Page </throttles/software/withrottle>` for details on how to install and run |WiThrottle|.)
 
 ----
 
@@ -150,7 +150,7 @@ The simplest throttle option is to just use a throttle connected directly to the
 
 |
 
-Basic use of |EX-WT| will be covered on the following :doc:`/ex-commandstation/testing` page.  (For additional operating instructions see :doc:`how to use EX-WebThrottle </ex-webthrottle/index>`)
+Basic use of |EX-WT| will be covered on the following :doc:`/ex-commandstation/testing-diy` page.  (For additional operating instructions see :doc:`how to use EX-WebThrottle </ex-webthrottle/index>`)
 
 ----
 

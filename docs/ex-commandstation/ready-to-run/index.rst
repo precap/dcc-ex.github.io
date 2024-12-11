@@ -37,9 +37,9 @@ The DCC-EX EX-CSB1 Command Station/Booster comes ready to use out of the box and
     purchasing
     connecting
     wifi-setup
-    /ex-commandstation/installer
+    /ex-commandstation/installer-rtr
     /ex-commandstation/controllers-rtr
-    /ex-commandstation/testing
+    /ex-commandstation/testing-rtr
     /support/ex-cs-troubleshooting
     manual
 
