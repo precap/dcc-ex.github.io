@@ -1,6 +1,6 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l1.rst
-.. include:: /include/include-ex-cs.rst
+.. include:: /include/include-ex-csb1.rst
   
 |EX-CS-LOGO| |donate-button|
 
@@ -9,6 +9,8 @@
 **********************************
 EX-CSB1 Quick Setup Guide
 **********************************
+
+|conductor| |tinkerer| |engineer| |support-button|
 
 This quick startup guide is designed to have you configured and setup to run trains in 5 minutes. After all, the point is to enjoy running trains, not sifting through more information than you need until you are ready. These instructions are for DCC locomotives. For more detailed information, to configure for running DC trains, or to use different throttles like EX-WebThrottle or JMRI, see the :doc:`EX-CSB1 Operating Manual <manual>`
 
@@ -19,7 +21,7 @@ What You Will need
 * A Power supply (12V - 16V DC see :ref:`Power Supplies <reference/hardware/power-supplies:power supplies>`)
 * A DCC loco (If you are here to run DC, please go to todo XXX)
 * Track
-* 16 to 28AWG/1.5mm^2 Wire, preferably in 2 colors with 1/8"/6mm insulation stripped (and wire tinned if stranded)
+* 16 to 28AWG/1.5mm^2 Wire, preferably in 2 colours with 1/8"/6mm insulation stripped (and wire tinned if stranded)
 * Jeweller's flat bladed screwdriver (1.5 - 2mm blade)
 * A WiFi capable smart device like a phone or tablet to control your trains (aka a "Throttle")
 
@@ -99,7 +101,6 @@ Using a small flat-bladed screwdriver, loosen both screws on the MAIN (A) Track 
    
    Tightening Screws
 
-
 .. figure:: /_static/images/ex-csb1/csb1_insert_wire.png
    :alt: Unplugging connector to insert wires
    :scale: 40%
@@ -113,8 +114,6 @@ Using a small flat-bladed screwdriver, loosen both screws on the MAIN (A) Track 
    :align: center
    
    Wires properly inserted and plug inserted
-
-
 
 .. NOTE:: The power connection to your track will be either wires you solder yourself to the rails or via a power connector that plugs into track (such as Kato Unitrack). We will leave it up to you to determine the proper connection to your track. 
 
@@ -150,7 +149,6 @@ The CSB1 has a 2.1mm x 5.5mm power jack. If you already have a power supply with
 
    12V/3A Power Supply
 
-
 |force-break|
 
 Testing Your Command Station
@@ -159,7 +157,7 @@ Testing Your Command Station
 Connect Track Input Power
 --------------------------
 
-To fully power the CSB1, just plug your power supply into the mains power (aka wall outlet) and connect the barrel end to the Command Station. Make sure your power supply matches the needs of your setup: the voltage should be between 12V and 25V DC, depending on the scale of your locomotives, and it should provide at least 2A of current with good over-current performance and voltage stability. To get the most out of your EX-CSB1, we suggest using a modern switching power supply with 4A or more. For Z scale, 12V is usually enough, but for N, HO, and OO scales, we recommend using between 14V and 16V DC. It’s important that your DC power is well-regulated which is why we suggest a modern switch-mode power supply with double insulation and strong overload protection.
+To fully power the CSB1, just plug your power supply into the mains power (aka wall outlet) and connect the barrel end to the Command Station. Make sure your power supply matches the needs of your setup: the voltage should be between 12V and 25V DC, depending on the scale of your locomotives, and it should provide at least 2A of current with good over-current performance and voltage stability. To get the most out of your EX-CSB1, we suggest using a modern switching power supply with 4A or more. For Z scale, 12V is usually enough, but for N, HO, and OO scales, we recommend using between 14V and 16V DC. It's important that your DC power is well-regulated which is why we suggest a modern switch-mode power supply with double insulation and strong overload protection.
 
 .. figure:: /_static/images/ex-csb1/csb1_barrel_insert.png
    :alt: Inserting barrel plug
@@ -190,12 +188,11 @@ You should see status information on the display including the CSB1 firmware ver
 
 The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. This quick start covers initial testing with a WiFi smart device app, for a USB Connection with EX-WebThrottle or JMRI and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
 
-
 Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly. To configure your CSB1 to connect to your network, see :doc:`WiFi Configuration </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`.
 
 The WiFi LED will illuminate once WiFi is configured and ready as an Access Point (or Station if reconfigured for STA mode.)
 
-On your device, select the network settings and find an available network that begins with "DCCEX_".
+On your device, select the network settings and find an available network that begins with "DCCEX\_".
 
 .. figure:: /_static/images/engine_driver/ed_wifi_select1.png
    :alt: Smart Device Available Network Screen
@@ -204,7 +201,7 @@ On your device, select the network settings and find an available network that b
 
    Smart Device Available Networks Screen
 
-Click on that network to see the next screen to enter your password. Notice the password is just "PASS_" followed by the same 6 digits in the network name (called a "SSID").
+Click on that network to see the next screen to enter your password. Notice the password is just "PASS\_" followed by the same 6 digits in the network name (called a "SSID").
 
 
 .. figure:: /_static/images/engine_driver/ed_wifi_pass.png
@@ -214,8 +211,6 @@ Click on that network to see the next screen to enter your password. Notice the 
 
    Smart Device AP Password Entry
 
-   
-
 .. todo XXX We need to probably link to the manual or another CSB1 doc and cover using installer as preferred to the IDE
 
 
@@ -224,7 +219,7 @@ Click on that network to see the next screen to enter your password. Notice the 
 Connect Engine Driver
 ----------------------
 
-Select the Engine Driver App on your Andriod smart device and once it loads, the setup wizard
+Select the Engine Driver App on your Android smart device and once it loads, the setup wizard
 
 .. figure:: /_static/images/engine_driver/ed_ed_icon.png
    :alt: Engine App Icon
