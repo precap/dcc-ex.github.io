@@ -233,7 +233,7 @@ Open the Engine Driver App on your Android smart device:
 
    Engine Driver App Icon
 
-Once loaded, select your preferences when the Intro/Setup wizard launches. If you have already used Engine Driver, you can run the wizard again from the app menu:
+Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. If you have already used Engine Driver, you can run the wizard again from the app menu:
 
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
    :alt: Engine Driver App Menu
@@ -251,6 +251,22 @@ Once loaded, select your preferences when the Intro/Setup wizard launches. If yo
    Engine Driver Intro/Setup Wizard
 
 The Wizard allows you to set or change appearance options and, most importantly, choose to use DCC-EX native commands instead of WiThrottle:
+
+.. figure:: /_static/images/engine_driver/ed_wizard1.png
+   :alt: Engine Driver Wizard Opening Screen
+   :scale: 45%
+   :align: center
+
+   Engine Driver Wizard Opening Screen
+
+Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation
+
+.. figure:: /_static/images/engine_driver/ed_wizard6.png
+   :alt: Engine Driver Wizard DCC-EX Select
+   :scale: 45%
+   :align: center
+
+   Engine Driver Wizard DCC-EX Select
 
 Next, select the "preferences" option:
 
