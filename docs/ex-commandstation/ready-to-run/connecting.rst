@@ -190,6 +190,10 @@ You should see status information on the display including the CSB1 firmware ver
 
    OLED Status Display
 
+Connect the Smart Device to the CSB1 AP Network
+-------------------------------------------------
+
+
 The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. This quick start covers initial testing with a WiFi smart device app, for a USB Connection with EX-WebThrottle or JMRI and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
 
 Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly. To configure your CSB1 to connect to your network, see :doc:`WiFi Configuration </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`.
@@ -220,24 +224,53 @@ Click on that network to see the next screen to enter your password. Notice the 
 
 .. todo [insert link] XXX figure link showing WiFi LED
 
-Connect Engine Driver
-----------------------
+Log Engine Driver into the CSB1 AP Network
+-------------------------------------------
 
-Select the Engine Driver App on your Android smart device and once it loads, the setup wizard
+Open the Engine Driver App on your Android smart device: 
+
 
 .. figure:: /_static/images/engine_driver/ed_ed_icon.png
    :alt: Engine App Icon
    :scale: 45%
-   :align: left
+   :align: center
 
    Engine Driver App Icon
 
+Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. If you have already used Engine Driver, you can run the wizard again from the app menu:
+
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
-   :alt: Engine Driver Main Screen
+   :alt: Engine Driver App Menu
+   :scale: 45%
+   :align: left
+
+   Engine Driver App Menu
+
+
+.. figure:: /_static/images/engine_driver/ed_wizard_menu.png
+   :alt: Engine Driver Intro/Setup Wizard
    :scale: 45%
    :align: center
 
-   Engine Driver Main Screen
+   Engine Driver Intro/Setup Wizard
+
+The Wizard allows you to set or change appearance options and, most importantly, choose to use DCC-EX native commands instead of WiThrottle:
+
+.. figure:: /_static/images/engine_driver/ed_wizard1.png
+   :alt: Engine Driver Wizard Opening Screen
+   :scale: 45%
+   :align: center
+
+   Engine Driver Wizard Opening Screen
+
+Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation
+
+.. figure:: /_static/images/engine_driver/ed_wizard6.png
+   :alt: Engine Driver Wizard DCC-EX Select
+   :scale: 45%
+   :align: center
+
+   Engine Driver Wizard DCC-EX Select
 
 Next, select the "preferences" option:
 
