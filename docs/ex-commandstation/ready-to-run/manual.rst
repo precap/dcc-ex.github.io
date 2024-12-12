@@ -1,6 +1,6 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l1.rst
-.. include:: /include/include-ex-cs.rst
+.. include:: /include/include-ex-csb1.rst
   
 |EX-CS-LOGO| |donate-button|
 
@@ -9,6 +9,8 @@
 ***************************************
 EX-CSB1 Operating Manual
 ***************************************
+
+|conductor| |tinkerer| |engineer| |support-button|
 
 Board layout
 ==============
