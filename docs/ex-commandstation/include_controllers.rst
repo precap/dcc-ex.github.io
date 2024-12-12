@@ -36,7 +36,7 @@ You need just two things that work together to operate your model railroad:
 The EX-CommandStation
 ---------------------
 
-The |EX-CS| is covered in the :doc:`/begin/rtr-or-diy` pages, and is either an |EX-CSB1| or an Arduino microcontroller with a motor driver and a WiFi shield. The Command Station accepts instructions from a controller and generates packets that are transmitted to your track and subsequently your trains.
+The |EX-CS| is covered in the :doc:`/ex-commandstation/index` pages, and is either an |EX-CSB1| or an Arduino microcontroller with a motor driver and a WiFi shield. The Command Station accepts instructions from a controller and generates packets that are transmitted to your track and subsequently your trains.
 
 The Throttle (Controller)
 -------------------------

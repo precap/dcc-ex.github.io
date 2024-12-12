@@ -239,8 +239,11 @@ html[data-theme='dark'] .dccex-prefix {
 .command-table tr:nth-child(even) {
   background-color: #f8f8f8 !important;  
 }
+html[data-theme='dark']  .command-table tr:nth-child(odd) {
+  background-color: black !important;
+}
 html[data-theme='dark']  .command-table tr:nth-child(even) {
-  background-color: #ffffff08 !important;
+  background-color: #141414 !important;
 }
 
 .command-table td {
@@ -499,6 +502,7 @@ html[data-theme='dark'] .admonition-title {
 
 .wy-table-responsive {
     margin-bottom: 12px !important;
+    border-radius: 5px;
 }
 
 /* override table width restrictions */ 
@@ -513,8 +517,8 @@ html[data-theme='dark'] .admonition-title {
   border-style: none !important;
   border-width:0px !important;
 }
-html[data-theme='dark'] tr:nth-child(odd), .table-grid-homepage tr:nth-child(odd), .table-list-homepage tr:nth-child(odd) {
-  background-color: #ffffff08 !important;
+html[data-theme='dark'] tr:nth-child(odd), html[data-theme='dark'] .table-grid-homepage tr:nth-child(odd), .table-list-homepage tr:nth-child(odd) {
+  background-color: black !important;
 }
 
 .table-wrap-text tr:nth-child(even), .table-grid-homepage tr:nth-child(even), .table-list-homepage tr:nth-child(even) {

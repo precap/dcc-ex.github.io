@@ -81,7 +81,6 @@ DCC-EX Model Railroading
 
    begin/what-to-know
    begin/levels
-   begin/rtr-or-diy
 
 .. toctree::
    :hidden:
