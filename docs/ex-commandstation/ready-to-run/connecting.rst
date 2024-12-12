@@ -237,7 +237,7 @@ Open the Engine Driver App on your Android smart device:
 
    Engine Driver App Icon
 
-Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. If you have already used Engine Driver, you can run the wizard again from the app menu:
+Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. If you have already used Engine Driver, you can run the wizard again from the app menu. Any settings from a previous run will be maintained:
 
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
    :alt: Engine Driver App Menu
@@ -254,7 +254,7 @@ Once loaded, select your preferences when the Intro/Setup wizard launches. You c
 
    Engine Driver Intro/Setup Wizard
 
-The Wizard allows you to set or change appearance options and, most importantly, choose to use DCC-EX native commands instead of WiThrottle:
+The Wizard allows you to set or change appearance options and, most importantly, choose to use DCC-EX native commands instead of WiThrottle Protocol:
 
 .. figure:: /_static/images/engine_driver/ed_wizard1.png
    :alt: Engine Driver Wizard Opening Screen
@@ -263,7 +263,7 @@ The Wizard allows you to set or change appearance options and, most importantly,
 
    Engine Driver Wizard Opening Screen
 
-Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation
+Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation. This setting will automatically add useful buttons and switch to using the DCC-EX native commands instead of WiThrottle Protocol (you can always switch back and forth if you need to connect to a WiThrottle device):
 
 .. figure:: /_static/images/engine_driver/ed_wizard6.png
    :alt: Engine Driver Wizard DCC-EX Select
@@ -272,14 +272,13 @@ Scroll through the other screens setting your preferences until you get the the 
 
    Engine Driver Wizard DCC-EX Select
 
-Next, select the "preferences" option:
+After pressing the checkmark to finish the Wizard, the opening screen will not change to look like figure 23:
 
-.. figure:: /_static/images/engine_driver/ed_preferences2.png
-   :alt: Changing Engine Driver Preferences
+.. figure:: /_static/images/engine_driver/ed_preferences3.png
+   :alt: Engine Driver optional buttons
    :scale: 45%
-   :align: center
+   :align: left
 
-   Changing Engine Driver Preferences
 
 In order to get the most functionality from Engine Driver, there are a few settings that should be changed. By default, Engine Driver uses the WiThrottle protocol, which the EX-CSB1 also understands, but the native DCC-EX protocol has much more power. Scroll through the long list of options and make sure "Emergency Stop", "Layout Power Button" and "DCC-EX Button" are all checked
 
