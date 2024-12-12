@@ -190,7 +190,29 @@ You should see status information on the display including the CSB1 firmware ver
 
 The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. This quick start covers initial testing with a WiFi smart device app, for a USB Connection with EX-WebThrottle or JMRI and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
 
+
 Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly. To configure your CSB1 to connect to your network, see :doc:`WiFi Configuration </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`
+
+On your device, select the network settings and find an available network that begins with "DCCEX_".
+
+.. figure:: /_static/images/engine_driver/ed_wifi_select1.png
+   :alt: Smart Device Available Network Screen
+   :scale: 40%
+   :align: center
+
+   Smart Device Available Networks Screen
+
+Click on that network to see the next screen to enter your password. Notice the password is just "PASS_" followed by the same 6 digits in the network name (called a "SSID").
+
+
+.. figure:: /_static/images/engine_driver/ed_wifi_pass.png
+   :alt: Smart Device AP Password Entry
+   :scale: 40%
+   :align: center
+
+   Smart Device AP Password Entry
+
+   
 
 .. todo XXX We need to probably link to the manual or another CSB1 doc and cover using installer as preferred to the IDE
 
