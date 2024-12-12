@@ -57,3 +57,4 @@ venv
 venv/*
 requirements.FND
 build_help.txt
+docs/_static/images/ex-csb1/desktop.ini
