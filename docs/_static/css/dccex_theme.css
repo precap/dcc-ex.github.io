@@ -113,6 +113,10 @@ h6, .h6 {
   padding-bottom: 0px !important;
 }
 
+form.gsc-search-box table tr:nth-child(odd)  {
+  background-color: white !important;
+}
+
 .gsc-control-cse {
   padding: 0px !important;
 }
