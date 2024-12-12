@@ -190,24 +190,101 @@ You should see status information on the display including the CSB1 firmware ver
 
 The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. This quick start covers initial testing with a WiFi smart device app, for a USB Connection with EX-WebThrottle or JMRI and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
 
-Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly. To configure your CSB1 to connect to your network, see :doc:`WiFi Configuration </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`
+
+Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly. To configure your CSB1 to connect to your network, see :doc:`WiFi Configuration </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`.
+
+The WiFi LED will illuminate once WiFi is configured and ready as an Access Point (or Station if reconfigured for STA mode.)
+
+On your device, select the network settings and find an available network that begins with "DCCEX_".
+
+.. figure:: /_static/images/engine_driver/ed_wifi_select1.png
+   :alt: Smart Device Available Network Screen
+   :scale: 40%
+   :align: center
+
+   Smart Device Available Networks Screen
+
+Click on that network to see the next screen to enter your password. Notice the password is just "PASS_" followed by the same 6 digits in the network name (called a "SSID").
+
+
+.. figure:: /_static/images/engine_driver/ed_wifi_pass.png
+   :alt: Smart Device AP Password Entry
+   :scale: 40%
+   :align: center
+
+   Smart Device AP Password Entry
+
+   
 
 .. todo XXX We need to probably link to the manual or another CSB1 doc and cover using installer as preferred to the IDE
 
-The WiFi LED will illuminate once WiFi is configured and ready as an Access Point (or Station if reconfigured for STA mode.)
 
 .. todo [insert link] XXX figure link showing WiFi LED
 
 Connect Engine Driver
 ----------------------
 
-.. figure:: /_static/images/ex-csb1/csb1_oled.png
-   :alt: OLED Status Display
-   :scale: 40%
+Select the Engine Driver App on your Andriod smart device and once it loads, the setup wizard
+
+.. figure:: /_static/images/engine_driver/ed_ed_icon.png
+   :alt: Engine App Icon
+   :scale: 45%
+   :align: left
+
+   Engine Driver App Icon
+
+.. figure:: /_static/images/engine_driver/ed_preferences1.png
+   :alt: Engine Driver Main Screen
+   :scale: 45%
    :align: center
 
-   OLED Status Display
+   Engine Driver Main Screen
 
+Next, select the "preferences" option:
+
+.. figure:: /_static/images/engine_driver/ed_preferences2.png
+   :alt: Changing Engine Driver Preferences
+   :scale: 45%
+   :align: center
+
+   Changing Engine Driver Preferences
+
+In order to get the most functionality from Engine Driver, there are a few settings that should be changed. By default, Engine Driver uses the WiThrottle protocol, which the EX-CSB1 also understands, but the native DCC-EX protocol has much more power. Scroll through the long list of options and make sure "Emergency Stop", "Layout Power Button" and "DCC-EX Button" are all checked
+
+
+.. figure:: /_static/images/engine_driver/ed_preferences3.png
+   :alt: Engine Driver optional buttons
+   :scale: 45%
+   :align: left
+
+   Engine Driver optional buttons
+
+   
+
+.. figure:: /_static/images/engine_driver/ed_preferences4.png
+   :alt: Engine Driver DCC-EX button option
+   :scale: 45%
+   :align: left
+
+   Engine Driver DCC-EX button option
+
+|BR|
+
+Keep scrolling to see the option for "DCC-EX - EX-CommandStation Preferences" and click on it. Then choose "Auto" or "Yes". Auto will automatically switch between WiThrottle protocol for other command stations and DCC-EX protocol when Engine Driver sees it is a DCC-EX command station. If you aren't using other command stations, at home or at a club, simply choose "Yes".
+
+.. figure:: /_static/images/engine_driver/ed_dccex_preference1.png
+   :alt: Engine Driver DCC-EX button option
+   :scale: 45%
+   :align: left
+
+   Engine Driver DCC-EX button option
+
+.. figure:: /_static/images/engine_driver/ed_preferences5.png
+   :alt: OLED Status Display
+   :scale: 45%
+   :align: center
+
+   OLED blah
 
 
 Confirm startup
