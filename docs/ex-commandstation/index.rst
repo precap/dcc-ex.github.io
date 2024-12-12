@@ -21,9 +21,6 @@ First some quick definitions. |EX-CS| is two things:
 
 |HR-DASHED|
 
-An |EX-CS| is a simple, but powerful, DCC and DC Command Station which you can purchase ready-to-run or assemble yourself from widely available parts. It supports much of the NMRA Digital Command Control (DCC) standards, including:
-
-
 .. figure:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
    :alt: EX-CommandStation
    :scale: 25%
@@ -31,6 +28,8 @@ An |EX-CS| is a simple, but powerful, DCC and DC Command Station which you can p
 
    R2R EX-CSB1 Command Station / Booster
    
+An |EX-CS| is a simple, but powerful, DCC and DC Command Station which you can purchase ready-to-run or assemble yourself from widely available parts. It supports much of the NMRA Digital Command Control (DCC) standards, including:
+
 * Simultaneous control of multiple locomotives
 * Control of all cab/loco functions (F0-F28 and F29-F68)
 * Control of accessory/function decoders (F0-F28 and F29-F68)

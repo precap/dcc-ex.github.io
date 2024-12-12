@@ -3,6 +3,8 @@
 .. include:: /include/include-ex-csb1.rst
 |EX-CS-LOGO|
 
+|EX-CSB1|
+
 ********************
 WiFi Configuration
 ********************

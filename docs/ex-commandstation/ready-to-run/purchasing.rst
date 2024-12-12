@@ -3,13 +3,13 @@
 .. include:: /include/include-ex-csb1.rst
 |EX-CS-LOGO|
 
+|EX-CSB1|
+
 **********
 Purchasing
 **********
 
 |conductor| |tinkerer| |engineer| |support-button|
-
-|EX-CSB1|
 
 How can I get one?
 ==================

@@ -6,6 +6,8 @@
 
 .. index:: EXCSB1, EX-CSB1
 
+|EX-CSB1|
+
 **********************************
 EX-CSB1 Quick Setup Guide
 **********************************
@@ -17,7 +19,7 @@ This quick startup guide is designed to have you configured and setup to run tra
 What You Will need
 =====================
 
-* An EX-CSB1 Command Station
+* An |EX-CSB1|
 * A Power supply (12V - 16V DC see :ref:`Power Supplies <reference/hardware/power-supplies:power supplies>`)
 * A DCC loco (If you are here to run DC, please go to todo XXX)
 * Track
@@ -62,7 +64,7 @@ And to connect via WiFi to the EX-CSB1 to control trains your smart device will 
 
 Connecting to the EX-CSB1 via WiFi:
 
-* Select the WiFi network in your smart device wifi settings named DCCEX_xxxxxx, and use the corresponding password PASS_xxxxxx (where xxxxxx is identical in each case) shown on your EX-CSB1's OLED display
+* Select the WiFi network in your smart device wifi settings named ``DCCEX_xxxxxx``, and use the corresponding password ``PASS_xxxxxx`` (where xxxxxx is identical in each case) shown on your EX-CSB1's OLED display
 * Tell your smart device not to worry about there being no Internet connection
 * Launch throttle app, which should connect automatically
 * You may need to tell your smart device to not automatically connect to your default network or it might keep trying to reconnect to that instead
@@ -72,7 +74,9 @@ These quick tips may actually be enough to get your running, but step by step in
 Track Connection
 -----------------
 
-There are 2 track output power connectors marked A and B. In the standard DCC-EX configuration of a CSB1, A is configured for DCC MAIN operation, and B is configured for PROG or programming track output. We recommend connecting your track to the A MAIN output initially to test your Command Station. To alter this default configuration of DCC outputs, or for DC Mode, you would need to configure outputs with a TrackManager command in the mySetup.h file or via Routes. See :doc:`the TrackManager page </trackmanager/index>`
+There are 2 track output power connectors marked A and B. In the standard DCC-EX configuration of a CSB1, A is configured for DCC **MAIN** operation, and B is configured for **PROG** or programming track output. We recommend connecting your track to the A MAIN output initially to test your Command Station. 
+
+To alter this default configuration of DCC outputs, or for DC Mode, you would need to configure outputs with a TrackManager command in the mySetup.h file or via Routes. See :doc:`the TrackManager page </trackmanager/index>`
 
 .. figure:: /_static/images/ex-csb1/ab_outputs.png
    :alt: Track A and B Outputs
