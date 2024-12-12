@@ -188,6 +188,10 @@ You should see status information on the display including the CSB1 firmware ver
 
    OLED Status Display
 
+Connect the Smart Device to the CSB1 AP Network
+-------------------------------------------------
+
+
 The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. This quick start covers initial testing with a WiFi smart device app, for a USB Connection with EX-WebThrottle or JMRI and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
 
 
@@ -221,24 +225,37 @@ Click on that network to see the next screen to enter your password. Notice the 
 
 .. todo [insert link] XXX figure link showing WiFi LED
 
-Connect Engine Driver
-----------------------
+Log Engine Driver into the CSB1 AP Network
+-------------------------------------------
 
-Select the Engine Driver App on your Andriod smart device and once it loads, the setup wizard
+Open the Engine Driver App on your Android smart device: 
+
 
 .. figure:: /_static/images/engine_driver/ed_ed_icon.png
    :alt: Engine App Icon
    :scale: 45%
-   :align: left
+   :align: center
 
    Engine Driver App Icon
 
+Once loaded, select your preferences when the Intro/Setup wizard launches. If you have already used Engine Driver, you can run the wizard again from the app menu:
+
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
-   :alt: Engine Driver Main Screen
+   :alt: Engine Driver App Menu
+   :scale: 45%
+   :align: left
+
+   Engine Driver App Menu
+
+
+.. figure:: /_static/images/engine_driver/ed_wizard_menu.png
+   :alt: Engine Driver Intro/Setup Wizard
    :scale: 45%
    :align: center
 
-   Engine Driver Main Screen
+   Engine Driver Intro/Setup Wizard
+
+The Wizard allows you to set or change appearance options and, most importantly, choose to use DCC-EX native commands instead of WiThrottle:
 
 Next, select the "preferences" option:
 
