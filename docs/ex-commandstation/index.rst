@@ -9,6 +9,12 @@ EX-CommandStation (RTR or DIY)
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
+.. sidebar::
+
+   .. contents:: On this page
+      :local:
+      :depth: 1
+
 What is EX-CommandStation?
 ==========================
 

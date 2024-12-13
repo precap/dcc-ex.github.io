@@ -22,7 +22,7 @@ This is an iOS App from the USA. |WiThrottle| is probably the most popular iOS t
 
 Please visit their website: https://www.withrottle.com
 
-You can find it in the App Store: `WiThrottle <http://itunes.apple.com/app/id344172578>`_
+You can find it in the App Store: `WiThrottle <http://itunes.apple.com/app/id344172578>`_ |EXTERNAL-LINK|
 
 For more information more information about these protocols, see :doc:`WiThrottle Server, Web Server, DCC-EX Native Commands Explained </throttles/protocols>`
 

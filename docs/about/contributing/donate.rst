@@ -7,6 +7,8 @@
 Donate to Our Project
 **********************
 
+|FORCE-BREAK|
+
 .. sidebar::
 
   .. contents:: On this page

@@ -317,7 +317,7 @@ If you have a need to use a stepper driver and motor combination that isn't on t
 
 To do this, you will need to add a valid AccelStepper() definition with the appropriate parameters provided, and this entry needs to be  defined as your `STEPPER_DRIVER` option.
 
-The list of parameters required are documented on the `AccelStepper <http://www.airspayce.com/mikem/arduino/AccelStepper/>`_ web page.
+The list of parameters required are documented on the `AccelStepper <http://www.airspayce.com/mikem/arduino/AccelStepper/>`_ |EXTERNAL-LINK| web page.
 
 **Note:** Prior to version 0.7.0 of |EX-TT|, there was a slight modification to the AccelStepper library. If you have a need to invert the enable option, then provide this as the last parameter. The modified library sets the enable pin (if defined) when the stepper object is instantiated, and if it needs to be inverted, this happens at the same time. We do not call the setEnablePin() or setPinsInverted() functions at any point. You can see this in use in the "standard_steppers.h" file as defined for the "A4988_INV" driver option.
 
