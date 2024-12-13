@@ -59,14 +59,14 @@ It also supports:
 
 ----
 
-Ready-to-Run or DIY
--------------------
+Ready-to-Run (RTR) or Do-It-YourSelf (DIY)
+------------------------------------------
 
 To get started, simply choose your path. 
 
-  Whether you are a |Conductor-text|, |Tinkerer-text|, or |Engineer-text|, most people will choose the easy, :doc:`ready-to-run</ex-commandstation/ready-to-run/index>`, option and purchase an |EX-CSB1|. 
+  Whether you are a |Conductor-text|, |Tinkerer-text|, or |Engineer-text|, most people will choose the easy, :doc:`Ready-To-Run</ex-commandstation/ready-to-run/index>` (RTR), option and purchase an |EX-CSB1|. 
   
-  Some Tinkerers and Engineers may opt to go the :doc:`DIY</ex-commandstation/diy/index>` route by purchasing separate components (or a kit), connecting it together themselves, and installing the |EX-CS| software. 
+  Some Tinkerers and Engineers may opt to go the :doc:`Do-It-Yourself</ex-commandstation/diy/index>` (DIY) route by purchasing separate components (or a kit), connecting it together themselves, and installing the |EX-CS| software. 
   
   The choice is yours.
 
@@ -81,7 +81,7 @@ To get started, simply choose your path.
     * - |EX-CSB1-LOGO-SMALL|
       - |EX-CS-DIY-LOGO-SMALL|
     * - Our ready-to-run DCC & DC command station / booster for controlling your model railroad
-      - DIY instructions on the parts to buy to build your own DCC & DC command station
+      - Do-It_yourself (DIY) instructions on the parts to buy to build your own DCC & DC command station
 
 ----
 
@@ -92,7 +92,7 @@ To get started, simply choose your path.
     :width: 900
 
     * - |conductor| 
-      - If you are just starting on the |DCC-EX| journey we recommend you start with the |BR| :doc:`Ready-to-Run</ex-commandstation/ready-to-run/index>` page though feel free to try the :doc:`DIY</ex-commandstation/diy/index>` path.
+      - If you are just starting on the |DCC-EX| journey we recommend you start with the |BR| :doc:`Ready-to-Run</ex-commandstation/ready-to-run/index>` (RTR) page though feel free to try the :doc:`Do-It-Yourself</ex-commandstation/diy/index>` (DIY) path.
 
 ----
 
@@ -103,7 +103,7 @@ To get started, simply choose your path.
     :width: 900
 
     * - |tinkerer| |BR| |BR| |engineer|
-      - if you are just starting on the |DCC-EX| journey we also recommend you start with the |BR| :doc:`Ready-to-Run</ex-commandstation/ready-to-run/index>` or :doc:`DIY</ex-commandstation/diy/index>`. |BR| But if you wish to discover more you may want to look at the :doc:`/ex-commandstation/advanced-setup/index` pages for additional options that may be of interest.
+      - if you are just starting on the |DCC-EX| journey we also recommend you start with the |BR| :doc:`Ready-to-Run</ex-commandstation/ready-to-run/index>` (RTR) or :doc:`Do-It-Yourself</ex-commandstation/diy/index>` (DIY). |BR| But if you wish to discover more you may want to look at the :doc:`/ex-commandstation/advanced-setup/index` pages for additional options that may be of interest.
 
 .. toctree::
     :maxdepth: 1
