@@ -7,7 +7,7 @@
 I2C GPIO Expander Modules
 *************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

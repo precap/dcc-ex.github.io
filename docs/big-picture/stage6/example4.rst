@@ -7,7 +7,7 @@
 Example - ROUTEs with servo based turnouts/signals on a PCA9685 servo module
 ****************************************************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. code-block:: 
 

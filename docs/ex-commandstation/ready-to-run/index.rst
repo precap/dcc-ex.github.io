@@ -7,7 +7,7 @@
 Ready-To-Run - Getting Started
 ******************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. figure:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
    :alt: DCC-EX EX-CSB1

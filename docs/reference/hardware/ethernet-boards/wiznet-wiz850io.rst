@@ -7,7 +7,7 @@
 Wiznet WIZ850IO
 ************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 This is a micro Ethernet board no bigger than the RJ45 connector it is attached to.  You have to wire this with jumpers or solder it to a prototyping PCB.
 

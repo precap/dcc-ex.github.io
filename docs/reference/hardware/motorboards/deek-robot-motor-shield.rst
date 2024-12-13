@@ -7,7 +7,7 @@
 Deek-Robot Motor Shield
 ***********************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. note:: 
 

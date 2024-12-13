@@ -7,7 +7,7 @@
 L298N Motor Driver Setup
 ************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. warning:: 
 

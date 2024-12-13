@@ -5,7 +5,7 @@
 JMRI (Java Model Railroad Interface)
 ************************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar:: 
 

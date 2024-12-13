@@ -7,7 +7,7 @@
 Stage 5 - Turntables & Traversers
 *********************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

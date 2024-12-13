@@ -7,7 +7,7 @@
 Stage 4 - Automation
 ********************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 What to expect to learn from stage 4
 ====================================

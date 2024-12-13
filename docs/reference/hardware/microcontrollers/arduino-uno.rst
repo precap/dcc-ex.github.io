@@ -8,7 +8,7 @@
 Arduino Uno (Not recommended)
 *****************************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 **As of version 5.4.0, this is no longer a recommended option, see :doc:`/news/posts/20240328`**
 

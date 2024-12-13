@@ -7,7 +7,7 @@
 I2C Displays
 ************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
@@ -173,7 +173,7 @@ Uncomment or edit the appropriate line for your display type.
 Combine IP address and port on OLED
 ===================================
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. note:: 
 

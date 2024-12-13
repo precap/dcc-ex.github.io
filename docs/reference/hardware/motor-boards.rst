@@ -7,7 +7,7 @@
 Supported Motor Drivers
 ***********************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar::
 
@@ -83,7 +83,7 @@ Easy to use boards
 Intermediate boards
 -------------------
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 These boards require wiring.
 
@@ -99,7 +99,7 @@ These boards require wiring.
 Expert Level Boards
 -------------------
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 These boards require you to add your own config to the config.h file, and may not have good current sensing. That said, if you buy a separate current sense board, we particularly like the IBT_2 board (though you will need 2 of them or some other board for the programming track)
 
@@ -123,7 +123,7 @@ Incompatible boards
 Other boards
 ------------
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 While not fully supported and tested, other boards can potentially be used. Look for the following criteria:
 
@@ -138,7 +138,7 @@ While not fully supported and tested, other boards can potentially be used. Look
 Configuring Motor Drivers
 =========================
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 If your board is not in the list of supported motor board types, or if you need to make changes or have more information about how motor boards are configured in |EX-CS|, see:
 
@@ -150,7 +150,7 @@ If your board is not in the list of supported motor board types, or if you need 
 High Accuracy Waveform
 ======================
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 If you're experiencing issues with specific decoders and all attempts to get them working are failing, you may need to enable the high accuracy waveform functionality (providing your motor driver supports it).
 

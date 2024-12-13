@@ -9,7 +9,7 @@ EX-WiFiShield 8266 (recommended)
 
 AKA Makerfabs ESP8266 WiFi Shield
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar::
 

@@ -7,7 +7,7 @@
 Overview - types and options
 ****************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

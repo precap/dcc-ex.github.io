@@ -12,7 +12,7 @@
 Using the Installer (Windows x32, MacOS or Linux)
 *************************************************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-installer-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-installer-button2|
 
 .. warning::
 

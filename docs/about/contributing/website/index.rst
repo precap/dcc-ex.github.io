@@ -7,7 +7,7 @@
 Contributing to the Documentation
 *********************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer|
 
 .. toctree::
     :maxdepth: 1

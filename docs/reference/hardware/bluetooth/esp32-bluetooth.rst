@@ -7,7 +7,7 @@
 Using Bluetooth with your ESP32 EX-CommandStation
 *************************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 For users wishing to use an ESP32 as their |EX-CS|, it is possible to utilise the built-in Bluetooth as the connection method.
 

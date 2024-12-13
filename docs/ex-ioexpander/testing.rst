@@ -7,7 +7,7 @@
 Testing EX-IOExpander
 *********************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-ioexpander-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-ioexpander-button2|
 
 .. sidebar:: 
   

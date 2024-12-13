@@ -3,11 +3,11 @@
 .. include:: /include/include-ex-cs.rst
 |EX-CS-LOGO|
 
-***************************************
-EX-CommandStation (Ready-to-Run or DIY)
-***************************************
+******************************
+EX-CommandStation (RTR or DIY)
+******************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 What is EX-CommandStation?
 ==========================

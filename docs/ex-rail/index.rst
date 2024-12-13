@@ -7,7 +7,7 @@
 EX-RAIL (Automation/Animation)
 ******************************
 
-|tinkerer| |engineer| |support-button| 
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 Welcome to the home for |DCC-EX| Automation.
 

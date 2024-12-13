@@ -7,7 +7,7 @@
 ESP-01 and ESP-01s
 **************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

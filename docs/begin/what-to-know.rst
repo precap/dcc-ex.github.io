@@ -161,8 +161,8 @@ Please read on to understand which of our products and features can help you ach
 Some Common Scenarios Explored
 ==============================
 
-I'm interested in DCC but have a very small budget
---------------------------------------------------
+I'm interested in DCC but have a limited budget
+-----------------------------------------------
 
 How does spending only US$60 to US$120 (€54 - €110) sound to get the equivalent of over US$400 (€365) worth of commercial command station capabilities?
 

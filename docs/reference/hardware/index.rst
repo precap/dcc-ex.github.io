@@ -7,7 +7,7 @@
 Hardware
 ********
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. toctree::
     :maxdepth: 1
@@ -16,7 +16,7 @@ Hardware
     wire-gauge
     power-supplies
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. toctree::
     :maxdepth: 1

@@ -7,7 +7,7 @@
 Troubleshooting & Getting Help
 ******************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar::
 

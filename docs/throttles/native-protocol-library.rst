@@ -7,7 +7,7 @@
 DCC-EX Native command protocol library - DCCEXProtocol
 ******************************************************
 
-|tinkerer| |engineer| |support-button| 
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 A DCC-EX Native command protocol library is available to help develop throttle apps on Arduino (primarily ESP32) hardware.
 

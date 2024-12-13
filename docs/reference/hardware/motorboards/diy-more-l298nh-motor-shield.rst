@@ -7,7 +7,7 @@
 DIY More L298NH Motor Shield
 ****************************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. note:: 
 

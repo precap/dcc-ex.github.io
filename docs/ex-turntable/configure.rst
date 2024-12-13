@@ -7,7 +7,7 @@
 Configuration options
 **********************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-turntable-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-turntable-button2|
 
 .. sidebar::
 
@@ -243,7 +243,7 @@ This is the time in milliseconds that the LED is on and off when the set to a sl
 Advanced configuration options
 ==============================
 
-|tinkerer| |engineer|
+|SUITABLE| tinkerer| |engineer| |support-button|
 
 DEBUG
 -----
@@ -303,7 +303,7 @@ Note that in turntable mode, a hall effect or similar sensor is typically used w
 Defining custom stepper drivers
 ===============================
 
-|tinkerer| |engineer|
+|SUITABLE| tinkerer| |engineer| |support-button|
 
 .. note:: 
 

@@ -7,7 +7,7 @@
 Style Guide
 *************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer|
 
 .. sidebar::
 

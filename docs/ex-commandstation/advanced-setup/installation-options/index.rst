@@ -7,7 +7,7 @@
 Installation Options
 **************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 There are two options available to install |EX-CS|:
 

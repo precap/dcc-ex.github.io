@@ -7,7 +7,7 @@
 HC-05/06 Bluetooth Modules
 **************************
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

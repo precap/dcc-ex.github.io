@@ -8,7 +8,7 @@
 Mega+WiFi (Not recommended)
 ***************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

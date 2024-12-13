@@ -9,7 +9,7 @@
 Purchasing
 **********
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 How can I get one?
 ==================

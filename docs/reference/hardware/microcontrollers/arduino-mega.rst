@@ -8,7 +8,7 @@
 Arduino Mega (Recommended)
 **************************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 Why do we recommend the Mega?
 -----------------------------

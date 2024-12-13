@@ -7,7 +7,7 @@
 Editing myAutomation.h
 **********************
 
-|tinkerer| |conductor| |support-button| 
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

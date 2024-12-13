@@ -6,7 +6,7 @@
 DCC Turntables/traversers
 *************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor|  |tinkerer| |engineer| |support-button|
 
 |NOT-IN-PROD-VERSION|
 

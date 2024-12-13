@@ -7,7 +7,7 @@
 IRF3205 Motor Driver Setup
 **************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. warning:: 
 
@@ -22,7 +22,7 @@ IRF3205 Motor Driver Setup
 Dual Motor Driver Module H-bridge MOSFET IRF3205
 ------------------------------------------------
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. figure:: /_static/images/motorboards/3205_motor_board.png
    :alt: IRF3205 Motor Board

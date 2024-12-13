@@ -10,7 +10,7 @@
 DCC-EX EX-MotorShield8874 RevA
 ******************************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. note:: 
 

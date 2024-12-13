@@ -5,7 +5,7 @@
 DCC-EX Third Party Suppliers
 ****************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. toctree::
     :maxdepth: 1

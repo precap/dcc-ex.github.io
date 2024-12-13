@@ -7,7 +7,7 @@
 Ethernet Boards
 ***************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
