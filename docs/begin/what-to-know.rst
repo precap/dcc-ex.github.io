@@ -16,7 +16,7 @@ Lets Get Started
     :depth: 2
     :local:
 
-This page goes through some introductory information about our team and our products.  
+This page goes through some introductory information about our team and our products.  It also explores some common scenarios and answers some common questions. 
 
 Please read on, or use the index to the right to skip to any topic of interest.
 
@@ -33,8 +33,8 @@ What is DCC-EX?
 
 |HR-DASHED|
 
-DCC-EX free and Open Source Products
-------------------------------------
+Our free and Open Source Products
+---------------------------------
 
 Our list of free, open source software products currently include:
 
@@ -112,7 +112,7 @@ Our list of open source hardware products currently include:
     * - |EX-WS-LOGO-SMALL| 
       - Our WiFi add-on board for DIY command stations
 
-----
+|HR-DASHED|
 
 What is EX-CommandStation
 =========================
@@ -120,6 +120,8 @@ What is EX-CommandStation
 |EX-CS| is or flagship product and is explained in great detail :doc:`elsewhere on the site</ex-commandstation/index>`, but a brief summary would be...
 
   An |EX-CS| is a simple, but powerful, DCC and DC Command Station which you can purchase :doc:`ready-to-run</ex-commandstation/ready-to-run/index>` or :doc:`assemble yourself</ex-commandstation/diy/index>` from widely available parts.
+
+|HR-DASHED|
 
 What is DCC?
 ============
