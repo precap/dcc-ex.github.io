@@ -7,7 +7,7 @@
 Folder and Page Structure
 *************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer|
 
 .. sidebar::
 

@@ -8,7 +8,7 @@
 STMicroelectronics Nucleo (Recommended)
 ***************************************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button2|
 
 .. sidebar::
 

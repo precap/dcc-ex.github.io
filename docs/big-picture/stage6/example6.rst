@@ -7,7 +7,7 @@
 Example - Full automation with pin based turnouts/points and signals on MCP23017 I/O expander Vpins
 ***************************************************************************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. code-block:: 
 

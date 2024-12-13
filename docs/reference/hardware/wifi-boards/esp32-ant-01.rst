@@ -7,7 +7,7 @@
 ESP32_Ant-01 Breakout and Development Board (ESP32)
 ***************************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

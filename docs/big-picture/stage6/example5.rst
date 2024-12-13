@@ -7,7 +7,7 @@
 Example - Full automation with pin based turnouts and signals on Mega2560 direct I/O pins
 *****************************************************************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. code-block:: 
 

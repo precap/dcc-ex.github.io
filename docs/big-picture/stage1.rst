@@ -7,7 +7,7 @@
 Stage 1 - Running a Train
 *********************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

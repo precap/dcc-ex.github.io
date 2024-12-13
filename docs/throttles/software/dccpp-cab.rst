@@ -5,7 +5,7 @@
 DCCpp CAB
 **********
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar:: 
 

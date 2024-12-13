@@ -7,7 +7,7 @@
 MiniIBT Motor Driver L6201P (single)
 ************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. warning:: 
 

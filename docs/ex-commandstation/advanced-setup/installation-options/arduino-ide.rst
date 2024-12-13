@@ -7,7 +7,7 @@
 Install using the Arduino IDE
 ******************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

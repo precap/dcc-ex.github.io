@@ -10,7 +10,7 @@
 Frequently Asked Questions (FAQ)
 ********************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| |
 
 This is a list of **Frequently Asked Questions** that we answer on our various support channels:
 

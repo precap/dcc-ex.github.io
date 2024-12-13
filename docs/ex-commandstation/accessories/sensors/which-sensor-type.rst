@@ -6,7 +6,7 @@
 Which sensor type to use?
 *************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

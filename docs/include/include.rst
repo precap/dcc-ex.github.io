@@ -328,3 +328,8 @@
 
   <a href="https://github.com/DCC-EX/EX-FastClock/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help"><img src="../_static/images/buttons/github-bug.png" style="width: 50%; height: 50%;" /></a>
 ..
+.. ...............................................
+..
+.. |suitable| image:: /_static/images/level_icons/level-suitable-for.png
+   :alt: Suitable For Level:
+   :scale: 40%

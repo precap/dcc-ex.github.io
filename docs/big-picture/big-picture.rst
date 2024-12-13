@@ -7,7 +7,7 @@
 How it All Works Together
 *************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer|
 
 .. sidebar:: 
 

@@ -12,7 +12,7 @@
 EX-CSB1 Operating Manual
 ***************************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 Board layout
 ==============

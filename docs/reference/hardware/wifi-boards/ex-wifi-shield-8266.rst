@@ -10,7 +10,7 @@
 DCC-EX EX-WiFiShield 8266
 *************************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar::
 

@@ -5,7 +5,7 @@
 Cab Engineer: DCC Throttle
 ***************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar:: 
 

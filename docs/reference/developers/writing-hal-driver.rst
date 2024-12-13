@@ -7,7 +7,7 @@
 Writing a HAL Driver
 *********************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 Suppose you have a particular device you want to use with |EX-CS|, but there isn't a driver for it.  Well, you could ask for one, and we may well write one for you.  Or you could write it yourself.
 

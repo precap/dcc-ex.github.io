@@ -7,7 +7,7 @@
 Motor Driver Configuration
 **************************
 
-|tinkerer| |Engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 
@@ -72,7 +72,7 @@ That's all you need to do. Make your change and then upload the sketch to your A
 If Your board is NOT in the Supported List
 ------------------------------------------
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 If your board is not in the list (remember many boards are considered a "STANDARD_MOTOR_SHIELD"), you can easily add it. In your config.h file, find the line that looks like this:
 

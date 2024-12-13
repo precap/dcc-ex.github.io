@@ -7,7 +7,7 @@
 Contact Us
 ***********
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 The best way to reach us is on our  `Discord Server </support/index.html#preferred-option-discord>`_. 
 

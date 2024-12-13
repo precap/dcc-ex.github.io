@@ -7,7 +7,7 @@
 Throttles (Hardware)
 ********************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. toctree::
   :maxdepth: 1

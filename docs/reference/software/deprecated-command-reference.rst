@@ -9,7 +9,7 @@
 DCC-EX Native Command Detailed Reference
 ****************************************
 
-|engineer| |support-button|
+|SUITABLE| |engineer| |support-button|
 
 .. sidebar:: 
 

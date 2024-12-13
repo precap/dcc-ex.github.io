@@ -5,7 +5,7 @@
 Servo driven turnouts/points
 ****************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

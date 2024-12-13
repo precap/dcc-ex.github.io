@@ -7,7 +7,7 @@
 Supported WiFi Shields and Boards
 *********************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. warning:: 
    :class: warning-float-right

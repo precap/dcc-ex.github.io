@@ -8,7 +8,7 @@
 Nano Every (Deprecated)
 ***********************
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 **As of version 5.4.0, this is now deprecated, see :doc:`/news/posts/20240328`**
 

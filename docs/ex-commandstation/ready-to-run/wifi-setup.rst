@@ -9,7 +9,7 @@
 WiFi Configuration
 ********************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 |EX-CSB1|
 

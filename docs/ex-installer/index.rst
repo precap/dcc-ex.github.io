@@ -10,7 +10,7 @@
 EX-Installer
 ************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 ----
 

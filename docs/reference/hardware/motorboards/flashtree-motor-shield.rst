@@ -7,7 +7,7 @@
 Flashtree Motor Shield
 **********************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. note:: 
 

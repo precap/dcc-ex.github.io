@@ -7,7 +7,7 @@
 Example - Full automation with servo based turnouts/points and signals with a PCA9685 servo module
 **************************************************************************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. code-block:: 
 

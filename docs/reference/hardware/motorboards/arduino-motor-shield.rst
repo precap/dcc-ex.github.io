@@ -7,7 +7,7 @@
 Arduino Motor Shield R3
 ***********************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. note:: 
 

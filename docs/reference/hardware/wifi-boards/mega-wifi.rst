@@ -7,7 +7,7 @@
 Mega+WiFi Combo Board
 *********************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. figure:: /_static/images/assembly/mega_wifi.png
    :alt: Mega WiFi

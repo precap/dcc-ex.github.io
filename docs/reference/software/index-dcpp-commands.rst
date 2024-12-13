@@ -9,7 +9,7 @@
 DCC-EX Native Commands
 **********************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. toctree::
     :maxdepth: 1
