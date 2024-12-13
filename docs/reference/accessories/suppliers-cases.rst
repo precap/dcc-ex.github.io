@@ -1,9 +1,21 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l2.rst
 .. include:: /include/include-third-party.rst
+|EX-SUPPLIERS-LOGO|
+
 ******************
 Cases / Enclosures
 ******************
+
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
+
+.. sidebar::
+
+   .. contents:: On this page
+      :local:
+      :depth: 1
+
+|FORCE-BREAK|
 
 David Yale
 ------------

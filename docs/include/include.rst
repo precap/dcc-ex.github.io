@@ -207,6 +207,11 @@
       :scale: 40%
       :class: image-product-logo-float-right
 ..
+.. |EX-SUPPLIERS-LOGO| image:: /_static/images/logos/product-logo-suppliers.png
+      :alt: DCC-EX Suppliers
+      :scale: 40%
+      :class: image-product-logo-float-right
+..
 .. |TRACKMANAGER-LOGO| image:: /_static/images/logos/product-logo-trackmanager.png
       :alt: DCC-EX Track Manager
       :scale: 40%

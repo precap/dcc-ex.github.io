@@ -83,7 +83,7 @@ Plug your board into your computer with a USB micro cable to see if it is recogn
 
 If you don't see the CH340 with the Mega plugged into USB, download and install the drivers from here:
 
-http://www.wch-ic.com/downloads/CH341SER_ZIP.html
+http://www.wch-ic.com/downloads/CH341SER_ZIP.html |EXTERNAL-LINK|
 
 Once you can see your computer recognises your board, **remember the port**. For a PC running windows, it will be something like "COM24" as in the picture above. For a Mac, it will be something like "/dev/cu.wchusbserial*****", and for Linux it will look like "/dev/ttyUSBx". Write it down. 
 

@@ -178,9 +178,9 @@ If you just need the power supply for your own board, use the schematic to get w
 
 - 17 function decoder
 
-http://www.modelrailroadcontrolsystems.com/improved-geoff-bunzas-low-cost-17-channel-dcc-decoder-bare-board/
+http://www.modelrailroadcontrolsystems.com/improved-geoff-bunzas-low-cost-17-channel-dcc-decoder-bare-board/ |EXTERNAL-LINK|
 
-https://www.tindie.com/products/tanner87661/dcc-interface-breakout-board-with-grove-port/
+https://www.tindie.com/products/tanner87661/dcc-interface-breakout-board-with-grove-port/ |EXTERNAL-LINK|
 
 **Build it in a case with a display!**
 
@@ -194,10 +194,10 @@ And if you want to get into the development of |EX-DCCI| and why we recommend th
    Neil's DCC-EX Sniffer in a 3D Printed Case
 
 HERE:
-https://wakwak2popo.wordpress.com/2020/12/11/dcc-sniffer/
+https://wakwak2popo.wordpress.com/2020/12/11/dcc-sniffer/ |EXTERNAL-LINK|
 
 and HERE:
-https://wakwak2popo.wordpress.com/2021/01/28/stand-alone-dcc-diagnostics/
+https://wakwak2popo.wordpress.com/2021/01/28/stand-alone-dcc-diagnostics/ |EXTERNAL-LINK|
 
 Logic Analyzer/Decoder
 =========================
@@ -232,7 +232,7 @@ Install PulseView
 
 Since the install instructions are particular for your operating system, we will just refer you to the SigRok page where you can follow their detailed instructions:
 
-`SigRok PulseView Installation Instructions <https://sigrok.org/doc/pulseview/0.4.1/manual.html#installation>`_
+`SigRok PulseView Installation Instructions <https://sigrok.org/doc/pulseview/0.4.1/manual.html#installation>`_ |EXTERNAL-LINK|
 
 Install the Plugin
 -------------------
@@ -265,7 +265,7 @@ Download USB Drivers
 
 These device need USB drivers from Saleae. Download and install the 1.x drivers from here:
 
-`USB Analyzer Drivers Download <https://support.saleae.com/logic-software/legacy-software/older-software-releases>`_
+`USB Analyzer Drivers Download <https://support.saleae.com/logic-software/legacy-software/older-software-releases>`_ |EXTERNAL-LINK|
 
 Connect the Analyzer
 ---------------------

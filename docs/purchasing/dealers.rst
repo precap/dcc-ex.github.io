@@ -1,12 +1,19 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l1.rst
-.. include:: /include/include-description.rst
+.. include:: /include/include-third-party.rst
+|EX-SUPPLIERS-LOGO|
 
 ************************************
 DCC-EX Official Dealers / Resellers
 ************************************
 
-With the ever increasing demand for hardware that is guaranteed to be |DCC-EX| compatible, and the uptake of |EX-CS| by more |conductor| level users, we are striving to make the |DCC-EX| ecosystem more accessible.
+.. sidebar::
+
+  .. contents:: On this page
+    :depth: 1
+    :local:
+
+With the ever increasing demand for hardware that is guaranteed to be |DCC-EX| compatible, and the uptake of |EX-CS| by more |CONDUCTOR-TEXT| level users, we are striving to make the |DCC-EX| ecosystem more accessible.
 
 As part of that, and starting with the release of the |EX-MS|, we have a number of official |DCC-EX| dealers that can supply various different hardware devices as well as complete |EX-CS| systems.
 
@@ -28,11 +35,8 @@ In the United States serving the US, Canada, and Mexico
 .. rst-class:: clearer
 
 
-`DCC-EX Store <https://store.dcc-ex.com/>`_
-===============================================
-
-`Smart Hobby, LLC <https://www.smarthobbyllc.com/>`_
-======================================================
+* `DCC-EX Store <https://store.dcc-ex.com/>`_ |EXTERNAL-LINK|
+* `Smart Hobby, LLC <https://www.smarthobbyllc.com/>`_ |EXTERNAL-LINK|
 
 ----
 
@@ -47,8 +51,8 @@ In the England serving the UK
 .. rst-class:: clearer
 
 
-`Chesterfield Model Making and Miniature Electronics <https://chesterfield-models.co.uk/product/dccex/>`_
-=============================================================================================================
+* `Chesterfield Model Making and Miniature Electronics <https://chesterfield-models.co.uk/product/dccex/>`_ |EXTERNAL-LINK|
+
 
 ----
 
@@ -64,8 +68,8 @@ In Austria serving the European Union (EU)
 .. rst-class:: clearer
 
 
-`Semify <https://www.semify-eda.com/ex-motorshield8874/>`_
-=============================================================
+* `Semify <https://www.semify-eda.com/ex-motorshield8874/>`_ |EXTERNAL-LINK|
+
 
 ----
 
@@ -81,6 +85,5 @@ In Australia serving AU, NZ, and APAC
 .. rst-class:: clearer
 
 
-`Millennium Engineering Pty Ltd <https://www.milleng.com.au>`_
-================================================================
+* `Millennium Engineering Pty Ltd <https://www.milleng.com.au>`_ |EXTERNAL-LINK|
 
