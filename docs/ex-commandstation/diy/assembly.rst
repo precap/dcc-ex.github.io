@@ -76,17 +76,8 @@ Cutting the Trace
 
 **Arduino Motor Shield R3** Only!  This is **not required** if you are using the **EX-MotorShield8874**.
 
-c
-
-   |conductor| |BR| In this *alternate* method, you can just bend the Vin pin so that instead of connecting to the header in the Arduino, it rides on the outside of the header. 
-
-   .. figure:: /_static/images/motorboards/bend_pin1.jpg
-      :alt: Bend out the Vin pin on the Arduino motor shield
-      :scale: 50%
-
-      Bending out the Pin (click to enlarge)
-   
-   Another *Alternate* method is to just snip off the pin with wire cutters and make sure that there is not enough pin left to still make contact with the hole it normally would go into when seated on the Arduino.
+Standard Method
+^^^^^^^^^^^^^^^
 
 Cut the trace indicated in the picture with a razor blade or x-acto knife. 2 or 3 firm scratches through the trace should do it. Do not cut too deep. Both a magnifier and an ohmmeter would be helpful here. The little vertical line in between the two solder pads is the scratch mark from where we cut through the little solder trace.
 
@@ -97,6 +88,25 @@ Cut the trace indicated in the picture with a razor blade or x-acto knife. 2 or 
    Cutting the Vin trace (click to enlarge)
 
 If you have an ohmmeter, touch your probes to each side of the trace pads and make sure the resistance reading is infinite. In other words, make sure the trace is cut and there is no longer continuity between the two pads on the trace.
+
+
+Alternate Method 1
+^^^^^^^^^^^^^^^^^^
+
+In this *alternate* method, you can just bend the Vin pin so that instead of connecting to the header in the Arduino, it rides on the outside of the header. 
+
+.. figure:: /_static/images/motorboards/bend_pin1.jpg
+   :alt: Bend out the Vin pin on the Arduino motor shield
+   :scale: 50%
+
+   Bending out the Pin (click to enlarge)
+
+Alternate Method 2
+^^^^^^^^^^^^^^^^^^
+
+Another *Alternate* method is to just snip off the pin with wire cutters and make sure that there is not enough pin left to still make contact with the hole it normally would go into when seated on the Arduino.
+
+----
 
 2. Connect the Motor Driver
 ===========================
@@ -182,6 +192,8 @@ f. The boards should be seated. Note the pins are longer than the headers. It is
 
 Check your work. Look under and through where the boards connect, make sure no pins missed the holes and got bent so that they run along the outside of the headers.
 
+----
+
 3. Connect the Motor Driver Power Supply
 ========================================
 
@@ -212,6 +224,8 @@ If you are using a laptop style "brick" power supply or an adapter that plugs in
 
 If you don't have a screw terminal adapter, you can cut the end off your power supply and strip the wires. The outer wire braid is usually the negative connection and the centre wire is the positive connection. Check the wiring image on the power supply itself.
 
+----
+
 4. Connect the Power Wires to the Tracks
 ========================================
 
@@ -233,6 +247,8 @@ In other words, if you view one side of your main track as having a 'left' side 
 
    Out to Main and Program tracks
 
+----
+
 5. Connect the Arduino Power Supply
 ===================================
 
@@ -245,6 +261,8 @@ Connect the 2.5mm barrel connector from your separate 7-9V DC power supply to th
 If you have a power supply with bare wires, you can bypass the barrel connector and connect your power supply to the ``Vin`` and ``Gnd`` pins on the Arduino.
 
 .. rst-class:: clearer
+
+----
 
 Next Steps - Install the WiFi board
 ===================================

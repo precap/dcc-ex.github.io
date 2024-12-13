@@ -114,12 +114,14 @@ Our list of open source hardware products currently include:
 
 |HR-DASHED|
 
-What is EX-CommandStation
-=========================
+What is EX-CommandStation?
+==========================
 
 |EX-CS| is or flagship product and is explained in great detail :doc:`elsewhere on the site</ex-commandstation/index>`, but a brief summary would be...
 
   An |EX-CS| is a simple, but powerful, DCC and DC Command Station which you can purchase :doc:`ready-to-run</ex-commandstation/ready-to-run/index>` or :doc:`assemble yourself</ex-commandstation/diy/index>` from widely available parts.
+
+Many people call |EX-CS| "DCC-EX". These terms are often used interchangeably, though they are in very fact different.
 
 |HR-DASHED|
 

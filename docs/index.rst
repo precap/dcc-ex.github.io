@@ -38,7 +38,7 @@ DCC-EX Model Railroading
 
     If you are just starting with |DCC-EX| then the sections below are intended to help you understand how our products might suit your needs. We've curated this guidance based on feedback from our users: 
 
-    - :ref:`begin/what-to-know:what is dcc-ex?`
+    - :ref:`begin/what-to-know:What is EX-CommandStation?`
     - :ref:`begin/what-to-know:what is dcc?`
     - :ref:`begin/what-to-know:We do DC as well!`
     - :ref:`I'm interested in DCC but have a limited budget <begin/what-to-know:i'm interested in dcc but have a limited budget>`

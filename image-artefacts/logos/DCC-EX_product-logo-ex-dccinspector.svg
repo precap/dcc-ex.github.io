@@ -35,15 +35,15 @@
      showguides="true"
      inkscape:current-layer="svg40"
      inkscape:window-maximized="1"
-     inkscape:window-y="-11"
-     inkscape:window-x="2869"
-     inkscape:cy="-285.1768"
-     inkscape:cx="-17.82355"
-     inkscape:zoom="0.16831664"
+     inkscape:window-y="177"
+     inkscape:window-x="3512"
+     inkscape:cy="279.36989"
+     inkscape:cx="2246.512"
+     inkscape:zoom="0.47607135"
      showgrid="false"
      id="namedview42"
-     inkscape:window-height="1244"
-     inkscape:window-width="2400"
+     inkscape:window-height="829"
+     inkscape:window-width="1600"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -269,7 +269,87 @@
        width="1334.3451"
        height="174.87143"
        id="rect2482-4-7-6-3-6" />
+    <rect
+       x="205.28384"
+       y="1341.9482"
+       width="1334.3451"
+       height="174.87143"
+       id="rect2482-4-7-6-3-6-5" />
+    <rect
+       x="205.28384"
+       y="1341.9482"
+       width="1334.3451"
+       height="174.87143"
+       id="rect2482-4-7-6-1" />
+    <rect
+       x="205.28384"
+       y="1341.9482"
+       width="1334.3451"
+       height="174.87143"
+       id="rect2482-4-7-6-37-3" />
+    <rect
+       x="205.28384"
+       y="1341.9482"
+       width="1334.3451"
+       height="174.87143"
+       id="rect2482-4-7-6-3-6-5-9" />
+    <rect
+       x="205.28384"
+       y="1341.9482"
+       width="1334.3451"
+       height="174.87143"
+       id="rect2482-4-7-6-37-6" />
+    <rect
+       x="205.28384"
+       y="1341.9482"
+       width="1334.3451"
+       height="174.87143"
+       id="rect2482-4-7-6-3-6-5-0" />
   </defs>
+  <text
+     xml:space="preserve"
+     id="text2480-6-0-6-6-7"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1171px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2482-4-7-6-37-3);fill:#ffffff;fill-opacity:0.470588;stroke:none;stroke-width:1.00000003;stroke-dasharray:none"
+     transform="matrix(3.4802183,0,0,3.4802183,112.67054,-4189.4634)"
+     inkscape:export-filename="D:\users\akers\documents\_personal -D\DCC-EX\product-logo-ex-turntable.png"
+     inkscape:export-xdpi="18.431187"
+     inkscape:export-ydpi="18.431187"><tspan
+       x="205.2832"
+       y="1421.3719"
+       id="tspan1123">EX-DCCInspector</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text2480-6-0-6-4-2-0-1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1171px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2482-4-7-6-3-6-5-9);fill:#ffffff;fill-opacity:0.470588;stroke:none;stroke-width:1.00000003;stroke-dasharray:none"
+     transform="matrix(3.4802183,0,0,3.4802183,112.67083,-4555.0201)"
+     inkscape:export-filename="D:\users\akers\documents\_personal -D\DCC-EX\product-logo-ex-commandstation.png"
+     inkscape:export-xdpi="18.431187"
+     inkscape:export-ydpi="18.431187"><tspan
+       x="205.2832"
+       y="1421.3719"
+       id="tspan1125">DCC-EX</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text2480-6-0-6-6-0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1171px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2482-4-7-6-37-6);display:inline;fill:none;fill-opacity:0.470588;stroke:#ffffff;stroke-width:2.29870638;stroke-dasharray:none"
+     transform="matrix(3.4802183,0,0,3.4802183,112.67054,-4189.4634)"
+     inkscape:export-filename="D:\users\akers\documents\_personal -D\DCC-EX\product-logo-ex-turntable.png"
+     inkscape:export-xdpi="18.431187"
+     inkscape:export-ydpi="18.431187"><tspan
+       x="205.2832"
+       y="1421.3719"
+       id="tspan1127">EX-DCCInspector</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text2480-6-0-6-4-2-0-9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1171px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2482-4-7-6-3-6-5-0);display:inline;fill:none;fill-opacity:0.470588;stroke:#ffffff;stroke-width:2.29870638;stroke-dasharray:none"
+     transform="matrix(3.4802183,0,0,3.4802183,112.67083,-4555.0201)"
+     inkscape:export-filename="D:\users\akers\documents\_personal -D\DCC-EX\product-logo-ex-commandstation.png"
+     inkscape:export-xdpi="18.431187"
+     inkscape:export-ydpi="18.431187"><tspan
+       x="205.2832"
+       y="1421.3719"
+       id="tspan1129">DCC-EX</tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-6"
@@ -280,7 +360,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1760">EX-DCCInspector</tspan></text>
+       id="tspan1131">EX-DCCInspector</tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-4-2"
@@ -291,7 +371,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1762">DCC-EX</tspan></text>
+       id="tspan1133">DCC-EX</tspan></text>
   <path
      d="M 916.02466,472.51298 H 2102.0679"
      stroke="#000000"
@@ -322,11 +402,37 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1768"><tspan
+       id="tspan1139"><tspan
          style="fill:#00a3b9"
-         id="tspan1764">EX-</tspan><tspan
+         id="tspan1135">EX-</tspan><tspan
          style="fill:#00353d"
-         id="tspan1766">DCCInspector</tspan></tspan></text>
+         id="tspan1137">DCCInspector</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     id="text2480-6-0-6-4-2-0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1171px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2482-4-7-6-3-6-5);fill:#ffffff;fill-opacity:0.470588;stroke:none"
+     transform="matrix(3.4802183,0,0,3.4802183,112.67083,-4555.0201)"
+     inkscape:export-filename="D:\users\akers\documents\_personal -D\DCC-EX\product-logo-ex-commandstation.png"
+     inkscape:export-xdpi="18.431187"
+     inkscape:export-ydpi="18.431187"><tspan
+       x="205.2832"
+       y="1421.3719"
+       id="tspan1141">DCC-EX</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text2480-6-0-6-8"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1171px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2482-4-7-6-1);fill:#000000;fill-opacity:1;stroke:none"
+     transform="matrix(3.4802183,0,0,3.4802183,104.67054,-4197.4634)"
+     inkscape:export-filename="D:\users\akers\documents\_personal -D\DCC-EX\product-logo-ex-turntable.png"
+     inkscape:export-xdpi="18.431187"
+     inkscape:export-ydpi="18.431187"><tspan
+       x="205.2832"
+       y="1421.3719"
+       id="tspan1147"><tspan
+         style="fill:#00a3b9"
+         id="tspan1143">EX-</tspan><tspan
+         style="fill:#00353d"
+         id="tspan1145">DCCInspector</tspan></tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-4"
@@ -337,11 +443,11 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1774"><tspan
+       id="tspan1153"><tspan
          style="fill:#00353d"
-         id="tspan1770">DCC-</tspan><tspan
+         id="tspan1149">DCC-</tspan><tspan
          style="fill:#00a3b9"
-         id="tspan1772">EX</tspan></tspan></text>
+         id="tspan1151">EX</tspan></tspan></text>
   <path
      d="M 910.02466,466.51298 H 2096.0679"
      stroke="#000000"
