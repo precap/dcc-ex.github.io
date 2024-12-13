@@ -2,7 +2,7 @@
 <svg
    inkscape:export-ydpi="17.060751"
    inkscape:export-xdpi="17.060751"
-   inkscape:export-filename="..\..\docs\_static\images\logos\product-logo-ex-toolbox.png"
+   inkscape:export-filename="..\..\docs\_static\images\logos\product-logo-ex-csb1.png"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="DCC-EX_product-logo-ex-csb1.svg"
    id="svg40"
@@ -36,9 +36,9 @@
      inkscape:current-layer="svg40"
      inkscape:window-maximized="1"
      inkscape:window-y="177"
-     inkscape:window-x="1912"
-     inkscape:cy="482.07061"
-     inkscape:cx="1130.6079"
+     inkscape:window-x="3512"
+     inkscape:cy="483.12088"
+     inkscape:cx="897.44954"
      inkscape:zoom="0.95214267"
      showgrid="false"
      id="namedview42"
@@ -304,7 +304,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1014">EX-CSB1</tspan></text>
+       id="tspan363">EX-CSB1</tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-4-1-2"
@@ -315,7 +315,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1016">DCC-EX</tspan></text>
+       id="tspan365">DCC-EX</tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-3"
@@ -326,7 +326,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1018">EX-CSB1</tspan></text>
+       id="tspan367">EX-CSB1</tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-4-1"
@@ -337,7 +337,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1020">DCC-EX</tspan></text>
+       id="tspan369">DCC-EX</tspan></text>
   <path
      d="M 916.02466,472.51298 H 2102.0679"
      stroke="#000000"
@@ -368,11 +368,11 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1026"><tspan
+       id="tspan375"><tspan
          style="fill:#00a3b9"
-         id="tspan1022">EX</tspan><tspan
+         id="tspan371">EX</tspan><tspan
          style="fill:#00353d"
-         id="tspan1024">-CSB1</tspan></tspan></text>
+         id="tspan373">-CSB1</tspan></tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-4"
@@ -383,11 +383,11 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1032"><tspan
+       id="tspan381"><tspan
          style="fill:#00353d"
-         id="tspan1028">DCC-</tspan><tspan
+         id="tspan377">DCC-</tspan><tspan
          style="fill:#00a3b9"
-         id="tspan1030">EX</tspan></tspan></text>
+         id="tspan379">EX</tspan></tspan></text>
   <path
      d="M 910.02466,466.51298 H 2096.0679"
      stroke="#000000"
