@@ -8,7 +8,7 @@
   * - Type / Brand |_xa| |_xa| |_xa| |_xa| |_xa|
     - R |BRxa| e |BRxa| c |BRxa| o |BRxa| m |BRxa| m |BRxa| e |BRxa| n |BRxa| d |BRxa| e |BRxa| d
     - S |BRxa| u |BRxa| p |BRxa| p |BRxa| o |BRxa| r |BRxa| t |BRxa| e |BRxa| d
-    - Comfort |BRxa| Level
+    - Level
     - Shield |BRxa| Format
     - HAL |BRxa| / |BRxa| |I2Cxa|
     - E |BRxa| E |BRxa| P |BRxa| R |BRxa| O |BRxa| M

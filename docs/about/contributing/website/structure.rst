@@ -63,7 +63,7 @@ Pages *generally* follow the basic structure:
   * `Includes`_
   * `Product Icon`_ (where appropriate)
   * `Page Heading`_
-  * `Comfort Level Logos`_
+  * `Level Logos`_
   * `GitHub Issues Link`_
   * `On This Page - Table of Contents`_ (on longer pages with multiple headings)
   * `Page Content`_
@@ -93,7 +93,7 @@ For example, the meta tags for levels.rst are:
   ::
 
     .. meta::
-    :keywords: Comfort Levels Conductor Tinkerer Engineer
+    :keywords: Levels Conductor Tinkerer Engineer
 
 Includes
 --------
@@ -154,8 +154,8 @@ Each page must have a Main Heading. Main Headings MUST have asterisks above and 
 
 See below for more information about heading.
 
-Comfort level logos
--------------------
+Level logos
+-----------
 
 On our :doc:`/begin/levels` page, we refer to Conductor, Tinkerer, and Engineer level users, and where possible, we should be using these logos to help users understand what level the documentation is targeted at.
 
@@ -205,7 +205,7 @@ Refer to :ref:`about/contributing/website/basic-rst:images` below for details on
 GitHub Issues Link
 ------------------
 
-It is recommended to include links to the appropriate product's GitHub issue templates by using the appropriate expansion on the same line as the comfort level expansions.
+It is recommended to include links to the appropriate product's GitHub issue templates by using the appropriate expansion on the same line as the 'Level' expansions.
 
 * \|githublink-ex-turntable\|
 * \|githublink-ex-turntable-button\|

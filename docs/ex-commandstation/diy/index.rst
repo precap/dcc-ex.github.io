@@ -17,7 +17,7 @@ DIY - Getting Started
 
 In order to get the most out of this website, we only ask you at first to make 2 choices:
 
-- The first is to self-identify your "level" with regards to DCC-EX. |BR| If you have not chosen whether you are a Conductor, Tinkerer, or Engineer, please go to :ref:`begin/levels:choose your comfort level` before proceeding further.
+- The first is to self-identify your "level" with regards to DCC-EX. |BR| If you have not chosen whether you are a Conductor, Tinkerer, or Engineer, please go to :doc:`/begin/levels` before proceeding further.
 - Your next choice will be whether you want to choose the "Ready-To-Run" (RTR) path or the "Do-It-Yourself" (DIY) path. 
 
 You are here on the DIY path where you will build your own command station from parts including Arduino, ESP32, or STM32 boards. If you meant to choose the Ready-To-Run route using an |EX-CSB1|, then please go to :doc:`/ex-commandstation/ready-to-run/index`. If you need a definition of what an EX-CommandStation is, please see :ref:`ex-commandstation/index:what is ex-commandstation?`.
