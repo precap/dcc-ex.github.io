@@ -35,15 +35,15 @@
      showguides="true"
      inkscape:current-layer="svg40"
      inkscape:window-maximized="1"
-     inkscape:window-y="-11"
-     inkscape:window-x="2869"
-     inkscape:cy="190.11787"
-     inkscape:cx="903.05987"
-     inkscape:zoom="0.33663327"
+     inkscape:window-y="177"
+     inkscape:window-x="3512"
+     inkscape:cy="415.88284"
+     inkscape:cx="1098.3763"
+     inkscape:zoom="0.67326654"
      showgrid="false"
      id="namedview42"
-     inkscape:window-height="1244"
-     inkscape:window-width="2400"
+     inkscape:window-height="829"
+     inkscape:window-width="1600"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -275,7 +275,41 @@
        width="499.55878"
        height="133.90031"
        id="rect2482-4-7-6-3-7" />
+    <rect
+       x="205.28384"
+       y="1341.9482"
+       width="499.55878"
+       height="133.90031"
+       id="rect2482-4-7-6-3-7-3" />
+    <rect
+       x="205.28384"
+       y="1341.9482"
+       width="1039.0117"
+       height="116.82903"
+       id="rect2482-4-7-6-7-3" />
   </defs>
+  <text
+     xml:space="preserve"
+     id="text2480-6-0-6-2-2"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1171px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2482-4-7-6-7-3);display:inline;fill:none;fill-opacity:0.470588;stroke:#ffffff;stroke-width:2.29870638;stroke-dasharray:none"
+     transform="matrix(3.4802183,0,0,3.4802183,112.67054,-4189.4634)"
+     inkscape:export-filename="D:\users\akers\documents\_personal -D\DCC-EX\product-logo-ex-turntable.png"
+     inkscape:export-xdpi="18.431187"
+     inkscape:export-ydpi="18.431187"><tspan
+       x="205.2832"
+       y="1421.3719"
+       id="tspan1011">Throttles</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text2480-6-0-6-4-6-3"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1171px;line-height:1.25;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2482-4-7-6-3-7-3);display:inline;fill:none;fill-opacity:0.470588;stroke:#ffffff;stroke-width:2.29870638;stroke-dasharray:none"
+     transform="matrix(3.4802183,0,0,3.4802183,112.67083,-4555.0201)"
+     inkscape:export-filename="D:\users\akers\documents\_personal -D\DCC-EX\product-logo-ex-commandstation.png"
+     inkscape:export-xdpi="18.431187"
+     inkscape:export-ydpi="18.431187"><tspan
+       x="205.2832"
+       y="1421.3719"
+       id="tspan1013">DCC-EX</tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-2"
@@ -286,7 +320,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1026">Throttles</tspan></text>
+       id="tspan1015">Throttles</tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-4-6"
@@ -297,7 +331,7 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1028">DCC-EX</tspan></text>
+       id="tspan1017">DCC-EX</tspan></text>
   <path
      d="M 916.02466,472.51298 H 2102.0679"
      stroke="#000000"
@@ -328,9 +362,9 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1032"><tspan
+       id="tspan1021"><tspan
          style="fill:#00353d"
-         id="tspan1030">Throttles</tspan></tspan></text>
+         id="tspan1019">Throttles</tspan></tspan></text>
   <text
      xml:space="preserve"
      id="text2480-6-0-6-4"
@@ -341,11 +375,11 @@
      inkscape:export-ydpi="18.431187"><tspan
        x="205.2832"
        y="1421.3719"
-       id="tspan1038"><tspan
+       id="tspan1027"><tspan
          style="fill:#00353d"
-         id="tspan1034">DCC-</tspan><tspan
+         id="tspan1023">DCC-</tspan><tspan
          style="fill:#00a3b9"
-         id="tspan1036">EX</tspan></tspan></text>
+         id="tspan1025">EX</tspan></tspan></text>
   <path
      d="M 910.02466,466.51298 H 2096.0679"
      stroke="#000000"

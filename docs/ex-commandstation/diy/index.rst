@@ -3,9 +3,9 @@
 .. include:: /include/include-ex-cs.rst
 |EX-CS-LOGO|
 
-***********************
-DIY - Getting Started
-***********************
+********************************
+Do-It-YourSelf - Getting Started
+********************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
