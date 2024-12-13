@@ -224,7 +224,7 @@ Click on that network to see the next screen to enter your password. Notice the 
 
 .. todo [insert link] XXX figure link showing WiFi LED
 
-Log Engine Driver into the CSB1 AP Network
+Run the Engine Driver Setup Wizard
 -------------------------------------------
 
 Open the Engine Driver App on your Android smart device: 
@@ -237,7 +237,7 @@ Open the Engine Driver App on your Android smart device:
 
    Engine Driver App Icon
 
-Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. If you have already used Engine Driver, you can run the wizard again from the app menu:
+Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. If you have already used Engine Driver, you can run the wizard again from the app menu. Any settings from a previous run will be maintained:
 
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
    :alt: Engine Driver App Menu
@@ -254,7 +254,7 @@ Once loaded, select your preferences when the Intro/Setup wizard launches. You c
 
    Engine Driver Intro/Setup Wizard
 
-The Wizard allows you to set or change appearance options and, most importantly, choose to use DCC-EX native commands instead of WiThrottle:
+The Wizard allows you to set or change appearance options and, most importantly, choose to use DCC-EX native commands instead of WiThrottle Protocol:
 
 .. figure:: /_static/images/engine_driver/ed_wizard1.png
    :alt: Engine Driver Wizard Opening Screen
@@ -263,7 +263,7 @@ The Wizard allows you to set or change appearance options and, most importantly,
 
    Engine Driver Wizard Opening Screen
 
-Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation
+Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation. This setting will automatically add useful buttons and switch to using the DCC-EX native commands instead of WiThrottle Protocol (you can always switch back and forth if you need to connect to a WiThrottle device):
 
 .. figure:: /_static/images/engine_driver/ed_wizard6.png
    :alt: Engine Driver Wizard DCC-EX Select
@@ -272,67 +272,82 @@ Scroll through the other screens setting your preferences until you get the the 
 
    Engine Driver Wizard DCC-EX Select
 
-Next, select the "preferences" option:
+After choosing the DCC-EX option above and pressing the checkmark to finish the Wizard, the opening Ending Driver screen will change to look like figure 23 with an added option at the bottom of the screen for "Connection Protocol". The default of "Auto" for Automatic is the new default. You can manually switch between DCC-EX Protocol and WiThrottle Protocol if you go to a club or use another Command Station that requires WiThrottle. The native DCC-EX protocol allows for more powerful, expanded capabilities when connected to an EX-CommandStation:
 
-.. figure:: /_static/images/engine_driver/ed_preferences2.png
-   :alt: Changing Engine Driver Preferences
+.. figure:: /_static/images/engine_driver/ed_dcc_ex_protocol1.png
+   :alt: DCC-EX Protocol Bottom Selector
+   :scale: 45%
+   :align: left
+
+   DCC-EX Protocol bottom selector
+
+.. figure:: /_static/images/engine_driver/ed_dcc_ex_protocol2.png
+   :alt: DCC-EX Protocol Menu
    :scale: 45%
    :align: center
 
-   Changing Engine Driver Preferences
-
-In order to get the most functionality from Engine Driver, there are a few settings that should be changed. By default, Engine Driver uses the WiThrottle protocol, which the EX-CSB1 also understands, but the native DCC-EX protocol has much more power. Scroll through the long list of options and make sure "Emergency Stop", "Layout Power Button" and "DCC-EX Button" are all checked
-
-
-.. figure:: /_static/images/engine_driver/ed_preferences3.png
-   :alt: Engine Driver optional buttons
-   :scale: 45%
-   :align: left
-
-   Engine Driver optional buttons
-
-   
-
-.. figure:: /_static/images/engine_driver/ed_preferences4.png
-   :alt: Engine Driver DCC-EX button option
-   :scale: 45%
-   :align: left
-
-   Engine Driver DCC-EX button option
+   DCC-EX Protocol Menu
 
 |BR|
 
-Keep scrolling to see the option for "DCC-EX - EX-CommandStation Preferences" and click on it. Then choose "Auto" or "Yes". Auto will automatically switch between WiThrottle protocol for other command stations and DCC-EX protocol when Engine Driver sees it is a DCC-EX command station. If you aren't using other command stations, at home or at a club, simply choose "Yes".
+Connect Engine Driver to EX-CommandStation
+---------------------------------------------
 
-.. figure:: /_static/images/engine_driver/ed_dccex_preference1.png
-   :alt: Engine Driver DCC-EX button option
-   :scale: 45%
-   :align: left
+Engine Driver should find the Command Station automatically and show it's SSID in the "Discovered Servers" List. Simply select yours by clicking on it. The last 6 characters of the SSID will be unique to your Command Station. If the list is empty, try entering it manually by putting 192.168.4.1 in the "Server Address" and "2560" for the Port. If that still does not work, see the Section on WiFi here todo XXX.
 
-   Engine Driver DCC-EX button option
-
-.. figure:: /_static/images/engine_driver/ed_preferences5.png
-   :alt: OLED Status Display
+.. figure:: /_static/images/engine_driver/ed_detect_2.png
+   :alt: Command Station Connect
    :scale: 45%
    :align: center
 
-   OLED blah
+   Command Station Connect
 
+Acquire Your Loco
+-------------------
+
+Once you have connected to your command station, the next screen will display the throttle controls. They will be greyed out until you select a loco by its address. Press the select button and enter the address for your loco. Here you can see we are connecting to loco "3" (the default address for almost all locos as they come from the box. See todo XXX for ) 
+
+.. figure:: /_static/images/engine_driver/ed_select_addr.png
+   :alt: Press Loco Select Button
+   :scale: 45%
+   :align: left
+
+   Press Loco Select Button
+
+.. figure:: /_static/images/engine_driver/ed_select_addr2.png
+   :alt: Acquire Loco by its Address
+   :scale: 45%
+   :align: center
+
+   Acquire Loco by its address
+
+|BR|
+
+The throttle screen reappears and the controls are active. You will also see 3 icons at the top of the display, a special DCC-EX button, an emergency stop button, and a track power button. Press the red power button to turn on the track power, the button should turn green and your track power should be on (the track output leds on your motor driver should light).
+
+.. figure:: /_static/images/engine_driver/ed_powr_btn_shadow.png
+   :alt: Turn On Track Power
+   :scale: 60%
+   :align: center
+
+   Turn On Track Power
+
+Run Trains
+-----------
+
+Move the slider control up slowly, operate the horn and light buttons, and you should be running trains! todo XXX Where to go next.
+
+.. figure:: /_static/images/engine_driver/ed_run.png
+   :alt: Operate Controls to Run Trains
+   :scale: 45%
+   :align: center
+
+   Operate Controls to Run trains
 
 Confirm startup
 ----------------
 
-todo XXX [insert link] Show and explain the startup screen
-
-Turn On Track Power
---------------------
-
-Show how to slide the power slider, etc
-
-Run a locomotive
-------------------
-
-reverse this and power? when to put loco on track? todo XXX
+todo XXX [insert link] Show and explain the startup screen. What goes here?
 
 DCC Operation
 ---------------
