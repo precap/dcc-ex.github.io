@@ -6,9 +6,9 @@
 .. include:: /include/include-description.rst
 |donate-button|
 
-***************************************
-Ready-to-Run vs DiY - Choose your Level
-***************************************
+**************************************************
+Ready-to-Run or Do-It-Yourself - Choose your Level
+**************************************************
 
 .. sidebar:: 
 
@@ -16,15 +16,15 @@ Ready-to-Run vs DiY - Choose your Level
     :depth: 2
     :local:
 
-Some of our products are "Ready-To-Run" and some are more "Do-It-Yourself". Model Railroad layouts can be as simple as a small circle that runs around a holiday display, to a fully automated club layout. 
+Some of our products are *Ready-To-Run* (RTR) and some are more *Do-It-Yourself* (DIY). Model Railroad layouts can be as simple as a small circle that runs around a holiday display, to a fully automated club layout. 
 
-Therefore, your options range in difficulty from *simple* to *moderately complex*. 
+Therefore, the options you can choose from range in difficulty from *simple* to *advanced*. 
 
-To help you navigate this web site, the pages are all tagged [#tags]_ with one or more of 'Levels' to help identify the *difficulty* or *technical complexity* of the what is described on that page.  (Don't worry, the paths are integrated and you can easily choose a slightly different path at any point.)
+To help you navigate this web site, the pages are all tagged [#tags]_ with one or more of *'Levels'* to help identify the *difficulty* or *technical complexity* of the what is described on that page.  (Don't worry, the paths are integrated and you can easily choose a slightly different path at any point.)
 
-While we have options for all 'Levels', it is important that you self evaluate your level of skill, technical knowledge, and preparedness to take on a challenge, before you delve into the following pages.  Some pages may not be suited to your level.
+While we have options for all *'Levels'*, it is important that you self evaluate your level of skill, technical knowledge, and preparedness to take on a challenge, before you delve into the following pages.  Some pages may not be suited to your level.
 
-To work out your own personal 'Level', look at the descriptions of the levels below and see which one you most identify with. (A |Conductor-text|, a |Tinkerer-text|, or an |Engineer-text|.)
+To work out your own personal *'Level'*, look at the descriptions of the levels below and see which one you most identify with. (A |Conductor-text|, a |Tinkerer-text|, or an |Engineer-text|.)
 
 Levels of Difficulty or Technical Complexity
 ============================================
@@ -48,7 +48,7 @@ Conductor
         :alt: Conductor Hat
         :width: 144px
         :class: image-min-width-72
-    - **The 'simple' path** |BR| |BR| A |Conductor-text|, for the most part, just wants to enjoy operating trains. |BR| You could be someone new to trains or picking it up after a long absence, or you could be someone coming from running DC and looking to switch over to DCC. This is also the perfect place for someone who just wants something that works without much tinkering. In short, a |Conductor-text| wants to drive trains and doesn't want to have to deal with the details of the hardware or software involved. |BR| |BR| We'll show you how to purchase a ready-to-run Command Station or put one together from parts and use a free Throttle (Controller) to run trains. We'll have you up and running in just a few minutes. This path will keep things simple. |BR| |BR| We recommend that you :doc:`start Here and choose either the ready-to-run or DIY Command Station </ex-commandstation/index>`.
+    - **The 'simple' path** |BR| |BR| A |Conductor-text|, for the most part, just wants to enjoy operating trains. |BR| You could be someone new to trains or picking it up after a long absence, or you could be someone coming from running DC and looking to switch over to DCC. This is also the perfect place for someone who just wants something that works without much tinkering. In short, a |Conductor-text| wants to drive trains and doesn't want to have to deal with the details of the hardware or software involved. |BR| |BR| We'll show you how to purchase a ready-to-run (RTR) Command Station or put one together from parts and use a free Throttle (Controller) to run trains. We'll have you up and running in just a few minutes. This path will keep things simple. |BR| |BR| We recommend that you :doc:`start Here and choose either the ready-to-run (RTR) or DIY Command Station </ex-commandstation/index>`.
 
 
 ----
@@ -105,7 +105,7 @@ Next Steps
 
 Keep these definitions in mind as you proceed through this website.
 
-To learn more about how to buy a ready-to-run or build your own (DIY) |EX-CS| station, click 'Next' or proceed to the :doc:`Ex-Command Station Page </ex-commandstation/index>`.
+To learn more about how to buy a ready-to-run (RTR) or build your own (DIY) |EX-CS| station, click 'Next' or proceed to the :doc:`Ex-Command Station Page </ex-commandstation/index>`.
 
 ----
 

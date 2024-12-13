@@ -16,7 +16,7 @@ Ready-To-Run - Getting Started
 
    EX-CSB1 CommandStation / Booster
 
-The |EX-CSB1| addresses the needs of DCC-EX users who want a *ready-to-run* DCC CommandStation, which will have them running trains within 5 minutes of plugging it into power and track and connecting your WiFi smart phone.
+The |EX-CSB1| addresses the needs of DCC-EX users who want a *ready-to-run* (RTR) DCC CommandStation, which will have them running trains within 5 minutes of plugging it into power and track and connecting your WiFi smart phone.
 
 This DCC-EX Command Station can now outperform commercial DCC command stations, which typically have single 3-3.5A or 5A output capabilities, at a fraction of the cost, while providing more advanced features.
 
