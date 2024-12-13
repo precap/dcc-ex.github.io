@@ -69,7 +69,7 @@ If you wish to run trains from your phone, tablet or other |WiThrottle protocol|
 
    |tinkerer| |engineer|
 
-   While it may be possible to run WiFi on an Uno, Nano or Pro Mini, it is not supported. The Uno simply does not have enough memory.
+   While it might be technically possible to run WiFi on a Nano or Pro Mini, it is not supported. The Uno simply does not have enough memory.
 
 What you will need (for WiFi)
 =============================
