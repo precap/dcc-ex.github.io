@@ -160,7 +160,7 @@
 ..
 .. |EXTERNAL-LINK| raw:: html
    
-  <img src="../../_static/images/external-link.svg" style="width: 16px; height: 16px; margin-top: -3px;">
+  <img src="_static/images/external-link.svg" style="width: 16px; height: 16px; margin-top: -3px;">
 ..
 .. ................................................
 ..

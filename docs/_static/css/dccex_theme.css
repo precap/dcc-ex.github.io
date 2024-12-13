@@ -521,7 +521,7 @@ html[data-theme='dark'] .admonition-title {
   border-style: none !important;
   border-width:0px !important;
 }
-html[data-theme='dark'] tr:nth-child(odd), html[data-theme='dark'] .table-grid-homepage tr:nth-child(odd), .table-list-homepage tr:nth-child(odd) {
+html[data-theme='dark'] tr:nth-child(odd), html[data-theme='dark'] html[data-theme='dark'] .table-grid-homepage tr:nth-child(odd), html[data-theme='dark'] .table-list-homepage tr:nth-child(odd) {
   background-color: black !important;
 }
 
