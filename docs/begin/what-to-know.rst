@@ -1,5 +1,5 @@
 .. meta::
-   :keywords: Comfort Levels Conductor Tinkerer Engineer
+   :keywords: Complexity Levels Conductor Tinkerer Engineer
 
 .. include:: /include/include.rst
 .. include:: /include/include-l1.rst
@@ -19,6 +19,8 @@ Lets Get Started
 This page goes through some introductory information about our team and our products.  
 
 Please read on, or use the index to the right to skip to any topic of interest.
+
+If you are comfortable with differences between DCC & DC and already know a bit about our products, skip on to the :doc:`next page</begin/levels>` where we explain how our products, and the pages on this site, are tagged by how simple or complex they are.
 
 |HR-DASHED|
 

@@ -132,7 +132,7 @@ refer to :doc:`/reference/hardware/i2c-displays`
 Installation options
 ====================
 
-Depending on your comfort level with using different software and computers in general, there are two options for installing the |EX-CS| software, both of which should be within the reach of |conductor-text| level users.
+Depending on your 'Level' with using different software and computers in general, there are two options for installing the |EX-CS| software, both of which should be within the reach of |conductor-text| level users.
 
 The simplest option, requiring only a simple download, is to use |EX-I|. There are limitations on what options you can select using this method, so if you are using any options that require configuration beyond what's prompted for during the install process, you will need to use the Arduino IDE instead.
 
