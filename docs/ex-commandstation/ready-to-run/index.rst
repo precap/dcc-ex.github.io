@@ -1,13 +1,15 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l2.rst
 .. include:: /include/include-ex-csb1.rst
-|EX-CS-LOGO| |EX-CSB1|
+|EX-CS-LOGO|
 
 ******************************
 Ready-To-Run - Getting Started
 ******************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
+
+|EX-CSB1|
 
 .. figure:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
    :alt: DCC-EX EX-CSB1

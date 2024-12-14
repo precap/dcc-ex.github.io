@@ -28,9 +28,14 @@ With |EX-TB| you can perform:
 * CV Programming in the programming track (Service Mode)
 * CV Programming in the main track (Operation Mode)
 * Servo motor testing and adjustment
-* Sensor testing 
-* Current Meter (Only available when connected to EX-CommandStation version 5.0.0 and above.)
-* Track Manager (Only available when connected to EX-CommandStation version 5.0.0 and above.)
+* Sensor testing
+* Current Meter
+* Track Manager
+* Loco status (all active locos)
+* Assist with Loco Speed Matching
+* Speedometer (requires two sensors on the EX‑CommandStation)
+* Roster list
+* NeoPixel Setup
 
 ----
 

@@ -12,8 +12,6 @@ EX-Installer
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
-----
-
 If you have DIY assembled your |EX-CS| hardware you need to load our software onto it make is usable.
 
 If you purchased an |EX-CSB1| you may wish to reload our software to enable additional features.

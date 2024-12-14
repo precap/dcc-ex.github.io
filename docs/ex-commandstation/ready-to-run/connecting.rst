@@ -6,13 +6,13 @@
 
 .. index:: EXCSB1, EX-CSB1
 
-|EX-CSB1|
-
 **********************************
 EX-CSB1 Quick Setup Guide
 **********************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
+
+|EX-CSB1|
 
 This quick startup guide is designed to have you configured and setup to run trains in 5 minutes. After all, the point is to enjoy running trains, not sifting through more information than you need until you are ready. These instructions are for DCC locomotives. For more detailed information, to configure for running DC trains, or to use different throttles like EX-WebThrottle or JMRI, see the :doc:`EX-CSB1 Operating Manual <manual>`
 
@@ -363,3 +363,10 @@ Full EX-CSB1 Operating Manual
 ------------------------------
 
 [insert link]
+
+----
+
+Next Steps
+==========
+
+Click the "next" button to see ???.
