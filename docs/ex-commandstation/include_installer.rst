@@ -18,7 +18,15 @@ Install the Software
       :depth: 4
       :local:
     
-This page is specifically intended for a |conductor-text| who has installed *just* the recommended hardware (including WiFi). If you are a |tinkerer-text| or |engineer-text| or have installed some of the additional, or different, hardware from that recommended for a |conductor-text| then we suggest that you look at the :doc:`/ex-installer/index` page for the full instructions.
+This page is specifically intended for a |conductor-text| who has purchased or assembled *just* the recommended hardware (including WiFi). If you are a |tinkerer-text| or |engineer-text| or have installed some of the additional, or different, hardware from that recommended for a |conductor-text| then we suggest that you look at the :doc:`/ex-installer/index` page for the full instructions.
+
+.. note::
+   
+   A word of caution on the alternate approach of using the |Arduino IDE| to install the software:
+
+   While it is possible install the software using the |Arduino IDE|, we *seriously* **DO NOT RECOMMEND IT** for a |conductor-text| or |tinkerer-text|. It is an order of magnitude more complex, much slower, and with a very high probability of getting something wrong unless you really know what you are doing.
+
+   The |EX-I| described below will meet 100% of the needs of a |conductor-text| or |tinkerer-text| with considerably less effort. 
 
 ----
 
@@ -33,9 +41,9 @@ Requirements (for installing)
    
    Make sure your USB Cable is connected from your computer to the |EX-CS|. Make sure no other programs (like the Arduino IDE) are using the same USB port.
 
-* a Windows, Linux or MacOS X **Computer**
-* an |EX-CS| (Arduino Mega/Uno + Motor shield and optional WiFi shield)
-* a **USB cable** to connect your computer to the Microcontroller
+* A Windows, Linux or MacOS X **Computer**
+* An |EX-CS| (|EX-CSB1| or Arduino Mega/Uno + Motor shield+  optional WiFi shield)
+* A **USB cable** to connect your computer to the Microcontroller
 
 1. Getting Ready 
 ================
