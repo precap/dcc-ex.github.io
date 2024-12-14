@@ -6,13 +6,13 @@
 
 .. index:: EXCSB1, EX-CSB1
 
-|EX-CSB1|
-
 ***************************************
 EX-CSB1 Operating Manual
 ***************************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
+
+|EX-CSB1|
 
 Board layout
 ==============
