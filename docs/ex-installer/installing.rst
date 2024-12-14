@@ -18,9 +18,21 @@ Using the Installer
       :depth: 4
       :local:
 
+Once you have purchased or assembled your |EX-CS| hardware you need to load our software onto it to make it usable. |BR| To make it as simple as possible we have created the |EX-I| app.
+
 .. note:: 
 
    If you already have, or wish to create, your own custom config files, we recommend that you :doc:`read this page first <managing-config-files>`.
+
+.. note:: 
+
+   A word of caution on the alternate approach of using the |Arduino IDE| to install the software:
+
+   While it is possible install the software using the |Arduino IDE|, we *seriously* **DO NOT RECOMMEND** it for a |conductor-text| or |tinkerer-text|. It is an order of magnitude more complex, much slower, and with a very high probability of getting something wrong unless you really know what you are doing.
+
+   The |EX-I| described below will meet 100% of the needs of a |conductor-text| or |tinkerer-text| with considerably less effort. 
+
+----
 
 Requirements (for installing)
 ==============================

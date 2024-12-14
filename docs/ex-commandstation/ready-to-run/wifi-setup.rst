@@ -15,7 +15,7 @@ The |EX-CSB1| comes with WiFi onboard.
    
    |conductor| |BR| An *Alternate* to connecting to your |EX-CSB1| directly via WiFi is to do so indirectly through |JMRI|. To do this you use a USB cable instead. This is described on the :doc:`/ex-commandstation/advanced-setup/supported-connections/jmri` page.
    
-The purpose of having WiFi to your |EX-CSB1| is allow connection up to 5 WiFi throttles (e.g. phones) DIRECTLY to it, eliminating the need for a computer and another software controller. 
+The purpose of having WiFi on your |EX-CSB1| is allow connection up to 5 WiFi throttles (e.g. phones) DIRECTLY to it, eliminating the need for a computer and another software controller. 
 
 However, use WiFi is optional. If you wish to simply use your computer connected via a USB cable to the |EX-CSB1| with the |JMRI| application (or similar), you can :doc:`skip ahead to the next page </ex-commandstation/installer-rtr>`.
 
