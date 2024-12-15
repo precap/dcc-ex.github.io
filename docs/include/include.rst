@@ -237,7 +237,7 @@
 ..
 .. |JMRI| replace::
 
-    :doc:`JMRI </throttles/jmri>`
+    :doc:`JMRI </throttles/software/jmri>`
 ..   
 .. |Engine Driver| replace::
 
