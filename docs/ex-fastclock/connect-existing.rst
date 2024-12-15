@@ -133,5 +133,5 @@ Connecting via |I2C| involves a HAL driver file to the |EX-CS| as well as adding
 Next Steps
 ==========
 
-Now that you know how to connect your existing FastCLock, click the "next" button see how you use |EX-FC|.  
+Now that you know how to connect your existing FastCLock, click the 'Next' button see how you use |EX-FC|.  
 

@@ -71,4 +71,4 @@ I have used C++ on Arduino's and Python/Jython on JMRI software to build Automat
 Next Steps - myAutomation.h
 ===========================
    
-Click :doc:`here <editing>` or click the :guilabel:`Next` button to learn how to edit the file which will contain your automation sequences.
+See the :doc:`editing` page or click the 'Next' button to learn how to edit the file which will contain your automation sequences.

@@ -128,7 +128,7 @@ Right click the "stlink_winusb_install.bat" file and select "Run as administrato
   :alt: Run as admin
   :scale: 50%
 
-Click "Next" to install the drivers, and you should see this summary screen to confirm the drivers installed successfully:
+Click 'Next' to install the drivers, and you should see this summary screen to confirm the drivers installed successfully:
 
 .. image:: /_static/images/nucleo/driver-install2.png
   :alt: Drivers installed

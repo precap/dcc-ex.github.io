@@ -178,4 +178,4 @@ Basic use of |EX-WT| will be covered on the following :doc:`/ex-commandstation/t
 Next Steps - Testing your setup 
 ===============================
 
-Click on the "next" button below to learn how to test your |EX-CS|.
+Click the 'Next' button below to learn how to test your |EX-CS|.

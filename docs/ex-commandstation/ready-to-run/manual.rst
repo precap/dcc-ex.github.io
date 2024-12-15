@@ -293,7 +293,7 @@ You can connect to the EX-CSB1 using both an app via Wifi on a smartphone or tab
 Connecting via Wifi
 ^^^^^^^^^^^^^^^^^^^^
 
-XXX should title be "connecting with your phone?" Do we link to the engine driver page or give a short version here? Or to we break up the page and the "next" button goes to a mirrored page so there is only one page to maintain?
+XXX should title be "connecting with your phone?" Do we link to the engine driver page or give a short version here? Or to we break up the page and the 'Next' button goes to a mirrored page so there is only one page to maintain?
 
 Please connect your smartphone or tablet where you previously installed Engine Driver or WiThrottle to this WiFi network with the password shown on the OLED to begin running trains immediately! You have nothing further to do to start using your DCC-EX EX-CSB1. You can remove the protective cover on the OLED if you wish.
 

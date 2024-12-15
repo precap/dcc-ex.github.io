@@ -65,7 +65,7 @@ To actually run your model railroad you will need a few items:
 Next Steps - Purchasing Parts
 =============================
 
-Click :doc:`here <purchasing>` or click the "next" button to see what you need to acquire to create your |EX-CS|.
+See the :doc:`purchasing` page or click the 'Next' button to see what you need to acquire to create your |EX-CS|.
 
 ----
 

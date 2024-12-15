@@ -364,6 +364,6 @@ Next Steps - Selecting a Throttle (Controller)
    
    The programming track is for programming only. Make sure you are on the main track if you expect your loco to move or respond to light or sound commands.
 
-Click :doc:`here </ex-commandstation/controllers-diy>` or click the "next" button to learn how to select a throttle (controller) suitable to test and use your |EX-CS|.
+See the :doc:`/ex-commandstation/controllers-diy` page or click the 'Next' button to learn how to select a throttle (controller) suitable to test and use your |EX-CS|.
 
 |force-break|

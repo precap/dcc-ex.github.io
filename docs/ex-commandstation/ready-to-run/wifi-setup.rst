@@ -36,5 +36,5 @@ If you wish to run trains from your phone, tablet or other |WiThrottle protocol|
 Next Steps
 ==========
 
-Click the "next" button to see how to install the software on your your |EX-CSB1|.
+Click the 'Next' button to see how to install the software on your |EX-CSB1|.
 

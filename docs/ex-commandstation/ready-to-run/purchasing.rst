@@ -47,4 +47,4 @@ Prices start from around **$129-$149** in the US without and with a power supply
 Next Steps
 ==========
 
-Click the "next" button to see how to setup your |EX-CSB1|.
+Click the 'Next' button to see how to setup your |EX-CSB1|.
