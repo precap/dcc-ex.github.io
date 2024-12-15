@@ -51,7 +51,7 @@
 ..
 .. |EX-CSB1| raw:: html
 
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation/Booster One Express</span>
+  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation&thinsp;/&thinsp;Booster One Express</span>
 ..
 .. |BSC| raw:: html
 
