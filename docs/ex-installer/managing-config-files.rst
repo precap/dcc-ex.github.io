@@ -10,7 +10,7 @@
 Managing config files with the Installer 
 ****************************************
 
-|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| |githublink-ex-installer-button2|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| |githublink-ex-installer-button-small|
 
 .. sidebar::
 

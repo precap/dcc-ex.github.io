@@ -8,7 +8,7 @@
 Testing your installation
 *************************
 
-|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| |githublink-ex-installer-button2|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| |githublink-ex-installer-button-small|
 
 .. sidebar::
 

@@ -301,40 +301,6 @@
 ..
 .. ...............................................
 ..
-.. |githublink-ex-turntable| raw:: html
-
-   <a class="githublink" href="https://github.com/DCC-EX/Turntable-EX/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help">Bug/Feature/Support Requests</a>
-..
-.. |githublink-ex-turntable-button| raw:: html
-
-   <a href="https://github.com/DCC-EX/Turntable-EX/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help"><img src="../_static/images/buttons/github-bug.png" style="width: 196px; height: 40px;" /></a>
-..
-.. |githublink-ex-dccinspector-button| raw:: html
-
-   <a href="https://github.com/DCC-EX/DCCInspector-EX/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help"><img src="../_static/images/buttons/github-bug.png" style="width: 50%; height: 50%;" /></a>
-..
-.. |githublink-ex-webthrottle-button| raw:: html
-
-   <a href="https://github.com/DCC-EX/WebThrottle-EX/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help"><img src="../_static/images/buttons/github-bug.png" style="width: 50%; height: 50%;" /></a>
-..
-.. |githublink-ex-installer-button| raw:: html
-
-  <a href="https://github.com/DCC-EX/EX-Installer/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help"><img src="../_static/images/buttons/github-bug.png" style="width: 50%; height: 50%;" /></a>
-..
-.. |githublink-ex-commandstation-button| raw:: html
-
-  <a href="https://github.com/DCC-EX/CommandStation-EX/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help"><img src="../_static/images/buttons/github-bug.png" style="width: 50%; height: 50%;" /></a>
-..
-.. |githublink-ex-ioexpander-button| raw:: html
-
-  <a href="https://github.com/DCC-EX/EX-IOExpander/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help"><img src="../_static/images/buttons/github-bug.png" style="width: 50%; height: 50%;" /></a>
-..
-.. |githublink-ex-fastclock-button| raw:: html
-
-  <a href="https://github.com/DCC-EX/EX-FastClock/issues/new/choose" target="_blank" title="Create a bug report, request a new feature, or request help"><img src="../_static/images/buttons/github-bug.png" style="width: 50%; height: 50%;" /></a>
-..
-.. ...............................................
-..
 .. |suitable| image:: /_static/images/level_icons/level-suitable-for.png
    :alt: Suitable For Level:
    :scale: 40%
