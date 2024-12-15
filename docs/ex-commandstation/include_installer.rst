@@ -20,6 +20,8 @@ Install the Software
     
 This page is specifically intended for a |conductor-text| who has purchased or assembled *just* the recommended hardware (including WiFi). If you are a |tinkerer-text| or |engineer-text| or have installed some of the additional, or different, hardware from that recommended for a |conductor-text| then we suggest that you look at the :doc:`/ex-installer/index` page for the full instructions.
 
+If you have purchased a |EX-CSB1| it will have come with the |EX-CS| software already installed.  You only need to look at this page if you want to change the default configuration. 
+
 .. note::
    
    A word of caution on the alternate approach of using the |Arduino IDE| to install the software:

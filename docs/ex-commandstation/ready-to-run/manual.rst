@@ -12,6 +12,12 @@ EX-CSB1 Operating Manual
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
+.. sidebar::
+
+   .. contents:: On this page
+      :depth: 4
+      :local:
+
 |EX-CSB1|
 
 Board layout
