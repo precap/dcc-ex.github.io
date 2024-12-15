@@ -9,12 +9,10 @@ Ready-To-Run - Getting Started
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
-|EX-CSB1|
-
 .. figure:: /_static/images/ex-csb1/csb1_render_drop_shadow.png
    :alt: DCC-EX EX-CSB1
    :align: right
-   :scale: 40%
+   :scale: 30%
 
    EX-CSB1 CommandStation / Booster
 
@@ -48,7 +46,7 @@ Looking for some help with your EX-CSB1?
 
 To find out how to request assistance click the first button below. To raise a bug report, feature request, support request, or submit Beta test results, feel free to use our handy GitHub templates accessible by clicking the second button:
 
-|support-button-large| |githublink-ex-installer-button2|
+|support-button-large| |githublink-ex-csb1-button|
 
 .. tip:: 
 
