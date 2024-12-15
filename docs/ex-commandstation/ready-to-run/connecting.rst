@@ -12,6 +12,12 @@ EX-CSB1 Quick Setup Guide
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
+.. sidebar::
+
+   .. contents:: On this page
+      :depth: 3
+      :local:
+
 |EX-CSB1|
 
 This quick startup guide is designed to have you configured and setup to run trains in 5 minutes. After all, the point is to enjoy running trains, not sifting through more information than you need until you are ready. These instructions are for DCC locomotives. For more detailed information, to configure for running DC trains, or to use different throttles like EX-WebThrottle or JMRI, see the :doc:`EX-CSB1 Operating Manual <manual>`
@@ -19,16 +25,16 @@ This quick startup guide is designed to have you configured and setup to run tra
 What You Will need
 =====================
 
-* An |EX-CSB1|
-* A Power supply (12V - 16V DC see :ref:`Power Supplies <reference/hardware/power-supplies:power supplies>`)
-* A DCC loco (If you are here to run DC, please go to todo XXX)
+* An |EX-CSB1| [1]_
+* A **Power supply** (12V - 16V DC see :ref:`Power Supplies <reference/hardware/power-supplies:power supplies>`)
+* A **DCC loco** (If you are here to run DC, please go to todo XXX)
 * Track
-* 16 to 28AWG/1.5mm^2 Wire, preferably in 2 colours with 1/8"/6mm insulation stripped (and wire tinned if stranded)
-* Jeweller's flat bladed screwdriver (1.5 - 2mm blade)
-* A WiFi capable smart device like a phone or tablet to control your trains (aka a "Throttle")
+* **16 to 28AWG/1.5mm^2 Wire**, preferably in 2 colours with 1/8"/6mm insulation stripped (and wire tinned if stranded)
+* Jeweller's **flat bladed screwdriver** (1.5 - 2mm blade)
+* A **WiFi capable smart device** like a phone or tablet to control your trains (aka a "Throttle")
 
 
- \*A computer is optional for making a USB connection and using programs like WebThrottle or JMRI and to update/add EXRAIL Scripts to the |EX-CS|. A USB connection also provides a connection to a "serial monitor" to generate logs and diagnose issues, but more on that later.
+ .. [1] While not required for normal use, it is required to initially install the software, and is optional for making a USB connection and using programs like |EX-WT| or |JMRI| and to update/add EXRAIL Scripts to the |EX-CS|. A USB connection also provides a connection to a "serial monitor" to generate logs and diagnose issues, but more on that later.
 
 Board Layout
 ==============
@@ -53,18 +59,19 @@ In summary, you need just two basic wiring connections to the EX-CSB1 to be up a
 * Track connected to Track A Output
 * Power supply input connected to Power IN DC barrel jack
 
+
+.. sidebar:: Engine Driver & EX-Toolbox
+
+   There are quite a few custom features in |Engine Driver| and |EX-TB|. It may be worth getting a cheap Android phone or tablet just to be able to use those apps
+
 And to connect via WiFi to the EX-CSB1 to control trains your smart device will need either:
 
-* Engine Driver or EX-ToolBox for Android
-* WiThrottle for Apple iOS
-
-.. NOTE:: 
-   There are quite a few custom features in Engine Driver and EX-Toolbox. It may be worth getting a cheap Android phone or tablet just to be able to use those apps
-
+* |Engine Driver| or |EX-TB| for Android
+* |WiThrottle| for Apple iOS
 
 Connecting to the EX-CSB1 via WiFi:
 
-* Select the WiFi network in your smart device wifi settings named ``DCCEX_xxxxxx``, and use the corresponding password ``PASS_xxxxxx`` (where xxxxxx is identical in each case) shown on your EX-CSB1's OLED display
+* Select the WiFi network in your smart device WiFi settings named ``DCCEX_xxxxxx``, and use the corresponding password ``PASS_xxxxxx`` (where **xxxxxx** is identical in each case) shown on your EX-CSB1's OLED display
 * Tell your smart device not to worry about there being no Internet connection
 * Launch throttle app, which should connect automatically
 * You may need to tell your smart device to not automatically connect to your default network or it might keep trying to reconnect to that instead
@@ -74,7 +81,7 @@ These quick tips may actually be enough to get your running, but step by step in
 Track Connection
 -----------------
 
-There are 2 track output power connectors marked A and B. In the standard DCC-EX configuration of a CSB1, A is configured for DCC **MAIN** operation, and B is configured for **PROG** or programming track output. We recommend connecting your track to the A MAIN output initially to test your Command Station. 
+There are 2 track output power connectors marked A and B. In the standard DCC-EX configuration of a EX-CSB1, A is configured for DCC **MAIN** operation, and B is configured for **PROG** or programming track output. We recommend connecting your track to the A MAIN output initially to test your Command Station. 
 
 To alter this default configuration of DCC outputs, or for DC Mode, you would need to configure outputs with a TrackManager command in the mySetup.h file or via Routes. See :doc:`the TrackManager page </trackmanager/index>`
 
@@ -85,11 +92,15 @@ To alter this default configuration of DCC outputs, or for DC Mode, you would ne
 
    Track A and B Outputs
 
-The pluggable male screw terminals accept to 16 to 28 AWG/1.5mm^2 gauge solid or stranded wire. If you use stranded, we recommend "tinning" the ends of the wire to make a good connection and ensure that stray wire whiskers don't stray outside the screw terminals and cause a short circuit. Larger wire can handle more current and provide less resistance.  18-22 AWG usually good. Keep your wires short by mounting the CS close to the track. 
+The pluggable male screw terminals accept to 16 to 28 AWG/1.5mm^2 gauge solid or stranded wire. If you use stranded, we recommend "tinning" the ends of the wire to make a good connection and ensure that stray wire whiskers don't stray outside the screw terminals and cause a short circuit. 
+
+Larger wire can handle more current and provide less resistance.  18-22 AWG usually good. Keep your wires short by mounting the CS close to the track. 
 
 .. todo See XXX for more information or wire gauge.
 
-Using a small flat-bladed screwdriver, loosen both screws on the MAIN (A) Track Output being careful not to screw them all the way out. The screws just need to be loosened enough to fit your wires into the holes. Tighten down both screws once you have inserted the wires making sure to not overtighten. You can pull the connector out of its socket to remove it from the |EX-CSB1| to make this easier. Remember push the connector all the way into the connector on the board to snap it back in place.
+Using a small flat-bladed screwdriver, loosen both screws on the MAIN (A) Track Output being careful not to screw them all the way out. The screws just need to be loosened enough to fit your wires into the holes. Tighten down both screws once you have inserted the wires making sure to not overtighten. 
+
+You can pull the connector out of its socket to remove it from the |EX-CSB1| to make this easier. Remember push the connector all the way into the connector on the board to snap it back in place.
 
 .. figure:: /_static/images/ex-csb1/csb1_insert_wire3.png
    :alt: Inserting Track Wires
@@ -137,7 +148,9 @@ Connect the other ends of the track output wires to your track. While not critic
 Power Connection
 ------------------
 
-The CSB1 has a 2.1mm x 5.5mm power jack. If you already have a power supply with bare wires, you can use an optional 2.1mm x 5.5mm screw terminal block adapter. For N and HO scale you would normally use a 12V to 15V DC power supply, but be sure to check the manual for your loco/decoder combination for the correct voltage. For more information about power supplies, including how to use one power supply to supply all the different voltages on your layout, see :ref:`Power Supplies <reference/hardware/power-supplies:power supplies>`. 
+The EX-CSB1 has a 2.1mm x 5.5mm power jack. If you already have a power supply with bare wires, you can use an optional 2.1mm x 5.5mm screw terminal block adapter. For N and HO scale you would normally use a 12V to 15V DC power supply, but be sure to check the manual for your loco/decoder combination for the correct voltage. 
+
+For more information about power supplies, including how to use one power supply to supply all the different voltages on your layout, see :ref:`Power Supplies <reference/hardware/power-supplies:power supplies>`. 
 
 .. figure:: /_static/images/power/2_1mm_screw_terminal_adapter.png
    :scale: 40%
@@ -161,7 +174,9 @@ Testing Your Command Station
 Connect Track Input Power
 --------------------------
 
-To fully power the CSB1, just plug your power supply into the mains power (aka wall outlet) and connect the barrel end to the Command Station. Make sure your power supply matches the needs of your setup: the voltage should be between 12V and 25V DC, depending on the scale of your locomotives, and it should provide at least 2A of current with good over-current performance and voltage stability. To get the most out of your EX-CSB1, we suggest using a modern switching power supply with 4A or more. For Z scale, 12V is usually enough, but for N, HO, and OO scales, we recommend using between 14V and 16V DC. It's important that your DC power is well-regulated which is why we suggest a modern switch-mode power supply with double insulation and strong overload protection.
+To fully power the EX-CSB1, just plug your power supply into the mains power (aka wall outlet) and connect the barrel end to the Command Station. Make sure your power supply matches the needs of your setup: the voltage should be between 12V and 25V DC, depending on the scale of your locomotives, and it should provide at least 2A of current with good over-current performance and voltage stability. 
+
+To get the most out of your EX-CSB1, we suggest using a modern switching power supply with 4A or more. For Z scale, 12V is usually enough, but for N, HO, and OO scales, we recommend using between 14V and 16V DC. It's important that your DC power is well-regulated which is why we suggest a modern switch-mode power supply with double insulation and strong overload protection.
 
 .. figure:: /_static/images/ex-csb1/csb1_barrel_insert.png
    :alt: Inserting barrel plug
@@ -170,7 +185,9 @@ To fully power the CSB1, just plug your power supply into the mains power (aka w
 
    Inserting Power Supply Barrel Plug
 
-When you connect power to the CSB1 via the barrel connector, you should see both bright green power LEDs light up (5V and 3.3V power), confirming that the electronics are working. However, for safety, track output power will be off by default when you first plug in the EX-CSB1. This is to prevent power from accidentally being applied to your layout before everything is ready. If you prefer, you can change this default setting in the :doc:`Startup Configuration </ex-commandstation/advanced-setup/startup-config>` ). 
+When you connect power to the EX-CSB1 via the barrel connector, you should see both bright green power LEDs light up (5V and 3.3V power), confirming that the electronics are working. 
+
+However, for safety, track output power will be off by default when you first plug in the EX-CSB1. This is to prevent power from accidentally being applied to your layout before everything is ready. If you prefer, you can change this default setting in the :doc:`Startup Configuration </ex-commandstation/advanced-setup/startup-config>` ). 
 
 .. figure:: /_static/images/ex-csb1/csb1_power_barrel.png
    :alt: Barrel Power LEDs
@@ -179,7 +196,7 @@ When you connect power to the CSB1 via the barrel connector, you should see both
 
    Barrel Plug Power LEDs
 
-You should see status information on the display including the CSB1 firmware version, track power status, free memory, and WiFi connection information. If you do not have a display, you will need to connect a serial monitor (See: :doc:`Using a Serial Monitor </reference/tools/serial-monitor>`).
+You should see status information on the display including the EX-CSB1 firmware version, track power status, free memory, and WiFi connection information. If you do not have a display, you will need to connect a serial monitor (See: :doc:`Using a Serial Monitor </reference/tools/serial-monitor>`).
 
 .. todo XXX insert link to serial monitor
 
@@ -190,13 +207,15 @@ You should see status information on the display including the CSB1 firmware ver
 
    OLED Status Display
 
-Connect the Smart Device to the CSB1 AP Network
--------------------------------------------------
+Connect the Smart Device to the EX-CSB1 AP Network
+---------------------------------------------------
 
 
-The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of DCCEX_xxxxxx and password of PASS_xxxxxx (where xxxxxx is the last 6 digits of the MAC address of the CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. This quick start covers initial testing with a WiFi smart device app, for a USB Connection with EX-WebThrottle or JMRI and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
+The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of ``DCCEX_xxxxxx`` and password of ``PASS_xxxxxx`` (where xxxxxx is the last 6 digits of the MAC address of the EX-CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. 
 
-Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly. To configure your CSB1 to connect to your network, see :doc:`WiFi Configuration </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`.
+This quick start covers initial testing with a WiFi smart device app, for a USB Connection with EX-WebThrottle or JMRI and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
+
+**Access Point (AP) mode** creates a separate WiFi network on the Command Station itself, whereas **Station (STA) mode** allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the |EX-CSB1| set to default to AP mode for convenience of being able to get up and running quickly. To configure your EX-CSB1 to connect to your network, see :doc:`WiFi Configuration </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`.
 
 The WiFi LED will illuminate once WiFi is configured and ready as an Access Point (or Station if reconfigured for STA mode.)
 
@@ -219,7 +238,7 @@ Click on that network to see the next screen to enter your password. Notice the 
 
    Smart Device AP Password Entry
 
-.. todo XXX We need to probably link to the manual or another CSB1 doc and cover using installer as preferred to the IDE
+.. todo XXX We need to probably link to the manual or another EX-CSB1 doc and cover using installer as preferred to the IDE
 
 
 .. todo [insert link] XXX figure link showing WiFi LED
@@ -237,7 +256,9 @@ Open the Engine Driver App on your Android smart device:
 
    Engine Driver App Icon
 
-Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. If you have already used Engine Driver, you can run the wizard again from the app menu. Any settings from a previous run will be maintained:
+Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. 
+
+If you have already used Engine Driver, you can run the wizard again from the app menu (from the Connection Screen only). Any settings from a previous run will be maintained.
 
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
    :alt: Engine Driver App Menu
@@ -263,7 +284,9 @@ The Wizard allows you to set or change appearance options and, most importantly,
 
    Engine Driver Wizard Opening Screen
 
-Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation. This setting will automatically add useful buttons and switch to using the DCC-EX native commands instead of WiThrottle Protocol (you can always switch back and forth if you need to connect to a WiThrottle device):
+Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation. 
+
+This setting will automatically add useful buttons and switch to using the DCC-EX native commands instead of WiThrottle Protocol (you can always switch back and forth if you need to connect to a WiThrottle device):
 
 .. figure:: /_static/images/engine_driver/ed_wizard6.png
    :alt: Engine Driver Wizard DCC-EX Select
@@ -272,7 +295,13 @@ Scroll through the other screens setting your preferences until you get the the 
 
    Engine Driver Wizard DCC-EX Select
 
-After choosing the DCC-EX option above and pressing the checkmark to finish the Wizard, the opening Ending Driver screen will change to look like figure 23 with an added option at the bottom of the screen for "Connection Protocol". The default of "Auto" for Automatic is the new default. You can manually switch between DCC-EX Protocol and WiThrottle Protocol if you go to a club or use another Command Station that requires WiThrottle. The native DCC-EX protocol allows for more powerful, expanded capabilities when connected to an EX-CommandStation:
+After choosing the DCC-EX option above and pressing the checkmark to finish the Wizard, the opening Ending Driver screen will change to look like figure 23 with an added option at the bottom of the screen for "Connection Protocol". 
+
+The default of "Auto" for Automatic is now the default. 
+
+You can manually switch between DCC-EX Protocol and WiThrottle Protocol if you go to a club or use another Command Station that requires WiThrottle, but generally the 'Auto' setting will do so automatically.
+
+The native DCC-EX protocol allows for more powerful, expanded capabilities when connected to an EX-CommandStation:
 
 .. figure:: /_static/images/engine_driver/ed_dcc_ex_protocol1.png
    :alt: DCC-EX Protocol Bottom Selector
@@ -293,7 +322,9 @@ After choosing the DCC-EX option above and pressing the checkmark to finish the 
 Connect Engine Driver to EX-CommandStation
 ---------------------------------------------
 
-Engine Driver should find the Command Station automatically and show it's SSID in the "Discovered Servers" List. Simply select yours by clicking on it. The last 6 characters of the SSID will be unique to your Command Station. If the list is empty, try entering it manually by putting 192.168.4.1 in the "Server Address" and "2560" for the Port. If that still does not work, see the Section on WiFi here todo XXX.
+|Engine Driver| should find the Command Station automatically and show it's SSID in the "Discovered Servers" List. Simply select yours by clicking on it. The last 6 characters of the SSID will be unique to your Command Station. 
+
+If the list is empty, try entering it manually by putting ``192.168.4.1`` in the 'Server Address' and ``2560`` for the 'Port'. If that still does not work, see the Section on WiFi here todo XXX.
 
 .. figure:: /_static/images/engine_driver/ed_detect_2.png
    :alt: Command Station Connect
@@ -305,7 +336,11 @@ Engine Driver should find the Command Station automatically and show it's SSID i
 Acquire Your Loco
 -------------------
 
-Once you have connected to your command station, the next screen will display the throttle controls. They will be greyed out until you select a loco by its address. Press the select button and enter the address for your loco. Here you can see we are connecting to loco "3" (the default address for almost all locos as they come from the box. See todo XXX for ) 
+Once you have connected to your command station, the next screen will display the throttle controls. They will be greyed out until you select a loco by its address. 
+
+Press the :guilabel:`select` button and enter the address for your loco. Here you can see we are connecting to loco `3` (the default address for almost all locos as they come from the box). 
+
+   (Once you are happy that your |EX-CS| is fully functioning you can change the DCC address of your locos using :ref:`these instructions<throttles/software/engine-driver-native-protocol:read and write dcc addresses on the programming track>`.)
 
 .. figure:: /_static/images/engine_driver/ed_select_addr.png
    :alt: Press Loco Select Button
@@ -323,7 +358,9 @@ Once you have connected to your command station, the next screen will display th
 
 |BR|
 
-The throttle screen reappears and the controls are active. You will also see 3 icons at the top of the display, a special DCC-EX button, an emergency stop button, and a track power button. Press the red power button to turn on the track power, the button should turn green and your track power should be on (the track output leds on your motor driver should light).
+The throttle screen reappears and the controls are active. You will also see 3 icons at the top of the display, a special DCC-EX button, an 'emergency stop' button, and a 'track power' button. 
+
+Press the red 'power' button to turn on the track power, the button should turn green and your track power should be on (the track output LEDs on your motor driver should light).
 
 .. figure:: /_static/images/engine_driver/ed_powr_btn_shadow.png
    :alt: Turn On Track Power
