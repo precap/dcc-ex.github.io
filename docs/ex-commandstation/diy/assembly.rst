@@ -272,7 +272,7 @@ Next Steps - Install the WiFi board
 
    |conductor| |BR| You can *alternately* connect a controller like |JMRI| or our |EX-WT| by using the serial cable to connect between your computer and the |EX-CS|. If so, skip to :doc:`/ex-commandstation/installer-diy`.
 
-Click :doc:`here </ex-commandstation/diy/wifi-setup>` or click the "next" button to learn how to connect the WiFi shield to your |EX-CS|.
+See the :doc:`/ex-commandstation/diy/wifi-setup` page or click the 'Next' button to learn how to connect the WiFi shield to your |EX-CS|.
 
 ..
    1. Load firmware on your Command Station

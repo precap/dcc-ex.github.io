@@ -85,7 +85,7 @@ A Throttle (Controller)
 Next Steps
 ==========
 
-Click the "next" button to see how to assemble your |EX-CS|.
+Click the 'Next' button to see how to assemble your |EX-CS|.
 
 ----
 

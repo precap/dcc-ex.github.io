@@ -59,4 +59,4 @@ The |EX-FC| integration includes:
 Next Steps
 ==========
 
-Now that you have a general overview of EX-FastClock's features and capabilities, click the "next" button see what is needed to create an |EX-FC|.
+Now that you have a general overview of EX-FastClock's features and capabilities, click the 'Next' button see what is needed to create an |EX-FC|.

@@ -178,7 +178,7 @@ Take a second jumper wire and connect it to any one of the Rx pins on the WiFi B
 Next Steps - Install the Software
 =================================
 
-Click :doc:`here </ex-commandstation/installer-diy>` or click the "next" button to learn how to install the software on your |EX-CS|.
+See the :doc:`/ex-commandstation/installer-diy` page or click the 'Next' button to learn how to install the software on your |EX-CS|.
 
 .. 
    If you already have the Command Station software running and are just adding WiFi, there is nothing further you need to do if you want to use the Command Station as an Access Point (AP) and connect a WiThrottle compatible CAB (|Engine Driver|). The next time you power up the Command Station, it will automatically find your WiFi board and which port it is connected to. See the detailed instructions here: :doc:`WiFi Configuration <../advanced-setup/wifi-config>`

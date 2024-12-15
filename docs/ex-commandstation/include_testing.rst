@@ -94,7 +94,7 @@ Connect Everything:
 * The circular control or vertical slider (chosen by the throttle select slider) can be moved by clicking and holding down the mouse button and dragging, clicking at a spot where you want the throttle to move, or clicking the + and - buttons
 
 .. note:: 
-   If you did not see the LEDs light near the A and B outputs on the Motor Shield, try pushing down on the motor shield to make sure that the pins are properly seated into the Arduino. If that did not work, scroll down to the very bottom of this page and click on the "next" button for troubleshooting help.
+   If you did not see the LEDs light near the A and B outputs on the Motor Shield, try pushing down on the motor shield to make sure that the pins are properly seated into the Arduino. If that did not work, scroll down to the very bottom of this page and click on the 'Next' button for troubleshooting help.
 
 .. sidebar:: 
 
@@ -189,7 +189,7 @@ You will need to install |Engine Driver| on your mobile device and then connect 
 See :doc:`Engine Driver Page </throttles/software/engine-driver>` for details on how to install and run |Engine Driver|.
 
 .. note:: 
-   If you did not see the LEDs near the A and B outputs light on the Motor Shield, try pushing down on the motor shield to make sure that the pins are properly seated into the Arduino. If that did not work, scroll down to the very bottom of this page and click on the "next" button for troubleshooting help.
+   If you did not see the LEDs near the A and B outputs light on the Motor Shield, try pushing down on the motor shield to make sure that the pins are properly seated into the Arduino. If that did not work, scroll down to the very bottom of this page and click on the 'Next' button for troubleshooting help.
 
 Using WiThrottle (Apple iOS)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

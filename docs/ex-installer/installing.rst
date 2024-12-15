@@ -577,7 +577,7 @@ When clicking this button, the Device Monitor window will open, allowing you to 
 
 |
 
-For further details on using Device Monitor, continue on to the next page with the "next" button, or go straight to :ref:`ex-installer/testing:using the ex-installer device monitor`.
+For further details on using Device Monitor, continue on to the next page with the 'Next' button, or go straight to :ref:`ex-installer/testing:using the ex-installer device monitor`.
 
 |force-break|
 
@@ -591,6 +591,6 @@ Next Steps - Test your setup
 
    The programming track is for programming only. Make sure you are on the main track if you expect your loco to move or respond to light or sound commands.
 
-Click :doc:`here </ex-installer/testing>` or click the "next" button to learn how to test and use your |EX-CS|.
+See the :doc:`/ex-installer/testing` page or click the 'Next' button to learn how to test and use your |EX-CS|.
 
 |force-break|

@@ -233,11 +233,11 @@
 ..
 .. |Motor Driver| replace::
 
-    :doc:`Motor Driver </reference/glossary>`
+    :doc:`Motor Driver </reference/hardware/motor-boards>`
 ..
 .. |JMRI| replace::
 
-    :doc:`JMRI </reference/glossary>`
+    :doc:`JMRI </throttles/jmri>`
 ..   
 .. |Engine Driver| replace::
 
@@ -265,15 +265,15 @@
 ..
 .. |Access Point| replace::
 
-    :doc:`Access Point (AP) </reference/glossary>`
+    :doc:`Access Point (AP) </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`
 ..
 .. |Access Point Mode| replace::
 
-    :doc:`Access Point (AP) Mode </reference/glossary>`
+    :doc:`Access Point (AP) Mode </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`
 ..
 .. |Station Mode| replace::
 
-    :doc:`Station (STA) Mode  </reference/glossary>`
+    :doc:`Station (STA) Mode  </ex-commandstation/advanced-setup/supported-wifi/wifi-config>`
 ..
 .. |Arduino IDE| replace::
 

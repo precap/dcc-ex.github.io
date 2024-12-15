@@ -231,4 +231,4 @@ If you have a layout that requires more control over when phase switching does a
 Next Steps
 ==========
 
-Now that you have a general overview of EX-Turntable's features and capabilities, click the "next" button see what is needed to create an |EX-TT|.
+Now that you have a general overview of EX-Turntable's features and capabilities, click the 'Next' button see what is needed to create an |EX-TT|.

@@ -24,8 +24,8 @@ This quick startup guide is designed to have you configured and setup to run tra
 
 These instructions are for DCC locomotives. For more detailed information, to configure for running DC trains, or to use different throttles like EX-WebThrottle or JMRI, see the :doc:`EX-CSB1 Operating Manual <manual>`
 
-What You Will need
-=====================
+What You Will Need
+==================
 
 * An |EX-CSB1| [1]_
 * A **Power supply** (12V - 16V DC see :ref:`Power Supplies <reference/hardware/power-supplies:power supplies>`)
@@ -37,8 +37,10 @@ What You Will need
 
  .. [1] While not required for normal use, a PC is required a) to initially install the software, and b) is optional for making a USB connection and using programs like |EX-WT| or |JMRI| and to update/add EXRAIL Scripts to the |EX-CS|. A USB connection also provides a connection to a "serial monitor" to generate logs and diagnose issues, but more on that later.
 
+----
+
 Board Layout
-==============
+============
 
 .. figure:: /_static/images/ex-csb1/csb1_render_layout_top.png
    :alt: DCC-EX EX-CSB1 Express
@@ -52,6 +54,8 @@ Board Layout
    
    Before connecting any wires to your command station or tracks, make sure you have unplugged the power supply from the wall or removed the barrel connector from the command station. It is crucial to ensure that the command station has no power while you are working on your connections.
 
+----
+
 Summary or Super-Quick Start
 ============================
 
@@ -59,9 +63,8 @@ In summary, you need just two basic wiring connections to the EX-CSB1 to be up a
 
 .. XXX Add link above to point to the full manual
 
-* Track connected to Track A Output
-* Power supply input connected to Power IN DC barrel jack
-
+1. Track connected to Track A Output
+2. Power supply input connected to Power IN DC barrel jack
 
 .. sidebar:: Engine Driver & EX-Toolbox
 
@@ -74,12 +77,19 @@ And to connect via WiFi to the EX-CSB1 to control trains your smart device will 
 
 Connecting to the EX-CSB1 via WiFi:
 
-* Select the WiFi network in your smart device WiFi settings named ``DCCEX_xxxxxx``, and use the corresponding password ``PASS_xxxxxx`` (where **xxxxxx** is identical in each case) shown on your EX-CSB1's OLED display
-* Tell your smart device not to worry about there being no Internet connection
-* Launch throttle app, which should connect automatically
-* You may need to tell your smart device to not automatically connect to your default network or it might keep trying to reconnect to that instead
+* Select the WiFi network in your smart device WiFi settings named ``DCCEX_xxxxxx``, and use the corresponding password ``PASS_xxxxxx`` (where **xxxxxx** is identical in each case) shown on your EX-CSB1's OLED display.
+* Tell your smart device not to worry about there being no Internet connection. [2]_
+* Launch your throttle app.
+* In your throttle app, connect to the ``dccex`` server.
+
+.. [2] You also may need to tell your smart device to not automatically connect to your default WiFi network or it might keep trying to reconnect to that instead
 
 These quick tips may actually be enough to get your running, but step by step instruction follow below.
+
+----
+
+Connecting your Command Station 
+===============================
 
 Track Connection
 -----------------
@@ -176,10 +186,10 @@ For more information about power supplies, including how to use one power supply
 |force-break|
 
 Testing Your Command Station
-============================================
+============================
 
 Connect Track Input Power
---------------------------
+-------------------------
 
 To fully power the EX-CSB1, just plug your power supply into the mains power (aka wall outlet) and connect the barrel end to the Command Station. Make sure your power supply matches the needs of your setup: the voltage should be between 12V and 25V DC, depending on the scale of your locomotives, and it should provide at least 2A of current with good over-current performance and voltage stability. 
 
@@ -214,8 +224,18 @@ You should see status information on the display including the EX-CSB1 firmware 
 
    OLED Status Display
 
+Connecting Your Throttle (controller)
+-------------------------------------
+
 Connect the Smart Device to the EX-CSB1 AP Network
----------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: /_static/images/ex-csb1/oled_startup.png
+   :alt: EX-CSB1 Startup - oLED screen
+   :scale: 25%
+   :align: right
+
+   EX-CSB1 Startup - oLED screen
 
 The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a WiFi network SSID of ``DCCEX_xxxxxx`` and password of ``PASS_xxxxxx`` (where **xxxxxx** is the last 6 digits of the MAC address of the EX-CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. 
 
@@ -236,7 +256,6 @@ On your device, select the network settings and find an available network that b
 
 Click on that network to see the next screen to enter your password. Notice the password is just "PASS\_" followed by the same 6 digits in the network name (called a "SSID").
 
-
 .. figure:: /_static/images/engine_driver/ed_wifi_pass.png
    :alt: Smart Device AP Password Entry
    :scale: 40%
@@ -250,7 +269,7 @@ Click on that network to see the next screen to enter your password. Notice the 
 .. todo [insert link] XXX figure link showing WiFi LED
 
 Run the Engine Driver Setup Wizard
--------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Open the Engine Driver App on your Android smart device: 
 
@@ -262,9 +281,9 @@ Open the Engine Driver App on your Android smart device:
 
    Engine Driver App Icon
 
-Once loaded, select your preferences when the Intro/Setup wizard launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. 
+Once loaded, select your preferences when the **Intro/Setup Wizard** launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. 
 
-If you have already used Engine Driver, you can run the wizard again from the app menu (from the Connection Screen only). Any settings from a previous run will be maintained.
+If you have already used |Engine Driver|, you can run the wizard again from the app menu (from the 'Connection' screen only). Any settings from previous runs of the wizard will be maintained.
 
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
    :alt: Engine Driver App Menu
@@ -272,7 +291,6 @@ If you have already used Engine Driver, you can run the wizard again from the ap
    :align: left
 
    Engine Driver App Menu
-
 
 .. figure:: /_static/images/engine_driver/ed_wizard_menu.png
    :alt: Engine Driver Intro/Setup Wizard
@@ -326,7 +344,7 @@ The native DCC-EX protocol allows for more powerful, expanded capabilities when 
 |BR|
 
 Connect Engine Driver to EX-CommandStation
----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |Engine Driver| should find the Command Station automatically and show it's SSID in the 'Discovered Servers' List. Simply select yours by clicking on it. The last 6 characters of the SSID will be unique to your Command Station. 
 
@@ -340,7 +358,7 @@ If the list is empty, try entering it manually by putting ``192.168.4.1`` in the
    Command Station Connect
 
 Acquire Your Loco
--------------------
+^^^^^^^^^^^^^^^^^
 
 Once you have connected to your command station, the next screen will display the throttle controls. They will be greyed out until you select a loco to control. 
 
@@ -376,18 +394,9 @@ Press the red 'power' button to turn on the track power, the button should turn 
    Turn On Track Power
 
 Run Trains
------------
+^^^^^^^^^^
 
 Move the slider control up slowly, operate the horn and light buttons, and you should be running trains! 
-
-If you are happy with the default configuration of your |EX-CSB1| there is nothing more you need to do.
-
-If you want to change the way the WiFi is configured, just click next or go the :doc:`wifi-setup` page.
-
-If you want to look at some other options to use as a controller (throttle) then have a look at the :doc:`/ex-commandstation/controllers-rtr` page.
-
-If you want to add a roster, turnout/points, routes or automations look at the :doc:`/ex-rail/index` page.
-
 
 .. figure:: /_static/images/engine_driver/ed_run.png
    :alt: Operate Controls to Run Trains
@@ -396,20 +405,77 @@ If you want to add a roster, turnout/points, routes or automations look at the :
 
    Operate Controls to Run trains
 
+----
+
+Additional information
+======================
+
 Confirm startup
 ----------------
 
+.. figure:: /_static/images/ex-csb1/oled_startup.png
+   :alt: EX-CSB1 Startup - oLED screen
+   :scale: 25%
+   :align: center
+
+   EX-CSB1 Startup - OLED screen
+
 todo XXX [insert link] Show and explain the startup screen. What goes here?
+
+At startup of the |EX-CSB1| the OLED screen shows useful information.
+
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+  :class: command-table
+
+  * - Line 
+    - key
+    - Meaning
+
+  * - 1
+    - DCC-EX
+    - EX-CommandStation version number
+
+  * - 2
+    - Lic
+    - The licence under which the EX-CommandStation code is published
+
+  * - 3
+    - Power
+    - Power State.  ON / OFF / JOIN / etc.
+
+  * - 4
+    - Free RAM
+    - Available RAM
+
+  * - 5
+    - Wifi:
+    - The SSID / Network name
+
+  * - 6
+    - PASS:
+    - The password for the Network
+
+  * - 7
+    - IP:
+    - The IP Address of the WiThrottle / Native server
+
+|HR-DASHED|
 
 DCC Operation
 ---------------
 
-The EX-CSB1 is set to operate in DCC mode by default. If you want to switch to any of the outputs to DC mode, you can find instructions on how to do that here :doc:`TrackManager page </trackmanager/index>`
+The EX-CSB1 is set to operate in DCC mode by default. If you want to switch to any of the outputs to DC mode, you can find instructions on how to do that on the :doc:`TrackManager page </trackmanager/index>`.
+
+|HR-DASHED|
 
 Booster Mode
 --------------
 
 The |EX-CSB1| as the name implies can operate as a Command Station or a Booster. See [insert link] for instructions on how to use the EX-CSB1 as a booster.
+
+|HR-DASHED|
 
 Full EX-CSB1 Operating Manual
 ------------------------------
@@ -423,4 +489,8 @@ Next Steps
 
 If you are happy with the default configuration of your |EX-CSB1| there is nothing more you need to do.
 
-If you want to change the way the WiFi is configured or continue on to look at some of the other options, just click 'next' or go the :doc:`wifi-setup` page.
+If you want to change the way the WiFi is configured, just click next or go the :doc:`wifi-setup` page.
+
+If you want to look at some other options to use as a controller (throttle) then have a look at the :doc:`/ex-commandstation/controllers-rtr` page.
+
+If you want to add a roster, turnout/points, routes or automations look at the :doc:`/ex-rail/index` page.

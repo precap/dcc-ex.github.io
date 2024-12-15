@@ -37,7 +37,7 @@ The |DCC-EX| |EX-CSB1| comes ready to use out of the box and has the following f
 Next Steps - Purchasing Parts
 =============================
 
-Click :doc:`here</ex-commandstation/ready-to-run/purchasing>` or click the "next" button to see how to acquire your |EX-CSB1|.
+See the :doc:`/ex-commandstation/ready-to-run/purchasing` page or click the 'Next' button to see how to acquire your |EX-CSB1|.
 
 ----
 

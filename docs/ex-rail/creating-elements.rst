@@ -429,4 +429,4 @@ New 4.1 SERVO_SIGNAL(vpin, redpos, amberpos, greenpos)
 Next Steps - Creating Sequences
 ===============================
 
-Click :doc:`here <getting-started>` or click the :guilabel:`Next` button to learn how to create automation sequences.
+See the :doc:`getting-started` page or click the 'Next' button to learn how to create automation sequences.

@@ -94,4 +94,4 @@ The complete list of supported stepper drivers and motors:
 Next Steps
 ==========
 
-Now that you know what you need, click the "next" button see what is needed to create an |EX-TT|.
+Now that you know what you need, click the 'Next' button see what is needed to create an |EX-TT|.

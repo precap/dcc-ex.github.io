@@ -577,4 +577,4 @@ The READ_LOCO reads the loco address from the PROG track and the current route t
 Next Steps - Examples
 =====================
 
-Click :doc:`here <examples>` or click the :guilabel:`Next` button to see some concrete examples of automation sequences.
+See the :doc:`examples` page or click the 'Next' button to see some concrete examples of automation sequences.
