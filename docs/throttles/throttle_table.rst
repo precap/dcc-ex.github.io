@@ -11,7 +11,7 @@
       -  Tech- |BRxa| nology
       -  
       -  Also |BRxa| Requ- |BRxa| ires
-      -  Form |BRxa| Factor
+      -  F |BRxa| o |BRxa| r |BRxa| m
       -  
       -  
       -  
@@ -25,10 +25,10 @@
       -  
       -  
       -  
-      -  Mobile
+      -  M |BRxa| o |BRxa| b |BRxa| i |BRxa| l |BRxa| e
       -  
       -  
-      -  PC
+      -  P |BRxa| C
       -  
       -  
       -  
@@ -39,7 +39,7 @@
       -  Proto- |BRxa| col
       -  UI
       -  
-      -  Physical |BRxa| Device
+      -  P |BRxa| h |BRxa| y |BRxa| s |BRxa| i |BRxa| c |BRxa| a |BRxa| l
       -  A |BRxa| n |BRxa| d |BRxa| r |BRxa| o |BRxa| i |BRxa| d
       -  i |BRxa| O |BRxa| S
       -  W |BRxa| i |BRxa| n
