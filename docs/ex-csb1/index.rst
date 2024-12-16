@@ -62,7 +62,12 @@ The EX-CSB1's robust, single-PCB design includes integrated MOSFET motor drivers
 
 With its dual role as a command station or booster, the EX-CSB1 can be strategically placed around a layout, seamlessly switching to booster mode upon detecting a RailSync input signal. This feature is particularly useful for modular layouts, ensuring smooth operation across different sections once joined together and slaved to a master DCC signal. Distributing power around the layout also reduces the cost of heavy copper lines to carry the DCC signal that would otherwise be needed with centralised power.
 
-XXX [Insert Image - 8874 stacked on CSB1]
+.. figure:: /_static/images/ex-csb1/csb1_stacked.png
+   :alt: EX-CSB1 Stacked with EX-MotorShield8874
+   :scale: 80%
+   :align: center
+   EX-CSB1 Stacked with EX-MotorShield8874
+
 
 An additional DCC-EX EX-MotorShield 8874 can be inserted onto the command station board to provide two more DCC or PWM DC outputs with the same performance characteristics and output mode flexibility.
 
