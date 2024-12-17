@@ -1,5 +1,67 @@
 .. ................................................
 ..
+.. |DCC-EX| raw:: html
+
+  <a href="./index.html"><span class="dccex-suffix">DCC-</span><span class="dccex-prefix">EX</span></a>
+..
+.. |EX-CS| raw:: html
+
+  <a href="./ex-commandstation/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span></a>
+..
+.. |EX-WS| raw:: html
+
+  <a href="./reference/hardware/motorboards/ex-motor-shield-8874.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;WiFiShield 8874</span></a>
+..
+.. |EX-WT| raw:: html
+
+  <a href="./ex-webthrottle/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;WebThrottle</span></a>
+..
+.. |EX-R| raw:: html
+
+  <a href="./ex-rail/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;RAIL</span></a>
+..
+.. |EX-I| raw:: html
+   
+  <a href="./ex-installer/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Installer</span></a>
+..
+.. |EX-TT| raw:: html
+
+  <a href="./ex-turntable/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span></a>
+..
+.. |EX-FC| raw:: html
+
+  <a href="./ex-fastclock/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;FastClock</span></a>
+..
+.. |EX-DCCI| raw:: html
+
+  <a href="./ex-dccinspector/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;DCCInspector</span></a>
+..
+.. |EX-IO| raw:: html
+
+  <a href="./ex-ioexpander/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span></a>
+..
+.. |EX-TB| raw:: html
+
+  <a href="./ex-toolbox/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Toolbox</span></a>
+..
+.. |EX-MS| raw:: html
+
+  <a href="./reference/hardware/motorboards/ex-motor-shield-8874.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;MotorShield8874</span></a>
+..
+.. |EX-CSB1| raw:: html
+
+  <a href="./ex-commandstation/ready-to-run/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation&thinsp;/&thinsp;Booster One Express</span></a>
+..
+.. |BSC| raw:: html
+
+  <span class="ex-suffix">BaseStationClassic (DCC++)</span>
+..
+.. |TM| raw:: html
+
+  <span class="ex-suffix">TrackManager</span>
+..
+.. ................................................
+..
 .. |EX-CSB1-LOGO-SMALL| image:: /_static/images/logos/product-logo-ex-csb1.png
       :alt: EX-CSB1 Logo
       :scale: 30%
