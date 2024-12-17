@@ -30,7 +30,7 @@ Designed in conjunction with the |DCC-EX| development team, the |EX-MS| is extre
 
    DCC-EX EX-MotorShield8874 RevA Semify
 
-.. figure:: /_static/images/motorboards/ex_motorshield8874_purple_side.jpg
+.. figure:: /_static/images/motorboards/ex_motorshield8874_purple_side.png
    :alt: DCC-EX EX-MotorShield8874 RevA Millennium Engineering
    :scale: 10%
 
@@ -98,13 +98,13 @@ Assembly with the EX-MotorShield8874 is extremely simple, just plug the motor sh
 
 Shown here are examples of the shield plugged into Mega+WiFi, Nucleo-F411RE:
 
-.. figure:: /_static/images/motorboards/ex_motorshield8874_mega.jpg
+.. figure:: /_static/images/motorboards/ex_motorshield8874_mega.png
    :alt: DCC-EX EX-MotorShield8874 RevA on Mega+WiFi
    :scale: 15%
 
    DCC-EX EX-MotorShield8874 RevA on Mega+WiFi
 
-.. figure:: /_static/images/motorboards/ex_motorshield8874_nucleo_f411.jpg
+.. figure:: /_static/images/motorboards/ex_motorshield8874_nucleo_f411.png
    :alt: DCC-EX EX-MotorShield8874 RevA on Nucleo-F411RE
    :scale: 15%
 
@@ -115,7 +115,7 @@ Shown here are examples of the shield plugged into Mega+WiFi, Nucleo-F411RE:
 
 The EX-MotorShield8874 accepts a standard 2.1mm inside diameter DC barrel jack for DC power, with centre pin positive, and polarity protected for your safety. Acceptable voltages for correct DCC operation include 10-24VDC, but the shield can cope with 9-30VDC.
 
-.. figure:: /_static/images/motorboards/ex_motorshield8874_purple_megawifi.jpg
+.. figure:: /_static/images/motorboards/ex_motorshield8874_purple_megawifi.png
    :alt: DCC-EX EX-MotorShield8874 on Mega+WiFi with power and track connectors
    :scale: 10%
 
@@ -139,7 +139,7 @@ We suggest 10-12VDC for Z & N Scale, 14-16VDC for OO, HO, and 18-19VDC for O, or
 
 Once satisfied the EX-MotorShield8874 is seated properly on the Command Station motherboard, you can apply power to the |EX-CS|. You ought to see a green LED light up indicating power is being supplied to the motherboard.
 
-.. figure:: /_static/images/motorboards/ex_motorshield8874_purple_megawifi_LED_on.jpg
+.. figure:: /_static/images/motorboards/ex_motorshield8874_purple_megawifi_LED_on.png
    :alt: DCC-EX EX-MotorShield8874 RevA on Mega+WiFi with power LED on
    :scale: 10%
 
