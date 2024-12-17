@@ -62,14 +62,14 @@ The EX-CSB1's robust, single-PCB design includes integrated MOSFET motor drivers
 
 With its dual role as a command station or booster, the EX-CSB1 can be strategically placed around a layout, seamlessly switching to booster mode upon detecting a RailSync input signal. This feature is particularly useful for modular layouts, ensuring smooth operation across different sections once joined together and slaved to a master DCC signal. Distributing power around the layout also reduces the cost of heavy copper lines to carry the DCC signal that would otherwise be needed with centralised power.
 
+An additional DCC-EX EX-MotorShield 8874 can be inserted onto the command station board to provide two more DCC or PWM DC outputs with the same performance characteristics and output mode flexibility.
+
 .. figure:: /_static/images/ex-csb1/csb1_stacked.png
    :alt: EX-CSB1 Stacked with EX-MotorShield8874
-   :scale: 80%
+   :scale: 60%
    :align: center
+
    EX-CSB1 Stacked with EX-MotorShield8874
-
-
-An additional DCC-EX EX-MotorShield 8874 can be inserted onto the command station board to provide two more DCC or PWM DC outputs with the same performance characteristics and output mode flexibility.
 
 The system includes comprehensive protection features such as reverse polarity protection, hardware and software overcurrent protection, overvoltage protection, and thermal protection. It also provides clear status indications via LEDs for microcontroller power, track input supply, track output power per output channel, DCC/DC mode indication and direction for DC mode, and WiFi connection status.
 
@@ -134,7 +134,7 @@ Board layout
    :scale: 70%
    :align: right
 
-**Track Power LEDs** - These are indicators that power is being sent to the track, and the mode of the output. With DCC operation, both LEDs should shine brightly when your throttle issues the power-on command. You can also configure the CSB1 to start with power on using a mySetup.h or myAutomation.h file. See more here XXX. For DC PWM mode operation, when power is on, ONE LED will light for each direction. That is, forward will light one LED and when you select reverse, the other LED will light. 
+**Track Power LEDs** - These are indicators that power is being sent to the track, and the mode of the output. With DCC operation, both LEDs should shine brightly when your throttle issues the power-on command. You can also configure the CSB1 to start with power on using a mySetup.h or myAutomation.h file. See more here :doc:`/ex-commandstation/advanced-setup/startup-config`. For DC PWM mode operation, when power is on, ONE LED will light for each direction. That is, forward will light one LED and when you select reverse, the other LED will light. 
 
 .. image:: /_static/images/ex-csb1/qwiic_conn.png
    :alt: Qwiic Connector
