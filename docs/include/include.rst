@@ -1,65 +1,6 @@
 .. meta::
   :keywords: DCC-EX DCC DCC++ EX DCC++EX 
 ..
-.. |DCC-EX| raw:: html
-
-  <span class="dccex-suffix">DCC-</span><span class="dccex-prefix">EX</span>
-..
-.. |EX-CS| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span>
-..
-.. |EX-WS| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;WiFiShield 8874</span>
-..
-.. |EX-WT| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;WebThrottle</span>
-..
-.. |EX-R| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;RAIL</span>
-..
-.. |EX-I| raw:: html
-   
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Installer</span>
-..
-.. |EX-TT| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span>
-..
-.. |EX-FC| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;FastClock</span>
-..
-.. |EX-DCCI| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;DCCInspector</span>
-..
-.. |EX-IO| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span>
-..
-.. |EX-TB| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Toolbox</span>
-..
-.. |EX-MS| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;MotorShield8874</span>
-..
-.. |EX-CSB1| raw:: html
-
-  <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation&thinsp;/&thinsp;Booster One Express</span>
-..
-.. |BSC| raw:: html
-
-  <span class="ex-suffix">BaseStationClassic (DCC++)</span>
-..
-.. |TM| raw:: html
-
-  <span class="ex-suffix">TrackManager</span>
 ..
 .. |br| raw:: html
 
