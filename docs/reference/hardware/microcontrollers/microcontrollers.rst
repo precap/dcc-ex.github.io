@@ -243,7 +243,7 @@ Here is the NUCLEO-F411RE with on the left a genuine Arduino Motor Shield R3 ins
   :alt: STM Nucleo-F411RE with genuine Arduino Motor Shield R3 installed
   :scale: 30%
 
-.. image:: /_static/images/motorboards/ex_motorshield8874_nucleo_f411.jpg
+.. image:: /_static/images/motorboards/ex_motorshield8874_nucleo_f411.png
   :alt: STM Nucleo-F411RE with DCC-EX EX-MotorShield8874 installed
   :scale: 17%
 
