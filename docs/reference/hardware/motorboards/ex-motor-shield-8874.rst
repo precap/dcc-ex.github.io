@@ -150,7 +150,7 @@ Once satisfied the EX-MotorShield8874 is seated properly on the Command Station 
 
 Track power for A (MAIN) and B (PROG) tracks can be connected now using the green track connectors. These unplug conveniently to allow easy swapping in and out of the |EX-CS|. Make sure to tighten the screws onto the wire in the connectors before applying power.
 
-.. figure:: /_static/images/motorboards/ex_motorshield8874_purple_connector_closeup.jpg
+.. figure:: /_static/images/motorboards/ex_motorshield8874_purple_connector_closeup.png
    :alt: DCC-EX EX-MotorShield8874 RevA connectors
    :scale: 30%
    
