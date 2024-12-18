@@ -281,9 +281,9 @@ Open the Engine Driver App on your Android smart device:
 
    Engine Driver App Icon
 
-Once loaded, select your preferences when the **Intro/Setup Wizard** launches. You can skip to the next paragraph if you see the "Welcome to Engine Driver" Wizard screen. 
+The very first time the app is launched the "Welcome to Engine Driver" **Intro/Setup Wizard** is shown. The wizard will ask to grant the app the required permissionsand allow you to select some basic preferences for the theme and throttle layout. 
 
-If you have already used |Engine Driver|, you can run the wizard again from the app menu (from the 'Connection' screen only). Any settings from previous runs of the wizard will be maintained.
+If you have already used |Engine Driver|, you can run the wizard again at any time from the app menu (from the 'Connection' screen only). Any settings from previous runs of the wizard will be maintained.
 
 .. figure:: /_static/images/engine_driver/ed_preferences1.png
    :alt: Engine Driver App Menu
@@ -299,7 +299,7 @@ If you have already used |Engine Driver|, you can run the wizard again from the 
 
    Engine Driver Intro/Setup Wizard
 
-The Wizard allows you to set or change appearance options and, most importantly, choose to use DCC-EX native commands instead of WiThrottle Protocol:
+The Wizard allows you to set or change appearance options and, most importantly, choose to use |DCC-EX native commands| instead of |WiThrottle Protocol|:
 
 .. figure:: /_static/images/engine_driver/ed_wizard1.png
    :alt: Engine Driver Wizard Opening Screen
@@ -310,7 +310,7 @@ The Wizard allows you to set or change appearance options and, most importantly,
 
 Scroll through the other screens setting your preferences until you get the the DCC-EX screen and make sure to select the option to use an EX-CommandStation. 
 
-This setting will automatically add useful buttons and switch to using the DCC-EX native commands instead of WiThrottle Protocol (you can always switch back and forth if you need to connect to a WiThrottle device):
+This setting will automatically add useful buttons and switch to using the |DCC-EX native commands| instead of |WiThrottle Protocol| (you can always switch back and forth if you need to connect to a WiThrottle specific device):
 
 .. figure:: /_static/images/engine_driver/ed_wizard6.png
    :alt: Engine Driver Wizard DCC-EX Select
@@ -319,13 +319,13 @@ This setting will automatically add useful buttons and switch to using the DCC-E
 
    Engine Driver Wizard DCC-EX Select
 
-After choosing the DCC-EX option above and pressing the checkmark to finish the Wizard, the opening Ending Driver screen will change to look like figure 23 with an added option at the bottom of the screen for 'Connection Protocol'. 
+After choosing the DCC-EX option above and pressing the checkmark to finish the Wizard, the opening Engine Driver screen will change to look like figure 23 with an added option at the bottom of the screen for 'Connection Protocol'. 
 
 The default of 'Auto' for Automatic is now the default. 
 
-You can manually switch between DCC-EX Protocol and WiThrottle Protocol if you go to a club or use another Command Station that requires WiThrottle, but generally the 'Auto' setting will do so automatically.
+You can manually switch between |DCC-EX Native Protocol| and |WiThrottle Protocol| if you go to a club or use another type of Command Station that requires WiThrottle, but generally the 'Auto' setting will do so automatically.
 
-The native DCC-EX protocol allows for more powerful, expanded capabilities when connected to an EX-CommandStation:
+The |DCC-EX Native protocol| allows for more powerful, expanded capabilities when connected to an |EX-CS|:
 
 .. figure:: /_static/images/engine_driver/ed_dcc_ex_protocol1.png
    :alt: DCC-EX Protocol Bottom Selector

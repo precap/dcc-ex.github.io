@@ -198,11 +198,11 @@
 ..
 .. |wiThrottle Protocol| replace::
 
-    :doc:`wiThrottle Protocol </reference/glossary>`
+    :doc:`wiThrottle Protocol </reference/software/withrottle-vs-native-commands>`
 ..
 .. |wiThrottle Server| replace::
 
-    :doc:`wiThrottle Server </reference/glossary>`
+    :doc:`wiThrottle Server </reference/software/withrottle-vs-native-commands>`
 ..
 .. |Access Point| replace::
 
@@ -226,11 +226,11 @@
 ..
 .. |DCC-EX Native Commands| replace::
    
-    :doc:`DCC-EX Native Commands </reference/glossary>`
+    :doc:`DCC-EX Native Commands </reference/software/withrottle-vs-native-commands>`
 ..
 .. |DCC-EX Native Protocol| replace::
    
-    :doc:`DCC-EX Native Protocol </reference/glossary>`
+    :doc:`DCC-EX Native Protocol </reference/software/withrottle-vs-native-commands>`
 ..
 .. |hr-dashed| raw:: html
 
