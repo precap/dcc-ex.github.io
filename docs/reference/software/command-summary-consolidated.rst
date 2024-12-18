@@ -629,8 +629,6 @@ For details on how to configure turnouts/points see: :ref:`reference/software/co
 Turntables/Traversers
 ---------------------
 
-|NOT-IN-PROD-VERSION|
-
 .. contents:: In This Section
     :depth: 4
     :local:
