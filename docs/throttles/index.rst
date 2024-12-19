@@ -49,7 +49,7 @@ Android (Phones and Tablets)
 Apple iOS (Phones and Tablets)
 ------------------------------
 
-- :doc:`Locontrol (iOS) <software/locontrol>` *- Requires JMRI*
+- :doc:`Locontrol (iOS) <software/locontrol>`
 - :doc:`WiThrottle (iOS) <software/withrottle>`
 - :doc:`SRCP Client (iOS) <software/srcpclient>`
 - :doc:`Train Driver (iOS) <software/train-driver>`
@@ -108,6 +108,7 @@ WiThrottle Protocol Based Throttles
 -----------------------------------
 
 - :doc:`Engine Driver (Android)<software/engine-driver>`
+- :doc:`Locontrol (iOS) <software/locontrol>`
 - :doc:`Cab Engineer: DCC Throttle (Andriod) <software/cab-engineer>`
 - :doc:`WiThrottle (iOS)<software/withrottle>`
 - :doc:`SRCP Client (iOS) <software/srcpclient>`
@@ -127,7 +128,6 @@ USB Based Throttles
 JMRI Web Server Based Throttles
 -------------------------------
 
-- :doc:`Locontrol (iOS) <software/locontrol>`
 - :doc:`DigiTrainsPro (Android) <software/digitrainspro>`
 
 ----

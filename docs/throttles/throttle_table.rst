@@ -1,51 +1,29 @@
 .. include:: /include/include_xa.rst
 
-.. list-table::
+.. flat-table::
     :widths: auto
     :header-rows: 3
     :class: command-table
 
-    * -  Name |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa|
-      -  Licence
-      -  Inter- |BRxa| face
-      -  Tech- |BRxa| nology
-      -  
-      -  [2]_ |BRxa| Also |BRxa| Requ- |BRxa| ires
-      -  F |BRxa| o |BRxa| r |BRxa| m
-      -  
-      -  
-      -  
-      -  
-      -  
-      -  CV |BRxa| Pro- |BRxa| gram- |BRxa| ming
+    * -  :rspan:`2` Name |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa| |_xa|
+      -  :rspan:`2` Licence
+      -  :rspan:`2` Inter- |BRxa| face
+      -  :rspan:`1` :cspan:`1` Technology
+      -  :rspan:`2` [2]_ |BRxa| Also |BRxa| Requ- |BRxa| ires
+      -  :cspan:`5` Format
+      -  :rspan:`2` CV |BRxa| Pro- |BRxa| gram- |BRxa| ming
 
-    * -  
-      -  
-      -  
-      -  
-      -  
-      -  
-      -  M |BRxa| o |BRxa| b |BRxa| i |BRxa| l |BRxa| e
-      -  
-      -  
-      -  P |BRxa| C
-      -  
-      -  
-      -  
+    * -  :cspan:`2` Mobile
+      -  :cspan:`2` PC
 
-    * -  
-      -  
-      -  
-      -  [1]_ |BRxa| P |BRxa| r |BRxa| o |BRxa| t |BRxa| o |BRxa| c |BRxa| o |BRxa| l |BRxa|
+    * -  [1]_ |BRxa| P |BRxa| r |BRxa| o |BRxa| t |BRxa| o |BRxa| c |BRxa| o |BRxa| l |BRxa|
       -  UI
-      -  
       -  P |BRxa| h |BRxa| y |BRxa| s |BRxa| i |BRxa| c |BRxa| a |BRxa| l
       -  [4]_ |BRxa| A |BRxa| n |BRxa| d |BRxa| r |BRxa| o |BRxa| i |BRxa| d
       -  i |BRxa| O |BRxa| S
       -  W |BRxa| i |BRxa| n
       -  M |BRxa| a |BRxa| c |BRxa| O |BRxa| S
       -  L |BRxa| i |BRxa| n |BRxa| u |BRxa| x
-      -  
 
     * -  :doc:`JMRI <software/jmri>` [5]_
       -  Free
@@ -162,9 +140,9 @@
     * -  :doc:`Locontrol <software/locontrol>`
       -  Free / Paid
       -  Net
-      -  JMRI Web
+      -  WiT
       -  App
-      -  JMRI
+      -  
       -  
       -  
       -  X
@@ -285,7 +263,7 @@
       -  
       -  
 
-    * -  :doc:`TCS UWT-50 <hardware/uwt50>`
+    * -  :doc:`TCS UWT-50 <hardware/uwt50>` \& UWT-100
       -  Paid
       -  Net
       -  WiT
