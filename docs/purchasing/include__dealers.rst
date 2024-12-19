@@ -1,5 +1,4 @@
 .. include:: /include/include_xa.rst
-.. include:: /include/include-l1_xa.rst
 
 .. image:: /_static/images/icons/flag_us60px.png
    :alt: USA Flag
@@ -15,7 +14,7 @@ In the United States serving USA, Canada, \& Mexico
 * `DCC-EX Store <https://store.dcc-ex.com/>`_ |EXTERNAL-LINKxa|
 * `Smart Hobby, LLC <https://www.smarthobbyllc.com/>`_ |EXTERNAL-LINKxa|
 
-----
+|HR-DASHEDxa|
 
 .. image:: /_static/images/icons/flag_uk60px.jpg
    :alt: UK Flag
@@ -31,7 +30,7 @@ In England serving the UK
 * `Chesterfield Model Making and Miniature Electronics <https://chesterfield-models.co.uk/product/dccex/>`_ |EXTERNAL-LINKxa|
 
 
-----
+|HR-DASHEDxa|
 
 .. image:: /_static/images/icons/flag_austria60px.png
    :alt: Austria Flag
@@ -48,7 +47,7 @@ In Austria serving the European Union (EU)
 * `Semify <https://www.semify-eda.com/ex-motorshield8874/>`_ |EXTERNAL-LINKxa|
 
 
-----
+|HR-DASHEDxa|
 
 .. image:: /_static/images/icons/flag_australia60px.png
    :alt: Australia Flag
