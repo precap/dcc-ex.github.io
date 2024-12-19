@@ -9,17 +9,17 @@
       -  :rspan:`2` Licence
       -  :rspan:`2` Inter- |BRxa| face
       -  :rspan:`1` :cspan:`1` Technology
-      -  :rspan:`2` [2]_ |BRxa| Also |BRxa| Requ- |BRxa| ires
+      -  :rspan:`2` Also |BRxa| Requ- |BRxa| ires [2]_
       -  :cspan:`5` Format
       -  :rspan:`2` CV |BRxa| Pro- |BRxa| gram- |BRxa| ming
 
     * -  :cspan:`2` Mobile
       -  :cspan:`2` PC
 
-    * -  [1]_ |BRxa| P |BRxa| r |BRxa| o |BRxa| t |BRxa| o |BRxa| c |BRxa| o |BRxa| l |BRxa|
+    * -  P |BRxa| r |BRxa| o |BRxa| t |BRxa| o |BRxa| c |BRxa| o |BRxa| l |BRxa| [1]_
       -  UI
       -  P |BRxa| h |BRxa| y |BRxa| s |BRxa| i |BRxa| c |BRxa| a |BRxa| l
-      -  [4]_ |BRxa| A |BRxa| n |BRxa| d |BRxa| r |BRxa| o |BRxa| i |BRxa| d
+      -  A |BRxa| n |BRxa| d |BRxa| r |BRxa| o |BRxa| i |BRxa| d |BRxa| [4]_ 
       -  i |BRxa| O |BRxa| S
       -  W |BRxa| i |BRxa| n
       -  M |BRxa| a |BRxa| c |BRxa| O |BRxa| S
@@ -27,7 +27,7 @@
 
     * -  :doc:`JMRI <software/jmri>`
       -  Free
-      -  USB / Net
+      -  USB / WiFi [6]_
       -  Native
       -  App \& Web
       -  JMRI [5]_
@@ -41,7 +41,7 @@
 
     * -  :doc:`Railroad Automation <software/railroad-automation>`
       -  Free
-      -  Net / LocoNet
+      -  WiFi / LocoNet
       -  LocoNet
       -  Web
       -  IoTT Red hat
@@ -69,7 +69,7 @@
 
     * -  :doc:`Engine Driver <software/engine-driver>`
       -  Free
-      -  Net
+      -  WiFi
       -  Native
       -  App
       -  
@@ -83,7 +83,7 @@
 
     * -  :doc:`DCCpp CAB <software/dccpp-cab>`
       -  Free
-      -  Net / BT
+      -  WiFi / BT
       -  Native
       -  App
       -  
@@ -97,7 +97,7 @@
 
     * -  :doc:`Cab Engineer: DCC Throttle  <software/cab-engineer>`
       -  Free
-      -  Net
+      -  WiFi
       -  Native
       -  App
       -  
@@ -111,7 +111,7 @@
 
     * -  :doc:`RtDtive DCC-EX <software/rtdrive-dccpp>`
       -  Free
-      -  Net
+      -  WiFi
       -  Native
       -  App
       -  
@@ -125,7 +125,7 @@
 
     * -  :doc:`DigiTrainsPro <software/digitrainspro>`
       -  Free / Paid
-      -  Net
+      -  WiFi
       -  JMRI Web
       -  App
       -  JMRI
@@ -153,7 +153,7 @@
 
     * -  :doc:`WiThrottle <software/withrottle>`
       -  Free / Paid
-      -  Net
+      -  WiFi
       -  WiT
       -  App
       -  
@@ -167,7 +167,7 @@
 
     * -  :doc:`SRCP Client <software/srcpclient>`
       -  Free
-      -  Net
+      -  WiFi
       -  Native
       -  App
       -  
@@ -181,7 +181,7 @@
 
     * -  :doc:`Train Driver <software/train-driver>`
       -  Free
-      -  Net
+      -  WiFi
       -  Native / WiT
       -  App
       -  
@@ -195,7 +195,7 @@
 
     * -  :doc:`Train Throttle <software/train-throttle>`
       -  Free
-      -  Net
+      -  WiFi
       -  WiT
       -  App
       -  
@@ -209,7 +209,7 @@
 
     * -  :doc:`miniThrottle <hardware/minithrottle>`
       -  Free
-      -  Net / USB
+      -  WiFi / USB
       -  Native
       -  Device
       -  DIY
@@ -223,7 +223,7 @@
 
     * -  :doc:`WiTcontroller <hardware/witcontroller>`
       -  Free
-      -  Net
+      -  WiFi
       -  WiT
       -  Device
       -  DIY
@@ -237,7 +237,7 @@
 
     * -  :doc:`DccExController <hardware/dccexcontroller>`
       -  Free
-      -  Net
+      -  WiFi
       -  Native
       -  Device
       -  DIY
@@ -265,7 +265,7 @@
 
     * -  :doc:`TCS UWT-50 <hardware/uwt50>` \& UWT-100
       -  Paid
-      -  Net
+      -  WiFi
       -  WiT
       -  Device
       -  
@@ -279,7 +279,7 @@
 
     * -  :doc:`Elgato Stream Deck <hardware/streamdeck>`
       -  Paid
-      -  Net
+      -  WiFi
       -  native
       -  Device
       -  PC or RPi
@@ -293,7 +293,7 @@
 
     * -  LocoNet-Compatible Throttles
       -  Free / Paid
-      -  Net
+      -  WiFi
       -  LocoNet
       -  Device
       -  IoTT Red hat
@@ -308,7 +308,6 @@
 
 **Legend**
 
-  Net = Wifi or LAN networks |BRxa|
   BT = Bluetooth |BRxa|
   Free = No additional cost for full functionality. |BRxa|
   Paid = Payment required for any usage. |BRxa|
@@ -327,4 +326,5 @@
 .. [3] CV programming is only available in Engine Driver when connected using the DCC-EX Native protocol.
 .. [4] Note: The Android throttle apps listed above can be made to made to run on Windows PCs. See :doc:`Running Android apps on Microsoft Windows <software/android-apps-on-windows>`.
 .. [5] JMRI is a suite of applications.  This table only refers the Web based throttle component of JMRI.  To use the Web throttle you will need to be running the JMRI suite of applications on a PC (Windows, OSX or Linux). e.g. **Decoder Pro** or **Panel Pro**.
+.. [6] Connection JMRI to an EX-CommandStation over WiFi works, but is not recommended and is not supported 
 
