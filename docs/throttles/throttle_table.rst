@@ -30,7 +30,7 @@
       -  USB / WiFi [6]_
       -  Native
       -  App \& Web
-      -  JMRI [5]_
+      -  JMRI [5]_ on PC/RPi
       -  
       -  Web
       -  Web
@@ -95,7 +95,7 @@
       -  
       -  X
 
-    * -  :doc:`Cab Engineer: DCC Throttle  <software/cab-engineer>`
+    * -  :doc:`Cab Engineer: DCC Throttle <software/cab-engineer>`
       -  Free
       -  WiFi
       -  Native
@@ -128,7 +128,7 @@
       -  WiFi
       -  JMRI Web
       -  App
-      -  JMRI
+      -  JMRI on PC/RPi
       -  
       -  X
       -  X
@@ -282,7 +282,7 @@
       -  WiFi
       -  native
       -  Device
-      -  PC or RPi
+      -  PC/RPi
       -  X
       -  
       -  
@@ -312,19 +312,20 @@
   Free = No additional cost for full functionality. |BRxa|
   Paid = Payment required for any usage. |BRxa|
   Free/Paid = Both Free and Paid versions are available. The free version has limited features. |BRxa|
-  Native = Uses the Native DCC-EX command / command protocols [1]_ |BRxa|
-  WiT = Uses the WiThrottle command protocol [1]_ |BRxa|
-  Web = Requires the use of a Web Browser |BRxa|
+  Native = Uses the DCC-EX Native protocol/commands. [1]_ |BRxa|
+  WiT = Uses the WiThrottle protocol. [1]_ |BRxa|
+  Web = Requires the use of a Web Browser. |BRxa|
   Physical = A dedicated separate physical device. Not an app running on a standard smart device.  |BRxa|
   Android = A phone or tablet running the Google Android operating system. |BRxa|
   iOS = An Apple iPhone or tablet running the iOS operating system. |BRxa|
-  MacOS = An Apple laptop or PC.
-  Win = Windows 7 and above.
+  MacOS = An Apple laptop or PC. |BRAxa|
+  Win = Windows 7 and above. |BRAxa|
+  DIY = Do it Yourself. Requires you to buy components and 'build' the device.
 
 .. [1] See :doc:`/reference/software/withrottle-vs-native-commands`.
-.. [2] Additional hardware of software is required for use. |BRxa| DIY = requires you to buy components and 'build' the device.
+.. [2] Additional hardware of software is required for use. |BRxa| DIY = Requires you to buy components and 'build' the device.
 .. [3] CV programming is only available in Engine Driver when connected using the DCC-EX Native protocol.
 .. [4] Note: The Android throttle apps listed above can be made to made to run on Windows PCs. See :doc:`Running Android apps on Microsoft Windows <software/android-apps-on-windows>`.
-.. [5] JMRI is a suite of applications.  This table only refers the Web based throttle component of JMRI.  To use the Web throttle you will need to be running the JMRI suite of applications on a PC (Windows, OSX or Linux). e.g. **Decoder Pro** or **Panel Pro**.
+.. [5] JMRI is a suite of applications.  This table only refers the Web based throttle component of JMRI.  To use the Web throttle you will need to be running the JMRI suite of applications on a PC (Windows, OSX or Linux) or RPi. e.g. **Decoder Pro** or **Panel Pro**.
 .. [6] Connection JMRI to an EX-CommandStation over WiFi works, but is not recommended and is not supported 
 
