@@ -20,7 +20,7 @@ Troubleshooting
 
 In this section, you will find some tips on troubleshooting the various issues encountered with |EX-CS|.
 
-If you have just assembled your |EX-CS| and it is not working as expected, we recommend you start with the :doc:`/support/ex-cs-diagnose` page.
+If you have just purchased your |EX-CSB1| or assembled your |EX-CS| and it is not working as expected, we recommend you start with the :doc:`/support/ex-cs-diagnose` page.
 
 ----
 
@@ -30,24 +30,27 @@ Troubleshooting tips
 Cannot drive a locomotive
 -------------------------
 
-.. list-table:: 
+.. flat-table:: 
   :widths: 30 70
   :header-rows: 1
   :class: command-table
 
   * - Symptoms
-    - Common Causes
+    - Common Causes and solutions
 
-  * - Locomotive doesn't respond to throttle settings
-    - (a) Track power has not been turned on - Issue ``<1>`` in the serial console, or use the :guilabel:`Power` button in |Engine Driver| or |JMRI| or the power slider in |EX-WT|.
-      (b) Locomotive is on the PROGRAMMING track - Issue ``<1 JOIN>`` in the serial console, or use the :guilabel:`Request Loco ID` button in |Engine Driver|.
-      (c) Power has not been supplied to the motor board - Check to ensure power supply is connected securely with the correct voltage, polarity, and current rating and is plugged in at the wall, and turned on.
-      (d) Ensure the motor shield is securely seated onto the Arduino.
+  * - :rspan:`3` Locomotive doesn't respond to throttle settings
+    - (a) Track power has not been turned on |BR| - Issue ``<1>`` in the serial console, or use the :guilabel:`Power` button in |Engine Driver| or |JMRI| or the power slider in |EX-WT|.
+
+  * - (b) Locomotive is on the PROGRAMMING track |BR| - Issue ``<1 JOIN>`` in the serial console, or use the :guilabel:`Request Loco ID` button in |Engine Driver|.
+
+  * - (c) Power has not been supplied to the motor board |BR| - Check to ensure power supply is connected securely with the correct voltage, polarity, and current rating and is plugged in at the wall, and turned on.
+
+  * - (d) Ensure the motor shield is securely seated onto the Arduino.
 
 Cannot connect to the EX-CommandStation over WiFi
 -------------------------------------------------
 
-.. list-table:: 
+.. flat-table:: 
   :widths: 30 70
   :header-rows: 1
   :class: command-table
@@ -55,15 +58,18 @@ Cannot connect to the EX-CommandStation over WiFi
   * - Symptoms
     - Common Causes
       
-  * - CommandStation does not appear in the available WiThrottle server list in |Engine Driver| or |WiThrottle| apps.
-      
+  * - :rspan:`4` CommandStation does not appear in the available WiThrottle server list in |Engine Driver| or |WiThrottle| apps. |BR| |BR|
       Manually entering the expected IP address and port does not successfully connect
       
-    - (a) CommandStation is configured for Access Point mode, but |Engine Driver| or |WiThrottle| device is connected to a different WiFi network - Connect the device to the CommandStation's WiFi network
-      (b) CommandStation is configured for Station Mode and connects to the WiFi network, but |Engine Driver| or |WiThrottle| device is connected to a different WiFi network - Connect the device to the correct WiFi network
-      (c) WiFi shield is connected incorrectly to the CommandStation - The Rx pin of the WiFi shield must connect to the Tx pin on the CommandStation, and Tx to the Rx pin
-      (d) ESP8266 has the wrong AT version.  See the :doc:`/support/wifi-at-version` page for details on how to check and correct if needed.
-      (e) The WiFi network name appears as "DCCEX-SAYS-BROKEN-FIRMWARE" or "UPDATE_ESP_FIRMWARE". See the :doc:`/support/wifi-at-version` page for details on how to check and correct if needed.
+    - (a) CommandStation is configured for Access Point mode, but |Engine Driver| or |WiThrottle| device is connected to a different WiFi network. |BR| - Connect the throttle to the CommandStation's WiFi network
+  
+  * - (b) CommandStation is configured for Station Mode and connects to the WiFi network, but |Engine Driver| or |WiThrottle| device is connected to a different WiFi network. |BR| - Connect the throttle to the correct WiFi network
+  
+  * - (c) WiFi shield is connected incorrectly to the CommandStation. |BR| - The Rx pin of the WiFi shield must connect to the Tx pin on the CommandStation, and Tx to the Rx pin
+  
+  * - (d) ESP8266 has the wrong AT version. |BR| - See the :doc:`/support/wifi-at-version` page for details on how to check and correct if needed.
+  
+  * - (e) The WiFi network name appears as "DCCEX-SAYS-BROKEN-FIRMWARE" or "UPDATE_ESP_FIRMWARE". |BR| - See the :doc:`/support/wifi-at-version` page for details on how to check and correct if needed.
 
 Diagnostics
 ===========

@@ -25,11 +25,11 @@
       -  M |BRxa| a |BRxa| c |BRxa| O |BRxa| S
       -  L |BRxa| i |BRxa| n |BRxa| u |BRxa| x
 
-    * -  :doc:`JMRI <software/jmri>` [5]_
+    * -  :doc:`JMRI <software/jmri>`
       -  Free
       -  USB / Net
       -  Native
-      -  Web
+      -  App \& Web
       -  JMRI [5]_
       -  
       -  Web
@@ -319,7 +319,8 @@
   Physical = A dedicated separate physical device. Not an app running on a standard smart device.  |BRxa|
   Android = A phone or tablet running the Google Android operating system. |BRxa|
   iOS = An Apple iPhone or tablet running the iOS operating system. |BRxa|
-  Win = Windows 7 and above
+  MacOS = An Apple laptop or PC.
+  Win = Windows 7 and above.
 
 .. [1] See :doc:`/reference/software/withrottle-vs-native-commands`.
 .. [2] Additional hardware of software is required for use. |BRxa| DIY = requires you to buy components and 'build' the device.
