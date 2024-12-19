@@ -10,7 +10,7 @@
       -  Inter- |BRxa| face
       -  Tech- |BRxa| nology
       -  
-      -  Also |BRxa| Requ- |BRxa| ires
+      -  [2]_ |BRxa| Also |BRxa| Requ- |BRxa| ires
       -  F |BRxa| o |BRxa| r |BRxa| m
       -  
       -  
@@ -36,23 +36,23 @@
     * -  
       -  
       -  
-      -  Proto- |BRxa| col
+      -  [1]_ |BRxa| P |BRxa| r |BRxa| o |BRxa| t |BRxa| o |BRxa| c |BRxa| o |BRxa| l |BRxa|
       -  UI
       -  
       -  P |BRxa| h |BRxa| y |BRxa| s |BRxa| i |BRxa| c |BRxa| a |BRxa| l
-      -  A |BRxa| n |BRxa| d |BRxa| r |BRxa| o |BRxa| i |BRxa| d
+      -  [4]_ |BRxa| A |BRxa| n |BRxa| d |BRxa| r |BRxa| o |BRxa| i |BRxa| d
       -  i |BRxa| O |BRxa| S
       -  W |BRxa| i |BRxa| n
       -  M |BRxa| a |BRxa| c |BRxa| O |BRxa| S
       -  L |BRxa| i |BRxa| n |BRxa| u |BRxa| x
       -  
 
-    * -  :doc:`JMRI <software/jmri>`
+    * -  :doc:`JMRI <software/jmri>` [5]_
       -  Free
       -  USB / Net
       -  Native
       -  Web
-      -  
+      -  JMRI [5]_
       -  
       -  Web
       -  Web
@@ -62,7 +62,7 @@
       -  X
 
     * -  :doc:`Railroad Automation <software/railroad-automation>`
-      -  
+      -  Free
       -  Net / LocoNet
       -  LocoNet
       -  Web
@@ -101,11 +101,11 @@
       -  
       -  
       -  
-      -  X (native only)
+      -  X [3]_
 
     * -  :doc:`DCCpp CAB <software/dccpp-cab>`
-      -  
-      -  Net
+      -  Free
+      -  Net / BT
       -  Native
       -  App
       -  
@@ -115,24 +115,10 @@
       -  
       -  
       -  
-      -  
+      -  X
 
     * -  :doc:`Cab Engineer: DCC Throttle  <software/cab-engineer>`
-      -  
-      -  Net
-      -  WiT
-      -  App
-      -  
-      -  
-      -  X
-      -  
-      -  
-      -  
-      -  
-      -  
-
-    * -  :doc:`RtDtive DCC++ <software/rtdrive-dccpp>`
-      -  
+      -  Free
       -  Net
       -  Native
       -  App
@@ -144,6 +130,20 @@
       -  
       -  
       -  
+
+    * -  :doc:`RtDtive DCC-EX <software/rtdrive-dccpp>`
+      -  Free
+      -  Net
+      -  Native
+      -  App
+      -  
+      -  
+      -  X
+      -  
+      -  
+      -  
+      -  
+      -  X
 
     * -  :doc:`DigiTrainsPro <software/digitrainspro>`
       -  Free / Paid
@@ -160,7 +160,7 @@
       -  
 
     * -  :doc:`Locontrol <software/locontrol>`
-      -  
+      -  Free / Paid
       -  Net
       -  JMRI Web
       -  App
@@ -188,7 +188,7 @@
       -  
 
     * -  :doc:`SRCP Client <software/srcpclient>`
-      -  
+      -  Free
       -  Net
       -  Native
       -  App
@@ -202,9 +202,9 @@
       -  
 
     * -  :doc:`Train Driver <software/train-driver>`
-      -  
+      -  Free
       -  Net
-      -  Native
+      -  Native / WiT
       -  App
       -  
       -  
@@ -216,7 +216,7 @@
       -  
 
     * -  :doc:`Train Throttle <software/train-throttle>`
-      -  
+      -  Free
       -  Net
       -  WiT
       -  App
@@ -230,11 +230,11 @@
       -  
 
     * -  :doc:`miniThrottle <hardware/minithrottle>`
-      -  
+      -  Free
       -  Net / USB
       -  Native
       -  Device
-      -  
+      -  DIY
       -  X
       -  
       -  
@@ -248,7 +248,7 @@
       -  Net
       -  WiT
       -  Device
-      -  
+      -  DIY
       -  X
       -  
       -  
@@ -262,7 +262,7 @@
       -  Net
       -  Native
       -  Device
-      -  
+      -  DIY
       -  X
       -  
       -  
@@ -276,7 +276,7 @@
       -  Serial
       -  Native
       -  Device
-      -  
+      -  DIY
       -  X
       -  
       -  
@@ -304,7 +304,7 @@
       -  Net
       -  native
       -  Device
-      -  PC or Rpi
+      -  PC or RPi
       -  X
       -  
       -  
@@ -331,11 +331,21 @@
 **Legend**
 
   Net = Wifi or LAN networks |BRxa|
-  Free / paid = Both Free and Paid versions are available. The free version may be limited in features. |BRxa|
-  Native = Uses the Native DCC-EX command / command protocols |BRxa|
-  WiT = Uses the WiThrottle command protocol |BRxa|
+  BT = Bluetooth |BRxa|
+  Free = No additional cost for full functionality. |BRxa|
+  Paid = Payment required for any usage. |BRxa|
+  Free/Paid = Both Free and Paid versions are available. The free version has limited features. |BRxa|
+  Native = Uses the Native DCC-EX command / command protocols [1]_ |BRxa|
+  WiT = Uses the WiThrottle command protocol [1]_ |BRxa|
   Web = Requires the use of a Web Browser |BRxa|
+  Physical = A dedicated separate physical device. Not an app running on a standard smart device.  |BRxa|
+  Android = A phone or tablet running the Google Android operating system. |BRxa|
+  iOS = An Apple iPhone or tablet running the iOS operating system. |BRxa|
   Win = Windows 7 and above
 
-Note: The Android throttle apps listed above can be made to made to run on Windows PCs. See :doc:`Running Android apps on Microsoft Windows <software/android-apps-on-windows>`.
+.. [1] See :doc:`/reference/software/withrottle-vs-native-commands`.
+.. [2] Additional hardware of software is required for use. |BRxa| DIY = requires you to buy components and 'build' the device.
+.. [3] CV programming is only available in Engine Driver when connected using the DCC-EX Native protocol.
+.. [4] Note: The Android throttle apps listed above can be made to made to run on Windows PCs. See :doc:`Running Android apps on Microsoft Windows <software/android-apps-on-windows>`.
+.. [5] JMRI is a suite of applications.  This table only refers the Web based throttle component of JMRI.  To use the Web throttle you will need to be running the JMRI suite of applications on a PC (Windows, OSX or Linux). e.g. **Decoder Pro** or **Panel Pro**.
 

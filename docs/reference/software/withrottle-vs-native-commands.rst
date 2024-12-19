@@ -46,7 +46,7 @@ When the |DCC-EX| team designed the **DCC-EX** |EX-CS| they found the WiThrottle
 
 |Engine Driver|, |EX-WT|, |JMRI| and a few other apps can use the more powerful **DCC-EX Native Protocol** when connecting to a **DCC-EX** |EX-CS|.
 
-|Engine Driver| can also us the **DCC-EX Native Protocol** to connect to a **DCC-EX** |EX-CS| via |JMRI| but you need to enable the **'DCC++ over TCP Server'** in the **'DCC++'**' menu in **Decoder-Pro**.
+|Engine Driver| can also use the **DCC-EX Native Protocol** to connect to a **DCC-EX** |EX-CS| via |JMRI| but you need to enable the **'DCC++ over TCP Server'** in the **'DCC++'**' menu in **Decoder-Pro**.
 
 ----
 
@@ -55,10 +55,10 @@ Which Should You Use?
 
 The **WiThrottle Protocol** is adequate for running trains, throwing turnouts/points and selecting Routes.
 
-What the **WiThrottle Protocol** can't do is CV programming, Track Manager changes, and system configuration.
+What the **WiThrottle Protocol** can't do is *CV programming*, *Track Manager changes*, and *system configuration*.
 
 The **DCC-EX Native Commands** can do these and more.
 
-So if you have the option to use a controller that uses the **DCC-EX Native Commands** it is worthwhile doing so.  However if you can't, use a controller with support for the **DCC-EX Native Commands**, then the **WiThrottle protocol** is just fine for running the average layout.
+So if you have the option to use a controller that uses the **DCC-EX Native Commands** it is worthwhile doing so.  However if you can't then the **WiThrottle protocol** is just fine for running the average layout.
 
 You can refer the :ref:`throttle/controller table <throttles/index:table - throttles by technology>` to see which controllers support **DCC-EX Native Commands**.
