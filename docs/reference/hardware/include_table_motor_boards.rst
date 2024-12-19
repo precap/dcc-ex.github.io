@@ -1,6 +1,6 @@
 .. include:: /include/include_xb.rst
   
-.. list-table::
+.. flat-table::
   :widths: auto
   :header-rows: 1
   :class: command-table
@@ -216,66 +216,32 @@
   * - VNH2SP30 - SparkFun Monster Moto and others
     - \-
     - :dcc-ex-red-bold-italic:`No`
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
+    - :cspan:`7` \-
     - Does not work. It can't switch fast enough to generate a reliable DCC signal
 
   * - IFX9202ED - Infineon Dual H-Bridge
     - \-
     - :dcc-ex-red-bold-italic:`No`
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
+    - :cspan:`7` \-
     - Does not work. Can't switch fast enough.
 
   * - DFRobot Romeo V2
     - \-
     - :dcc-ex-red-bold-italic:`No`
     - Engineer
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
+    - :cspan:`6` \-
     - Well, an Engineer could perhaps get this one to work.
 
   * - Kuman Board (and any L293D based boards)
     - \-
     - :dcc-ex-red-bold-italic:`No`
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
+    - :cspan:`7` \-
     - Does not work. Not enough current.
 
   * - Pololu TB9051FTG based motor shield
     - \-
     - :dcc-ex-red-bold-italic:`No`
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
+    - :cspan:`7` \-
     - Does not work. It can't switch fast enough to generate a reliable DCC signal
 
 

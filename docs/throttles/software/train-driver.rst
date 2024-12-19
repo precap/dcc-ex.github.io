@@ -7,6 +7,12 @@ Train Driver
 
 |conductor| |tinkerer| |engineer|
 
+
+.. image:: /_static/images/throttles/icon_ios.png
+   :alt: iOS Logo
+   :scale: 30%
+   :align: left 
+   
 `Get it on the Apple App Store <https://apps.apple.com/au/app/train-driver/id1558334503>`_
 
 Train Driver is a multi protocol model train mobile controller

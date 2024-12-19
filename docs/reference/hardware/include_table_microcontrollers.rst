@@ -1,6 +1,6 @@
 .. include:: /include/include_xa.rst
   
-.. list-table::
+.. flat-table::
   :widths: auto
   :header-rows: 1
   :class: command-table
@@ -93,15 +93,7 @@
   * - Arduino Uno R4
     - \-
     - :dcc-ex-red-bold-italic:`No`
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
-    - \-
+    - :cspan:`8` \-
     - :dcc-ex-red-bold-italic:`Different architecture to the R3. Will never be supported.`
 
   * - Arduino :doc:`Nano</reference/hardware/microcontrollers/nano>`

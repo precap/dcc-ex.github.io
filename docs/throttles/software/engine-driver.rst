@@ -13,6 +13,12 @@ Engine Driver
       :depth: 2
       :local:
 
+
+.. image:: /_static/images/throttles/icon_android.png
+   :alt: Android Logo
+   :scale: 30%
+   :align: left
+   
 .. image:: /_static/images/throttles/engine_driver_logo.png
    :alt: Android Logo
    :scale: 60%
