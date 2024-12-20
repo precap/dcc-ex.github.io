@@ -19,7 +19,7 @@ DCC-EX EX-MotorShield8874 RevA
 .. sidebar::
 
   .. contents:: On this page
-    :depth: 1
+    :depth: 3
     :local:
 
 Designed in conjunction with the |DCC-EX| development team, the |EX-MS| is extremely simple to use with all current and future generations of |EX-CS| hardware. It also safely powers the Command Station motherboard via the same single barrel jack DC input voltage that powers the track. It is rated at a very generous peak 5A of load per channel using Texas Instruments DRV8874 MOSFET technology. This board is the new standard by which we compare other boards.
@@ -35,6 +35,8 @@ Designed in conjunction with the |DCC-EX| development team, the |EX-MS| is extre
    :scale: 10%
 
    DCC-EX EX-MotorShield8874 RevA Millennium Engineering
+
+----
 
 What Is It?
 ===========
@@ -62,6 +64,8 @@ The board's 5V and 3V3 friendly design makes it suitable for a broad range of Ar
 
 This Shield features a status LED for supply, which provides a visual indication of the power supply status in addition to LEDs to show each side of the A and B power outputs.
 
+----
+
 Why did we make it?
 ====================
 
@@ -72,17 +76,17 @@ EX-Motorshield8874 is specifically designed for use with DCC-EX Command Station 
 
    The EX-MotorShield8874 was created through the gracious support and design facilities of Semify, who, along with DCC-EX, license it to manufacturers. The hardware design has been made open source for individual users and the schematics are available on the `DCC-EX GitHub <https://github.com/DCC-EX/EX-Motorshield8874>`_ repository.
 
+
+----
+
 How can I get one?
 ==================
 
 Units may be purchased from the following sources:
 
-* In the US from the `DCC-EX Store <https://store.dcc-ex.com/>`_ or...
-* from `Smart Hobby, LLC <https://www.smarthobbyllc.com/>`_. You can also find Smart Hobby on Facebook
-* In the UK from `Chesterfield Model Making & Miniature Electronics <https://chesterfield-models.co.uk/product/semify-dcc-ex-motor-shield/>`_
-* In Europe from `Semify's Web Store <https://www.semify-eda.com/ex-motorshield8874/>`_ (based in Austria)
-* In Australia, New Zealand and South East Asia from `Millennium Engineering Pty Ltd <https://www.milleng.com.au>`_
-* and other manufacturers licensed by DCC-EX.
+.. include:: /purchasing/include__dealers.rst
+
+|HR-DASHED|
 
 There are different options for the board such as fully assembled or in kit form where connectors and headers need to be soldered onto the board. Prices vary from around $34.95 to $39.90 in the US, to approximately £29.99 in the UK, €37 in Europe, and in Australia starting from $AU55.00. Prices typically do not include tax and shipping.
 
@@ -90,6 +94,7 @@ For quantities of 10 or less per annum, you may utilise a PCB manufacturing and 
 
 Entrepreneurs wanting to use the design to offer commercial quantities to their local communities should contact Semify (service @ semify-eda.com) to arrange a bulk purchase or DCC-EX (support @ dcc-ex.com) for a license to manufacture. Licensing includes donating a royalty to DCC-EX per board sold.
 
+-----
 
 Assembly with EX-MotorShield8874
 ================================
@@ -164,21 +169,27 @@ Polarity (which wire is connected to which side of the track) is not not importa
 
 In other words, if you view one side of your main track as having a 'left' side and a 'right' side, and connect positive output A to the left side, connect the positive from the B side to the left side of the programming track. In electrical terms, we want both tracks to be "in phase" with each other. Here is the diagram from above repeated again for reference.
 
+----
+
 Next steps
 ==========
 
 See the :doc:`/ex-commandstation/diy/wifi-setup` page to learn how to connect the WiFi shield to your |EX-CS|, or *alternatively* connect a controller like |JMRI| or our |EX-WT| by using the serial cable to connect between your computer and the |EX-CS| as outlined in the :ref:`ex-installer/installing:getting ready` section of the |EX-I| page. Note that when configuring the EX-CommandStation you will want to select `EX8874_SHIELD` as the motor board during configuration.
 
+----
+
+Additional Information
+======================
 
 Stacking EX-MotorShield8874s
-================================
+---------------------------
 
 This is **definitely** advanced Tinkerer/Engineer level work. Do **not** attempt it without some confidence you know what you are doing electronically. Future revisions of the EX-MotorShield8874 will look at alternative ways to expand the number of DCC districts.
 
 This article covers both stacking an Arduino Motor Shield R3 (or clone) and an EX-MotorShield8874, and stacking two EX-MotorShield8874s.
 
 Stacking an Arduino Motor Shield R3 and EX-MotorShield8874
-----------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This stack is perhaps simplest and an easy enough upgrade for those who already have an Arduino Motor Shield R3 or clone.
 
@@ -245,7 +256,8 @@ Or for any 3v3 microcontroller such as STM32 Nucleo models, but not the ESPDuino
   new MotorDriver( 5,  4, UNUSED_PIN, 6, A3, 1.27, 5000, A5)
 
 Stacking Two EX-MotorShield8874s
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The easiest way forward is to leave the first EX-MotorShield8874 in the stack entirely unmodified. Note that if you are using an Ethernet shield, it must be the very first board in the stack, with the unmodified EX-MotorShield8874 next immediately on top of that. As such, this too it likely worth testing first before proceeding to modifying the second EX-MotorShield8874 and adding it on.
 
 The top EX-MotorShield8874 must have its onboard 7.2V regulators disconnected from the VIN pin at least, and preferably also disabled to save a little power consumption and lower the RF noise. It also needs to have all of its IO pins used to communicate with the |EX-CS| re-routed to alternate pins and an additional motor driver entry created in `config.h`
@@ -351,8 +363,10 @@ The BRAKE pins both need to be isolated by cutting the default setting on the pa
 
 For more detailed and technical information, follow the link to the `EX-MotorShield8874 on Github <https://github.com/DCC-EX/EX-MotorShield8874>`_ It also includes the schematic and the KiCad project files.
 
+----
+
 Testing TrackManager configuration and operation
-================================================
+------------------------------------------------
 
 There are some simple tests you can perform to confirm that the EX-MotorShield8874 is operating correctly once configured.
 
