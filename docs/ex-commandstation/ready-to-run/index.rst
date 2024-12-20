@@ -16,9 +16,9 @@ Ready-To-Run - Getting Started
 
    EX-CSB1 CommandStation / Booster
 
-The |EX-CSB1| addresses the needs of DCC-EX users who want a *ready-to-run* (RTR) DCC CommandStation, which will have them running trains within 5 minutes of plugging it into power and track and connecting your WiFi smart phone.
+The |EX-CSB1| addresses the needs of DCC-EX users who want a *ready-to-run* (RTR) DCC command station, which will have them running trains within 5 minutes of plugging it into power and track and connecting your WiFi smart phone.
 
-This DCC-EX Command Station can now outperform commercial DCC command stations, which typically have single 3-3.5A or 5A output capabilities, at a fraction of the cost, while providing more advanced features.
+This DCC-EX Command Station can now outperform commercial DCC command stations, which typically have single 3-3.5A or single 5A output capabilities, at a fraction of the cost, while providing more advanced features.
 
 The |EX-CSB1| is the second offering in the DCC-EX open source hardware ecosystem specifically designed for model railroaders, and is a direct result of the strong community engagement |DCC-EX| strives to inspire.
 
@@ -27,15 +27,15 @@ Features
 
 The |DCC-EX| |EX-CSB1| comes ready to use out of the box and has the following features:
 
-*	Dual DCC/PWM DC outputs with up to 5A capacity – easily expandable to 4 outputs
-*	WiFi built-in – fast 802.11n capable, with Access Point and Station modes including support for connecting as many as 10 WiFi throttles (you can also connect to JMRI via WiFi, but a USB cable is often better)
-*	Single power supply for track and onboard electronics – 12-25V DC with polarity protection
-*	USB-C connector – for software upload, diagnostic monitoring, DCC-EX WebThrottle and JMRI connectivity
-*	Railsync DCC input – enables booster mode, which with an optional EX-RAIL script can be automatically engaged on receipt of a signal
+*	**Dual DCC/PWM DC outputs** with up to 5A capacity – easily expandable to 4 outputs
+*	**WiFi built-in** – fast 802.11n capable, with Access Point and Station modes including support for connecting as many as 10 WiFi throttles (you can also connect to JMRI via WiFi, but a USB cable is often better)
+*	**Single power supply** for track and onboard electronics – 12-25V DC with polarity protection
+*	**USB-C connector** – for software upload, diagnostic monitoring, DCC-EX WebThrottle and JMRI connectivity
+*	**Railsync DCC input** – enables booster mode, which with an optional EX-RAIL script can be automatically engaged on receipt of a signal
 *	OLED screen – for diagnostics, status and information display
 
-Next Steps - Purchasing Parts
-=============================
+Next Steps - Purchasing
+=======================
 
 See the :doc:`/ex-commandstation/ready-to-run/purchasing` page or click the 'Next' button to see how to acquire your |EX-CSB1|.
 
