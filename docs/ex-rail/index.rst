@@ -3,9 +3,9 @@
 .. include:: /include/include-ex-r.rst
 |EX-R-LOGO|
 
-******************************
-EX-RAIL (Automation/Animation)
-******************************
+************************************************************
+|EX-R| (Automation/Animation)
+************************************************************
 
 |SUITABLE| |tinkerer| |engineer| |support-button|
 

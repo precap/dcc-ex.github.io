@@ -3,9 +3,9 @@
 .. include:: /include/include-ex-io.rst
 |EX-IO-LOGO|
 
-*************
-EX-IOExpander
-*************
+***************************************
+|EX-IO|
+***************************************
 
 |SUITABLE| |tinkerer| |engineer| |support-button|
 

@@ -3,9 +3,9 @@
 .. include:: /include/include-ex-wt.rst
 |EX-WT-LOGO|
 
-**************
-EX-WebThrottle
-**************
+******************************************
+|EX-WT|
+******************************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 

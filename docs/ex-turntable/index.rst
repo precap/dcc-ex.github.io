@@ -3,9 +3,9 @@
 .. include:: /include/include-ex-tt.rst
 |EX-TT-LOGO|
 
-************
-EX-Turntable
-************
+************************************
+|EX-TT|
+************************************
 
 |SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-turntable-button-small|
 
