@@ -252,7 +252,7 @@ Stacking the EX8874 on these headers provides 2 additional power districts for a
 
 |FORCE-BREAK|
 
-.. figure:: /_static/images/ex-csb1/i2C_jumper_pads.png
+.. figure:: /_static/images/ex-csb1/i2c_jumper_pads.png
    :alt: I2C Jumper Pads
    :scale: 45%
    :align: right
