@@ -41,6 +41,8 @@ Board layout
 
    EX-CSB1 top (click image to enlarge it)
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/barrel_jack1.png
    :alt: Barrel Jack
    :scale: 40%
@@ -53,6 +55,8 @@ Board layout
 Be careful since some power supplies have a 2.5mm inner hole which is likely to be too loose. The barrel jack input power is reverse voltage protected. This supplies a 5V switching regulator for all electronics on the board including a 3.3V regulator for 3.3V components, an optional |EX-MS| stacked on top, and power out to the track. 
 
 While it is capable of 10v-25v operation, it is best to choose a suitable track voltage for your scale. Typically this is 12-15v for N scale, and 14-16v for HO scale. With help in choosing your power supply or using one with bare wires instead of a barrel connector, see `Powering the EX-CSB1`_ below.
+
+|FORCE-BREAK|
 
 .. figure:: /_static/images/ex-csb1/usb_conn1.png
    :alt: USB Connector
@@ -67,6 +71,8 @@ You can connect your track Power supply (see above) to the barrel jack while the
 
 The USB port is also very useful for connecting a serial monitor to test the command station and view logging information in real time to aid in fault finding. See :doc:`/reference/tools/serial-monitor`
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/pluggable_connectors.png
    :alt: Pluggable Track Output Connectors
    :scale: 40%
@@ -79,6 +85,8 @@ The USB port is also very useful for connecting a serial monitor to test the com
 For DCC operation, output A is usually the MAIN track and output B is the programming track. However, with our TrackManager :sup:`tm` feature, you can configure any output to be DCC, DC, MAIN, or PROG. You should keep the phase of the tracks aligned, so if a train crosses from one power district to another it doesn't intentionally cause a short (unless it's a reversing loop and you have assigned that output to have Auto-Reverse capability.) See: :doc:`/ex-installer/managing-config-files`. 
 
 Power to each output can be controlled together or individually. Correct wired gauge for the screw terminals is 16 to 28AWG (1.5mm^2). Be sure your wire gauge can handle the current you expect on the track.
+
+|FORCE-BREAK|
 
 .. figure:: /_static/images/ex-csb1/track_output_leds.png
    :alt: Track Output LEDs
@@ -93,6 +101,8 @@ You can also configure the CSB1 to start with power on using a mySetup.h or myAu
 
 .. todo: add link
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/qwiic_conn.png
    :alt: Qwiic Connector
    :scale: 30%
@@ -106,6 +116,8 @@ Please note the pin connection order when making your own cables or when purchas
 
 :dcc-ex-red-bold-italic:`IMPORTANT: The voltage for this connector is ALWAYS 3.3V!``
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/booster_conn.png
    :alt: Railsync Connector
    :scale: 35%
@@ -116,6 +128,8 @@ Please note the pin connection order when making your own cables or when purchas
 **RailSync Connector** - This is a standard Railsync input and is labelled "Booster In" on the top of the board. Connecting a RailSync output from a Command Station or Booster will automatically switch the EXCSB1 to booster mode on receipt of an input signal when the CSB1 is running the appropriate EX-RAIL script. 
 
 Again be sure to wire the DCC outputs to power districts with consistent phasing. Any voltage between 5V and 26V at the input will work. The Digitrax specification is from 12V to 26V. See `the DCCWiki article on RailSync <https://dccwiki.com/LocoNet_and_RailSync_Voltages>`_ |EXTERNAL-LINK|
+
+|FORCE-BREAK|
 
 .. figure:: /_static/images/ex-csb1/oled_header.png
    :alt: OLED header
@@ -130,6 +144,8 @@ Again be sure to wire the DCC outputs to power districts with consistent phasing
 
 Make absolutely sure that any display you purchase to connect directly to the header has its pins in the correct order! The correct order is GND, V+, SCL, SDA and is different than other OLED connectors on the board. For more information see: :doc:`/reference/hardware/i2c-devices`.
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/dual_i2c_pins.png
    :alt: Dual Male I2C Header
    :scale: 40%
@@ -143,6 +159,8 @@ Make absolutely sure that any display you purchase to connect directly to the he
 
 The EX-CSB1 is a 3.3V device, so all the I2C connectors only supply 3.3V unlike the Arduino Mega. Keep that in mind if you are upgrading from a DIY Arduino Command Station to a 3.3V device like the EX-CSB1 and are connecting I2C devices. For more information see: :doc:`/reference/hardware/i2c-devices`.
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/reset_button.png
    :alt: Reset Button
    :scale: 60%
@@ -153,6 +171,8 @@ The EX-CSB1 is a 3.3V device, so all the I2C connectors only supply 3.3V unlike 
 **Reset Button** - Pressing the reset button does a hard reset of the command station. If the Command Station gets into an unexpected state, you can reset it by pressing this button. 
 
 The DCC-EX software, |EX-R| Scripts, and any other settings are maintained, but the unit reboots as if it had been turned off. Boards stacked on top of the EX-CSB1 also receive the reset signal, but less well designed boards may not be reset depending upon their own circuit peculiarities. Only rarely should it require unplugging all power from the EX-CSB1 to perform a power-on hard reset.
+
+|FORCE-BREAK|
 
 .. figure:: /_static/images/ex-csb1/esp32_1.png
    :alt: ESP32 Microcontroller
@@ -165,6 +185,8 @@ The DCC-EX software, |EX-R| Scripts, and any other settings are maintained, but 
 
 Be careful in your setup to protect WiFi antenna from being damaged from contact with anything or should the unit be dropped. For best WiFi performance, keep items at least 2cm (.75") from the antenna and do not allow any metallic objects to be near, underneath, or surrounding the antenna.
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/wifi_led2.png
    :alt: WiFi LED
    :scale: 45%
@@ -174,6 +196,8 @@ Be careful in your setup to protect WiFi antenna from being damaged from contact
 
 **WiFi / User LED** - When WiFi is enabled, this LED will stay on. It is under software control in the EX-CommandStation software, so the LED can be repurposed to indicate a user defined function with an |EX-R| script or a ``<U>`` command function.
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/3v_led.png
    :alt: 3.3V LED
    :scale: 28%
@@ -182,6 +206,8 @@ Be careful in your setup to protect WiFi antenna from being damaged from contact
    3.3V LED
 
 **3.3V LED** - The 3.3V power LED will light whenever the 3.3V regulator is powered. This occurs when powered by USB, or from an external power supply connected to the barrel jack. This is simply an indicator that the circuitry on the board is powered.
+
+|FORCE-BREAK|
 
 .. figure:: /_static/images/ex-csb1/5v_led.png
    :alt: 5V LED
@@ -194,9 +220,13 @@ Be careful in your setup to protect WiFi antenna from being damaged from contact
 
 Power from the barrel jack will power the 5V regulator which in turn powers the 3.3V regulator. Therefore, when power is supplied via the barrel jack, both the 5V and 3.3V LEDs will be lit.
 
+|FORCE-BREAK|
+
 **GPIO Headers** - The 4 GPIO headers accept a DCC-EX |EX-MS|. The EX-CSB1 itself has 2 outputs for 2 track power districts. 
 
 Stacking the EX8874 on these headers provides 2 additional power districts for a total of 4. Any of the 4 outputs can be used for any combination of DCC MAIN, DCC PROG, or DC PWM. You must enable the extra board from the EX-Installer or your config.h file for a manual install. See the :ref:`ex-commandstation/ready-to-run/manual:adding an ex-motorshield 8874` section of this document.
+
+|FORCE-BREAK|
 
 .. figure:: /_static/images/ex-csb1/oled_display.png
    :alt: OLED Display
@@ -207,6 +237,8 @@ Stacking the EX8874 on these headers provides 2 additional power districts for a
 
 **OLED Display (not shown above)** - The OLED display provides diagnostics, status, and general information. The OLED display can also show output from EX-RAIL scripts including user defined text. By default, the display shows the version number, license, power status, free memory, and if configured, your WiFi access point login information.
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/hot_area.png
    :alt: Hot Area Warning
    :scale: 36%
@@ -215,6 +247,8 @@ Stacking the EX8874 on these headers provides 2 additional power districts for a
    Hot Area Warning
 
 **HOT Surface Area** - The entire area shown in the image to the right can get extremely hot during operation. Be carful not to touch this area at the top or bottom of the board to avoid being burned. This is especially true at high track current levels. Also be sure to provide proper ventilation to the board. If placed in a case, that case must have proper ventilation. Consider using proper vent holes and a fan if you intend to place the EX-CSB1 inside an enclosure.
+
+|FORCE-BREAK|
 
 .. figure:: /_static/images/ex-csb1/i2C_jumper_pads.png
    :alt: I2C Jumper Pads
@@ -225,6 +259,8 @@ Stacking the EX8874 on these headers provides 2 additional power districts for a
 
 **I2C Jumper Pads** - There are 2 solder pad jumpers on the EX-CSB1 labelled "i2c". XXX why and when would I use these?
 
+|FORCE-BREAK|
+
 .. figure:: /_static/images/ex-csb1/unpopulated_power_pins.png
    :alt: Unpopulated Power Pads
    :scale: 45%
@@ -232,9 +268,9 @@ Stacking the EX8874 on these headers provides 2 additional power districts for a
 
    Unpopulated Power Pads
 
-|FORCE-BREAK|
-
 **Unpopulated Power Connector** - These unpopulated solder pads are used internally for testing and can provide power connections for an optional header. When operated without an |EX-MS| on top, a user could remove the barrel jack and solder pins here capable of handling the 5A maximum current to power the board and the track.
+
+|FORCE-BREAK|
 
 .. figure:: /_static/images/ex-csb1/pin_legend.png
    :alt: Pin Legend
@@ -245,7 +281,7 @@ Stacking the EX8874 on these headers provides 2 additional power districts for a
 
 **Board Bottom Legend** - On the bottom of the board there are several markings such as the DCC-EX logo, board revision, and the QR code that links to this page on our website. 
 
-Additionally, important pins are labelled should you need access to them from the top of the board headers. Input/Output (GPIO) pins are labelled "IO36", "IO39", etc. GND, 5V, and 3.3V are also labelled. Note that when an EX-MotorShield8874 is stacked on top for extra power districts, there are no free GPIO pins left to connect accessories directly the EX-CSB1. You must use the I2C pins and connect port expanders and/or servo boards to connect your accessories.
+Additionally, important pins are labelled should you need access to them from the top of the board headers. Input/Output (GPIO) pins are labelled "IO36", "IO39", etc. GND, 5V, and 3.3V are also labelled. Note that when an EX-MotorShield8874 is stacked on top for extra power districts, there are no free GPIO pins left to connect accessories directly the |EX-CSB1|. You must use the I2C pins and connect port expanders and/or servo boards to connect your accessories.
 
 ----
 
