@@ -4,7 +4,7 @@
 |EX-TT-LOGO|
 
 ************************************
-|EX-TT|
+EX-Turntable
 ************************************
 
 |SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-turntable-button-small|

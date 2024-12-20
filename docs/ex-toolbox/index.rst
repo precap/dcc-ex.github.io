@@ -4,7 +4,7 @@
 |EX-TB-LOGO|
 
 *****************************************
-|EX-TB|
+EX-Toolbox
 *****************************************
 
 |SUITABLE| |tinkerer| |engineer| |support-button|

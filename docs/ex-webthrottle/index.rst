@@ -4,7 +4,7 @@
 |EX-WT-LOGO|
 
 ******************************************
-|EX-WT|
+EX-WebThrottle
 ******************************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
