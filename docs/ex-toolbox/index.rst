@@ -3,9 +3,9 @@
 .. include:: /include/include-ex-tb.rst
 |EX-TB-LOGO|
 
-************
-EX-Toolbox
-************
+*****************************************
+|EX-TB|
+*****************************************
 
 |SUITABLE| |tinkerer| |engineer| |support-button|
 

@@ -1,3 +1,6 @@
+Suppliers / Resellers List
+--------------------------
+
 .. include:: /include/include_xa.rst
 
 .. image:: /_static/images/icons/flag_us60px.png
@@ -6,7 +9,7 @@
    :align: left
 
 In the United States serving USA, Canada, \& Mexico
----------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. rst-class:: clearer
 
@@ -22,7 +25,7 @@ In the United States serving USA, Canada, \& Mexico
    :align: left
 
 In England serving the UK
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. rst-class:: clearer
 
@@ -39,7 +42,7 @@ In England serving the UK
 
 
 In Austria serving the European Union (EU)
-------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. rst-class:: clearer
 
@@ -56,7 +59,7 @@ In Austria serving the European Union (EU)
 
 
 In Australia serving AU, NZ, and APAC
-----------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. rst-class:: clearer
 

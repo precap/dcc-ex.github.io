@@ -6,9 +6,9 @@
 
 .. index:: EXCSB1, EX-CSB1
 
-******************
+*****************************************
 |EX-CSB1|
-******************
+*****************************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
@@ -97,16 +97,12 @@ Units may be purchased from the following sources:
 
 |HR-DASHED|
 
-The EX-CSB1 Command Stations normally come with an OLED status display and a carrier base mount (sometimes called a "sled") or case depending on supplier. 
+.. include:: /purchasing/include__ex-csb1-pricing.rst
 
-There are different options for the board such as with or without an additional |EX-MS| for two additional DCC/PWM DC outputs.
-
-Prices start from around $129-$149 in the US without and with a power supply, to approximately £98 in the UK, €115 in Europe, and in Australia starting from $AU190. Prices typically do not include tax and shipping. 
-
-`Click here for ordering in quantity of if you wish to become a reseller <Ordering in Quantity or wishing to Resell>`_.
+----
 
 Next Steps
-================
+==========
 
-* :doc:`Getting started with the EX-CSB1 </ex-commandstation/ready-to-run/index>`
+* :doc:`Getting started with the EX-CSB1 </ex-commandstation/ready-to-run/connecting>`
 * :doc:`EX-CSB1 Operating Manual </ex-commandstation/ready-to-run/manual>`
