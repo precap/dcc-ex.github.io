@@ -7,7 +7,7 @@
 Connecting a Servo Module
 *************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
@@ -229,6 +229,11 @@ The parameters required are:
 - OnValue = The desired intensity (brightness) of the LED when turned on, with 0 being off, and 4095 being 100%
 - OffValue = The desired intensity (brightness) of the LED when turned off
 
+|NEW-IN-V5-4|
+
+There is now an option to configure these LED's from within the myAutomation.h file instead of the mySetup.h file.  See CONFIGURE_SERVO in EXRAIL Command Reference.
+
+
 Here are some examples:
 
 .. code-block:: cpp
@@ -250,7 +255,7 @@ Using these for JMRI signal heads and signal masts
 
 If the LEDs are to be used for signal heads or signal masts in JMRI, they can be added to the Turnout Table by defining these as outputs also in "mySetup.h".
 
-An output is defined by using the ``<Z id vpin iflag>`` command. Refer to :ref:`reference/software/command-reference:outputs (dio pin) commands` for further information on this command.
+An output is defined by using the ``<Z id vpin iflag>`` command. Refer to :ref:`reference/software/command-summary-consolidated:outputs (configuring the ex-commandstation)` for further information on this command.
 
 This command will associate the provided output ID with the LED connected to the VPin as defined in the configuration commands in the section above.
 

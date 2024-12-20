@@ -7,7 +7,7 @@
 Troubleshooting & Getting Help
 ******************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar::
 
@@ -64,11 +64,11 @@ For those who wish to contribute to the project, this is by far the best option 
 
 .. rst-class:: dcclink
 
-   `Join our Discord Server <https://discord.gg/y2sB4Fp>`_ |EXTERNAL-LINK|
+   `Join our Discord Server <https://discord.gg/y2sB4Fp>`_
 
 Instructions:
 
-1. Follow this link `<https://discord.gg/y2sB4Fp>`_ |EXTERNAL-LINK|
+1. Follow this link `<https://discord.gg/y2sB4Fp>`_
 
 2. click ``Register`` on the sign in-page
 
@@ -150,20 +150,20 @@ Facebook
 
 We try to follow FaceBook and JMRI groups, but there are just too many separate groups to see and respond to all the messages.
 
-You can find some of us on Facebook in the "DCC-EX, DCC++ and Arduino Model Railroading" private group. However many of the project team do not use Facebook at all, so this approach is **not recommended**.
+You can also find *some of us* on Facebook in the `"DCC-EX, DCC++ and Arduino Model Railroading" <https://www.facebook.com/groups/1406785379394934/>`_ private group. 
 
-`Arduino for Model Railroading <https://www.facebook.com/groups/926390087391995/>`_ |EXTERNAL-LINK|
+Many of the project team *do not use Facebook*, so this approach is **not recommended**.
 
 There is also another group you you can join here:
 
-`DCC++ and Arduino Model Railroading <https://www.facebook.com/groups/1406785379394934/>`_ |EXTERNAL-LINK|
+`DCC++ and Arduino Model Railroading <https://www.facebook.com/groups/1406785379394934/>`_
 
 TrainBoard
 ^^^^^^^^^^
 
-You can also find a few of us on TrainBoard. However very few of the project team use TrainBoard, so this approach is **not recommended**.
+You can also *find a few of us* on TrainBoard. However *very few of the project team* use TrainBoard, so this approach is **not recommended**.
 
-`DCC++ EX TrainBoard Forum <https://www.trainboard.com/highball/index.php?forums/dcc.177/>`_ |EXTERNAL-LINK|
+`DCC++ EX TrainBoard Forum <https://www.trainboard.com/highball/index.php?forums/dcc.177/>`_
 
 
 .. toctree::

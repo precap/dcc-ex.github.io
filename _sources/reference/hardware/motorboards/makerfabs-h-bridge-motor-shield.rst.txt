@@ -7,7 +7,7 @@
 Makerfabs H-Bridge Motor Shield
 *******************************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. warning:: 
 

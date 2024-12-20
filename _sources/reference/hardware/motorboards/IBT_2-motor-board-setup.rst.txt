@@ -7,7 +7,7 @@
 IBT_2 BTS7960 Motor Board
 *************************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. sidebar::
 
@@ -89,7 +89,7 @@ Upgrading (Use the Arduino Motor Shield AND the IBT_2)
 
 For this installation we are going to assume you already have a working Command Station or at least have all the parts you need as listed above.
 
-If you need instructions on how to install the Arduino Motor Shield, see :doc:`Arduino Motor Shield Assembly </ex-commandstation/get-started/assembly>`
+If you need instructions on how to install the Arduino Motor Shield, see :doc:`Arduino Motor Shield Assembly </ex-commandstation/diy/assembly>`
 
 What We Are Going To Do (Upgrade)
 ----------------------------------
@@ -180,7 +180,7 @@ Change the last line to look like this. To be sure of your spelling, you can cop
 
 ``#define MOTOR_SHIELD_TYPE IBT_2_WITH_ARDUINO``
 
-Upload the sketch to your Arduino. If you need help on how to upload a sketch, see :doc:`Getting Started </ex-commandstation/get-started/index>`
+Upload the sketch to your Arduino. If you need help on how to upload a sketch, see :doc:`Getting Started </ex-commandstation/index>`
 
 Please see `Important Notes on Current Sensing (IBT_2)`_.
 
@@ -348,6 +348,7 @@ Below is the Handson Technology datasheet, recommended reading for Tinkerers and
 `Handson Technology BTS7960 High Current 43A H-Bridge Motor Driver <../../../_static/documents/bts7960-motor-driver.pdf>`_
 
 .. TODO: this has to go somewhere:
+
    There are two ways to monitor motor board current, one is at the input of the board and the other is at the output. We will cover both of these methods in the :ref:`advanced-setup/supported-motorboards/IBT_2-motor-board-setup:Important Notes on Current Sensing (IBT_2)` section.
 
    Also, mention "high accuracy mode" and include the circuit for that.

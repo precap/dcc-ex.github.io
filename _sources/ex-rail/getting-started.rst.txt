@@ -7,7 +7,7 @@
 Sequences - an Introduction
 ***************************
 
-|tinkerer| |engineer| |support-button| 
+|SUITABLE| |tinkerer| |engineer| |support-button| 
 
 .. sidebar:: 
 
@@ -191,7 +191,7 @@ Automatically Running a Sequence at Power Up
 .. note:: 
    :class: note-float-right
 
-   |NEW-IN-V5| There is no longer an implied AUTOSTART whereby everything in myAutomation.h prior to the first ``DONE`` keyword is executed on startup. If you wish to reinstate this behaviour, simply add the keyword ``AUTOSTART`` as the first line.
+   There is no longer an implied AUTOSTART whereby everything in myAutomation.h prior to the first ``DONE`` keyword is executed on startup. If you wish to reinstate this behaviour, simply add the keyword ``AUTOSTART`` as the first line.
 
 If you want a sequence to start immediate the system powers up, add the ``AUTOSTART`` command to the content of the sequence.
 
@@ -634,4 +634,4 @@ The READ_LOCO reads the loco address from the PROG track and the current route t
 Next Steps - Examples
 =====================
 
-Click :doc:`here <examples>` or click the :guilabel:`Next` button to see some concrete examples of automation sequences.
+See the :doc:`examples` page or click the 'Next' button to see some concrete examples of automation sequences.

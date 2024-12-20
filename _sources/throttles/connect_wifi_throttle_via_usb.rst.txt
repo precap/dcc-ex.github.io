@@ -5,7 +5,7 @@
 Connecting WiFi Throttles via USB
 *********************************
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

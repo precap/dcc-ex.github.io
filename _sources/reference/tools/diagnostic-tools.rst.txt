@@ -7,7 +7,7 @@
 DCC Diagnostic Tools
 *********************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

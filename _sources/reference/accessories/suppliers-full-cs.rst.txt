@@ -1,9 +1,13 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l2.rst
 .. include:: /include/include-third-party.rst
+|EX-SUPPLIERS-LOGO|
+
 *********************
 Full Command Stations
 *********************
+
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 CMME (Chesterfield Model Making & Miniature Electronics)
 ---------------------------------------------------------

@@ -7,7 +7,7 @@
 IRF3205 Motor Driver Setup
 **************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. warning:: 
 
@@ -22,11 +22,11 @@ IRF3205 Motor Driver Setup
 Dual Motor Driver Module H-bridge MOSFET IRF3205
 ------------------------------------------------
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. figure:: /_static/images/motorboards/3205_motor_board.png
    :alt: IRF3205 Motor Board
-   :scale: 75%
+   :scale: 50%
 
    IRF3205 Motor Board
 
@@ -95,7 +95,7 @@ Upgrading (Use the Arduino Motor Shield AND the IRF3205)
 
 For this installation we are going to assume you already have a working Command Station or at least have all the parts you need as listed above.
 
-If you need instructions on how to install the Arduino Motor Shield, see :doc:`Arduino Motor Shield Assembly </ex-commandstation/get-started/assembly>`
+If you need instructions on how to install the Arduino Motor Shield, see :doc:`Arduino Motor Shield Assembly </ex-commandstation/diy/assembly>`
 
 Tinkerers will use their existing motor shield for PROG and replace the MAIN output with one of the outputs of this board. Engineers can skip to :ref:`reference/hardware/motorboards/IRF3205-motor-board-setup:Replacing (Use both IRF3205 outputs to control MAIN and PROG)` to see how to modify the board so that just the IRF3205 can manage both tracks.
 
@@ -117,7 +117,9 @@ Steps (Upgrade IRF3205)
 
 2. Disconnect the wires coming out of output A of the Arduino Motor Shield that normally connects to your MAIN track.
 
-3. Move the two wires we just disconnected from the motor shield and connect one to each of the "Motor1" screw terminals of the IRF3205 board. TODO: Add image.
+3. Move the two wires we just disconnected from the motor shield and connect one to each of the "Motor1" screw terminals of the IRF3205 board. 
+
+..to: Add image.
 
 4. NOTE: It is important that the phase of the signal to your PROG and MAIN tracks are the same if you are ever going to use the ``<1 JOIN>`` command to make both tracks a MAIN when the PROG track is not in use, or if you are going to use the "DriveAway" feature. For more detail, see :ref:`reference/hardware/motorboards/IRF3205-motor-board-setup:Keeping your tracks in phase` below.
 
@@ -145,7 +147,9 @@ Here is a visual diagram. See :ref:`reference/hardware/motorboards/IRF3205-motor
    :align: center
 
 
-It should look like following. Note we have included the Arduino Mega and have the Arduino Motor shield off to the side for reference. The motor shield would obviously normally be stacked on top of the Arduino. However, some people might not use the motor shield and instead will have another board to use for their programming track. In this case, they would connect the IRF3205 (TODO: What does this mean? Did I mean to connect this other board to those pins or the IRF3205?? Fix this in the IBT_2 board page also) to the same pins on the Arduino microcontroller. As with most of our diagrams, you can click on them to enlarge them. )TODO: Mention fuses here? Another diagram?)
+It should look like following. Note we have included the Arduino Mega and have the Arduino Motor shield off to the side for reference. The motor shield would obviously normally be stacked on top of the Arduino. However, some people might not use the motor shield and instead will have another board to use for their programming track. In this case, they would connect the IRF3205 (TODO: What does this mean? Did I mean to connect this other board to those pins or the IRF3205?? Fix this in the IBT_2 board page also) to the same pins on the Arduino microcontroller. As with most of our diagrams, you can click on them to enlarge them. )
+
+.. todo:: LOW - Mention fuses here? Another diagram?
 
 .. image:: /_static/images/motorboards/IRF3205_w_arduino.png
    :alt: IRF3205 Wiring Schematic
@@ -183,9 +187,11 @@ Remove the last line and replace it with this. To be sure of your spelling, you 
      new MotorDriver(3, 12, UNUSED_PIN, UNUSED_PIN, A3, 12.2, 6000, UNUSED_PIN), \
      new MotorDriver(11, 13, UNUSED_PIN, UNUSED_PIN, A1, 2.99, 2000, UNUSED_PIN)
 
-This will use pin 3 for Enable and 12 for signal, which will use the "High Accuracy" waveform. You could use other pins that line up together if you like and use "Standard" accuracy (TODO: Link to not explaining high accuracy).
+This will use pin 3 for Enable and 12 for signal, which will use the "High Accuracy" waveform. You could use other pins that line up together if you like and use "Standard" accuracy.
 
-7. Upload the new sketch to your Arduino. If you need help on how to upload a sketch, see :doc:`Getting Started </ex-commandstation/get-started/index>`
+.. todo:: LOW - Link to not explaining high accuracy.
+
+7. Upload the new sketch to your Arduino. If you need help on how to upload a sketch, see :doc:`Getting Started </ex-commandstation/index>`
 
 8. If you intend to use your Command station for programming on a separate programming track, or you will want to monitor current on your main track, you will connect an external current sense board. See the notes below for more detail about current sense and a suggestion for using an external current sense board.
 
@@ -216,6 +222,8 @@ Steps (Replace IRF3205)
 4. Upload the new sketch to your Arduino Mega
 
 Connect wires of the proper gauge (TODO: see gauge) from the "MOTOR1" screw terminals of the IRF3205 board to your MAIN track and connect 2 more wires from the "MOTOR2" terminals to your PROG track. 
+
+.. todo:: LOW - See Gauge
 
 .. NOTE:: It is important that the phase of the signal to your PROG and MAIN tracks are the same if you are ever going to use <1 JOIN> to make both tracks a MAIN when the PROG track is not in use, or if you are going to use the "DriveAway" feature.
 
@@ -263,6 +271,8 @@ Pay attention to board labels, not their position on this drawing. Your current 
 
 If you want to use more than 5A (but we recommend not to), there are changes you need to make to the hardware AND to the config.h settings. See TODO: link to section below.
 
+.. todo:: LOW - link to section below.
+
 .. Note:: We are going to edit your config.h file. If this is your first time using the Command Station software and you do not have a config.h file, rename your config.example.h file to config.h.
 
 Launch the Arduino IDE (or whatever editor you use) and open the CommandStation-EX project. Find the config.h file. look for the following lines of code:
@@ -293,8 +303,9 @@ Remove the last line and replace it with this. To be sure of your spelling, you 
      new MotorDriver(11, 13, UNUSED_PIN, UNUSED_PIN, A1, 2.99, 2000, UNUSED_PIN)
 
 This will us pin 3 for Enable and 12 for signal, which will use the "High Accuracy" waveform. You could use other pins that line up together if you like and use "Standard" accuracy (TODO: Link to note explaining high accuracy).
-Upload the sketch to your Arduino. If you need help on how to upload a sketch, see :doc:`Getting Started </ex-commandstation/get-started/index>`
+Upload the sketch to your Arduino. If you need help on how to upload a sketch, see :doc:`Getting Started </ex-commandstation/index>`
 
+.. todo:: LOW - Link to note explaining high accuracy
 
 .. TODO:: `LOW - Hardware <https://github.com/DCC-EX/dcc-ex.github.io/issues/427>`_ - organise the above and add pictures
 
@@ -377,8 +388,8 @@ http://amazon.com/gp/product/B019GYOPSS/ |EXTERNAL-LINK|
 $23.38 +tax; prime shipping
 
 ELEGOO MEGA 2560 R3 Board ATmega2560 ATMEGA16U2 + USB Cable
-https://www.amazon.com/gp/product/B01H4ZLZLQ
-$16.99 +tax; prime shipping |EXTERNAL-LINK|
+https://www.amazon.com/gp/product/B01H4ZLZLQ |EXTERNAL-LINK|
+$16.99 +tax; prime shipping
 
 ACS724 Current Sensor Carrier 0 to 10A (this one has 400mv/A sensitivity)
 https://www.pololu.com/product/4042 |EXTERNAL-LINK|

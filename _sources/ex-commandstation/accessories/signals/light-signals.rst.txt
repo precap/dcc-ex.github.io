@@ -7,7 +7,7 @@
 Light signals
 *************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 
@@ -55,6 +55,41 @@ What if my signals have different colours?
 ------------------------------------------
 
 If your signalling requires using different colours to the standard red/amber/green, then that has no impact whatsoever on defining and operating the signals, and you will still need to refer to them as red/amber/green in the software, and control them by whichever pin is defined as the red aspect.
+
+Signals with flashing amber
+---------------------------
+
+|NEW-IN-V5-4|
+
+|EX-R| now has the ability to blink a vpin on and off at set intervals, which can also be utilised to creating a flashing or blinking amber signal.
+
+This can be used with the ``ONAMBER(vpin)`` event handler to flash the amber aspect when activated.
+
+For example, to have a signal using vpins 30 (Red), 31 (Amber), and 32 (Green) flash or blink amber when that aspect is set, you would create the signal and associated event handler in "myAutomation.h" like this:
+
+.. code-block:: 
+
+  SIGNAL(30,31,32)      // Define the signal object
+  ONAMBER(30)           // When amber aspect is activated
+    BLINK(31,500,500)   // Turn vpin 31 on and off every 500ms
+  DONE
+
+Further to this, if you wish to use both on and flashing/blinking amber, you can do so using an |EX-R| macro which can be activated as part of a route or sequence:
+
+.. code-block:: 
+
+  // Macro to flash a signal's amber aspect - assumes amber is the next vpin from the red vpin
+  #define FLASHAMBER(signal) \
+    AMBER(signal) \
+    BLINK(signal+1,500,500)
+
+  SIGNAL(30,31,32)              // Define the signal as normal
+  
+  ROUTE(50, "Flash signal 30")  // Create a route to activate flashing/blinking amber
+    FLASHAMBER(30)              // Call the macro defined above
+  DONE
+
+Refer to `BLINK( pin, onms, offms ) - Blink an output pin <../../../ex-rail/EX-RAIL-command-reference.html#blink-pin-onms-offms-blink-an-output-pin>`_ for further details on the ``BLINK()`` command.
 
 Connecting the signals
 ======================

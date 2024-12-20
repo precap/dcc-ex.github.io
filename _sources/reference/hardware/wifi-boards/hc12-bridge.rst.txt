@@ -7,7 +7,7 @@
 HC-12 Wireless Bridge
 *********************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

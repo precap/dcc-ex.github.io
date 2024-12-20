@@ -1,13 +1,16 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l3.rst
 .. include:: /include/include-hardware.rst
+
 |EX-CS-LOGO|
 
-******************
-Arduino Nano Setup
-******************
+******************************
+Arduino Nano (Not recommended)
+******************************
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
+
+**As of version 5.4.0, this is no longer a recommended option, see :doc:`/news/posts/20240328`**
 
 .. sidebar::
 
@@ -92,13 +95,9 @@ To use this board, you simple plug the Nano into the motor shield (really a carr
 Wiring a Motor Shield
 =====================
 
-|tinkerer|
-
 You will need jumpers to connect the Nano to the Arduino Motor Shield
 
 Wiring other Motor Boards
 ============================
-
-|tinkerer|
 
 As long as you know the pinouts, you can jumper wires to any motor shield you can connect to an Uno or Mega.

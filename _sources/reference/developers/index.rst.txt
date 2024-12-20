@@ -7,7 +7,7 @@
 Developer and API reference
 ****************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 This section contains detailed information relevant for those who wish to utilise DCC-EX's API functions or develop integrated items such as throttles.
 

@@ -7,7 +7,7 @@
 DFRobot 2x2A DC Motor Shield (DRI0009)
 **************************************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. warning:: 
 

@@ -3,11 +3,11 @@
 .. include:: /include/include-ex-tb.rst
 |EX-TB-LOGO|
 
-************
+*****************************************
 EX-Toolbox
-************
+*****************************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 Welcome to the home of |EX-TB|, an Android app to help setup and configure your |EX-CS|. 
 
@@ -21,15 +21,14 @@ Welcome to the home of |EX-TB|, an Android app to help setup and configure your 
 * CV Programming in the programming track (Service Mode)
 * CV Programming in the main track (Operation Mode)
 * Servo motor testing and adjustment
-* Sensor testing 
+* Sensor testing
 * Current Meter
 * Track Manager
 * Loco status (all active locos)
 * Assist with Loco Speed Matching
-* Speedometer (requires two sensors on the |EX-CS|)
+* Speedometer (requires two sensors on the EX‑CommandStation)
 * Roster list
-* NeoPixel Setup (Alpha version only)
-
+* NeoPixel Setup
 
 .. toctree::
   :maxdepth: 1

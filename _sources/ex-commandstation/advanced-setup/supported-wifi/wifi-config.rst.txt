@@ -7,7 +7,7 @@
 WiFi Configuration
 *******************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 
@@ -15,7 +15,7 @@ WiFi Configuration
       :depth: 1
       :local:
 
-This page describes the software configuration options for using WiFi to connect your |EX-CS| (CS) wirelessly to |JMRI| or a wireless throttle like |Engine Driver|. For information on how to connect your hardware, go to :doc:`WiFi Setup </ex-commandstation/get-started/wifi-setup>`.
+This page describes the software configuration options for using WiFi to connect your |EX-CS| (CS) wirelessly to |JMRI| or a wireless throttle like |Engine Driver|. For information on how to connect your hardware, go to :doc:`WiFi Setup </ex-commandstation/diy/wifi-setup>`.
 
 As mentioned in the above link, you will need the following to proceed:
 
@@ -51,7 +51,7 @@ For a video, click `Setting up WiFi <https://www.youtube.com/watch?v=N6TWR7fIl0A
 Wireless Connections
 =====================
 
-As mentioned in :doc:`WiFi Setup </ex-commandstation/get-started/wifi-setup>`, there are two main reasons for wanting to use WiFi; to connect to |JMRI| without a USB cable, or to connect to a wireless throttle (controller) like the |Engine Driver| mobile app. While it can work to simply use WiFi to replace the USB cable to connect the computer running |JMRI| to your Command Station, there are better ways and frankly, your electronics are usually under the benchwork, so just buy the right sized cable. But if you have no alternative and need to replace the cable with wireless, we recommend the HC-12 serial wireless bridge boards which we cover on the :doc:`/reference/hardware/wifi-boards/hc12-bridge` page.
+As mentioned in :doc:`WiFi Setup </ex-commandstation/diy/wifi-setup>`, there are two main reasons for wanting to use WiFi; to connect to |JMRI| without a USB cable, or to connect to a wireless throttle (controller) like the |Engine Driver| mobile app. While it can work to simply use WiFi to replace the USB cable to connect the computer running |JMRI| to your Command Station, there are better ways and frankly, your electronics are usually under the benchwork, so just buy the right sized cable. But if you have no alternative and need to replace the cable with wireless, we recommend the HC-12 serial wireless bridge boards which we cover on the :doc:`/reference/hardware/wifi-boards/hc12-bridge` page.
 
 That said, there are two main wireless technologies that let you send commands to your Command Station and control your trains:
 
@@ -119,7 +119,7 @@ We will focus on how to connect a Throttle to the Command Station. For info on u
 Access Point Mode (Default - No Configuration Necessary)
 ========================================================
 
-To use the default |Access Point mode|, you don't have to do anything other than connect an ESP8266 board as described in :doc:`WiFi Setup </ex-commandstation/get-started/wifi-setup>`. 
+To use the default |Access Point mode|, you don't have to do anything other than connect an ESP8266 board as described in :doc:`WiFi Setup </ex-commandstation/diy/wifi-setup>`. 
 
 That's it! If there is no previously configured network in range, or the WiFi setup in your config.h file is still unconfigured, the default for |EX-CS| is AP mode. We find your WiFi board, no matter which of the extra serial ports you attached it to. |EX-CS| then accepts commands from WiFi throttles in either |WiThrottle Protocol| or |DCC-EX Native Commands|.
 
@@ -133,6 +133,8 @@ You will need to know:
 * The password (Unless you change it in config.h, your local WiFi password.)  Its default is **PASS_xxxxxx** where the x's are the last 6 digits of your device' MAC address)
 
 .. note:: All of this information is displayed in the startup log if you connect the Command Station to a serial monitor. The IP address and port also appear on the optional LCD or OLED display.
+
+   If you wish to use a custom SSID in access point mode, you will need to set the WIFI_FORCE_AP option in config.h, see :ref:`ex-commandstation/advanced-setup/supported-wifi/wifi-config:#define wifi_force_ap`
 
 Whenever you connect a USB cable and open the serial monitor, you reset the program running on your Command Station. It will go through the bootup sequence again and try to connect to a network. If you did not setup a "Station Mode" configuration, or if that network is not in range, it will configure itself in AP mode. You will see this process by watching the serial monitor log window. Here are the important lines you need to look for. While the IP address is almost always 192.168.4.1, it could be different on your system. You are looking for the items in the blue box below that are highlighted in red. 
 
@@ -171,7 +173,7 @@ Simply click on that network and connect to it on your mobile device. You will n
 
 Ignore the warning that may pop up telling you that "Internet may not be available". The Command Station is not connected to the internet, and you are connecting to the Command Station directly from your mobile device for the purpose of controlling trains, not surfing the web. Depending on the config and OS of your mobile device, you may still have internet access over mobile data through a cell tower connection. If you wish to use your home network internet (for example, if your data plan is expensive), turn off mobile data and see the section below on Station Mode to connect using your home network instead.
 
-Once you are connected to the Command Station with your cell phone, you can run your WiFi Throttle app, enter the IP Address for the Server Address (**the default is usually 192.168.4.1, but it will be displayed in your serial monitor log if you are unsure**), enter **2560 for the port number**, and then select and acquire your loco by its address. If you don't know your loco address, see the ``<R>`` command in the :ref:`Decoder Test <reference/software/command-reference:DECODER TEST>` section of the Command Reference.
+Once you are connected to the Command Station with your cell phone, you can run your WiFi Throttle app, enter the IP Address for the Server Address (**the default is usually 192.168.4.1, but it will be displayed in your serial monitor log if you are unsure**), enter **2560 for the port number**, and then select and acquire your loco by its address. If you don't know your loco address, see the ``<R>`` command in the :ref:`reference/software/command-summary-consolidated:<r> - read dcc decoder (cab) address` section of the Command Reference.
 
 .. note:: Your Mobile Throttle function keys are user defined default function keys, not the function keys you used in either |JMRI| or Rocrail engine roster function keys.
 
@@ -276,6 +278,13 @@ If you don't change this setting and start up in AP mode instead, the default pa
 ----------------------------------
 
 **Default: 14000 milliseconds (14 seconds)** - You only need to set this if you have an extremely slow WiFi router, and the response to the connection request takes longer than normal.
+
+#define WIFI_FORCE_AP
+---------------------
+
+|NEW-IN-V5-4|
+
+**Default: commented out** - Uncomment this line if you wish to use a custom SSID for your WiFi in access point mode, otherwise defining a custom SSID will cause the WiFi to attempt to connect to an existing WiFi network is STA mode.
 
 #define ENABLE_ETHERNET true
 ----------------------------

@@ -7,7 +7,7 @@
 Objects - an Introduction
 *************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
@@ -21,7 +21,7 @@ There are a number key objects that are important for creating sequences:
 
 * `Roster Entries - Your locos <#adding-a-roster>`_
 * `Turnouts/Points <#adding-turnouts-points>`_
-* `Servos for Semophores/Signals and Animations <#servos-for-signals-and -animations>`_
+* `Servos for Semaphores/Signals and Animations <#servos-for-signals-and -animations>`_
 * `Sensors <#adding-sensors>`_
 * `Signals (Lights) <#adding-signals>`_
 
@@ -398,7 +398,7 @@ Sensor numbers are direct references to VPINs (virtual pin numbers) in the Hardw
 
 Sensors with ID's 0 to 255 may be LATCHED/UNLATCHED in your script. If a sensor is latched on by the script, it can only be set off by the script… so ``AT(22) LATCH(22)`` for example effectively latches the sensor 22 on when detected once.
 
-Sensor polling by JMRI is independent of this, and may continue if ``<S>`` commands are used.
+Sensor polling by JMRI is independent of this, and may continue if ``<S>`` commands are used.  However there is now a way of defining JMRI sensors from within EXRAIL - see EXRAIL Command Reference - JMRI_SENSOR.
 
 ----
 
@@ -459,4 +459,4 @@ New 4.1 SERVO_SIGNAL(vpin, redpos, amberpos, greenpos)
 Next Steps - Creating Sequences
 ===============================
 
-Click :doc:`here <getting-started>` or click the :guilabel:`Next` button to learn how to create automation sequences.
+See the :doc:`getting-started` page or click the 'Next' button to learn how to create automation sequences.

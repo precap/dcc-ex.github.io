@@ -7,7 +7,7 @@
 Stage 2 - Adding a Roster
 *********************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

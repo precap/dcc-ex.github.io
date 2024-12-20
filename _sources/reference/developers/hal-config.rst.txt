@@ -7,7 +7,7 @@
 I/O Device Drivers and HAL
 **************************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. sidebar::
 

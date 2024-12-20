@@ -7,7 +7,7 @@
 Default Pin/VPin Allocations and Recommendations
 ************************************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
@@ -278,8 +278,6 @@ When adding more PCA9685s, select an unused VPin that allows a total of 16 conse
 EX-IOExpander - digital and analogue I/O expander
 -------------------------------------------------
 
-|NEW-IN-V5-LOGO-SMALL|
-
 EX-IOExpander is designed to support up to 256 pins and is currently in testing. The default |I2C| address is 0x65, however any valid and available address can be used.
 
 The device driver name is "IO_EXIOExpander.h" and is included by default.
@@ -330,8 +328,6 @@ Other devices
 EX-Turntable
 ------------
 
-|NEW-IN-V5-LOGO-SMALL|
-
 .. note:: 
 
   |EX-TT| is in Beta testing, however the device driver is unlikely to change much if at all.
@@ -357,8 +353,6 @@ Refer to :doc:`/ex-turntable/index` for further information.
 
 DCC-EX rotary encoder
 ---------------------
-
-|NEW-IN-V5-LOGO-SMALL|
 
 .. note:: 
 

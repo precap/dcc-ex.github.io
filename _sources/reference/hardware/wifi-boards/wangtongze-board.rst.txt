@@ -7,7 +7,7 @@
 WangTongze Board
 ****************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

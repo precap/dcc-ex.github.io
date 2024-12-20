@@ -7,11 +7,11 @@
 Example - Full automation with pin based turnouts and signals on Mega2560 direct I/O pins
 *****************************************************************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. code-block:: 
 
-  // myAutomation.h for SEQUENCEs with pin turnouts, sensors, and signals directly connected to the Mega2560.
+  // myAutomation.h for SEQUENCEs with pin turnouts/points, sensors, and signals directly connected to the Mega2560.
 
   // Define our aliases:
   ALIAS(TRN1, 100)
@@ -43,7 +43,7 @@ Example - Full automation with pin based turnouts and signals on Mega2560 direct
   SIGNAL(SIG2_TRN2_GO, 34, 35)
   SIGNAL(SIG3_STN_EX, 37, 38)
 
-  // Start up with turnouts closed and signals red
+  // Start up with turnouts/points closed and signals red
   CLOSE(TRN1)
   CLOSE(TRN2)
   RED(SIG1_TRN1_APP)

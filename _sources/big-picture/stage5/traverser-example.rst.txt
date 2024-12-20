@@ -5,7 +5,7 @@
 Example - Turntable and traverser ROUTEs
 ****************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. code-block:: 
 

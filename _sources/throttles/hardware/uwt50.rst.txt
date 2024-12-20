@@ -6,7 +6,7 @@
 TCS UWT-50 & UWT-100 WiFi Throttles (Physical)
 **********************************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 
 .. figure:: /_static/images/throttles/uwt50_a.png

@@ -10,15 +10,7 @@
 Using the Installer 
 *******************
 
-|force-break|
-
-.. rst-class:: dcclink-right
-
-   :ref:`Download Ex-Installer Now <download/ex-commandstation:ex-Installer>`
-
-|conductor| |tinkerer| |engineer| |support-button| |githublink-ex-installer-button2|
-
-|force-break|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| |githublink-ex-installer-button-small|
 
 .. sidebar::
 
@@ -26,9 +18,21 @@ Using the Installer
       :depth: 4
       :local:
 
+Once you have purchased or assembled your |EX-CS| hardware you need to load our software onto it to make it usable. |BR| To make it as simple as possible we have created the |EX-I| app.
+
 .. note:: 
 
    If you already have, or wish to create, your own custom config files, we recommend that you :doc:`read this page first <managing-config-files>`.
+
+.. note:: 
+
+   A word of caution on the alternate approach of using the |Arduino IDE| to install the software:
+
+   While it is possible install the software using the |Arduino IDE|, we *seriously* **DO NOT RECOMMEND** it for a |conductor-text| or |tinkerer-text|. It is an order of magnitude more complex, much slower, and with a very high probability of getting something wrong unless you really know what you are doing.
+
+   The |EX-I| described below will meet 100% of the needs of a |conductor-text| or |tinkerer-text| with considerably less effort. 
+
+----
 
 Requirements (for installing)
 ==============================
@@ -61,7 +65,7 @@ Download and Run EX-Installer
   
    **Antivirus Software** |BR| You *may* need to turn off your antivirus software before you try to install. |BR| Sometimes our software gets blocked by antivirus apps. If you see any errors on the install screen, this is usually the issue.
 
-* Download the :ref:`EX-Installer <download/ex-commandstation:ex-Installer>` app. |BR| |BR|
+* Download the **new** :ref:`EX-Installer <download/ex-commandstation:ex-Installer>` app. |BR| |BR|
 * For **Microsoft Windows**:
   
   * Open the Windows *File Manager*
@@ -573,7 +577,7 @@ When clicking this button, the Device Monitor window will open, allowing you to 
 
 |
 
-For further details on using Device Monitor, continue on to the next page with the "next" button, or go straight to :ref:`ex-installer/testing:using the ex-installer device monitor`.
+For further details on using Device Monitor, continue on to the next page with the 'Next' button, or go straight to :ref:`ex-installer/testing:using the ex-installer device monitor`.
 
 |force-break|
 
@@ -587,6 +591,6 @@ Next Steps - Test your setup
 
    The programming track is for programming only. Make sure you are on the main track if you expect your loco to move or respond to light or sound commands.
 
-Click :doc:`here </ex-installer/testing>` or click the "next" button to learn how to test and use your |EX-CS|.
+See the :doc:`/ex-installer/testing` page or click the 'Next' button to learn how to test and use your |EX-CS|.
 
 |force-break|

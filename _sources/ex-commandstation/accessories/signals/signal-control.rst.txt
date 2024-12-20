@@ -7,7 +7,7 @@
 Controlling signals
 *******************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 
@@ -46,7 +46,7 @@ It doesn't matter what type of signal it has been defined as, the control comman
 
 These commands can be used within automation sequences to automatically set signal aspects as part of other activities such as closing/throwing turnouts/points.
 
-For a simple example, to set a signal at pin 28 red when turnout ID 201 is thrown, and green when it is closed, these turnout event handlers would be added to "myAutomation.h":
+For a simple example, to set a signal at pin 28 red when turnout ID 201 is thrown, and green when it is closed, these turnout/point event handlers would be added to "myAutomation.h":
 
 .. code-block:: cpp
 

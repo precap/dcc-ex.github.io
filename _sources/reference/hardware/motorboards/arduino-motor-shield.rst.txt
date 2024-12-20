@@ -7,7 +7,7 @@
 Arduino Motor Shield R3
 ***********************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. note:: 
 
@@ -23,4 +23,4 @@ Easy to use, widely available, and in the latest R3 version it is compatible wit
 
 Schematics are available on the `Arduino website <https://docs.arduino.cc/resources/schematics/A000079-schematics.pdf>`_ |EXTERNAL-LINK|.
 
-:doc:`Install the Arduino Motor Shield </ex-commandstation/get-started/assembly>`
+:doc:`Install the Arduino Motor Shield </ex-commandstation/diy/assembly>`

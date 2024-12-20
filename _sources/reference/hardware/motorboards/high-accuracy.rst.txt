@@ -7,7 +7,7 @@
 High Accuracy Waveform Mode
 ***************************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. sidebar::
 

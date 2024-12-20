@@ -7,7 +7,7 @@
 GitHub
 *******
 
-|tinkerer| |Engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

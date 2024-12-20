@@ -7,7 +7,7 @@
 Install using the Arduino IDE
 ******************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
@@ -17,7 +17,15 @@ Install using the Arduino IDE
 
 The Arduino IDE is an "Integrated Development Environment". Don't let the name scare you away! It is really just a program that lets you open a project (like our |EX-CS| Software), compile the files into instructions the Arduino understands, and upload them from your computer into the Arduino using a serial cable. It is very easy to use.
 
-Those on the Tinkerer or Engineer path (see :doc:`/begin/levels`) may want to make changes to the code, or just learn more about how the |EX-CS| software works. At a minimum, you may need to change options in the config.h file, or use the IDE's "Serial Monitor" to monitor your Command Station, get logs if something is not working, or enter commands to test out features.
+.. note::
+   
+   A word of caution on the approach of using the |Arduino IDE| to install the software:
+
+   While it is possible install the software using the |Arduino IDE|, we *seriously* **DO NOT RECOMMEND IT** for a |conductor-text| or |tinkerer-text|. It is an order of magnitude more complex, much slower, and with a very high probability of getting something wrong unless you really know what you are doing.
+
+   The |EX-I| described below will meet 100% of the needs of a |conductor-text| or |tinkerer-text| with considerably less effort. 
+
+Those on the |Engineer-text| path (see :doc:`/begin/levels`) may want to make changes to the code, or just learn more about how the |EX-CS| software works. At a minimum, you may need to change options in the 'config.h' file, or use the IDE's "Serial Monitor" to monitor your Command Station, get logs if something is not working, or enter commands to test out features.
 
 **You can click on most of the images below to enlarge them**
 
@@ -88,7 +96,7 @@ If you want to take a look at this file or make a simple change, just open the f
 Select the board type and COM port
 ===================================
 
-Before you attempt this step, make sure that you have everything connected properly from the :doc:`assembly page </ex-commandstation/get-started/assembly>`. And a final reminder to **make sure you cut the Vin trace** on the bottom of the Arduino Motor Shield. Ready? Proceed.
+Before you attempt this step, make sure that you have everything connected properly from the :doc:`assembly page </ex-commandstation/diy/assembly>`. And a final reminder to **make sure you cut the Vin trace** on the bottom of the Arduino Motor Shield. Ready? Proceed.
 
 Connect the computer to the Arduino with the USB cable. Note the 5V coming from your computer/Raspberry Pi is enough to power the Mega, since it bypasses the regulator that converts your 7-9V power supply down to 5V, and goes right to the 5V bus on the board. So don't be alarmed by lights on your Arduino.
 
