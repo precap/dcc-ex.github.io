@@ -89,7 +89,7 @@ Note: if you are just starting out this is the recommended approach.
 * in the **'Install EX-CommandStation'** screen, make sure you select `Create MyAutomation.h` and `advanced config` along with any other options you need for your Command Station.
 * Click the :guilabel:`Advanced Config` button you will be shown the **'Advanced Configuration'** Screen where you can make additional edits to **config.h** and **myAutomation.h** 
 * On the **'Load EX-CommandStation'** screen, after you click :guilabel:`Load` and the software has finished loading, you will see a :guilabel:`Backup config files` button.  
-* Click on the button and follow select or create a folder  backup your files. :dcc-ex-red-italic:`This MUST NOT be inside any of the folders created by the installer.`
+* Click on the button and follow select or create a folder  backup your files. :dcc-ex-red-bold-italic:`This MUST NOT be inside any of the folders created by the installer.`
 
 The next time you run |EX-I|
 
@@ -106,7 +106,7 @@ Using any text Editor
 
 Any app that can edit plain text files can be used.
 
-* Create or select a folder to store the files.   :dcc-ex-red-italic:`This MUST NOT be inside any of the folders created by the installer.``
+* Create or select a folder to store the files.   :dcc-ex-red-bold-italic:`This MUST NOT be inside any of the folders created by the installer.``
 * Copy `config-sample.h` from github or the |EX-I| install folders.
 * Rename `config-sample.h` to `config.h` and edit as needed
 * If needed, create `myAutomation.h` and edit as needed
@@ -117,5 +117,5 @@ Any app that can edit plain text files can be used.
 * Then click :guilabel:`Advanced Config`
 * Continue to the **'Load Configuration'** screen and load the software
 
-If you had previously used the Arduino IDE or VSC to create custom config files, you can use these files, either from where you originally created them, or you can copy them to a separate folder. :dcc-ex-red-italic:`As long as that folder IS NOT inside any of the folders created by the installer.`
+If you had previously used the Arduino IDE or VSC to create custom config files, you can use these files, either from where you originally created them, or you can copy them to a separate folder. :dcc-ex-red-bold-italic:`As long as that folder IS NOT inside any of the folders created by the installer.`
 

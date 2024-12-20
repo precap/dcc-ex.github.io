@@ -251,11 +251,11 @@ Connect the Smart Device to the EX-CSB1 AP Network
 
    EX-CSB1 Startup - OLED screen
 
-The DCC-EX |EX-CSB1| will power up in WiFi **Access Point mode** as configured out of the box, with its own unique WiFi network SSID of ``DCCEX_xxxxxx`` and password of ``PASS_xxxxxx`` (where **xxxxxx** is the last 6 digits of the MAC address of the EX-CSB1), both of which will be visible on the OLED display (or serial monitor log). After it boots you can connect with a WiFi throttle like |Engine Drive| or |WiThrottle|. 
+The DCC-EX |EX-CSB1| will power up in WiFi **Access Point mode** as configured out of the box, with its own unique WiFi network SSID of ``DCCEX_xxxxxx`` and password of ``PASS_xxxxxx`` (where **xxxxxx** is the last 6 digits of the MAC address of the EX-CSB1), both of which will be visible on the OLED display (or serial monitor log). After it boots you can connect with a WiFi throttle like |Engine Driver| or |WiThrottle|. 
 
 This quick start covers initial testing with the |Engine Driver| app, though it is a broadly similar process when using any other throttle app on a Smart device. 
 
-For a USB Connection with |EX-WebThrottle| or |JMRI| and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
+For a USB Connection with |EX-WT| or |JMRI| and a computer, please see the full :doc:`CSB1 operating manual <manual>`.
 
 **Access Point (AP) mode** creates a separate WiFi network on the Command Station itself, whereas **Station (STA) mode** allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the |EX-CSB1| set to default to **Access Point (AP) mode** for the convenience of being able to get up and running quickly. 
 
