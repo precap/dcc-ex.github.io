@@ -6,7 +6,7 @@
 Infrared or IR sensors
 **********************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

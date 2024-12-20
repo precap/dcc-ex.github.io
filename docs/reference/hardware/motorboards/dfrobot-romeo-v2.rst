@@ -9,7 +9,7 @@
 DFRobot Romeo V2
 ****************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. warning:: 
 

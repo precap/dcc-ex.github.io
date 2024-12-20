@@ -7,7 +7,7 @@
 Getting Started
 ***************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer|
 
 .. sidebar::
 

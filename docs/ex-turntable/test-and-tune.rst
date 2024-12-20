@@ -7,7 +7,7 @@
 Testing, Tuning, and Control
 *****************************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-turntable-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-turntable-button-small|
 
 .. sidebar:: 
 
@@ -373,8 +373,6 @@ The EX-RAIL equivalent to the above would be:
 
 Controlling EX-Turntable with a rotary encoder
 ==============================================
-
-|NEW-IN-V5-LOGO-SMALL|
 
 It is possible to use a rotary encoder to select turntable positions if desired, which is handy for use with mimic panels and so forth.
 

@@ -7,7 +7,7 @@
 Contributing to EX-WebThrottle2
 *******************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

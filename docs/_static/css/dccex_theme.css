@@ -113,6 +113,10 @@ h6, .h6 {
   padding-bottom: 0px !important;
 }
 
+form.gsc-search-box table tr:nth-child(odd)  {
+  background-color: white !important;
+}
+
 .gsc-control-cse {
   padding: 0px !important;
 }
@@ -239,8 +243,11 @@ html[data-theme='dark'] .dccex-prefix {
 .command-table tr:nth-child(even) {
   background-color: #f8f8f8 !important;  
 }
+html[data-theme='dark']  .command-table tr:nth-child(odd) {
+  background-color: black !important;
+}
 html[data-theme='dark']  .command-table tr:nth-child(even) {
-  background-color: #ffffff08 !important;
+  background-color: #141414 !important;
 }
 
 .command-table td {
@@ -464,6 +471,30 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
   background: #6d3403 !important;
 }
 
+.rst-content .citation-reference, .rst-content .footnote-reference {
+  font-size: 70%;
+}
+
+.admonition {
+  border-radius: 5px;
+}
+
+.warning {
+  border-radius: 5px;
+}
+html[data-theme='dark'] .warning {
+  background: #37270c !important;
+  border-radius: 5px;
+}
+.admonition-title {
+  border-radius: 5px 5px 0px 0px ;
+}
+html[data-theme='dark'] .admonition-title {
+  background: #ff8a00 !important;
+  border-radius: 5px 5px 0px 0px ;
+  color: black;
+}
+
 /* *************************************** */
 
 .menuselection {
@@ -475,6 +506,7 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
 
 .wy-table-responsive {
     margin-bottom: 12px !important;
+    border-radius: 5px;
 }
 
 /* override table width restrictions */ 
@@ -489,8 +521,8 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
   border-style: none !important;
   border-width:0px !important;
 }
-html[data-theme='dark'] tr:nth-child(odd), .table-grid-homepage tr:nth-child(odd), .table-list-homepage tr:nth-child(odd) {
-  background-color: #ffffff08 !important;
+html[data-theme='dark'] tr:nth-child(odd), html[data-theme='dark'] html[data-theme='dark'] .table-grid-homepage tr:nth-child(odd), html[data-theme='dark'] .table-list-homepage tr:nth-child(odd) {
+  background-color: black !important;
 }
 
 .table-wrap-text tr:nth-child(even), .table-grid-homepage tr:nth-child(even), .table-list-homepage tr:nth-child(even) {
@@ -809,7 +841,10 @@ html[data-theme='dark'] .sd-card-header {
   font-size: 100% important;
 }
 html[data-theme='dark'] .rst-content code.literal, .rst-content tt.literal {
-  color: #ff6000 !important;
+  color: #f9ff00 !important;
+  font-size: 100% important;
+  border: 1px solid #333;
+  background: #141414;
 }
 
 /* general purpose */

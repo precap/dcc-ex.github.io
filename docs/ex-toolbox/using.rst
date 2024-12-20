@@ -7,7 +7,7 @@
 EX-Toolbox - Installing and Using
 *********************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
@@ -18,7 +18,7 @@ EX-Toolbox - Installing and Using
 Installing
 ==========
 
-|EX-TB| can be installed on your Android phone or tablet via the `Google Play Store <https://play.google.com/store/apps/details?id=dcc_ex.ex_toolbox>`_ |EXTERNAL-LINK|.
+|EX-TB| can be installed on your Android phone or tablet via the `Google Play Store <https://play.google.com/store/apps/details?id=dcc_ex.ex_toolbox>`_ .
 
 Open the *Play Store* app on your phone or tablet and search for "EX-Toolbox".
 
@@ -58,28 +58,29 @@ Discovered Servers
   
 .. warning::
 
-   |EX-TB| can connect *directly* to an |EX-CS| or server using the |Native Protocol|, however |JMRI|, the |EX-CS| and other devices and apps can, or do, advertise as "WiThrottle" mDNS services. EX-Toolbox cannot determine which are actually connections to a suitable server.
+   |EX-TB| can only connect *directly* to an |EX-CS| or JMRI's :ref:`'DCC++ over TCP Server'<ex-toolbox/using:connecting via jmri>`, however |JMRI|, the |EX-CS| and other devices and apps can, or do, advertise as "WiThrottle" mDNS services. EX-Toolbox cannot determine which are actually direct connections to an |EX-CS| or JMRI's :ref:`'DCC++ over TCP Server'<ex-toolbox/using:connecting via jmri>`.
 
    So... just because a server is in this list, doesn't mean that |EX-TB| will be able to connect to it.
 
-   Refer to `Connecting via JMRI`_ below for how to use |EX-TB| with JMRI.
+|HR-DASHED|
 
 Recent Server List
 ------------------
 
-  If the server you want to connect to is in the list, simply click on it and you will be taken to the 'CV-Programming' screen.
+If the server you want to connect to is in the list, simply click on it and you will be taken to the 'CV-Programming' screen.
 
-  A server being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
+A server being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
 
+|HR-DASHED|
 
 IP Address and Port
 -------------------
 
-  Type in the **IP address** and **Port** of the |EX-CS| and press :guilabel:`Connect`.
+Type in the **IP address** and **Port** of the |EX-CS| and press :guilabel:`Connect`.
 
-  To find your EX-CommandStation's IP address and Port refer you original setup or, if you have a OLED screen on your command station the details will be displayed on it.
+To find your EX-CommandStation's IP address and Port refer you original setup or, if you have a OLED screen on your command station the details will be displayed on it.
 
-  If you only ever connect to one |EX-CS| you can effectively bypass this screen by setting the 'Auto-Connect to WiThrottle Server?' preference.
+If you only ever connect to one |EX-CS| you can effectively bypass this screen by setting the 'Auto-Connect to WiThrottle Server?' preference.
 
 ----
 
@@ -178,9 +179,8 @@ See below for issuing DCC-EX commands.
 
 ----
 
-
-Issuing <> Commands to the EX-CommandStation
---------------------------------------------
+Issuing <> Commands
+-------------------
 
 On several of the screens in |EX-TB| you can issue native DCC-EX ``<>`` commands to your |EX-CS|.
 
@@ -196,7 +196,7 @@ You can use the :guilabel:`Next` and :guilabel:`Prior` buttons to retrieve previ
 
 ----
 
-Speed matching
+Speed Matching
 ==============
 
 Speed Matching assists with making two or more locos run at similar speeds.
@@ -218,12 +218,8 @@ To access the Speed Matching either:
    
       <iframe width="336" height="189" src="https://www.youtube.com/embed/7WyWR8xYvgY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-EX-Toolbox Speed Matching Instructions
---------------------------------------
-
 Requirements
-^^^^^^^^^^^^
+------------
 
 1. A loop of track - ``MAIN``
 2. A ``PROG`` track - or be prepared to switch the loop to ``PROG`` temporarily. (see Notes)
@@ -232,7 +228,7 @@ Requirements
 5. That you have run all the locos (the 'Master *and* any 'Second' loco) for 5-10 minutes to warm them up.  Many locos run differently when warm.
 
 Assumptions
-^^^^^^^^^^^
+-----------
 
 1. Assumes that you have already configured the 'Master' to be the way you want it and the other locos to behave.
 
@@ -248,10 +244,10 @@ Assumptions
    
    **BACK-EMF** is referred to by some manufacturers as 'Dynamic Compensation for Speed Stabilisation', 'Scaleable Speed Stabilisation' or 'Load Compensation'.  Unfortunately there is no standard way to disable BACK-EMF. You will need to refer to the manuals for your decoders. 
    
-   `This page <https://tonystrains.com/news/dcc-motor-control-with-back-emf-and-p-i-d/>`_ |EXTERNAL-LINK| has a detailed explanation of BACK-EMF and details on how to change it for a number of manufacturers.
+   `This page <https://tonystrains.com/news/dcc-motor-control-with-back-emf-and-p-i-d/>`_ has a detailed explanation of BACK-EMF and details on how to change it for a number of manufacturers.
 
 Instructions
-^^^^^^^^^^^^
+------------
 
 1. Open |EX-TB| and go to the Speed Matching screen.
 2. Put the/a second (non-master) loco on the ``PROG`` track. (see Notes)
@@ -280,7 +276,7 @@ Instructions
 11. If you have more locos to match, repeat from step 2.
     
 Notes: 
-^^^^^^
+------
 
    1. By default, the :guilabel:`+` and :guilabel:`-` buttons change the CV values by 1. You can change this step amount by editing the 'Step' field. |BR| e.g. When I start on a loco, I normally have the Step at 10.  When it gets closer to a match I change the step to 1.
    
@@ -392,7 +388,7 @@ On the Servo motor screen,
 Sensor testing
 ==============
 
-.. figure:: /_static/images/ex-toolbox/sensors.png
+.. figure:: /_static/images/ex-toolbox/servos.png
    :alt: Sensors Screen
    :scale: 50%
    :align: right
@@ -526,13 +522,9 @@ This screen displays
 Connecting via JMRI
 ===================
 
-By default, you cannot connect |EX-TB| to |JMRI| and therefore the |EX-CS| via JMRI. JMRI uses the |WiThrottle Protocol| for normal WiFI connections to client devices, but the |EX-TB| requires the use of the |Native Protocol|.
+|EX-TB| can't normally connect to a |EX-CS| through JMRI, however it is possible if you ``Load DCC== over TCP Server`` in the DCC++ menu in JMRI, then connect |EX-TB| to the additional server that is presented.
 
-To use |EX-TB| with |JMRI| you must enable the ``Load DCC++ over TCP Server`` option.  This is found in the 'DCC++' Menu.
-
-Once this is enabled you will see two servers in the 'Discovered Servers' list in |EX-TB| (and |Engine Driver|).  One will be just the name you have given your railroad in JMRI (e.g. 'My JMRI Railroad'). The other will have the same name but with ' [DCC-EX]' after it (e.g.'My JMRI Railroad [DCC-EX]').
-
-To use |EX-TB| you must select the one with ' [DCC-EX]' in the name.
+----
 
 Connecting via USB
 ==================
@@ -590,8 +582,8 @@ Using *SerialToIPGUI* (For Microsoft Windows) (Recommended):
 Downloads
 ---------
 
- * *SerialToIPGUI*  - https://sourceforge.net/projects/serialtoip/ |EXTERNAL-LINK|
- * *socat* for windows requires downloading the 'cgywin' and installing the optional 'socat' package when you install - https://www.cygwin.com/ |EXTERNAL-LINK|
+ * *SerialToIPGUI*  - https://sourceforge.net/projects/serialtoip/
+ * *socat* for windows requires downloading the 'cgywin' and installing the optional 'socat' package when you install - https://www.cygwin.com/ 
 
 
 ----

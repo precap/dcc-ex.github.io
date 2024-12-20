@@ -5,7 +5,7 @@
 Elgato Stream Deck
 ******************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. figure:: /_static/images/throttles/streamdeck1.jpg
    :alt: Stream Deck Unit

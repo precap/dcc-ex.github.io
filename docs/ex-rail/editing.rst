@@ -7,7 +7,7 @@
 Editing myAutomation.h
 **********************
 
-|tinkerer| |conductor| |support-button| 
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 
@@ -101,4 +101,4 @@ Next Steps - Objects
 ====================
 
    
-Click :doc:`here <creating-elements>` or click the :guilabel:`Next` button to learn how to add the key objects you will need to create your automation sequences.
+See the :doc:`creating-elements` page or click the 'Next' button to learn how to add the key objects you will need to create your automation sequences.

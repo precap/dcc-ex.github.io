@@ -7,7 +7,7 @@
 Layout Connections and Wiring
 ******************************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-turntable-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-turntable-button-small|
 
 .. sidebar::
 

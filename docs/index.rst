@@ -17,7 +17,7 @@ DCC-EX Model Railroading
     :columns: 12 12 12 8
     :class-card: sd-shadow-md sd-rounded-3 sd-width-auto
 
-    |DCC-EX| is a team of dedicated enthusiasts producing open source *DCC & DC solutions* for you to run your complete model railroad layout. Our easy to use, do-it-yourself, and free open source products run on off-the-shelf Arduino technology and are supported by numerous third party hardware and apps like |JMRI|, |Engine Driver|, |WiThrottle|, Rocrail and more.
+    |DCC-EX| is a team of dedicated enthusiasts producing open source *DCC & DC solutions* to run your entire model railroad layout. Our easy to use, ready-to-run and do-it-yourself products use our own custom hardware as well as off-the-shelf Arduino and similar technology. Our free and open source EX-CommandStation software is supported by numerous third party hardware and apps like |JMRI|, |Engine Driver|, |WiThrottle|, Rocrail and more. Our mission is to provide free and open source software and hardware designs to make model railroading accessible and affordable to everyone. Read more about our entire "EX"-osystem of offerings in the following pages.
 
   .. grid-item-card:: 
     :columns: 12 12 12 4
@@ -38,9 +38,10 @@ DCC-EX Model Railroading
 
     If you are just starting with |DCC-EX| then the sections below are intended to help you understand how our products might suit your needs. We've curated this guidance based on feedback from our users: 
 
-    - :ref:`begin/what-to-know:what is dcc and dcc-ex?`
-    - :ref:`begin/what-to-know:dcc-ex does dc as well`
-    - :ref:`I'm interested in DCC but have a limited budget <begin/what-to-know:i'm interested in dcc but have a very small budget>`
+    - :ref:`begin/what-to-know:What is EX-CommandStation?`
+    - :ref:`begin/what-to-know:what is dcc?`
+    - :ref:`begin/what-to-know:We do DC as well!`
+    - :ref:`I'm interested in DCC but have a limited budget <begin/what-to-know:i'm interested in dcc but have a limited budget>`
     - :ref:`I just want to run DCC trains <begin/what-to-know:i just want to run my trains>`
     - :ref:`I want to operate my turnout/points & run DCC trains <begin/what-to-know:i want to operate my turnouts/points and run trains>`
     - :ref:`I want to control accessories & run DCC trains <begin/what-to-know:i want to control all my accessories and run trains>`
@@ -71,9 +72,9 @@ DCC-EX Model Railroading
     Where to next?
     ^^^
     
-    It is important to understand that different |DCC-EX| products, and options within those products are targeted at different levels of users, from those who don't know anything about electronics or software, through to those with a lot of knowledge and experience. 
+    It is important to understand that different |DCC-EX| products, and options within those products, are targeted to different levels of users, from those who don't know anything about electronics or software, through to those with more extensive knowledge and experience. 
     
-    We have tagged the pages to help you understand who they are aimed at.  The :doc:`/begin/levels` page explains those levels. Keep an eye out on our pages to see at which level of experience our documentation is aimed at.
+    We have tagged the pages with helpful icons to help you understand who they are aimed at.  The :doc:`/begin/levels` page explains those levels. Keep an eye out on our pages to see at which level of experience each section of our documentation is aimed towards.
 
 .. toctree::
    :hidden:
@@ -90,6 +91,7 @@ DCC-EX Model Railroading
    ex-commandstation/index
    ex-installer/index
    ex-webthrottle/index
+   EX-CSB1 Express <ex-csb1/index>
    EX-MotorShield8874 <reference/hardware/motorboards/ex-motor-shield-8874>
    EX-WiFiShield-8266 <reference/hardware/wifi-boards/ex-wifi-shield-8266>
    ex-dccinspector/index

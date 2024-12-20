@@ -7,7 +7,7 @@
 Keyes/Fundumoto ("Beeper Board")
 ********************************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. warning:: 
 

@@ -5,7 +5,7 @@
 myBluePillThrottle (Physical)
 ******************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

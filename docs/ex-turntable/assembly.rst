@@ -7,7 +7,7 @@
 Assembly & Setup
 ****************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-turntable-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-turntable-button-small|
 
 .. sidebar:: 
 
@@ -605,4 +605,4 @@ At this point, you should have a fully assembled |EX-TT| with the software loade
 
 In addition, |EX-TT| should be connected to your CommandStation ready to test, tune your turntable positions, and configure EX-RAIL ready for use on your layout.
 
-Click the "next" button to get cracking!
+Click the 'Next' button to get cracking!

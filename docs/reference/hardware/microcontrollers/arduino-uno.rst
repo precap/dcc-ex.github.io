@@ -1,13 +1,16 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l3.rst
 .. include:: /include/include-hardware.rst
+
 |EX-CS-LOGO|
 
-*****************
-Arduino Uno Setup
-*****************
+*****************************
+Arduino Uno (Not recommended)
+*****************************
 
-|conductor|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
+
+**As of version 5.4.0, this is no longer a recommended option, see :doc:`/news/posts/20240328`**
 
 If you already have an Uno, or will use |JMRI| to control your trains, then by all means use an Uno. Just remember that you can't have WiFi, Ethernet or a few other options due to memory limitations. But as a Command Station connected to |JMRI| with a USB cable it works great.
 
@@ -15,7 +18,7 @@ If you already have an Uno, or will use |JMRI| to control your trains, then by a
    :alt: Arduino Uno R3
    :scale: 75%
 
-Setting up the UNO is essentially the same as setting up a Mega, so refer to the :doc:`/ex-commandstation/get-started/assembly` page for information on setting up this microcontroller.
+Setting up the UNO is essentially the same as setting up a Mega, so refer to the :doc:`/ex-commandstation/diy/assembly` page for information on setting up this microcontroller.
 
 .. warning:: 
 

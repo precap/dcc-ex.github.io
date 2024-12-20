@@ -7,7 +7,7 @@
 Overview
 *********
 
-|tinkerer| |engineer| |support-button| |githublink-ex-turntable-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-turntable-button-small|
 
 .. sidebar:: 
   
@@ -61,7 +61,7 @@ The |EX-TT| integration includes:
 
   Credit where credit is due!
   
-  **AccelStepper.h credit:** This project would not be effective without the excellent work by Mike McCauley on the AccelStepper.h library that enables us to have somewhat prototypical acceleration and deceleration of the turntable. This library is included with the |EX-TT| software (sans example sketches), and more details can be found on the official `AccelStepper <http://www.airspayce.com/mikem/arduino/AccelStepper/>`_ web page. Note as of version 0.7.0 there is no longer a need for modifications to the library.
+  **AccelStepper.h credit:** This project would not be effective without the excellent work by Mike McCauley on the AccelStepper.h library that enables us to have somewhat prototypical acceleration and deceleration of the turntable. This library is included with the |EX-TT| software (sans example sketches), and more details can be found on the official `AccelStepper <http://www.airspayce.com/mikem/arduino/AccelStepper/>`_ |EXTERNAL-LINK| web page. Note as of version 0.7.0 there is no longer a need for modifications to the library.
 
   **NmraDcc.h credit:** Also, while not directly used in this software, Alex Shephard's "DCCInterface_TurntableControl" was the inspiration for the initial turntable logic for another DCC driven turntable that translated into the beginnings of |EX-TT|. You can see this code as part of the `NmraDcc Arduino library <https://github.com/mrrwa/NmraDcc>`_ |EXTERNAL-LINK|.
 
@@ -222,13 +222,13 @@ If the turntable continues to rotate beyond the 225 degree point, the phase will
 The above outlines how the default automatic phase switching works with |EX-TT|, and this behaviour is configurable.
 
 .. 
-  If you find that the default 45/225 degree angles aren't right for your layout, then this can be modified in "config.h" which is created in :ref:`ex-commandstation/get-started/assembly:7. Load firmware on your Command Station`, and the configuration parameter is outlined here: :ref:`ex-turntable/configure:phase_switch_angle`.
+  If you find that the default 45/225 degree angles aren't right for your layout, then this can be modified in "config.h" which is created in :ref:`ex-commandstation/diy/assembly:7. Load firmware on your Command Station`, and the configuration parameter is outlined here: :ref:`ex-turntable/configure:phase_switch_angle`.
 
-If you find that the default 45/225 degree angles aren't right for your layout, then this can be modified in "config.h" which is created in :doc:`/ex-commandstation/get-started/installer`, and the configuration parameter is outlined here: :ref:`ex-turntable/configure:phase_switch_angle`.
+If you find that the default 45/225 degree angles aren't right for your layout, then this can be modified in "config.h" which is created in :doc:`/ex-commandstation/installer-diy`, and the configuration parameter is outlined here: :ref:`ex-turntable/configure:phase_switch_angle`.
 
 If you have a layout that requires more control over when phase switching does and doesn't happen, you can configure manual phase switching, as outlined in :ref:`ex-turntable/test-and-tune:manual phase switching`.
 
 Next Steps
 ==========
 
-Now that you have a general overview of EX-Turntable's features and capabilities, click the "next" button see what is needed to create an |EX-TT|.
+Now that you have a general overview of EX-Turntable's features and capabilities, click the 'Next' button see what is needed to create an |EX-TT|.

@@ -8,7 +8,7 @@
 Stage 3 - Turnouts/Points, Accessories, Sensors & Blocks
 ********************************************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 What to expect to learn from stage 3
 ====================================
@@ -122,7 +122,7 @@ Try `<D SERVO 100 450 3>` and the servo should move slowly back.
 You can use the servo to control turnouts, semaphore signals, engine shed doors, and other layout components, to make your layout more dynamic and exciting.  In the picture below, you can see a servo mounted below the baseboard with a piece of wire passing through a slot cut in the baseboard, to operate a turnout.
 
 .. image:: /_static/images/i2c/TurnoutServoMount.jpg
-   :alt: Servo mount to operate a turnout
+   :alt: Servo mount to operate a turnout/Point
    :scale: 60%
 
 And in the next picture you can see a servo that operates a semaphore signal.  The signal, and its servo mounting bracket, were 3d-printed on a Creality Ender-3 printer.
@@ -153,18 +153,18 @@ As per the |EX-R| reference, turnouts are defined with the following syntax:
 
 The valid parameters are:
 
-- id = Unique ID within the CommandStation (note these are shared across turnouts, sensors, and outputs).
+- id = Unique ID within the CommandStation (note these are shared across turnouts/points, sensors, and outputs).
 - pin = The ID of the pin the servo is connected to, which would typically be the VPin ID of the PCA9685 controller board.
-- active_angle = The angle to which the servo will move when the turnout is thrown (refer below for further detailed information).
-- inactive_angle = The angle to which the servo will move when the turnout is closed (refer below for further detailed information).
-- profile = There are five profiles to choose from that determine the speed at which a turnout will move: Instant, Fast, Medium, Slow, and Bounce (note we don't recommend Bounce for a turnout definition).
-- description = A human-friendly description of the turnout that will appear in WiThrottle apps and |Engine Driver|. Note that this must be enclosed in quotes "".
+- active_angle = The angle to which the servo will move when the turnout/point is thrown (refer below for further detailed information).
+- inactive_angle = The angle to which the servo will move when the turnout/point is closed (refer below for further detailed information).
+- profile = There are five profiles to choose from that determine the speed at which a turnout/point will move: Instant, Fast, Medium, Slow, and Bounce (note we don't recommend Bounce for a turnout/point definition).
+- description = A human-friendly description of the turnout/point that will appear in WiThrottle apps and |Engine Driver|. Note that this must be enclosed in quotes "".
 
 An example definition for a servo connected to the second control pins of the first PCA9685 connected to the CommandStation, using the slow profile for prototypical operation:
 
 .. code-block:: cpp
 
-   SERVO_TURNOUT(200, 101, 450, 110, Slow, "Example slow turnout definition")
+   SERVO_TURNOUT(200, 101, 450, 110, Slow, "Example slow turnout/point definition")
 
 ----
 

@@ -3,11 +3,11 @@
 .. include:: /include/include-ex-tt.rst
 |EX-TT-LOGO|
 
-************
+************************************
 EX-Turntable
-************
+************************************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-turntable-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-turntable-button-small|
 
 Welcome to the home of |EX-TT|, a fully integrated turntable controller for |EX-CS|. 
 

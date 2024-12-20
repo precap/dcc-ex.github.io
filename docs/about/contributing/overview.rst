@@ -7,7 +7,7 @@
 Overview
 *********
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
@@ -66,4 +66,4 @@ Managing code and our website
 
 We manage all of our code and our website via GitHub, and anyone can contribute to this whether an official part of our team or not.
 
-Click the "Next" button to read how we use GitHub.
+Click the 'Next' button to read how we use GitHub.

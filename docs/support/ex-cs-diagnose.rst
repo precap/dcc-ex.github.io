@@ -10,7 +10,7 @@
 Diagnosing Basic Problems
 *************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. sidebar::
 
@@ -49,7 +49,7 @@ Either using the |EX-I| to the Arduino IDE.
     - (a) Have you selected the correct COM port? |BR| See :ref:`ex-installer/installing:getting ready` for information on finding the correct COM port.
       (b) Have you selected the correct Arduino board type?
   
-  * - 2. Have you selected the correct Baud rate?
+  * - 2. (Arduino IDE only) |BR| Have you selected the correct Baud rate? 
     - Go to Question 3.
     - ToDo
   
@@ -61,6 +61,8 @@ Either using the |EX-I| to the Arduino IDE.
   * - 4. ToDo?
     - ToDo.
     - ToDo
+
+.. todo:: LOW - Finish this
 
 ----
 
@@ -86,14 +88,16 @@ As an initial check we recommend you should try to connect to your EX-CommandSta
     - Go to Question 2.
     - (a) EX-CommandStation not connected to PC via USB.
       (b) CommandStation software may not have loaded correctly. 
-      (c) Possible dead Arduino board.
-
-      For (b) or (c), try loading the EX-CommandStation software again.
+      (c) Possible dead Arduino board. 
+      
+      |BR| For (b) or (c), try loading the EX-CommandStation software again.
 
   * - 2. Can you connect to it using EX-WebThrottle?
     - Go to Question 3.
     - (a) EX-CommandStation not connected to your **PC** via USB.
-      (b) Software may not have loaded correctly. Try loading the EX-CommandStation software again.
+      (b) Software may not have loaded correctly. 
+      
+      |BR| Try loading the EX-CommandStation software again.
 
   * - 3. When you click the power on slider, it should say power on. |BR| Do the 4 LEDs on the motor board turn on and stay on?
     - Go to Question 4.
@@ -108,7 +112,7 @@ As an initial check we recommend you should try to connect to your EX-CommandSta
   * - 5. When you select a loco and move the throttle, does the loco move?
     - Congratulations, your |EX-CS| is essentially working.
     - (a) Wrong loco DCC Address selected.
-      (b) loco is not DCC decoder equipped.  (You will likely hear a humming coming from the loco. If you do remove it from the track urgently, the loco is being damaged.)
+      (b) loco is not DCC decoder equipped.  (You will likely hear a humming coming from the loco. If you do remove it from the track urgently, the loco may be being damaged.)
 
 |
 
@@ -132,7 +136,7 @@ Using JMRI
 
   * - 2. Have you selected the correct COM port?
     - Go to Question 3.
-    - (a) Check which com port the EX-CommandStation is connected to. |BR| See :ref:`ex-commandstation/get-started/installer:1. getting ready` for details on how to determine the correct com port.
+    - (a) Check which com port the EX-CommandStation is connected to. |BR| See :ref:`ex-commandstation/installer-diy:1. getting ready` for details on how to determine the correct com port.
 
   * - 3. Can you turn the track power on?  |BR| Do the LEDs on the motor shield turn on?
     - Go to Question 4.
@@ -228,5 +232,11 @@ When Configured in Station mode
       For c & d, try loading the EX-CommandStation software again.
 
   * - 2. Can your throttle app connect to the WiThrottle server of the EX-CommandStation |BR| |BR| |Engine Driver| should show you the WiThrottle server in the discovered servers list |BR| For |WiThrottle| It should connect automatically.
-    - ToDo
+    - Go to Question 3.
     - (a) You may be on a different network to the EX-CommandStation (e.g. 2.5gHz VS 5gHz connection to you home router.) Try entering the IP address and Port manually.  To 
+
+  * - 3. When select a loco in the throttle app and move the throttle, does the loco move?
+    - Congratulations, your |EX-CS| is essentially working.
+    - (a) Have you connected the track to the 'MAIN' outputs of the Motor Board.  |BR| You cannot directly control trains on the 'PROGRAMMING' outputs without using additional commands which can be done in |Engine Driver| but not other WiFi throttle apps (Use the :guilabel:`Request Loco ID` button in |Engine Driver|.) |BR| recommend that the MAIN outputs be used to run a layout.
+      (b) Wrong loco DCC Address selected.
+      (c) loco is not DCC decoder equipped.  (You will likely hear a humming coming from the loco. If you do remove it from the track urgently, the loco is being damaged.)

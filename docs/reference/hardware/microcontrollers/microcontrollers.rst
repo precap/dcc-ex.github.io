@@ -1,15 +1,14 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l3.rst
 .. include:: /include/include-hardware.rst
+
 |EX-CS-LOGO|
 
 *****************************************************
 Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD
 *****************************************************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button2|
-
-|NEW-IN-V5|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button-small|
 
 .. sidebar::
 
@@ -129,7 +128,7 @@ Right click the "stlink_winusb_install.bat" file and select "Run as administrato
   :alt: Run as admin
   :scale: 50%
 
-Click "Next" to install the drivers, and you should see this summary screen to confirm the drivers installed successfully:
+Click 'Next' to install the drivers, and you should see this summary screen to confirm the drivers installed successfully:
 
 .. image:: /_static/images/nucleo/driver-install2.png
   :alt: Drivers installed
@@ -244,7 +243,7 @@ Here is the NUCLEO-F411RE with on the left a genuine Arduino Motor Shield R3 ins
   :alt: STM Nucleo-F411RE with genuine Arduino Motor Shield R3 installed
   :scale: 30%
 
-.. image:: /_static/images/motorboards/ex_motorshield8874_nucleo_f411.jpg
+.. image:: /_static/images/motorboards/ex_motorshield8874_nucleo_f411.png
   :alt: STM Nucleo-F411RE with DCC-EX EX-MotorShield8874 installed
   :scale: 17%
 

@@ -1,13 +1,14 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l2.rst
 .. include:: /include/include-ex-cs.rst
+
 |EX-CS-LOGO|
    
-****************
-Advanced Options
-****************
+**********************
+DIY - Advanced Options
+**********************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button-small|
 
 .. sidebar::
 
@@ -15,7 +16,7 @@ Advanced Options
       :depth: 1
       :local:
 
-These pages describe the major supported hardware options for building a |EX-CS|, along with some guidance for some of the unsupported options. They are primarily targeted at |tinkerer-text| and |engineer-text| level.  However there are some options that are suitable for a |conductor-text|.  If however, you identify as a |conductor-text| and only wish to install the recommended hardware we suggest that you look at the simplified :doc:`/ex-commandstation/get-started/index` page.
+These pages describe the major supported hardware options for building a |EX-CS|, along with some guidance for some of the unsupported options. They are primarily targeted at |tinkerer-text| and |engineer-text| level.  However there are some options that are suitable for a |conductor-text|.  If however, you identify as a |conductor-text| and only wish to install the recommended hardware we suggest that you look at the simplified :doc:`/ex-commandstation/index` page.
 
 
 Steps to Build an EX-CommandStation
@@ -53,7 +54,7 @@ The other item of specific note is the Mega2560 + WiFi which, while appearing a 
 .. toctree::
   :maxdepth: 2
   
-  supported-microcontrollers/index
+  /reference/hardware/microcontroller-boards
 
 
 Motor Drivers
@@ -131,7 +132,7 @@ refer to :doc:`/reference/hardware/i2c-displays`
 Installation options
 ====================
 
-Depending on your comfort level with using different software and computers in general, there are two options for installing the |EX-CS| software, both of which should be within the reach of |conductor-text| level users.
+Depending on your 'Level' with using different software and computers in general, there are two options for installing the |EX-CS| software, both of which should be within the reach of |conductor-text| level users.
 
 The simplest option, requiring only a simple download, is to use |EX-I|. There are limitations on what options you can select using this method, so if you are using any options that require configuration beyond what's prompted for during the install process, you will need to use the Arduino IDE instead.
 
@@ -175,7 +176,6 @@ DCC-EX Commands
   :maxdepth: 1
 
   Native Commands Summary </reference/software/command-summary-consolidated>
-  Native Commands Details </reference/software/command-reference>
 
 Features under development
 ==========================

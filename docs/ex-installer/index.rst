@@ -6,25 +6,15 @@
 
 |EX-I-LOGO|
 
-************
+************************************************
 EX-Installer
-************
+************************************************
 
-|force-break|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
-.. rst-class:: dcclink-right
+If you have DIY assembled your |EX-CS| hardware you need to load our software onto it make is usable.
 
-   :ref:`Download Ex-Installer Now <download/ex-commandstation:ex-Installer>`
-
-|conductor| |tinkerer| |engineer| |support-button|
-
-|force-break|
-
-.. note:: 
-
-  The recent issue with the Arduino CLI update has now been resolved. |BR| |EX-I| *is ready to use again.*
-
-Once you have assembled your |EX-CS| hardware you need to load our software onto it make is usable.  
+If you purchased an |EX-CSB1| you may wish to reload our software to enable additional features.
 
 To make it as simple as possible we have created the |EX-I| app.
 

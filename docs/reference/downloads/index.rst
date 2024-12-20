@@ -8,7 +8,7 @@ Documents and Schematics
 Documents
 =========
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. toctree::
    :maxdepth: 2
@@ -18,7 +18,7 @@ Documents
 Schematics
 ==========
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. toctree::
    :maxdepth: 2

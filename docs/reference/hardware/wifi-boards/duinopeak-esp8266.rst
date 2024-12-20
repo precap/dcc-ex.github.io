@@ -7,7 +7,7 @@
 Duinopeak ESP8266 WiFi Expansion Board
 **************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

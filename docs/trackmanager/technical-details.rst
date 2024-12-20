@@ -9,9 +9,8 @@
 DCC & DC Technical Details
 **************************
 
-|tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-commandstation-button-small|
 
-|NEW-IN-V5-LOGO-SMALL|
 
 .. sidebar::
 

@@ -7,7 +7,7 @@
 DCC-EX HAL Architecture
 ***********************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. sidebar::
 

@@ -7,7 +7,7 @@
 Diagnostics ``<D>`` Command
 ****************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 

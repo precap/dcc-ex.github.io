@@ -7,7 +7,7 @@
 Pololu MC33926
 **************
 
-|tinkerer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. warning:: 
 

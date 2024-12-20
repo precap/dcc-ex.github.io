@@ -7,7 +7,7 @@
 Contributing to the Hardware & Software
 ***************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

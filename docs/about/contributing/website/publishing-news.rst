@@ -7,7 +7,7 @@
 Publishing DCC-EX News Posts
 ****************************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer|
 
 .. sidebar::
 

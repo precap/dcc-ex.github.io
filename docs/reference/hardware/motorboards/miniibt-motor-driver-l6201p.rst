@@ -7,7 +7,7 @@
 MiniIBT Motor Driver L6201P (single)
 ************************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. warning:: 
 
@@ -27,4 +27,4 @@ https://www.aliexpress.com/item/531569334.html |EXTERNAL-LINK|
 
 ***Dave Bodnar Tested this board***
 
-http://trainelectronics.com/DCC_Arduino/DCC++/
+http://trainelectronics.com/DCC_Arduino/DCC++/ |EXTERNAL-LINK|

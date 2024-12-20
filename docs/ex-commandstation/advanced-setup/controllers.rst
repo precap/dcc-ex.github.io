@@ -7,7 +7,7 @@
 Choosing a Throttle (Controller) - Advanced
 *******************************************
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
 
@@ -99,7 +99,7 @@ For more information on any of these throttles, you can click on their links bel
 Our EX-WebThrottle (DCC-EX | USB/Serial)
 ----------------------------------------
 
-The simplest option is to just use a throttle connected directly to the |EX-CS|. The simplest of all is arguably |EX-WT|, connected via a USB cable from your computer and web browser directly to the Command Station. You have control of multiple locomotives and can operate turnouts. There is a way to replace the USB cable with a wireless connection, but we will cover that later in the Wireless USB Bridge section. Below is a picture of |EX-WT| with the side menu open. You can click on the image to see it full size.
+The simplest option is to just use a throttle connected directly to the |EX-CS|. The simplest of all is arguably |EX-WT|, connected via a USB cable from your computer and web browser directly to the Command Station. You have control of multiple locomotives and can operate turnouts/points. There is a way to replace the USB cable with a wireless connection, but we will cover that later in the Wireless USB Bridge section. Below is a picture of |EX-WT| with the side menu open. You can click on the image to see it full size.
 
 .. image:: /_static/images/throttles/webthrottle1.jpg
    :alt: EX-WebThrottle
@@ -122,7 +122,7 @@ For operating instructions see :doc:`how to use EX-WebThrottle </ex-webthrottle/
 Engine Driver (Android | WiThrottle | WiFi)
 --------------------------------------------
 
-Engine Driver is a throttle app for your phone that can control multiple locos and your turnouts. It uses an interface called "|WiThrottle Protocol|" (for WiFi Throttle). any |WiThrottle Protocol| compatible throttle will work with the |EX-CS|. There are two ways to connect it; the first method is by connecting directly to the Command Station via WiFi. You will need a WiFi board connected to the Command Station (see WiFi Setup :doc:`WiFi Setup </ex-commandstation/advanced-setup/supported-connections/wifi-setup>`).
+Engine Driver is a throttle app for your phone that can control multiple locos and your turnouts/points. It uses an interface called "|WiThrottle Protocol|" (for WiFi Throttle). any |WiThrottle Protocol| compatible throttle will work with the |EX-CS|. There are two ways to connect it; the first method is by connecting directly to the Command Station via WiFi. You will need a WiFi board connected to the Command Station (see WiFi Setup :doc:`WiFi Setup </ex-commandstation/advanced-setup/supported-connections/wifi-setup>`).
 
 The second method is to use |JMRI| and connect |Engine Driver| (ED) to the computer running |JMRI|. That computer would then connect to the Command Station via a USB cable (normally) or via a Wireless USB Bridge. The computer running |JMRI| can be just about any type of computer: PC, Mac, or Raspberry Pi. However, most operators like the Pi option because it is inexpensive, small, can mount under the layout, and has a free image file that you can flash to a Micro-SD card and have a full |JMRI| setup with WiFi with virtually no fuss.
 
@@ -168,7 +168,7 @@ See :doc:`SRCPClient Page </throttles/software/srcpclient>`
 JMRI
 ------
 
-|JMRI| is sort of the 800lb gorilla of front-ends! In its simplest form, it is a throttle, or a gateway to allow you to use |Engine Driver|, or a mouse or touchscreen, as a throttle without a WiFi board connected to the |EX-CS|. The WiFi is built into the computer you use to run |JMRI|, and |JMRI| has a |WiThrottle Server| built into it. The computer running |JMRI|, in turn, connects to the Command Station with a USB cable. |JMRI| is a complex program. If you are seriously into your model railroading however, |JMRI| can provide a lot of value. It can handle your turnouts, outputs, and sensors. It lets you create rosters for your locos and a visual layout of your tracks. There isn't much it can't do. And it is free and open source, just like |DCC-EX|!
+|JMRI| is sort of the 800lb gorilla of front-ends! In its simplest form, it is a throttle, or a gateway to allow you to use |Engine Driver|, or a mouse or touchscreen, as a throttle without a WiFi board connected to the |EX-CS|. The WiFi is built into the computer you use to run |JMRI|, and |JMRI| has a |WiThrottle Server| built into it. The computer running |JMRI|, in turn, connects to the Command Station with a USB cable. |JMRI| is a complex program. If you are seriously into your model railroading however, |JMRI| can provide a lot of value. It can handle your turnouts/points, outputs, and sensors. It lets you create rosters for your locos and a visual layout of your tracks. There isn't much it can't do. And it is free and open source, just like |DCC-EX|!
 
 Connecting via USB cable
 ^^^^^^^^^^^^^^^^^^^^^^^^^

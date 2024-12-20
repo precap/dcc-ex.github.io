@@ -7,7 +7,7 @@
 JMRI Connection
 **************************
 
-|tinkerer| |engineer| |support-button|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 Connection Type: Direct to Command Station through JMRI
 =======================================================

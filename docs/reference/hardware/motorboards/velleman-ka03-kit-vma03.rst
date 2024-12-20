@@ -7,7 +7,7 @@
 Velleman KA03 (kit) VMA03 (soldered)
 ************************************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. warning:: 
 

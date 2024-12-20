@@ -1,13 +1,16 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l3.rst
 .. include:: /include/include-hardware.rst
+
 |EX-CS-LOGO|
 
-************
-Teensy
-************
+*******************
+Teensy (Deprecated)
+*******************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
+
+**As of version 5.4.0, this is now deprecated, see :doc:`/news/posts/20240328`**
 
 The Teensy 3.x/4.x Series by PJRC are next generation ARM-based microcontrollers. They have loads of RAM, a faster clock speed and a host of add-ons. 
 

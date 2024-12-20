@@ -5,7 +5,7 @@
 Train Throttle
 **************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 Train Throttle is a fully featured client for the JMRI WiThrottle server, which allows you to control your DCC equipped model trains. You can control a single engine or consist, create consists, set turnouts, toggle routes, and more.
 

@@ -7,7 +7,7 @@
 Recommended Software
 *********************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar:: 
 

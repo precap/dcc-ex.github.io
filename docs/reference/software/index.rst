@@ -7,7 +7,7 @@
 Software
 ********
 
-|conductor| |tinkerer| |engineer| |support-button|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. toctree::
     :maxdepth: 1
@@ -16,3 +16,5 @@ Software
     index-dcpp-commands
     /throttles/native-protocol-library
     programming-locos
+    /ex-rail/EX-RAIL-command-reference
+    withrottle-vs-native-commands

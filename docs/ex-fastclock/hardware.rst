@@ -7,7 +7,7 @@
 Hardware
 **********
 
-|tinkerer| |engineer| |support-button| |githublink-ex-fastclock-button2|
+|SUITABLE| |tinkerer| |engineer| |support-button| |githublink-ex-fastclock-button-small|
 
 .. sidebar:: 
 
@@ -31,9 +31,9 @@ The software for the |EX-FC| can be found in the |EX-FC| repository in the |DCC-
 ToDo
 ====
 
-Add a more detailed description here
+.. todo:: LOW - Add a more detailed description here
 
 Next Steps
 ==========
 
-Now that you know what you need, click the "next" button see how you use |EX-FC|.
+Now that you know what you need, click the 'Next' button see how you use |EX-FC|.
