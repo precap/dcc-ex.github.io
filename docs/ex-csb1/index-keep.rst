@@ -224,7 +224,7 @@ Board layout
 
 **HOT Surface Area** - The entire area shown in the image to the right can get extremely hot during operation. Be carful not to touch this area at the top or bottom of the board to avoid being burned. This is especially true at high track current levels. Also be sure to provide proper ventilation to the board. If placed in a case, that case must have proper ventilation. Consider using proper vent holes and a fan if you intend to place the EX-CSB1 inside an enclosure.
 
-.. image:: /_static/images/ex-csb1/i2C_jumper_pads.png
+.. image:: /_static/images/ex-csb1/i2c_jumper_pads.png
    :alt: I2C Jumper Pads
    :scale: 45%
    :align: right
