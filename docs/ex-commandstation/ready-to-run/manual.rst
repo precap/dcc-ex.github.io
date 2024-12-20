@@ -78,7 +78,7 @@ The USB port is also very useful for connecting a serial monitor to test the com
    :scale: 40%
    :align: right
 
-   Pluggable Track Output Connectors
+   Pluggable Track |BR| Output Connectors
 
 **Track A and B Outputs** - These are female pluggable terminals that accept a removable male screw terminal plug (included with your CSB1). Using the removable connectors allows for easy reconfiguration, testing, and placement of your command station. You can unsolder these connectors (or ask for a special order) and replace them with 3.5mm pitch screw terminals if you prefer. 
 
@@ -97,7 +97,9 @@ Power to each output can be controlled together or individually. Correct wired g
 
 **Track Power LEDs** - These are indicators that power is being sent to the track, and the mode of the output. With DCC operation, both LEDs should shine brightly when your throttle issues the power-on command. 
 
-You can also configure the CSB1 to start with power on using a mySetup.h or myAutomation.h file. See more here XXX. For DC PWM mode operation, when power is on, ONE LED will light for each direction. That is, forward will light one LED and when you select reverse, the other LED will light. 
+You can also configure the CSB1 to start with power on using a mySetup.h or myAutomation.h file, or by selecting one of the options in |EX-I|. See the :ref:`EX -Installer page <ex-installer/installing:start with power on>` for more information on how to change this behaviour. 
+
+For DC PWM mode operation, when power is on, ONE LED will light for each direction. That is, forward will light one LED and when you select reverse, the other LED will light. 
 
 .. todo: add link
 
@@ -257,7 +259,9 @@ Stacking the EX8874 on these headers provides 2 additional power districts for a
 
    I2C Jumper Pads
 
-**I2C Jumper Pads** - There are 2 solder pad jumpers on the EX-CSB1 labelled "i2c". XXX why and when would I use these?
+**I2C Jumper Pads** - There are 2 solder pad jumpers on the EX-CSB1 labelled "i2c". 
+
+.. TODO XXX why and when would I use these?
 
 |FORCE-BREAK|
 
@@ -310,9 +314,11 @@ To get the most out of your EX-CSB1, we suggest using a modern switching power s
 
 .. NOTE:: Your power supply can be rated at *or above* the specified Amperage rating. You must not exceed the voltage rating of your device, but a little extra current is ok, since the CSB1 will only use as much as it needs. However, remember that both voltage and current can be dangerous.
 
-.. For more details on how much current do I need, see [link] XXX
+.. TODO XXX For more details on how much current do I need, see [link] XXX
 
-When you connect power to the CSB1, you should see one or both bright green power LEDs light up, confirming that the electronics are working. However, for safety, track power will be off by default when you first plug in the EX-CSB1. This is to prevent power from accidentally being applied to your layout before everything is ready. If you prefer, you can change this default setting [link] XXX.
+When you connect power to the CSB1, you should see one or both bright green power LEDs light up, confirming that the electronics are working. 
+
+However, for safety, track power will be off by default when you first plug in the EX-CSB1. This is to prevent power from accidentally being applied to your layout before everything is ready. See the :ref:`EX -Installer page <ex-installer/installing:start with power on>` for more information on how to change this behaviour.
 
 Connecting and Testing Your Command Station
 ============================================
@@ -347,7 +353,7 @@ Once you are sure power is disconnected from the CS and the power LED is no long
 For DCC operation it does not matter which wire goes to which rail, since there is no polarity. However, as you layout grows, it is important to stay consistent with your wiring to ensure that different power districts remain in phase. That just means that when the tracks rapidly switch between one being energized and the other at ground potential, all the districts stay synchronised. 
 
 
-.. todo: You can find more detail on this in our wiring section XXX. [link]
+.. todo XXX You can find more detail on this in our wiring section XXX. [link]
 
 For DC operation, polarity does matter. One rail is positive, and the other is negative, which determines the direction your train will move when voltage is applied through the command station. If you reverse the voltage, the train will change direction and run in reverse.
 
@@ -378,26 +384,47 @@ Unscrew both screw terminals with a flat blade jeweller's screwdriver. The screw
 
 .. TODO XXX [plug image]
 
+|HR-DASHED|
 
 Turning on Power
 ------------------
 
-Now you can connect your track power supply to the barrel connector on the CSB1 and then plug the other end into the wall. You should see status information on the display including the CSB1 firmware version. (If you do not have a display, you will need to connect a serial monitor XXX This is a mess of having to have so many options and send people back and forth and have an entire section on using a serial monitor. Just link to it? Yeah... link to it... it's why I insisted on an OLED display XXX PMA :-P )
+Now you can connect your track power supply to the barrel connector on the CSB1 and then plug the other end into the wall. You should see status information on the display including the CSB1 firmware version. 
 
-The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of ``DCCEX_xxxxxx`` and password of ``PASS_xxxxxx``, both of which will be visible on the OLED display (or serial monitor log) after it boots.
+If you do not have a display or your display is not working, you will need to connect a :doc:`serial monitor </reference/tools/serial-monitor>`. 
 
-.. TODO XXX  figure link to OLED display. Also link to serial monitor log section?
+.. TODO XXX This is a mess of having to have so many options and send people back and forth and have an entire section on using a serial monitor. Just link to it? Yeah... link to it... it's why I insisted on an OLED display XXX PMA :-P )
 
-Access Point (AP) mode creates a separate WiFi network on the Command Station itself, whereas Station (STA) mode allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly.
+The DCC-EX |EX-CSB1| will power up in WiFi Access Point mode as configured out of the box, with a Wifi network SSID of ``DCCEX_xxxxxx`` and password of ``PASS_xxxxxx``, both of which will be visible on the OLED display (or serial monitor log) after it boots.
+
+.. figure:: /_static/images/ex-csb1/oled_startup.png
+   :alt: EX-CSB1 Startup - OLED screen
+   :scale: 25%
+   :align: right
+
+   EX-CSB1 Startup - OLED screen
+
+**Access Point mode VS Station mode**
+
+   * **Access Point (AP) mode** creates a separate WiFi network on the Command Station itself. (Most useful if your layout is away from the house / home network, or you transport your layout frequently.)
+
+   * **Station (STA) mode** allows the Command Station to join as a WiFi device on your home or layout WiFi network. We have the EX-CSB1 set to default to AP mode for convenience of being able to get up and running quickly.
 
 The WiFi LED will illuminate once WiFi is configured and ready as an Access Point (or Station if reconfigured for STA mode.)
 
 .. TODO XXX figure link showing WiFi LED
 
+|HR-DASHED|
+
 Connecting a Throttle
 ----------------------
 
-You can connect to the EX-CSB1 using both an app via Wifi on a smartphone or tablet, and/or on a PC using |EX-WT| with the PC plugged into the EX-CSB1's USB-C port. Detailed instructions are here https://dcc-ex.com/ex-commandstation/controllers.html#choosing-a-throttle-controller
+You can connect to the |EX-CSB1| using both an app via Wifi on a smartphone or tablet, and/or on a PC using |EX-WT| with the PC plugged into the EX-CSB1's USB-C port. Detailed instructions are here https://dcc-ex.com/ex-commandstation/controllers.html#choosing-a-throttle-controller
+
+.. contents:: In this Section
+    :depth: 4
+    :local:
+    :class: in-this-section
 
 |HR-DASHED|
 
@@ -406,9 +433,11 @@ Connecting via Wifi
 
 .. todo: Connecting via Wifi
 
-XXX should title be "connecting with your phone?" Do we link to the engine driver page or give a short version here? Or to we break up the page and the 'Next' button goes to a mirrored page so there is only one page to maintain?
+.. TODO XXX should title be "connecting with your phone?" Do we link to the engine driver page or give a short version here? Or to we break up the page and the 'Next' button goes to a mirrored page so there is only one page to maintain?
 
-Please connect your smartphone or tablet where you previously installed |Engine Driver| or |WiThrottle| to this WiFi network with the password shown on the OLED to begin running trains immediately! You have nothing further to do to start using your DCC-EX |EX-CSB1|. You can remove the protective cover on the OLED if you wish.
+Please connect your smartphone or tablet where you previously installed |Engine Driver| or |WiThrottle| to this WiFi network with the password shown on the OLED to begin running trains immediately! 
+
+You have nothing further to do to start using your DCC-EX |EX-CSB1|. You can remove the protective cover on the OLED if you wish.
 
 .. TODO XXX figure image of phone logging in to the AP
 
@@ -458,7 +487,9 @@ There's no need to worry about polarity in DCC, making wiring simpler as your la
 
 **DC (Direct Current) PWM:** DC PWM operation suits traditional or legacy locomotive control, where the direction and speed of your trains are controlled by varying the voltage and switching polarity. In DC mode, one rail is positive with respect to the other. The train moves forward when voltage is applied and reverses direction when the polarity is flipped. 
 
-DC control is simpler but less flexible, especially if you want to run multiple trains on the same track simultaneously. Under DCC-EX, DC PWM outputs are given a virtual DCC address which allows WiThrottle/DCC-EX throttles to control your DC locos on the piece of track powered by that output. The DC PWM frequency can be set using virtual DCC Functions 28-31 (XXX check!)
+DC control is simpler but less flexible, especially if you want to run multiple trains on the same track simultaneously. Under DCC-EX, DC PWM outputs are given a virtual DCC address which allows WiThrottle/DCC-EX throttles to control your DC locos on the piece of track powered by that output. The DC PWM frequency can be set using virtual DCC Functions 28-31 
+
+.. TODO XXX check! DCC Functions 28-31 
 
 **Managing DCC and DC Modes in TrackManager:** If you are ready to dive into customising your track outputs, |TM| is the tool you'll use. It allows you to easily switch between DCC and DC modes for any track connected to your EX-CSB1. 
 
@@ -502,11 +533,18 @@ If you want to switch to any of the outputs to DC mode, you can find instruction
 Uploading the Software (Changing the Configuration)
 ====================================================
 
-XXX - any reason you didn't you just copy my very carefully written Getting Started Guide content here??? PMA
+.. TODO XXX - any reason you didn't you just copy my very carefully written Getting Started Guide content here??? PMA
 
-The EX-CSB1 comes preloaded with the Command Station software, so you can start using it right out of the box. However, if you wish to customise its configuration or update the software, you can easily do so by connecting the EX-CSB1 to your computer via USB. Follow these steps to make any changes you need:
+The EX-CSB1 comes preloaded with the Command Station software, so you can start using it right out of the box. 
 
----
+However, if you wish to customise its configuration or update the software, you can easily do so by connecting the |EX-CSB1| to your computer via USB and follow the steps below to make any changes you need.
+
+.. contents:: In this Section
+    :depth: 2
+    :local:
+    :class: in-this-section
+
+|HR-DASHED|
 
 First Time Connection
 ---------------------
@@ -521,65 +559,68 @@ Plug It In: Connect one end of the USB cable to the EX-CSB1 and the other end to
 Step 2: Install the Required USB Drivers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Automatic Installation: In many cases, your computer will automatically recognise the EX-CSB1 and install the necessary USB serial drivers.
-Manual Installation: just link to the CH340 content we already have?? XXX
+Automatic Driver Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If the drivers do not install automatically, you may need to download them from the official website. Follow the instructions provided on the site to complete the installation.
+In most cases, your computer will automatically recognise the |EX-CSB1| then you connect it and install the necessary USB serial drivers.
 
-Step 3: Access or Update the Command Station Software
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Manual Driver Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Open the Software: Since the |EX-CSB1| comes preloaded with the Command Station software, you can access it directly by launching the program on your computer after connecting the |EX-CSB1|.
-Download the Latest Version (Optional): If you want to update to the latest software version, visit the official DCC-EX website and download it. Open the installer and follow the on-screen instructions.
-Modify the Configuration: The software allows you to customise the EX-CSB1's configuration to suit your specific needs. Use the setup wizard or manual settings within the software to make any changes.
+If you don't see a port listed there and are using a clone board, you may have to install a driver for a CH340 USB chip that is on these boards. See `Drivers for the CH340 <https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all>`_ for detailed instructions.
 
-Step 4: Verify the Connection
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Step 3: Download and Run the EX-Installer program
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Open the Command Station Software: Once the software is updated or if you're making adjustments, launch it from your desktop or start menu.
-Check the Connection: The software should automatically detect the EX-CSB1. If it doesn't, ensure that your USB cable is securely connected and try again.
+Download and run the |EX-I| program on your computer following the instructions on the :doc:`/ex-commandstation/installer-rtr` page.
 
-Step 5: Start Using or Customising Your Command Station
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-With the |EX-CSB1| connected, you're ready to start using it or making any necessary adjustments to the configuration. Explore the features and tailor the settings to optimise your model railway experience.
-
+.. Step 4: Verify the Connection
+.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. 
+.. Open the Command Station Software: Once the software is updated or if you're making adjustments, launch it from your desktop or start menu.
+.. Check the Connection: The software should automatically detect the EX-CSB1. If it doesn't, ensure that your USB cable is securely connected and try again.
+.. 
+.. Step 5: Start Using or Customising Your Command Station
+.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. 
+.. With the |EX-CSB1| connected, you're ready to start using it or making any necessary adjustments to the configuration. Explore the features and tailor the settings to optimise your model railway experience.
+.. 
 
 Changing the Configuration
 --------------------------
 
-XXX - see my Getting Started Guide content?? PMA
+On subsequent connections of your |EX-CSB1| to you PC loading the drivers will be automatic.
 
-.. todo:: Changing the Configuration
+You only need to run the |EX-I| program on your computer following the instructions on the :doc:`/ex-commandstation/installer-rtr` page.
+
+As the |EX-I| program is updated periodically, it is worth checking from time-to-time to see if there is a new version byt checking the :doc:`/ex-installer/index` page.
 
 Uploading EXRAIL Scripts
 ------------------------
 
-XXX - generic link here?
+EX‑RAIL is an “EXtended Railroad Automation Instruction Language” that can easily be used to describe sequential command 'sequences' to automatically take place on your model layout. These sequences are defined programmatically in a simple command script file, and uploaded to the Command Station once to configure it. EX-Rail will then run automatically on EX-CommandStation startup, trigger manually, or on occurrence of the specified events.
 
-.. todo:: Uploading EXRAIL Scripts
+To find out more about |EX-R| and how to add them to your |EX-CSB1| see the :doc:`/ex-rail/index` page.
 
-
-Resetting the CS
-----------------
-
-XXX - what do you mean here??
-
-.. todo:: Resetting the CS
-
-Soft Reset Recovery
---------------------
-
-.. todo:: Soft Reset Recovery
+.. Resetting the CS
+.. ----------------
+.. 
+.. XXX - what do you mean here??
+..
+.. todo XXX Resetting the CS
+.. 
+.. Soft Reset Recovery
+.. --------------------
+.. 
+.. todo XXX Soft Reset Recovery
 
 Factory Reset
 -------------
 
-.. todo:: Factory Reset
+The |EX-CSB1| does not have a simple 'reset' button.  
 
-XXX - no need? Just specify the "default" settings needed for EX-Installer??? PMA
-
-If you need to reset your EX-CSB1 Command Station software to its default settings, you'll need to reinstall the software. This process will overwrite your current configuration with the original default settings. Follow these steps to reset the software:
+If you need to reset your EX-CSB1 Command Station software to its default settings, you'll need to reinstall the software using the default settings. Follow these steps to reset the software:
 
 Step 1: Disconnect Power
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -589,34 +630,79 @@ Before you begin, make sure the Command Station is powered off. Unplug the power
 Step 2: Connect to Your Computer via USB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Locate the USB Port: Find the USB port on your EX-CSB1.
-Use a Compatible USB Cable: Connect the CSB1 to your computer using the appropriate USB cable.
-Power On: Plug the power supply back in or reconnect the barrel connector to power on the CSB1.
+Locate the USB Port
+~~~~~~~~~~~~~~~~~~~
+
+Find the USB port on your EX-CSB1.
+
+Use a Compatible USB Cable
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Connect the CSB1 to your computer using the appropriate USB cable.
+
+Power On
+~~~~~~~~
+
+Plug the power supply back in or reconnect the barrel connector to power on the CSB1.
 
 Step 3: Download the Latest Installer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Visit the DCC-EX Website: Go to the official DCC-EX website and download the latest version of the Command Station software installer.
-Save the Installer: Save the installer file to a location on your computer where you can easily access it.
+Visit the DCC-EX Website 
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Step 4: Run the Installer
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Go to the :doc:`official DCC-EX website </ex-installer/installing>`.
 
-Open the Installer: Locate the downloaded installer file on your computer and double-click to run it.
-Follow the On-Screen Instructions: The installer will guide you through the reinstallation process. During this process, the existing software on the EX-CSB1 will be overwritten with the default settings.
-Complete the Installation: Allow the installer to complete the process. Once done, the software will be reset to its original configuration.
+Save the Installer
+~~~~~~~~~~~~~~~~~~ 
+
+Save the |EX-I| file to a location on your computer where you can easily access it.
+
+Step 4: Run EX-Installer
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Open EX-Installer 
+~~~~~~~~~~~~~~~~~
+
+Locate the downloaded installer file on your computer and double-click to run it.
+
+Follow the On-Screen Instructions 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Following the instructions on the :doc:`/ex-commandstation/installer-rtr` page.
+
+|EX-I| will guide you through the reinstallation process. During this process, the existing software on the |EX-CSB1| will be overwritten with the default settings.
+
+Complete the Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Allow |EX-I| to complete the process. Once done, the Command Station will be reset to its original configuration.
 
 Step 5: Verify the Reset
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Launch the Command Station Software: After the installation is complete, open the Command Station software to ensure it's running correctly with the default settings.
-Check the Configuration: Confirm that the software has been reset by checking the basic settings and making sure they match the defaults.
+Launch the Command Station Software
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After the installation is complete, power up the |EX-CSB1| to ensure it's running correctly with the default settings.
+
+Check the Configuration
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Confirm that the software has been reset by checking the basic settings and making sure they match the defaults.
 
 Step 6: Reconfigure if Necessary
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Customise Settings: If you need to adjust the settings to suit your layout, you can now do so within the software.
-Test Your Setup: Power up your layout and test the system to ensure everything is working as expected.
+Customise Settings
+~~~~~~~~~~~~~~~~~~
+
+If you need to adjust the settings to suit your layout, you can now do so within |EX-I|.
+
+Test Your Setup
+~~~~~~~~~~~~~~~
+
+Power up your layout and test the system to ensure everything is working as expected.
 
 Connecting
 ===========
@@ -624,11 +710,11 @@ Connecting
 USB Connection to a Serial Monitor
 ----------------------------------
 
-XXX - NOOOOO... can we not do this using **just** EX-Installer's Device Monitor?? 
+There are a number ways to open a serial monitor to the |EX-CSB1|.  They are discussed on the :doc`/reference/tools/serial-monitor` page, and any are acceptable. 
 
-.. todo:: USB Connection to a Serial Monitor
+To discuss just one of those options, which will likely be the easiest to do if you have recently installed the Command Station software using |EX-I|. Simply click the :guilabel:`Serial Monitor` button when the the |EX-CSB1| is connected via USB to your PC.
 
-Using the appropriate USB-A to USB-C or USB-C to USB-C cable, you can use the Arduino IDE, EX-WebThrottle, or JMRI to act as a serial monitor to view diagnostic messages from the Command Station or send manual commands for testing or configuration.
+|HR-DASHED|
 
 USB Connection to JMRI
 ----------------------
@@ -640,18 +726,26 @@ USB Connection to JMRI
 Connecting Optional Devices and Accessories
 -------------------------------------------
 
+.. contents:: In this Section
+    :depth: 4
+    :local:
+    :class: in-this-section
+
+|HR-DASHED|
+
 Integrated displays
 ^^^^^^^^^^^^^^^^^^^
 
 .. todo:: Integrated displays
+
+
+|HR-DASHED|
 
 |I2C| Accessories
 ^^^^^^^^^^^^^^^^^^^
 
 DCC-EX I2C Hardware Overview
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. todo:: DCC-EX I2C Hardware Overview
 
 The EX-CSB1 Command Station allows you to expand your model railway setup by connecting various I2C accessories such as sensors, displays, and GPIO expanders. Using the DCC-EX |EX-I| and additional tools, you can easily configure these accessories to work with your layout.
 
@@ -715,23 +809,25 @@ If issues persist, refer to the troubleshooting guides on the DCC-EX website.
 Additional Resources
 For more detailed instructions and support, refer to these resources:
 
-.. todo:: are these main headings or subheadings of what is above?
+.. todo XXX are these main headings or subheadings of what is above?
 
 -----
 
 Adding an EX-MotorShield 8874
 -----------------------------
 
-You can and an |EX-MS| to provide an additional 2 outputs. You may want to do this if you want to split your DCC layout into separate power districts or if running DC PWM, create up to 4 blocks before you need to add a booster. XXX more detail here?
+You can and an |EX-MS| to provide an additional 2 outputs. You may want to do this if you want to split your DCC layout into separate power districts or if running DC PWM, create up to 4 blocks before you need to add a booster. 
+
+.. TODO XXX more detail here?
 
 ----
 
-Using the EX-CommandStation Software
-=====================================
-
-.. todo:: Using the EX-CommandStation Software
-
-----
+.. Using the EX-CommandStation Software
+.. =====================================
+.. 
+.. .. todo XXX Using the EX-CommandStation Software
+.. 
+.. ----
 
 Additional information
 ==========================================

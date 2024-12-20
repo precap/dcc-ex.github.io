@@ -7,7 +7,7 @@
 |EX-I-LOGO|
 
 ************************************************
-|EX-I|
+EX-Installer
 ************************************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|

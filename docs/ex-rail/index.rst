@@ -4,7 +4,7 @@
 |EX-R-LOGO|
 
 ************************************************************
-|EX-R| (Automation/Animation)
+EX-RAIL (Automation/Animation)
 ************************************************************
 
 |SUITABLE| |tinkerer| |engineer| |support-button|

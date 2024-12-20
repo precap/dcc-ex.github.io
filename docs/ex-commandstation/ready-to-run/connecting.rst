@@ -231,11 +231,11 @@ Connect the Smart Device to the EX-CSB1 AP Network
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: /_static/images/ex-csb1/oled_startup.png
-   :alt: EX-CSB1 Startup - oLED screen
+   :alt: EX-CSB1 Startup - OLED screen
    :scale: 25%
    :align: right
 
-   EX-CSB1 Startup - oLED screen
+   EX-CSB1 Startup - OLED screen
 
 The DCC-EX EX-CSB1 Command Station/Booster will power up in WiFi Access Point mode as configured out of the box, with a WiFi network SSID of ``DCCEX_xxxxxx`` and password of ``PASS_xxxxxx`` (where **xxxxxx** is the last 6 digits of the MAC address of the EX-CSB1), both of which will be visible on the OLED display (or serial monitor log) after it boots so you can connect with a WiFi throttle like Engine Drive or WiThrottle. 
 

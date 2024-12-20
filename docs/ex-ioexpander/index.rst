@@ -4,7 +4,7 @@
 |EX-IO-LOGO|
 
 ***************************************
-|EX-IO|
+EX-IOExpander
 ***************************************
 
 |SUITABLE| |tinkerer| |engineer| |support-button|

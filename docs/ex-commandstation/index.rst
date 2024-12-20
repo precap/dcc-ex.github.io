@@ -4,7 +4,7 @@
 |EX-CS-LOGO|
 
 ***********************************************************************
-|EX-CS| (RTR or DIY)
+EX-CommandStation (RTR or DIY)
 ***********************************************************************
 
 |SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
