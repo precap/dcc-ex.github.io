@@ -86,8 +86,8 @@ To get started, simply choose your path.
 
     * - |EX-CSB1-LOGO-SMALL|
       - |EX-CS-DIY-LOGO-SMALL|
-    * - Our ready-to-run DCC & DC command station / booster for controlling your model railroad
-      - Do-It_yourself (DIY) instructions on the parts to buy to build your own DCC & DC command station
+    * - Our ready-to-run (RTR) DCC & DC command station / booster for controlling your model railroad
+      - Do-it-yourself (DIY) instructions on the parts to buy to build your own DCC & DC command station
 
 ----
 
@@ -109,7 +109,7 @@ To get started, simply choose your path.
     :width: 900
 
     * - |tinkerer| |BR| |BR| |engineer|
-      - if you are just starting on the |DCC-EX| journey we also recommend you start with the |BR| :doc:`Ready-to-Run</ex-commandstation/ready-to-run/index>` (RTR) or :doc:`Do-It-Yourself</ex-commandstation/diy/index>` (DIY). |BR| But if you wish to discover more you may want to look at the :doc:`/ex-commandstation/advanced-setup/index` pages for additional options that may be of interest.
+      - If you are just starting on the |DCC-EX| journey we also recommend you start with the |BR| :doc:`Ready-to-Run</ex-commandstation/ready-to-run/index>` (RTR) or :doc:`Do-It-Yourself</ex-commandstation/diy/index>` (DIY). |BR| But if you wish to discover more you may want to look at the :doc:`/ex-commandstation/advanced-setup/index` pages for additional options that may be of interest.
 
 .. toctree::
     :maxdepth: 1
