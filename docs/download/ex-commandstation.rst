@@ -82,7 +82,7 @@ Latest EX-CommandStation Official Release
 
    .. rst-class:: dcclink
 
-   `Official Release page <https://github.com/DCC-EX/CommandStation-EX/releases>`_
+   `Official Release page <https://github.com/DCC-EX/CommandStation-EX/releases>`_ |EXTERNAL-LINK|
 
 
 Latest EX-CommandStation Unreleased Development Version
@@ -94,7 +94,7 @@ Latest EX-CommandStation Unreleased Development Version
 
    .. rst-class:: dcclink
 
-   `Development Version <https://github.com/DCC-EX/CommandStation-EX/tree/devel>`_
+   `Development Version <https://github.com/DCC-EX/CommandStation-EX/tree/devel>`_ |EXTERNAL-LINK|
 
 |force-break|
 
@@ -105,7 +105,7 @@ EX-CommandStation Repository (project source files)
 
    .. rst-class:: dcclink
 
-      `EX-CommandStation GitHub <https://github.com/DCC-EX/CommandStation-EX>`_
+      `EX-CommandStation GitHub <https://github.com/DCC-EX/CommandStation-EX>`_ |EXTERNAL-LINK|
 
 |force-break|
 
@@ -126,8 +126,8 @@ The new |EX-I| :dcc-ex-red-bold:`does not provide an option to install BaseStati
 
    .. rst-class:: dcclink
 
-      `BaseStation-Classic .zip file <https://github.com/DCC-EX/BaseStation-Classic/archive/master.zip>`_
+      `BaseStation-Classic .zip file <https://github.com/DCC-EX/BaseStation-Classic/archive/master.zip>`_ |EXTERNAL-LINK|
 
    .. rst-class:: dcclink
 
-      `BaseStation-Classic GitHub <https://github.com/DCC-EX/BaseStation-Classic>`_
+      `BaseStation-Classic GitHub <https://github.com/DCC-EX/BaseStation-Classic>`_ |EXTERNAL-LINK|

@@ -60,6 +60,7 @@ One you have loaded the |EX-CS| software you will be able to see the AT version 
 You can check the AT version two ways. Which is best for you depends on how you loaded the |EX-CS| software:
 
 * :ref:`Using EX-Installer <support/wifi-at-version:Checking the AT version using EX-Installer>`
+* :ref:`Using EX-WebThrottle <support/wifi-at-version:Checking the AT version using EX-WebThrottle>`
 * :ref:`Using the Arduino IDE <support/wifi-at-version:Checking the AT version with the Arduino IDE>`
 
 |hr-dashed|
@@ -72,6 +73,25 @@ Once you have successfully loaded the |EX-CS| software:
 1. Click back through the pages of the |EX-I| till you get to the 'Select your Device' screen
 2. Click on the :guilabel:`View device monitor` button |BR| A new window will open and a lot of text will appear
 3. You need to look for a line that will have a section highlighted in green
+
+e.g. ``AT version:1.7.4.0(May 11 2020 19:13:04)``
+
+Alternately, you can enter the command ``<+GMR>`` and click :guilabel:`Send`.  A similar line will be shown.
+
+If it says **anything other than** 1.7.4 in that line, then you have the wrong version you will need to :ref:`follow the instructions at the end of this page <support/wifi-at-version:What to do if you have the wrong AT Firmware version>` to correct it.
+
+|hr-dashed|
+
+Checking the AT version using EX-WebThrottle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Once you have successfully loaded the |EX-CS| software
+
+1. Close EX-Installer (Or the Arduino IDE if you used it)
+2. Open `EX-WebThrottle <https://dcc-ex.com/WebThrottle-EX/>`_ 
+3. Click the :guilabel:`Connect EX-CS` button and select the COM port that you used to load the software onto the |EX-CS|
+4. look at the log that will appear at the bottom of the screen
+5. You need to look for a line that will have a section highlighted in green
 
 e.g. ``AT version:1.7.4.0(May 11 2020 19:13:04)``
 
@@ -135,7 +155,7 @@ Checking the AT version of a ESP-01 with a USB Serial Adapter
    :alt: CH340G USB to TTL(serial) Converter
    :scale: 35%
 
-1. Connect the ESP01 to the serial adapter with the instructions on here: https://remotexy.com/en/help/esp8266-firmware-update (see the section on 'Connection via the USB-UARt adapter') |BR| Note the orange wire is not needed for checking the AT version.
+1. Connect the ESP01 to the serial adapter with the instructions on here: https://remotexy.com/en/help/esp8266-firmware-update |EXTERNAL-LINK| (see the section on 'Connection via the USB-UARt adapter') |BR| Note the orange wire is not needed for checking the AT version.
 2. Plug the serial adapter it the PC
 3. Open the Arduino IDE 
 4. Select **Tools** -> **Serial monitor** from the menus
@@ -275,7 +295,7 @@ Correcting a ESP-01 with a USB Serial Adapter
    :alt: CH340G USB to TTL(serial) Converter
    :scale: 35%
 
-See https://remotexy.com/en/help/esp8266-firmware-update/
+See https://remotexy.com/en/help/esp8266-firmware-update/ |EXTERNAL-LINK|
 
 |force-break|
 
@@ -303,11 +323,11 @@ Correcting a ESP-01 or ESP-01s with a USB to TTL CH340G Converter Module Adapter
 
 The early/normal boards needs to be modified to be able to temporarily connect GND to GPIO 0.
 
-See here for the modification needed https://www.mogtour.com/wp-content/uploads/2021/01/ch340g.pdf
+See here for the modification needed https://www.mogtour.com/wp-content/uploads/2021/01/ch340g.pdf |EXTERNAL-LINK|
 
 Later boards do not require the modification.
 
-See https://www.allaboutcircuits.com/projects/update-the-firmware-in-your-esp8266-wi-fi-module/
+See https://www.allaboutcircuits.com/projects/update-the-firmware-in-your-esp8266-wi-fi-module/ |EXTERNAL-LINK|
 
 |force-break|
 
@@ -316,9 +336,9 @@ See https://www.allaboutcircuits.com/projects/update-the-firmware-in-your-esp826
 Correcting a ESP-01 with a Arduino Uno
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See https://cordobo.com/2300-flash-esp8266-01-with-arduino-uno/
+See https://cordobo.com/2300-flash-esp8266-01-with-arduino-uno/ |EXTERNAL-LINK|
 
-Or https://remotexy.com/en/help/esp8266-firmware-update/
+Or https://remotexy.com/en/help/esp8266-firmware-update/ |EXTERNAL-LINK|
 
 |force-break|
 
@@ -351,13 +371,13 @@ Correcting the Makerfabs ESP8266 WiFi Shield With a USB to TTL Converter Module 
 
 .. note:: 
 
-   Some people have experienced problems with v3.8.5 of the flash download tool (available from the DCC-EX Downloads) when following the instructions of the linked page. They have had more success with v2.3 (`available here <https://bbs.espressif.com/viewtopic.php?f=57&t=433>`_ or `here <https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.14core.com%2Fwp-content%2Fuploads%2F2015%2F11%2FFLASH_DOWNLOAD_TOOLS_v2.4_150924.rar%3Ffbclid%3DIwAR0fbvEFz8kDSJA2gTxfoELxjCpgJ4gLrUMIVEAAT7-ZijUz-zuw2u_IEJA&h=AT3orFt4zGDT6TJWu5vN8gZR0KZFSn4hRPNNlBdQKeKx1LjnKgFjnu9JoOstmKL7q90ov6R72eVhyEwr1Y_ihZHSSB-QH1uWg4WNtooVT410DOxdcDxu-ULhKLdj6BWlEuyJ&__tn__=R]-R&c[0]=AT0mJaTY7Uijw9oHkwCS233Z0qIwndZX4AYG3yer1G5pY4U9f9osL8pTpec-sKJbToYfoS3uqUEKouusXV1zj8Kidqz8fH2PgtWFNWo0UeXthti6kuASi3JyJftjnOACvcXV6PF1YAZW_3xKKmLERyurXizuFx7V>`_.) 
+   Some people have experienced problems with v3.8.5 of the flash download tool (available from the DCC-EX Downloads) when following the instructions of the linked page. They have had more success with v2.3 (`available here <https://bbs.espressif.com/viewtopic.php?f=57&t=433>`_ |EXTERNAL-LINK| or `here <https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.14core.com%2Fwp-content%2Fuploads%2F2015%2F11%2FFLASH_DOWNLOAD_TOOLS_v2.4_150924.rar%3Ffbclid%3DIwAR0fbvEFz8kDSJA2gTxfoELxjCpgJ4gLrUMIVEAAT7-ZijUz-zuw2u_IEJA&h=AT3orFt4zGDT6TJWu5vN8gZR0KZFSn4hRPNNlBdQKeKx1LjnKgFjnu9JoOstmKL7q90ov6R72eVhyEwr1Y_ihZHSSB-QH1uWg4WNtooVT410DOxdcDxu-ULhKLdj6BWlEuyJ&__tn__=R]-R&c[0]=AT0mJaTY7Uijw9oHkwCS233Z0qIwndZX4AYG3yer1G5pY4U9f9osL8pTpec-sKJbToYfoS3uqUEKouusXV1zj8Kidqz8fH2PgtWFNWo0UeXthti6kuASi3JyJftjnOACvcXV6PF1YAZW_3xKKmLERyurXizuFx7V>`_ |EXTERNAL-LINK|.) 
 
    If you don't succeed after several attempts with v3.8.5 try v2.3 instead.
 
-See https://gist.github.com/nathankellenicki/7008540322c617869cec17226cff579d   
+See https://gist.github.com/nathankellenicki/7008540322c617869cec17226cff579d |EXTERNAL-LINK| 
 
-Also see a detailed video by Andrew from `Wotton Tor <https://www.youtube.com/@AndrewH561>`_ - `Flashing the Makerfabs wifi board <https://www.youtube.com/watch?v=mNHlDmCnPMU>`_  (The flashing demo starts about 9 minutes into the video.)
+Also see a detailed video by Andrew from `Wotton Tor <https://www.youtube.com/@AndrewH561>`_ |EXTERNAL-LINK| - `Flashing the Makerfabs wifi board <https://www.youtube.com/watch?v=mNHlDmCnPMU>`_ |EXTERNAL-LINK| (The flashing demo starts about 9 minutes into the video.)
 
 |hr-dashed|
 
