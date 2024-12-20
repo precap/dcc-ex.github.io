@@ -20,7 +20,7 @@ WiThrottle
 
 This is an iOS App from the USA. |WiThrottle| is probably the most popular iOS throttle since early on when |JMRI| built a |WiThrottle Server| into its program. You can connect WiThrottle to |JMRI| and connect |JMRI| to |EX-CS|, or you if you are not going to use |JMRI|, you can connect directly to the Command Station if you install a WiFi board.
 
-Please visit their website: https://www.withrottle.com
+Please visit their website: https://www.withrottle.com |EXTERNAL-LINK|
 
 You can find it in the App Store: `WiThrottle <http://itunes.apple.com/app/id344172578>`_ |EXTERNAL-LINK|
 
