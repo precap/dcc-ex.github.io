@@ -22,7 +22,9 @@ DCC-EX EX-MotorShield8874 RevA
     :depth: 3
     :local:
 
-Designed in conjunction with the |DCC-EX| development team, the |EX-MS| is extremely simple to use with all current and future generations of |EX-CS| hardware. It also safely powers the Command Station motherboard via the same single barrel jack DC input voltage that powers the track. It is rated at a very generous peak 5A of load per channel using Texas Instruments DRV8874 MOSFET technology. This board is the new standard by which we compare other boards.
+Designed in conjunction with the |DCC-EX| development team, the |EX-MS| is extremely simple to use with all current and future generations of |EX-CS| hardware. 
+
+It also safely powers the Command Station motherboard via the same single barrel jack DC input voltage that powers the track. It is rated at a very generous peak 5A of load per channel using Texas Instruments DRV8874 MOSFET technology. This board is the new standard by which we compare other boards.
 
 .. figure:: /_static/images/motorboards/ex_motorshield8874.png
    :alt: DCC-EX EX-MotorShield8874 RevA Semify
@@ -56,7 +58,7 @@ The EX-Motorshield8874 is pin compatible with the original Arduino Motor Shield 
 * Stackable (Support multiple Power Districts)
 * Optional OLED header to connect a display directly to the shield
   
-The EX-Motorshield8874 is based on two DRV8874 H-bridge motor drivers with integrated current sensing from Texas Instruments (TI). It is used to drive inductive loads like relays, solenoids, DC and stepping motors, as well as provide the DCC signal and power to the model railroad tracks.
+The |EX-MS| is based on two DRV8874 H-bridge motor drivers with integrated current sensing from Texas Instruments (TI). It is used to drive inductive loads like relays, solenoids, DC and stepping motors, as well as provide the DCC signal and power to the model railroad tracks.
 
 Powering of Arduino boards is possible due to the on board DC/DC buck converter, supporting a wide input supply range from 9 to 30V. The reverse polarity protection prevents damage to the circuit and its components in case the power supply is accidentally connected backwards.
 
@@ -69,12 +71,12 @@ This Shield features a status LED for supply, which provides a visual indication
 Why did we make it?
 ====================
 
-EX-Motorshield8874 is specifically designed for use with DCC-EX Command Station for controlling model railroads, but can also be used as generally better replacement for Arduino Motor Shield R3 in any device that needs to control a motor. We needed higher current capacity to power more motors/trains and have little to no voltage drop due to advanced MOSFET driver technology.
+|EX-MS| is specifically designed for use with DCC-EX Command Station for controlling model railroads, but can also be used as generally better replacement for Arduino Motor Shield R3 in any device that needs to control a motor. We needed higher current capacity to power more motors/trains and have little to no voltage drop due to advanced MOSFET driver technology.
 
 
 .. note:: 
 
-   The EX-MotorShield8874 was created through the gracious support and design facilities of Semify, who, along with DCC-EX, license it to manufacturers. The hardware design has been made open source for individual users and the schematics are available on the `DCC-EX GitHub <https://github.com/DCC-EX/EX-Motorshield8874>`_ repository.
+   The |EX-MS| was created through the gracious support and design facilities of Semify, who, along with DCC-EX, license it to manufacturers. The hardware design has been made open source for individual users and the schematics are available on the `DCC-EX GitHub <https://github.com/DCC-EX/EX-Motorshield8874>`_ repository.
 
 
 ----
@@ -99,7 +101,7 @@ Entrepreneurs wanting to use the design to offer commercial quantities to their 
 Assembly with EX-MotorShield8874
 ================================
 
-Assembly with the EX-MotorShield8874 is extremely simple, just plug the motor shield into your choice of Command Station motherboard.  Unlike other motor shields, the EX-MotorShield8874 needs no jumpering, trace cutting, or pin bending! Just plug it in.
+Assembly with the |EX-MS| is extremely simple, just plug the motor shield into your choice of Command Station motherboard.  Unlike other motor shields, the EX-MotorShield8874 needs no jumpering, trace cutting, or pin bending! Just plug it in.
 
 Shown here are examples of the shield plugged into Mega+WiFi, Nucleo-F411RE:
 
@@ -118,7 +120,7 @@ Shown here are examples of the shield plugged into Mega+WiFi, Nucleo-F411RE:
 1. Connect DC Power to Motor Driver
 ------------------------------------
 
-The EX-MotorShield8874 accepts a standard 2.1mm inside diameter DC barrel jack for DC power, with centre pin positive, and polarity protected for your safety. Acceptable voltages for correct DCC operation include 10-24VDC, but the shield can cope with 9-30VDC.
+The |EX-MS| accepts a standard 2.1mm inside diameter DC barrel jack for DC power, with centre pin positive, and polarity protected for your safety. Acceptable voltages for correct DCC operation include 10-24VDC, but the shield can cope with 9-30VDC.
 
 .. figure:: /_static/images/motorboards/ex_motorshield8874_purple_megawifi.png
    :alt: DCC-EX EX-MotorShield8874 on Mega+WiFi with power and track connectors
@@ -142,7 +144,7 @@ We suggest 10-12VDC for Z & N Scale, 14-16VDC for OO, HO, and 18-19VDC for O, or
 1. Turn on Power to the Motor Driver
 ------------------------------------
 
-Once satisfied the EX-MotorShield8874 is seated properly on the Command Station motherboard, you can apply power to the |EX-CS|. You ought to see a green LED light up indicating power is being supplied to the motherboard.
+Once satisfied the |EX-MS| is seated properly on the Command Station motherboard, you can apply power to the |EX-CS|. You ought to see a green LED light up indicating power is being supplied to the motherboard.
 
 .. figure:: /_static/images/motorboards/ex_motorshield8874_purple_megawifi_LED_on.png
    :alt: DCC-EX EX-MotorShield8874 RevA on Mega+WiFi with power LED on
@@ -182,7 +184,7 @@ Additional Information
 ======================
 
 Stacking EX-MotorShield8874s
----------------------------
+----------------------------
 
 This is **definitely** advanced Tinkerer/Engineer level work. Do **not** attempt it without some confidence you know what you are doing electronically. Future revisions of the EX-MotorShield8874 will look at alternative ways to expand the number of DCC districts.
 
@@ -208,7 +210,7 @@ On the EX-MotorShield8874 you need to alter the Pin Assignment pads (NB: the fol
 * Cut the DIR jumpers for both Driver A and Driver B, and solder bridge the right hand ALT pads
 * Cut the SENSE jumpers for both Driver A and Driver B, and solder bridge the right hand ALT pads
 
-The above will re-allocate most of the pins used by the top board to the `ALT or alternate set of pins <https://github.com/DCC-EX/EX-MotorShield8874#aternate-pin-assignment-pcb-jumpers>`_ but note it leaves the FAULT pins routed to the default positions of A4/A5 as there is no conflict with the Arduino Motor Shield R3.
+The above will re-allocate most of the pins used by the top board to the `ALT or alternate set of pins <https://github.com/DCC-EX/EX-MotorShield8874#aternate-pin-assignment-pcb-jumpers>`_ |EXTERNAL-LINK| but note it leaves the FAULT pins routed to the default positions of A4/A5 as there is no conflict with the Arduino Motor Shield R3.
 
 Add **one** of the following motor driver definitions to your config.h file (if uncertain, read :doc:`this description </reference/hardware/motorboards/motor-board-config>` first):
 

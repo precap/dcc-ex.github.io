@@ -318,8 +318,8 @@
   Physical = A dedicated separate physical device. Not an app running on a standard smart device.  |BRxa|
   Android = A phone or tablet running the Google Android operating system. |BRxa|
   iOS = An Apple iPhone or tablet running the iOS operating system. |BRxa|
-  MacOS = An Apple laptop or PC. |BRAxa|
-  Win = Windows 7 and above. |BRAxa|
+  MacOS = An Apple laptop or PC. |BRxa|
+  Win = Windows 7 and above. |BRxa|
   DIY = Do it Yourself. Requires you to buy components and 'build' the device.
 
 .. [1] See :doc:`/reference/software/withrottle-vs-native-commands`.
